@@ -47,14 +47,26 @@ struct CategorySelectionView: View {
                 }
                 .pickerStyle(.segmented)
 
-                LazyVStack(spacing: 18) {
-                    ForEach(categories) { category in
-                        Button {
-                            select(category)
-                        } label: {
-                            categoryCard(category, isSelected: selectedCategoryID == category.id)
+                if categories.isEmpty {
+                    ContentUnavailableView(
+                        localized("Няма заредени въпроси", "No Questions Loaded"),
+                        systemImage: "questionmark.folder",
+                        description: Text(localized("Провери локалните JSON файлове и опитай отново.", "Check the local JSON files and try again."))
+                    )
+                    .padding(.vertical, 36)
+                } else {
+                    LazyVStack(spacing: 18) {
+                        ForEach(categories) { category in
+                            let questionCount = category.questionCount(for: selectedDifficulty)
+                            Button {
+                                select(category)
+                            } label: {
+                                categoryCard(category, isSelected: selectedCategoryID == category.id)
+                            }
+                            .buttonStyle(CategoryCardButtonStyle())
+                            .disabled(questionCount == 0)
+                            .opacity(questionCount == 0 ? 0.62 : 1)
                         }
-                        .buttonStyle(CategoryCardButtonStyle())
                     }
                 }
             }
@@ -209,4 +221,3 @@ struct CategorySelectionView: View {
         selectedLanguage.localized(bg, en)
     }
 }
-

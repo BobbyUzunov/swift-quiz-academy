@@ -1,0 +1,692 @@
+[
+  {
+    "id": "swiftui-beginner-01",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Към кой протокол обикновено се conform-ва SwiftUI екран?",
+    "questionEN": "Which protocol does a SwiftUI screen usually conform to?",
+    "answersBG": [
+      "View",
+      "Scene",
+      "App",
+      "Model"
+    ],
+    "answersEN": [
+      "View",
+      "Scene",
+      "App",
+      "Model"
+    ],
+    "correctAnswerBG": "View",
+    "correctAnswerEN": "View",
+    "explanationBG": "Правилният отговор е \"View\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"View\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-02",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кое property предоставя UI съдържанието на View?",
+    "questionEN": "Which property provides the UI content of a View?",
+    "answersBG": [
+      "layout",
+      "body",
+      "screen",
+      "render"
+    ],
+    "answersEN": [
+      "layout",
+      "body",
+      "screen",
+      "render"
+    ],
+    "correctAnswerBG": "body",
+    "correctAnswerEN": "body",
+    "explanationBG": "Правилният отговор е \"body\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"body\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-03",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой wrapper пази локално състояние на view?",
+    "questionEN": "Which wrapper stores local view state?",
+    "answersBG": [
+      "@State",
+      "@Local",
+      "@View",
+      "@Store"
+    ],
+    "answersEN": [
+      "@State",
+      "@Local",
+      "@View",
+      "@Store"
+    ],
+    "correctAnswerBG": "@State",
+    "correctAnswerEN": "@State",
+    "explanationBG": "Правилният отговор е \"@State\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"@State\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-04",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой view подрежда елементи вертикално?",
+    "questionEN": "Which view arranges children vertically?",
+    "answersBG": [
+      "HStack",
+      "VStack",
+      "ZStack",
+      "List"
+    ],
+    "answersEN": [
+      "HStack",
+      "VStack",
+      "ZStack",
+      "List"
+    ],
+    "correctAnswerBG": "VStack",
+    "correctAnswerEN": "VStack",
+    "explanationBG": "Правилният отговор е \"VStack\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"VStack\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-05",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой view наслагва елементи един върху друг?",
+    "questionEN": "Which view overlays children on top of each other?",
+    "answersBG": [
+      "Grid",
+      "HStack",
+      "ZStack",
+      "Form"
+    ],
+    "answersEN": [
+      "Grid",
+      "HStack",
+      "ZStack",
+      "Form"
+    ],
+    "correctAnswerBG": "ZStack",
+    "correctAnswerEN": "ZStack",
+    "explanationBG": "Правилният отговор е \"ZStack\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"ZStack\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-06",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой modifier добавя вътрешно разстояние във view?",
+    "questionEN": "Which modifier adds space inside a view?",
+    "answersBG": [
+      "padding()",
+      "border()",
+      "clipShape()",
+      "offset()"
+    ],
+    "answersEN": [
+      "padding()",
+      "border()",
+      "clipShape()",
+      "offset()"
+    ],
+    "correctAnswerBG": "padding()",
+    "correctAnswerEN": "padding()",
+    "explanationBG": "Правилният отговор е \"padding()\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"padding()\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-07",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой view показва съдържание, върху което може да се натисне?",
+    "questionEN": "Which view shows tappable text or content?",
+    "answersBG": [
+      "Button",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "answersEN": [
+      "Button",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "correctAnswerBG": "Button",
+    "correctAnswerEN": "Button",
+    "explanationBG": "Правилният отговор е \"Button\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Button\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-08",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой view показва SF Symbols?",
+    "questionEN": "Which view displays SF Symbols?",
+    "answersBG": [
+      "Text",
+      "Image(systemName:)",
+      "SymbolView",
+      "Icon"
+    ],
+    "answersEN": [
+      "Text",
+      "Image(systemName:)",
+      "SymbolView",
+      "Icon"
+    ],
+    "correctAnswerBG": "Image(systemName:)",
+    "correctAnswerEN": "Image(systemName:)",
+    "explanationBG": "Правилният отговор е \"Image(systemName:)\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Image(systemName:)\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-09",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой modifier променя стила на шрифта?",
+    "questionEN": "Which modifier changes font style?",
+    "answersBG": [
+      ".font()",
+      ".tint()",
+      ".task()",
+      ".tag()"
+    ],
+    "answersEN": [
+      ".font()",
+      ".tint()",
+      ".task()",
+      ".tag()"
+    ],
+    "correctAnswerBG": ".font()",
+    "correctAnswerEN": ".font()",
+    "explanationBG": "Правилният отговор е \".font()\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \".font()\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-beginner-10",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionBG": "Кой view създава празно гъвкаво пространство?",
+    "questionEN": "Which view creates empty flexible space?",
+    "answersBG": [
+      "Divider",
+      "Spacer",
+      "Group",
+      "Section"
+    ],
+    "answersEN": [
+      "Divider",
+      "Spacer",
+      "Group",
+      "Section"
+    ],
+    "correctAnswerBG": "Spacer",
+    "correctAnswerEN": "Spacer",
+    "explanationBG": "Правилният отговор е \"Spacer\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Spacer\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-01",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Какво позволява @Binding на child view?",
+    "questionEN": "What does @Binding allow a child view to do?",
+    "answersBG": [
+      "Чете и променя state, притежаван другаде",
+      "Създава database",
+      "Изключва previews",
+      "Импортира images"
+    ],
+    "answersEN": [
+      "Read and write state owned elsewhere",
+      "Create a database",
+      "Disable previews",
+      "Import images"
+    ],
+    "correctAnswerBG": "Чете и променя state, притежаван другаде",
+    "correctAnswerEN": "Read and write state owned elsewhere",
+    "explanationBG": "Правилният отговор е \"Чете и променя state, притежаван другаде\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Read and write state owned elsewhere\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-02",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Кой modifier променя foreground цвета/стила на view?",
+    "questionEN": "Which modifier changes a view's foreground color/style?",
+    "answersBG": [
+      "foregroundStyle",
+      "padding",
+      "task",
+      "tag"
+    ],
+    "answersEN": [
+      "foregroundStyle",
+      "padding",
+      "task",
+      "tag"
+    ],
+    "correctAnswerBG": "foregroundStyle",
+    "correctAnswerEN": "foregroundStyle",
+    "explanationBG": "Правилният отговор е \"foregroundStyle\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"foregroundStyle\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-03",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Каква е целта на NavigationStack?",
+    "questionEN": "What is the purpose of NavigationStack?",
+    "answersBG": [
+      "Управляване на navigation paths",
+      "Пазене на passwords",
+      "Рисуване само на charts",
+      "Компилиране на assets"
+    ],
+    "answersEN": [
+      "Managing navigation paths",
+      "Storing passwords",
+      "Drawing charts only",
+      "Compiling assets"
+    ],
+    "correctAnswerBG": "Управляване на navigation paths",
+    "correctAnswerEN": "Managing navigation paths",
+    "explanationBG": "Правилният отговор е \"Управляване на navigation paths\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Managing navigation paths\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-04",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Кой container показва ефективно редове с данни?",
+    "questionEN": "Which container efficiently shows rows of data?",
+    "answersBG": [
+      "List",
+      "Circle",
+      "Image",
+      "Spacer"
+    ],
+    "answersEN": [
+      "List",
+      "Circle",
+      "Image",
+      "Spacer"
+    ],
+    "correctAnswerBG": "List",
+    "correctAnswerEN": "List",
+    "explanationBG": "Правилният отговор е \"List\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"List\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-05",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Какво представя .sheet?",
+    "questionEN": "What does .sheet present?",
+    "answersBG": [
+      "Modal view",
+      "Нов compiler",
+      "Image asset",
+      "Unit test"
+    ],
+    "answersEN": [
+      "A modal view",
+      "A new compiler",
+      "An image asset",
+      "A unit test"
+    ],
+    "correctAnswerBG": "Modal view",
+    "correctAnswerEN": "A modal view",
+    "explanationBG": "Правилният отговор е \"Modal view\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A modal view\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-06",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Кой wrapper чете system values като color scheme?",
+    "questionEN": "Which wrapper reads system values like color scheme?",
+    "answersBG": [
+      "@Environment",
+      "@State",
+      "@Main",
+      "@Local"
+    ],
+    "answersEN": [
+      "@Environment",
+      "@State",
+      "@Main",
+      "@Local"
+    ],
+    "correctAnswerBG": "@Environment",
+    "correctAnswerEN": "@Environment",
+    "explanationBG": "Правилният отговор е \"@Environment\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"@Environment\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-07",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "От какво има нужда ForEach за dynamic data?",
+    "questionEN": "What does ForEach need for dynamic data?",
+    "answersBG": [
+      "Identifiable данни или id",
+      "Само images",
+      "Timer",
+      "Database"
+    ],
+    "answersEN": [
+      "Identifiable data or an id",
+      "Only images",
+      "A timer",
+      "A database"
+    ],
+    "correctAnswerBG": "Identifiable данни или id",
+    "correctAnswerEN": "Identifiable data or an id",
+    "explanationBG": "Правилният отговор е \"Identifiable данни или id\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Identifiable data or an id\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-08",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Кой modifier изрязва view към shape?",
+    "questionEN": "Which modifier clips a view to a shape?",
+    "answersBG": [
+      "clipShape",
+      "font",
+      "task",
+      "tag"
+    ],
+    "answersEN": [
+      "clipShape",
+      "font",
+      "task",
+      "tag"
+    ],
+    "correctAnswerBG": "clipShape",
+    "correctAnswerEN": "clipShape",
+    "explanationBG": "Правилният отговор е \"clipShape\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"clipShape\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-09",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Какво прави .disabled(true)?",
+    "questionEN": "What does .disabled(true) do?",
+    "answersBG": [
+      "Спира interaction",
+      "Изтрива view",
+      "Променя app icon",
+      "Стартира navigation"
+    ],
+    "answersEN": [
+      "Prevents interaction",
+      "Deletes a view",
+      "Changes app icon",
+      "Starts navigation"
+    ],
+    "correctAnswerBG": "Спира interaction",
+    "correctAnswerEN": "Prevents interaction",
+    "explanationBG": "Правилният отговор е \"Спира interaction\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Prevents interaction\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-intermediate-10",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionBG": "Кой view рисува progress indicator?",
+    "questionEN": "Which view draws a progress indicator?",
+    "answersBG": [
+      "ProgressView",
+      "Spacer",
+      "Section",
+      "Group"
+    ],
+    "answersEN": [
+      "ProgressView",
+      "Spacer",
+      "Section",
+      "Group"
+    ],
+    "correctAnswerBG": "ProgressView",
+    "correctAnswerEN": "ProgressView",
+    "explanationBG": "Правилният отговор е \"ProgressView\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"ProgressView\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-01",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Защо body на view трябва да остане лек?",
+    "questionEN": "Why should view body stay lightweight?",
+    "answersBG": [
+      "Може да се преизчислява често",
+      "Изпълнява се само веднъж",
+      "Пази databases",
+      "Подписва apps"
+    ],
+    "answersEN": [
+      "It can be recomputed often",
+      "It runs only once ever",
+      "It stores databases",
+      "It signs apps"
+    ],
+    "correctAnswerBG": "Може да се преизчислява често",
+    "correctAnswerEN": "It can be recomputed often",
+    "explanationBG": "Правилният отговор е \"Може да се преизчислява често\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"It can be recomputed often\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-02",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "На какво влияе identity в SwiftUI lists?",
+    "questionEN": "What does identity affect in SwiftUI lists?",
+    "answersBG": [
+      "Diffing, updates и animations",
+      "Само colors",
+      "Само network calls",
+      "Само app icons"
+    ],
+    "answersEN": [
+      "Diffing, updates, and animations",
+      "Only colors",
+      "Only network calls",
+      "Only app icons"
+    ],
+    "correctAnswerBG": "Diffing, updates и animations",
+    "correctAnswerEN": "Diffing, updates, and animations",
+    "explanationBG": "Правилният отговор е \"Diffing, updates и animations\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Diffing, updates, and animations\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-03",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Какво запазва @StateObject?",
+    "questionEN": "What does @StateObject preserve?",
+    "answersBG": [
+      "Observable object, притежаван от view",
+      "Само локален Int",
+      "Статичен color",
+      "System image"
+    ],
+    "answersEN": [
+      "An observable object owned by the view",
+      "A local Int only",
+      "A static color",
+      "A system image"
+    ],
+    "correctAnswerBG": "Observable object, притежаван от view",
+    "correctAnswerEN": "An observable object owned by the view",
+    "explanationBG": "Правилният отговор е \"Observable object, притежаван от view\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"An observable object owned by the view\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-04",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Какво означава @ObservedObject?",
+    "questionEN": "What does @ObservedObject imply?",
+    "answersBG": [
+      "Object-ът се притежава другаде",
+      "View го притежава постоянно",
+      "Това е constant",
+      "Не е observable"
+    ],
+    "answersEN": [
+      "The object is owned elsewhere",
+      "The view owns it permanently",
+      "It is a constant",
+      "It is not observable"
+    ],
+    "correctAnswerBG": "Object-ът се притежава другаде",
+    "correctAnswerEN": "The object is owned elsewhere",
+    "explanationBG": "Правилният отговор е \"Object-ът се притежава другаде\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The object is owned elsewhere\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-05",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Какво помага да се предава PreferenceKey?",
+    "questionEN": "What does PreferenceKey help pass?",
+    "answersBG": [
+      "Стойности от child view нагоре",
+      "Passwords",
+      "Assets",
+      "Build settings"
+    ],
+    "answersEN": [
+      "Child view values upward",
+      "Passwords",
+      "Assets",
+      "Build settings"
+    ],
+    "correctAnswerBG": "Стойности от child view нагоре",
+    "correctAnswerEN": "Child view values upward",
+    "explanationBG": "Правилният отговор е \"Стойности от child view нагоре\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Child view values upward\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-06",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "За какво се използва custom Layout?",
+    "questionEN": "What is a custom Layout used for?",
+    "answersBG": [
+      "Дефиниране на measurement и placement",
+      "Запазване в UserDefaults",
+      "Създаване на tests",
+      "Подписване на apps"
+    ],
+    "answersEN": [
+      "Defining measurement and placement",
+      "Saving UserDefaults",
+      "Creating tests",
+      "Signing apps"
+    ],
+    "correctAnswerBG": "Дефиниране на measurement и placement",
+    "correctAnswerEN": "Defining measurement and placement",
+    "explanationBG": "Правилният отговор е \"Дефиниране на measurement и placement\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Defining measurement and placement\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-07",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Какво контролира transaction?",
+    "questionEN": "What does transaction control?",
+    "answersBG": [
+      "Animation детайли за state changes",
+      "Database rows",
+      "App target names",
+      "Image compression"
+    ],
+    "answersEN": [
+      "Animation details for state changes",
+      "Database rows",
+      "App target names",
+      "Image compression"
+    ],
+    "correctAnswerBG": "Animation детайли за state changes",
+    "correctAnswerEN": "Animation details for state changes",
+    "explanationBG": "Правилният отговор е \"Animation детайли за state changes\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Animation details for state changes\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-08",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Какво може да създаде matchedGeometryEffect?",
+    "questionEN": "What can matchedGeometryEffect create?",
+    "answersBG": [
+      "Плавни transitions между свързани views",
+      "Network requests",
+      "Compile errors",
+      "User accounts"
+    ],
+    "answersEN": [
+      "Smooth transitions between related views",
+      "Network requests",
+      "Compile errors",
+      "User accounts"
+    ],
+    "correctAnswerBG": "Плавни transitions между свързани views",
+    "correctAnswerEN": "Smooth transitions between related views",
+    "explanationBG": "Правилният отговор е \"Плавни transitions между свързани views\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Smooth transitions between related views\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-09",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "Защо да избягваме тежка работа директно в body?",
+    "questionEN": "Why avoid heavy work directly in body?",
+    "answersBG": [
+      "Може да влоши rendering performance",
+      "Body никога не се изпълнява повторно",
+      "Изключва buttons",
+      "Изтрива state"
+    ],
+    "answersEN": [
+      "It can hurt rendering performance",
+      "Body never reruns",
+      "It disables buttons",
+      "It deletes state"
+    ],
+    "correctAnswerBG": "Може да влоши rendering performance",
+    "correctAnswerEN": "It can hurt rendering performance",
+    "explanationBG": "Правилният отговор е \"Може да влоши rendering performance\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"It can hurt rendering performance\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swiftui-advanced-10",
+    "categoryId": "swiftui",
+    "difficulty": "advanced",
+    "questionBG": "С какво помага EquatableView?",
+    "questionEN": "What does EquatableView help with?",
+    "answersBG": [
+      "Пропускане на непроменени view updates",
+      "Сортиране на arrays",
+      "Signing builds",
+      "Drawing icons"
+    ],
+    "answersEN": [
+      "Skipping unchanged view updates",
+      "Sorting arrays",
+      "Signing builds",
+      "Drawing icons"
+    ],
+    "correctAnswerBG": "Пропускане на непроменени view updates",
+    "correctAnswerEN": "Skipping unchanged view updates",
+    "explanationBG": "Правилният отговор е \"Пропускане на непроменени view updates\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Skipping unchanged view updates\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  }
+]

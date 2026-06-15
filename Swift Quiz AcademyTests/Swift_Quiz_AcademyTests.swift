@@ -126,6 +126,73 @@ struct Swift_Quiz_AcademyTests {
         #expect(viewModel.totalQuestionCount == 150)
     }
 
+    @Test func jsonQuestionLoaderLoadsLocalDatabase() {
+        let loader = QuestionLoader()
+        let questions = loader.loadAllQuestions()
+
+        #expect(questions.count == 150)
+        #expect(Set(questions.map(\.categoryId)).count == 5)
+        #expect(questions.allSatisfy { !$0.id.isEmpty })
+        #expect(questions.allSatisfy { $0.answersBG.contains($0.correctAnswerBG) })
+        #expect(questions.allSatisfy { $0.answersEN.contains($0.correctAnswerEN) })
+    }
+
+    @Test func jsonQuestionsDecodeExpectedShape() throws {
+        let data = """
+        [
+          {
+            "id": "sample-beginner-01",
+            "categoryId": "swift-basics",
+            "difficulty": "beginner",
+            "questionBG": "Коя ключова дума създава константа?",
+            "questionEN": "Which keyword creates a constant?",
+            "answersBG": ["var", "let", "func", "class"],
+            "answersEN": ["var", "let", "func", "class"],
+            "correctAnswerBG": "let",
+            "correctAnswerEN": "let",
+            "explanationBG": "let създава константа.",
+            "explanationEN": "let creates a constant."
+          }
+        ]
+        """.data(using: .utf8)!
+
+        let questions = try JSONDecoder().decode([QuizQuestion].self, from: data)
+
+        #expect(questions.count == 1)
+        #expect(questions[0].id == "sample-beginner-01")
+        #expect(questions[0].difficulty == .beginner)
+        #expect(questions[0].correctAnswerIndex(for: .english) == 1)
+        #expect(questions[0].explanationText(for: .bulgarian) == "let създава константа.")
+    }
+
+    @Test func questionLoaderGroupsByCategoryAndDifficulty() {
+        let loader = QuestionLoader()
+        let grouped = QuestionLoader.groupByCategoryAndDifficulty(loader.loadAllQuestions())
+
+        #expect(grouped.keys.count == 5)
+
+        for definition in QuestionLoader.categoryDefinitions {
+            let categoryGroup = grouped[definition.id] ?? [:]
+
+            #expect((categoryGroup[.beginner] ?? []).count >= 5)
+            #expect((categoryGroup[.intermediate] ?? []).count >= 5)
+            #expect((categoryGroup[.advanced] ?? []).count >= 5)
+            #expect(categoryGroup.values.reduce(0) { $0 + $1.count } >= 20)
+        }
+    }
+
+    @Test func categoryQuestionsFilterByDifficultyFromJSON() {
+        let categories = QuestionLoader().loadCategories()
+
+        #expect(categories.count == 5)
+
+        for category in categories {
+            #expect(category.questionCount(for: .beginner) == 10)
+            #expect(category.questionCount(for: .intermediate) == 10)
+            #expect(category.questionCount(for: .advanced) == 10)
+        }
+    }
+
     @Test func levelSystemUsesVersionOnePointOneProgression() {
         let levelCases: [(xp: Int, level: Int, currentXP: Int, nextXP: Int, toNext: Int)] = [
             (0, 1, 0, 100, 100),

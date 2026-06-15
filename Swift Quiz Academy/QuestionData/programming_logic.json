@@ -1,0 +1,692 @@
+[
+  {
+    "id": "programming-logic-beginner-01",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Кой statement изпълнява код само когато условието е вярно?",
+    "questionEN": "Which statement runs code only when a condition is true?",
+    "answersBG": [
+      "if",
+      "let",
+      "import",
+      "return"
+    ],
+    "answersEN": [
+      "if",
+      "let",
+      "import",
+      "return"
+    ],
+    "correctAnswerBG": "if",
+    "correctAnswerEN": "if",
+    "explanationBG": "Правилният отговор е \"if\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"if\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-02",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Кой цикъл минава през елементи в колекция?",
+    "questionEN": "Which loop repeats over items in a collection?",
+    "answersBG": [
+      "for-in",
+      "switch",
+      "guard",
+      "struct"
+    ],
+    "answersEN": [
+      "for-in",
+      "switch",
+      "guard",
+      "struct"
+    ],
+    "correctAnswerBG": "for-in",
+    "correctAnswerEN": "for-in",
+    "explanationBG": "Правилният отговор е \"for-in\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"for-in\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-03",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво означава && в условие?",
+    "questionEN": "What does && mean in a condition?",
+    "answersBG": [
+      "И",
+      "ИЛИ",
+      "НЕ",
+      "РАВНО"
+    ],
+    "answersEN": [
+      "AND",
+      "OR",
+      "NOT",
+      "EQUAL"
+    ],
+    "correctAnswerBG": "И",
+    "correctAnswerEN": "AND",
+    "explanationBG": "Правилният отговор е \"И\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"AND\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-04",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво означава || в условие?",
+    "questionEN": "What does || mean in a condition?",
+    "answersBG": [
+      "И",
+      "ИЛИ",
+      "ПО-МАЛКО",
+      "ПЛЮС"
+    ],
+    "answersEN": [
+      "AND",
+      "OR",
+      "LESS",
+      "PLUS"
+    ],
+    "correctAnswerBG": "ИЛИ",
+    "correctAnswerEN": "OR",
+    "explanationBG": "Правилният отговор е \"ИЛИ\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"OR\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-05",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Кой оператор означава различно?",
+    "questionEN": "Which operator means not equal?",
+    "answersBG": [
+      "==",
+      "!=",
+      "<=",
+      "="
+    ],
+    "answersEN": [
+      "==",
+      "!=",
+      "<=",
+      "="
+    ],
+    "correctAnswerBG": "!=",
+    "correctAnswerEN": "!=",
+    "explanationBG": "Правилният отговор е \"!=\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"!=\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-06",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво е алгоритъм?",
+    "questionEN": "What is an algorithm?",
+    "answersBG": [
+      "Решение стъпка по стъпка",
+      "Color",
+      "Device",
+      "A random number"
+    ],
+    "answersEN": [
+      "A step-by-step solution",
+      "A color",
+      "A device",
+      "A random number"
+    ],
+    "correctAnswerBG": "Решение стъпка по стъпка",
+    "correctAnswerEN": "A step-by-step solution",
+    "explanationBG": "Правилният отговор е \"Решение стъпка по стъпка\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A step-by-step solution\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-07",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво става, когато условието на цикъл никога не става false?",
+    "questionEN": "What happens when a loop condition never becomes false?",
+    "answersBG": [
+      "Безкраен цикъл",
+      "Optional",
+      "Compilation",
+      "Import"
+    ],
+    "answersEN": [
+      "Infinite loop",
+      "Optional",
+      "Compilation",
+      "Import"
+    ],
+    "correctAnswerBG": "Безкраен цикъл",
+    "correctAnswerEN": "Infinite loop",
+    "explanationBG": "Правилният отговор е \"Безкраен цикъл\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Infinite loop\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-08",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Кой statement избира между множество случаи?",
+    "questionEN": "Which statement chooses between multiple cases?",
+    "answersBG": [
+      "switch",
+      "var",
+      "Text",
+      "Array"
+    ],
+    "answersEN": [
+      "switch",
+      "var",
+      "Text",
+      "Array"
+    ],
+    "correctAnswerBG": "switch",
+    "correctAnswerEN": "switch",
+    "explanationBG": "Правилният отговор е \"switch\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"switch\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-09",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво е debugging?",
+    "questionEN": "What is debugging?",
+    "answersBG": [
+      "Намиране и поправяне на проблеми",
+      "Добавяне на icons",
+      "Публикуване веднага",
+      "Само промяна на font size"
+    ],
+    "answersEN": [
+      "Finding and fixing problems",
+      "Adding icons",
+      "Publishing instantly",
+      "Changing font size only"
+    ],
+    "correctAnswerBG": "Намиране и поправяне на проблеми",
+    "correctAnswerEN": "Finding and fixing problems",
+    "explanationBG": "Правилният отговор е \"Намиране и поправяне на проблеми\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Finding and fixing problems\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-beginner-10",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionBG": "Какво трябва да връща Boolean expression?",
+    "questionEN": "What should a Boolean expression produce?",
+    "answersBG": [
+      "true или false",
+      "Само text",
+      "Само images",
+      "File"
+    ],
+    "answersEN": [
+      "true or false",
+      "Only text",
+      "Only images",
+      "A file"
+    ],
+    "correctAnswerBG": "true или false",
+    "correctAnswerEN": "true or false",
+    "explanationBG": "Правилният отговор е \"true или false\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"true or false\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-01",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво означава decomposition?",
+    "questionEN": "What does decomposition mean?",
+    "answersBG": [
+      "Разделяне на проблем на по-малки части",
+      "Изтриване на код",
+      "Changing colors",
+      "Compiling twice"
+    ],
+    "answersEN": [
+      "Breaking a problem into smaller parts",
+      "Deleting code",
+      "Changing colors",
+      "Compiling twice"
+    ],
+    "correctAnswerBG": "Разделяне на проблем на по-малки части",
+    "correctAnswerEN": "Breaking a problem into smaller parts",
+    "explanationBG": "Правилният отговор е \"Разделяне на проблем на по-малки части\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Breaking a problem into smaller parts\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-02",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е scope на променлива?",
+    "questionEN": "What is a variable's scope?",
+    "answersBG": [
+      "Къде може да бъде достъпена",
+      "Нейният цвят",
+      "Нейната icon",
+      "Нейното device"
+    ],
+    "answersEN": [
+      "Where it can be accessed",
+      "Its color",
+      "Its icon",
+      "Its device"
+    ],
+    "correctAnswerBG": "Къде може да бъде достъпена",
+    "correctAnswerEN": "Where it can be accessed",
+    "explanationBG": "Правилният отговор е \"Къде може да бъде достъпена\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Where it can be accessed\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-03",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво прави short-circuit evaluation?",
+    "questionEN": "What does short-circuit evaluation do?",
+    "answersBG": [
+      "Спира проверката, щом резултатът е ясен",
+      "Изтрива всички conditions",
+      "Изпълнява всеки branch",
+      "Пропуска компилация"
+    ],
+    "answersEN": [
+      "Stops checking once the result is known",
+      "Deletes all conditions",
+      "Runs every branch",
+      "Skips compilation"
+    ],
+    "correctAnswerBG": "Спира проверката, щом резултатът е ясен",
+    "correctAnswerEN": "Stops checking once the result is known",
+    "explanationBG": "Правилният отговор е \"Спира проверката, щом резултатът е ясен\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Stops checking once the result is known\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-04",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Коя data structure работи first-in, first-out?",
+    "questionEN": "Which data structure works first-in, first-out?",
+    "answersBG": [
+      "Queue",
+      "Stack",
+      "Set",
+      "Tree"
+    ],
+    "answersEN": [
+      "Queue",
+      "Stack",
+      "Set",
+      "Tree"
+    ],
+    "correctAnswerBG": "Queue",
+    "correctAnswerEN": "Queue",
+    "explanationBG": "Правилният отговор е \"Queue\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Queue\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-05",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Коя data structure работи last-in, first-out?",
+    "questionEN": "Which data structure works last-in, first-out?",
+    "answersBG": [
+      "Stack",
+      "Queue",
+      "Array only",
+      "Dictionary"
+    ],
+    "answersEN": [
+      "Stack",
+      "Queue",
+      "Array only",
+      "Dictionary"
+    ],
+    "correctAnswerBG": "Stack",
+    "correctAnswerEN": "Stack",
+    "explanationBG": "Правилният отговор е \"Stack\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Stack\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-06",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е base case в recursion?",
+    "questionEN": "What is a base case in recursion?",
+    "answersBG": [
+      "Условието, което спира recursion",
+      "Най-големият array",
+      "The app icon",
+      "Boolean operator"
+    ],
+    "answersEN": [
+      "The condition that stops recursion",
+      "The largest array",
+      "The app icon",
+      "A Boolean operator"
+    ],
+    "correctAnswerBG": "Условието, което спира recursion",
+    "correctAnswerEN": "The condition that stops recursion",
+    "explanationBG": "Правилният отговор е \"Условието, което спира recursion\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The condition that stops recursion\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-07",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво прави sorting?",
+    "questionEN": "What does sorting do?",
+    "answersBG": [
+      "Подрежда стойности по правило",
+      "Изтрива стойности",
+      "Създава UI",
+      "Импортира modules"
+    ],
+    "answersEN": [
+      "Arranges values by a rule",
+      "Deletes values",
+      "Creates UI",
+      "Imports modules"
+    ],
+    "correctAnswerBG": "Подрежда стойности по правило",
+    "correctAnswerEN": "Arranges values by a rule",
+    "explanationBG": "Правилният отговор е \"Подрежда стойности по правило\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Arranges values by a rule\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-08",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е precondition?",
+    "questionEN": "What is a precondition?",
+    "answersBG": [
+      "Нещо, което се очаква да е вярно преди code да се изпълни",
+      "Font",
+      "An asset",
+      "Device"
+    ],
+    "answersEN": [
+      "Something expected to be true before code runs",
+      "A font",
+      "An asset",
+      "A device"
+    ],
+    "correctAnswerBG": "Нещо, което се очаква да е вярно преди code да се изпълни",
+    "correctAnswerEN": "Something expected to be true before code runs",
+    "explanationBG": "Правилният отговор е \"Нещо, което се очаква да е вярно преди code да се изпълни\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Something expected to be true before code runs\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-09",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво връща modulo (%)?",
+    "questionEN": "What does modulo (%) return?",
+    "answersBG": [
+      "Остатъкът",
+      "Частното",
+      "String",
+      "Само Boolean"
+    ],
+    "answersEN": [
+      "The remainder",
+      "The quotient",
+      "A string",
+      "A Boolean only"
+    ],
+    "correctAnswerBG": "Остатъкът",
+    "correctAnswerEN": "The remainder",
+    "explanationBG": "Правилният отговор е \"Остатъкът\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The remainder\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-intermediate-10",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е edge case?",
+    "questionEN": "What is an edge case?",
+    "answersBG": [
+      "Необичаен input, който може да счупи logic",
+      "Ръб на екрана",
+      "Color",
+      "A package"
+    ],
+    "answersEN": [
+      "An unusual input that may break logic",
+      "A screen edge",
+      "A color",
+      "A package"
+    ],
+    "correctAnswerBG": "Необичаен input, който може да счупи logic",
+    "correctAnswerEN": "An unusual input that may break logic",
+    "explanationBG": "Правилният отговор е \"Необичаен input, който може да счупи logic\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"An unusual input that may break logic\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-01",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "За какво се използва Big O notation?",
+    "questionEN": "What is Big O notation used for?",
+    "answersBG": [
+      "Описване на растежа на algorithm",
+      "Рисуване на circles",
+      "Именуване на variables",
+      "Подписване на apps"
+    ],
+    "answersEN": [
+      "Describing algorithm growth",
+      "Drawing circles",
+      "Naming variables",
+      "Signing apps"
+    ],
+    "correctAnswerBG": "Описване на растежа на algorithm",
+    "correctAnswerEN": "Describing algorithm growth",
+    "explanationBG": "Правилният отговор е \"Описване на растежа на algorithm\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Describing algorithm growth\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-02",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво означава O(1)?",
+    "questionEN": "What does O(1) mean?",
+    "answersBG": [
+      "Константно време",
+      "Линейно време",
+      "Експоненциално време",
+      "Без време"
+    ],
+    "answersEN": [
+      "Constant time",
+      "Linear time",
+      "Exponential time",
+      "No time"
+    ],
+    "correctAnswerBG": "Константно време",
+    "correctAnswerEN": "Constant time",
+    "explanationBG": "Правилният отговор е \"Константно време\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Constant time\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-03",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво изисква binary search?",
+    "questionEN": "What does binary search require?",
+    "answersBG": [
+      "Сортирани данни",
+      "Случайни данни",
+      "Images",
+      "Network"
+    ],
+    "answersEN": [
+      "Sorted data",
+      "Random data",
+      "Images",
+      "A network"
+    ],
+    "correctAnswerBG": "Сортирани данни",
+    "correctAnswerEN": "Sorted data",
+    "explanationBG": "Правилният отговор е \"Сортирани данни\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Sorted data\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-04",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "От какво е съставен graph?",
+    "questionEN": "What is a graph made of?",
+    "answersBG": [
+      "Nodes и edges",
+      "Само arrays",
+      "Само strings",
+      "Само views"
+    ],
+    "answersEN": [
+      "Nodes and edges",
+      "Only arrays",
+      "Only strings",
+      "Only views"
+    ],
+    "correctAnswerBG": "Nodes и edges",
+    "correctAnswerEN": "Nodes and edges",
+    "explanationBG": "Правилният отговор е \"Nodes и edges\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Nodes and edges\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-05",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "За какво често се използва dynamic programming?",
+    "questionEN": "What is dynamic programming often used for?",
+    "answersBG": [
+      "Преизползване на резултати от припокриващи се subproblems",
+      "Промяна на icons",
+      "Importing packages",
+      "Writing comments"
+    ],
+    "answersEN": [
+      "Reusing overlapping subproblem results",
+      "Changing icons",
+      "Importing packages",
+      "Writing comments"
+    ],
+    "correctAnswerBG": "Преизползване на резултати от припокриващи се subproblems",
+    "correctAnswerEN": "Reusing overlapping subproblem results",
+    "explanationBG": "Правилният отговор е \"Преизползване на резултати от припокриващи се subproblems\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Reusing overlapping subproblem results\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-06",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво помага да намалим immutability?",
+    "questionEN": "What does immutability help reduce?",
+    "answersBG": [
+      "Неочаквани state changes",
+      "Цялото memory use",
+      "Целият UI code",
+      "Всички functions"
+    ],
+    "answersEN": [
+      "Unexpected state changes",
+      "All memory use",
+      "All UI code",
+      "All functions"
+    ],
+    "correctAnswerBG": "Неочаквани state changes",
+    "correctAnswerEN": "Unexpected state changes",
+    "explanationBG": "Правилният отговор е \"Неочаквани state changes\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Unexpected state changes\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-07",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво е race condition?",
+    "questionEN": "What is a race condition?",
+    "answersBG": [
+      "Output зависи от timing на operations",
+      "Само бърз loop",
+      "Sorting rule",
+      "Compiler setting"
+    ],
+    "answersEN": [
+      "Output depends on timing of operations",
+      "A fast loop only",
+      "A sorting rule",
+      "A compiler setting"
+    ],
+    "correctAnswerBG": "Output зависи от timing на operations",
+    "correctAnswerEN": "Output depends on timing of operations",
+    "explanationBG": "Правилният отговор е \"Output зависи от timing на operations\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Output depends on timing of operations\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-08",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво е memoization?",
+    "questionEN": "What is memoization?",
+    "answersBG": [
+      "Кеширане на предишни резултати",
+      "Изтриване на предишни резултати",
+      "Рисуване на tables",
+      "Промяна на text"
+    ],
+    "answersEN": [
+      "Caching previous results",
+      "Deleting previous results",
+      "Drawing tables",
+      "Changing text"
+    ],
+    "correctAnswerBG": "Кеширане на предишни резултати",
+    "correctAnswerEN": "Caching previous results",
+    "explanationBG": "Правилният отговор е \"Кеширане на предишни резултати\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Caching previous results\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-09",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво означава idempotent?",
+    "questionEN": "What does idempotent mean?",
+    "answersBG": [
+      "Повторните calls имат същия ефект",
+      "Calls винаги fail-ват",
+      "Calls са random",
+      "Calls изискват UI"
+    ],
+    "answersEN": [
+      "Repeated calls have the same effect",
+      "Calls always fail",
+      "Calls are random",
+      "Calls require UI"
+    ],
+    "correctAnswerBG": "Повторните calls имат същия ефект",
+    "correctAnswerEN": "Repeated calls have the same effect",
+    "explanationBG": "Правилният отговор е \"Повторните calls имат същия ефект\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Repeated calls have the same effect\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "programming-logic-advanced-10",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionBG": "Какво е state machine?",
+    "questionEN": "What is a state machine?",
+    "answersBG": [
+      "Model със states и transitions",
+      "Hardware-only feature",
+      "Font system",
+      "Image type"
+    ],
+    "answersEN": [
+      "A model with states and transitions",
+      "A hardware-only feature",
+      "A font system",
+      "An image type"
+    ],
+    "correctAnswerBG": "Model със states и transitions",
+    "correctAnswerEN": "A model with states and transitions",
+    "explanationBG": "Правилният отговор е \"Model със states и transitions\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A model with states and transitions\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  }
+]

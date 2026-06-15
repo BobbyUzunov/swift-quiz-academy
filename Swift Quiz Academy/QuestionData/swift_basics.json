@@ -1,0 +1,692 @@
+[
+  {
+    "id": "swift-basics-beginner-01",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Коя ключова дума създава константа в Swift?",
+    "questionEN": "Which keyword creates a constant in Swift?",
+    "answersBG": [
+      "var",
+      "let",
+      "func",
+      "class"
+    ],
+    "answersEN": [
+      "var",
+      "let",
+      "func",
+      "class"
+    ],
+    "correctAnswerBG": "let",
+    "correctAnswerEN": "let",
+    "explanationBG": "Правилният отговор е \"let\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"let\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-02",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой тип съхранява цели числа?",
+    "questionEN": "Which type stores whole numbers?",
+    "answersBG": [
+      "String",
+      "Bool",
+      "Int",
+      "Double"
+    ],
+    "answersEN": [
+      "String",
+      "Bool",
+      "Int",
+      "Double"
+    ],
+    "correctAnswerBG": "Int",
+    "correctAnswerEN": "Int",
+    "explanationBG": "Правилният отговор е \"Int\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Int\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-03",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Как се дефинира функция в Swift?",
+    "questionEN": "How do you define a function in Swift?",
+    "answersBG": [
+      "function greet()",
+      "func greet()",
+      "def greet()",
+      "method greet()"
+    ],
+    "answersEN": [
+      "function greet()",
+      "func greet()",
+      "def greet()",
+      "method greet()"
+    ],
+    "correctAnswerBG": "func greet()",
+    "correctAnswerEN": "func greet()",
+    "explanationBG": "Правилният отговор е \"func greet()\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"func greet()\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-04",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой оператор проверява равенство?",
+    "questionEN": "Which operator checks equality?",
+    "answersBG": [
+      "=",
+      "==",
+      "!=",
+      ">="
+    ],
+    "answersEN": [
+      "=",
+      "==",
+      "!=",
+      ">="
+    ],
+    "correctAnswerBG": "==",
+    "correctAnswerEN": "==",
+    "explanationBG": "Правилният отговор е \"==\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"==\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-05",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой тип представя истина или лъжа?",
+    "questionEN": "Which type represents true or false?",
+    "answersBG": [
+      "Bool",
+      "Int",
+      "Array",
+      "String"
+    ],
+    "answersEN": [
+      "Bool",
+      "Int",
+      "Array",
+      "String"
+    ],
+    "correctAnswerBG": "Bool",
+    "correctAnswerEN": "Bool",
+    "explanationBG": "Правилният отговор е \"Bool\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Bool\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-06",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Коя ключова дума създава променлива?",
+    "questionEN": "Which keyword creates a variable?",
+    "answersBG": [
+      "let",
+      "var",
+      "set",
+      "new"
+    ],
+    "answersEN": [
+      "let",
+      "var",
+      "set",
+      "new"
+    ],
+    "correctAnswerBG": "var",
+    "correctAnswerEN": "var",
+    "explanationBG": "Правилният отговор е \"var\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"var\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-07",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво означава nil в Swift?",
+    "questionEN": "What does nil mean in Swift?",
+    "answersBG": [
+      "Нула",
+      "Липса на стойност",
+      "Празен масив",
+      "String"
+    ],
+    "answersEN": [
+      "Zero",
+      "No value",
+      "Empty array",
+      "A string"
+    ],
+    "correctAnswerBG": "Липса на стойност",
+    "correctAnswerEN": "No value",
+    "explanationBG": "Правилният отговор е \"Липса на стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"No value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-08",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой синтаксис създава Optional String?",
+    "questionEN": "Which syntax creates an optional String?",
+    "answersBG": [
+      "String!",
+      "String?",
+      "Optional.String",
+      "String.nil"
+    ],
+    "answersEN": [
+      "String!",
+      "String?",
+      "Optional.String",
+      "String.nil"
+    ],
+    "correctAnswerBG": "String?",
+    "correctAnswerEN": "String?",
+    "explanationBG": "Правилният отговор е \"String?\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"String?\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-09",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Коя колекция пази подредени стойности?",
+    "questionEN": "Which collection keeps ordered values?",
+    "answersBG": [
+      "Set",
+      "Dictionary",
+      "Array",
+      "Enum"
+    ],
+    "answersEN": [
+      "Set",
+      "Dictionary",
+      "Array",
+      "Enum"
+    ],
+    "correctAnswerBG": "Array",
+    "correctAnswerEN": "Array",
+    "explanationBG": "Правилният отговор е \"Array\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Array\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-beginner-10",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Коя ключова дума връща стойност от функция?",
+    "questionEN": "What keyword returns a value from a function?",
+    "answersBG": [
+      "send",
+      "return",
+      "break",
+      "yield"
+    ],
+    "answersEN": [
+      "send",
+      "return",
+      "break",
+      "yield"
+    ],
+    "correctAnswerBG": "return",
+    "correctAnswerEN": "return",
+    "explanationBG": "Правилният отговор е \"return\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"return\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-01",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво позволява type inference на Swift?",
+    "questionEN": "What does type inference allow Swift to do?",
+    "answersBG": [
+      "Отгатва типа от зададената стойност",
+      "Пропуска компилацията",
+      "Конвертира всички стойности към String",
+      "Игнорира optional-и"
+    ],
+    "answersEN": [
+      "Guess a type from the assigned value",
+      "Skip compilation",
+      "Convert all values to String",
+      "Ignore optionals"
+    ],
+    "correctAnswerBG": "Отгатва типа от зададената стойност",
+    "correctAnswerEN": "Guess a type from the assigned value",
+    "explanationBG": "Правилният отговор е \"Отгатва типа от зададената стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Guess a type from the assigned value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-02",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Коя ключова дума маркира метод, който променя property на struct?",
+    "questionEN": "Which keyword marks a method that changes a struct property?",
+    "answersBG": [
+      "static",
+      "mutating",
+      "override",
+      "lazy"
+    ],
+    "answersEN": [
+      "static",
+      "mutating",
+      "override",
+      "lazy"
+    ],
+    "correctAnswerBG": "mutating",
+    "correctAnswerEN": "mutating",
+    "explanationBG": "Правилният отговор е \"mutating\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"mutating\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-03",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво прави optional binding с if let?",
+    "questionEN": "What does optional binding with if let do?",
+    "answersBG": [
+      "Безопасно unwrap-ва optional",
+      "Създава цикъл",
+      "Създава class",
+      "Сортира array"
+    ],
+    "answersEN": [
+      "Safely unwraps an optional",
+      "Creates a loop",
+      "Builds a class",
+      "Sorts an array"
+    ],
+    "correctAnswerBG": "Безопасно unwrap-ва optional",
+    "correctAnswerEN": "Safely unwraps an optional",
+    "explanationBG": "Правилният отговор е \"Безопасно unwrap-ва optional\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Safely unwraps an optional\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-04",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Коя колекция пази уникални неподредени стойности?",
+    "questionEN": "Which collection stores unique unordered values?",
+    "answersBG": [
+      "Array",
+      "Set",
+      "Dictionary",
+      "Tuple"
+    ],
+    "answersEN": [
+      "Array",
+      "Set",
+      "Dictionary",
+      "Tuple"
+    ],
+    "correctAnswerBG": "Set",
+    "correctAnswerEN": "Set",
+    "explanationBG": "Правилният отговор е \"Set\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Set\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-05",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "За какво е полезен tuple?",
+    "questionEN": "What is a tuple useful for?",
+    "answersBG": [
+      "Групира няколко стойности заедно",
+      "Само networking",
+      "Изтриване на променливи",
+      "Създаване на икони"
+    ],
+    "answersEN": [
+      "Grouping multiple values together",
+      "Only networking",
+      "Deleting variables",
+      "Creating icons"
+    ],
+    "correctAnswerBG": "Групира няколко стойности заедно",
+    "correctAnswerEN": "Grouping multiple values together",
+    "explanationBG": "Правилният отговор е \"Групира няколко стойности заедно\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Grouping multiple values together\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-06",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Кой access level прави кода използваем само в същия файл?",
+    "questionEN": "Which access level keeps code usable only inside the same file?",
+    "answersBG": [
+      "public",
+      "private",
+      "fileprivate",
+      "open"
+    ],
+    "answersEN": [
+      "public",
+      "private",
+      "fileprivate",
+      "open"
+    ],
+    "correctAnswerBG": "fileprivate",
+    "correctAnswerEN": "fileprivate",
+    "explanationBG": "Правилният отговор е \"fileprivate\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"fileprivate\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-07",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "С какво обикновено помага guard?",
+    "questionEN": "What does guard usually help with?",
+    "answersBG": [
+      "Ранно излизане, когато условие не е изпълнено",
+      "Рисуване на shapes",
+      "Импортиране на assets",
+      "Стартиране само на animations"
+    ],
+    "answersEN": [
+      "Early exit when a condition fails",
+      "Drawing shapes",
+      "Importing assets",
+      "Running animations only"
+    ],
+    "correctAnswerBG": "Ранно излизане, когато условие не е изпълнено",
+    "correctAnswerEN": "Early exit when a condition fails",
+    "explanationBG": "Правилният отговор е \"Ранно излизане, когато условие не е изпълнено\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Early exit when a condition fails\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-08",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Кой синтаксис дефинира closure parameter?",
+    "questionEN": "Which syntax defines a closure parameter?",
+    "answersBG": [
+      "{ value in ... }",
+      "func value =>",
+      "class value",
+      "import value"
+    ],
+    "answersEN": [
+      "{ value in ... }",
+      "func value =>",
+      "class value",
+      "import value"
+    ],
+    "correctAnswerBG": "{ value in ... }",
+    "correctAnswerEN": "{ value in ... }",
+    "explanationBG": "Правилният отговор е \"{ value in ... }\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"{ value in ... }\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-09",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво прави append върху Array?",
+    "questionEN": "What does append do on an Array?",
+    "answersBG": [
+      "Добавя елемент",
+      "Премахва всички стойности",
+      "Сортира низходящо",
+      "Създава optional"
+    ],
+    "answersEN": [
+      "Adds an element",
+      "Removes all values",
+      "Sorts descending",
+      "Creates an optional"
+    ],
+    "correctAnswerBG": "Добавя елемент",
+    "correctAnswerEN": "Adds an element",
+    "explanationBG": "Правилният отговор е \"Добавя елемент\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Adds an element\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-intermediate-10",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Коя ключова дума дефинира custom value type?",
+    "questionEN": "Which keyword defines a custom value type?",
+    "answersBG": [
+      "struct",
+      "package",
+      "screen",
+      "asset"
+    ],
+    "answersEN": [
+      "struct",
+      "package",
+      "screen",
+      "asset"
+    ],
+    "correctAnswerBG": "struct",
+    "correctAnswerEN": "struct",
+    "explanationBG": "Правилният отговор е \"struct\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"struct\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-01",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какъв проблем решават generics?",
+    "questionEN": "What problem do generics solve?",
+    "answersBG": [
+      "Писане на преизползваем код за много типове",
+      "Избягване на всички типове",
+      "Drawing views",
+      "Пропускане на тестове"
+    ],
+    "answersEN": [
+      "Writing reusable code for multiple types",
+      "Avoiding all types",
+      "Drawing views",
+      "Skipping tests"
+    ],
+    "correctAnswerBG": "Писане на преизползваем код за много типове",
+    "correctAnswerEN": "Writing reusable code for multiple types",
+    "explanationBG": "Правилният отговор е \"Писане на преизползваем код за много типове\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Writing reusable code for multiple types\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-02",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво дефинира associatedtype в protocol?",
+    "questionEN": "What does associatedtype define in a protocol?",
+    "answersBG": [
+      "Placeholder тип, избран от conformer-ите",
+      "Фиксиран String",
+      "Икона на приложение",
+      "Само stored property"
+    ],
+    "answersEN": [
+      "A placeholder type chosen by conformers",
+      "A fixed String",
+      "An app icon",
+      "A stored property only"
+    ],
+    "correctAnswerBG": "Placeholder тип, избран от conformer-ите",
+    "correctAnswerEN": "A placeholder type chosen by conformers",
+    "explanationBG": "Правилният отговор е \"Placeholder тип, избран от conformer-ите\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A placeholder type chosen by conformers\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-03",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Коя функция помага да избегнем reference cycles?",
+    "questionEN": "Which feature helps avoid reference cycles?",
+    "answersBG": [
+      "weak references",
+      "for loops",
+      "arrays",
+      "tuples"
+    ],
+    "answersEN": [
+      "weak references",
+      "for loops",
+      "arrays",
+      "tuples"
+    ],
+    "correctAnswerBG": "weak references",
+    "correctAnswerEN": "weak references",
+    "explanationBG": "Правилният отговор е \"weak references\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"weak references\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-04",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво включва синтаксисът на throwing function?",
+    "questionEN": "What does throwing function syntax include?",
+    "answersBG": [
+      "throws",
+      "error",
+      "catching",
+      "failed"
+    ],
+    "answersEN": [
+      "throws",
+      "error",
+      "catching",
+      "failed"
+    ],
+    "correctAnswerBG": "throws",
+    "correctAnswerEN": "throws",
+    "explanationBG": "Правилният отговор е \"throws\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"throws\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-05",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво моделира async/await?",
+    "questionEN": "What does async await model?",
+    "answersBG": [
+      "Асинхронна работа със suspension points",
+      "Само animations",
+      "Само strings",
+      "Само dictionaries"
+    ],
+    "answersEN": [
+      "Asynchronous work with suspension points",
+      "Only animations",
+      "Only strings",
+      "Only dictionaries"
+    ],
+    "correctAnswerBG": "Асинхронна работа със suspension points",
+    "correctAnswerEN": "Asynchronous work with suspension points",
+    "explanationBG": "Правилният отговор е \"Асинхронна работа със suspension points\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Asynchronous work with suspension points\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-06",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво означава value semantics при structs?",
+    "questionEN": "What does value semantics mean for structs?",
+    "answersBG": [
+      "Копията са независими стойности",
+      "Всички structs са global",
+      "Не могат да имат methods",
+      "Винаги са optional"
+    ],
+    "answersEN": [
+      "Copies are independent values",
+      "All structs are global",
+      "They cannot have methods",
+      "They are always optional"
+    ],
+    "correctAnswerBG": "Копията са независими стойности",
+    "correctAnswerEN": "Copies are independent values",
+    "explanationBG": "Правилният отговор е \"Копията са независими стойности\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Copies are independent values\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-07",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво е protocol-oriented programming?",
+    "questionEN": "What is protocol-oriented programming?",
+    "answersBG": [
+      "Дизайн около protocols и conformances",
+      "Използване само на classes",
+      "Избягване на extensions",
+      "Писане без типове"
+    ],
+    "answersEN": [
+      "Designing around protocols and conformances",
+      "Only using classes",
+      "Avoiding extensions",
+      "Writing no types"
+    ],
+    "correctAnswerBG": "Дизайн около protocols и conformances",
+    "correctAnswerEN": "Designing around protocols and conformances",
+    "explanationBG": "Правилният отговор е \"Дизайн около protocols и conformances\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Designing around protocols and conformances\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-08",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво могат да добавят extensions?",
+    "questionEN": "What can extensions add?",
+    "answersBG": [
+      "Methods, computed properties и conformances",
+      "Stored properties винаги",
+      "Нови app targets",
+      "Само comments"
+    ],
+    "answersEN": [
+      "Methods, computed properties, and conformances",
+      "Stored properties always",
+      "New app targets",
+      "Only comments"
+    ],
+    "correctAnswerBG": "Methods, computed properties и conformances",
+    "correctAnswerEN": "Methods, computed properties, and conformances",
+    "explanationBG": "Правилният отговор е \"Methods, computed properties и conformances\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Methods, computed properties, and conformances\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-09",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво прави defer?",
+    "questionEN": "What does defer do?",
+    "answersBG": [
+      "Изпълнява код при излизане от scope",
+      "Стартира task веднага",
+      "Изтрива memory",
+      "Създава class"
+    ],
+    "answersEN": [
+      "Runs code when leaving scope",
+      "Starts a task immediately",
+      "Deletes memory",
+      "Creates a class"
+    ],
+    "correctAnswerBG": "Изпълнява код при излизане от scope",
+    "correctAnswerEN": "Runs code when leaving scope",
+    "explanationBG": "Правилният отговор е \"Изпълнява код при излизане от scope\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Runs code when leaving scope\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "swift-basics-advanced-10",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво представя Result<Success, Failure>?",
+    "questionEN": "What does Result<Success, Failure> represent?",
+    "answersBG": [
+      "Success или failure като стойност",
+      "Само integer",
+      "SwiftUI layout",
+      "Asset catalog"
+    ],
+    "answersEN": [
+      "Success or failure as a value",
+      "Only an integer",
+      "A SwiftUI layout",
+      "An asset catalog"
+    ],
+    "correctAnswerBG": "Success или failure като стойност",
+    "correctAnswerEN": "Success or failure as a value",
+    "explanationBG": "Правилният отговор е \"Success или failure като стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Success or failure as a value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  }
+]

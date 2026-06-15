@@ -1,0 +1,692 @@
+[
+  {
+    "id": "ios-basics-beginner-01",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "За какво се използва Xcode?",
+    "questionEN": "What is Xcode used for?",
+    "answersBG": [
+      "Редактиране на снимки",
+      "Създаване на Apple apps",
+      "Управляване на passwords",
+      "Само разглеждане на files"
+    ],
+    "answersEN": [
+      "Editing photos",
+      "Building Apple apps",
+      "Managing passwords",
+      "Browsing files only"
+    ],
+    "correctAnswerBG": "Създаване на Apple apps",
+    "correctAnswerEN": "Building Apple apps",
+    "explanationBG": "Правилният отговор е \"Създаване на Apple apps\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Building Apple apps\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-02",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой файл обикновено стартира SwiftUI приложение?",
+    "questionEN": "What file usually launches a SwiftUI app?",
+    "answersBG": [
+      "App struct",
+      "README",
+      "Asset catalog",
+      "Preview"
+    ],
+    "answersEN": [
+      "App struct",
+      "README",
+      "Asset catalog",
+      "Preview"
+    ],
+    "correctAnswerBG": "App struct",
+    "correctAnswerEN": "App struct",
+    "explanationBG": "Правилният отговор е \"App struct\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"App struct\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-03",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Къде обикновено се съхраняват изображенията на приложението?",
+    "questionEN": "Where are app images commonly stored?",
+    "answersBG": [
+      "Assets.xcassets",
+      "Tests",
+      "Products",
+      "Derived Data only"
+    ],
+    "answersEN": [
+      "Assets.xcassets",
+      "Tests",
+      "Products",
+      "Derived Data only"
+    ],
+    "correctAnswerBG": "Assets.xcassets",
+    "correctAnswerEN": "Assets.xcassets",
+    "explanationBG": "Правилният отговор е \"Assets.xcassets\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Assets.xcassets\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-04",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво е simulator?",
+    "questionEN": "What is a simulator?",
+    "answersBG": [
+      "Fake API",
+      "Инструмент, който стартира приложения като устройство",
+      "Compiler error",
+      "Cloud database"
+    ],
+    "answersEN": [
+      "A fake API",
+      "A tool that runs apps like a device",
+      "A compiler error",
+      "A cloud database"
+    ],
+    "correctAnswerBG": "Инструмент, който стартира приложения като устройство",
+    "correctAnswerEN": "A tool that runs apps like a device",
+    "explanationBG": "Правилният отговор е \"Инструмент, който стартира приложения като устройство\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A tool that runs apps like a device\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-05",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Кой език често се използва за модерни iOS приложения?",
+    "questionEN": "Which language is commonly used for modern iOS apps?",
+    "answersBG": [
+      "Swift",
+      "PHP",
+      "SQL",
+      "Само HTML"
+    ],
+    "answersEN": [
+      "Swift",
+      "PHP",
+      "SQL",
+      "HTML only"
+    ],
+    "correctAnswerBG": "Swift",
+    "correctAnswerEN": "Swift",
+    "explanationBG": "Правилният отговор е \"Swift\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Swift\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-06",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво е app icon?",
+    "questionEN": "What is an app icon?",
+    "answersBG": [
+      "Launch image, показан на Home Screen",
+      "Unit test",
+      "Data type",
+      "Network call"
+    ],
+    "answersEN": [
+      "The launch image shown on the Home Screen",
+      "A unit test",
+      "A data type",
+      "A network call"
+    ],
+    "correctAnswerBG": "Launch image, показан на Home Screen",
+    "correctAnswerEN": "The launch image shown on the Home Screen",
+    "explanationBG": "Правилният отговор е \"Launch image, показан на Home Screen\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The launch image shown on the Home Screen\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-07",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво означава build в Xcode?",
+    "questionEN": "What does build mean in Xcode?",
+    "answersBG": [
+      "Компилира и подготвя приложението",
+      "Изтрива приложението",
+      "Променя езика",
+      "Отваря Safari"
+    ],
+    "answersEN": [
+      "Compile and prepare the app",
+      "Delete the app",
+      "Change the language",
+      "Open Safari"
+    ],
+    "correctAnswerBG": "Компилира и подготвя приложението",
+    "correctAnswerEN": "Compile and prepare the app",
+    "explanationBG": "Правилният отговор е \"Компилира и подготвя приложението\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Compile and prepare the app\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-08",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Коя зона показва проблеми при компилация?",
+    "questionEN": "Which area shows compile problems?",
+    "answersBG": [
+      "Issue Navigator",
+      "Color Picker",
+      "Calendar",
+      "Photos"
+    ],
+    "answersEN": [
+      "Issue Navigator",
+      "Color Picker",
+      "Calendar",
+      "Photos"
+    ],
+    "correctAnswerBG": "Issue Navigator",
+    "correctAnswerEN": "Issue Navigator",
+    "explanationBG": "Правилният отговор е \"Issue Navigator\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Issue Navigator\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-09",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво е Preview в SwiftUI?",
+    "questionEN": "What is a Preview in SwiftUI?",
+    "answersBG": [
+      "Live UI render в Xcode",
+      "Database",
+      "File format",
+      "Keyboard shortcut"
+    ],
+    "answersEN": [
+      "A live UI render in Xcode",
+      "A database",
+      "A file format",
+      "A keyboard shortcut"
+    ],
+    "correctAnswerBG": "Live UI render в Xcode",
+    "correctAnswerEN": "A live UI render in Xcode",
+    "explanationBG": "Правилният отговор е \"Live UI render в Xcode\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A live UI render in Xcode\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-beginner-10",
+    "categoryId": "ios-basics",
+    "difficulty": "beginner",
+    "questionBG": "Какво означава UI?",
+    "questionEN": "What does UI stand for?",
+    "answersBG": [
+      "Потребителски интерфейс",
+      "Universal Internet",
+      "Unit Index",
+      "Upload Item"
+    ],
+    "answersEN": [
+      "User Interface",
+      "Universal Internet",
+      "Unit Index",
+      "Upload Item"
+    ],
+    "correctAnswerBG": "Потребителски интерфейс",
+    "correctAnswerEN": "User Interface",
+    "explanationBG": "Правилният отговор е \"Потребителски интерфейс\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"User Interface\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-01",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "За какво се използва bundle identifier?",
+    "questionEN": "What is a bundle identifier used for?",
+    "answersBG": [
+      "Уникално идентифициране на app",
+      "Промяна на font size",
+      "Създаване на loops",
+      "Сортиране на arrays"
+    ],
+    "answersEN": [
+      "Uniquely identifying an app",
+      "Changing font size",
+      "Making loops",
+      "Sorting arrays"
+    ],
+    "correctAnswerBG": "Уникално идентифициране на app",
+    "correctAnswerEN": "Uniquely identifying an app",
+    "explanationBG": "Правилният отговор е \"Уникално идентифициране на app\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Uniquely identifying an app\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-02",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво обикновено пази Info.plist?",
+    "questionEN": "What does Info.plist commonly store?",
+    "answersBG": [
+      "App configuration metadata",
+      "Само quiz answers",
+      "Swift functions",
+      "Compiled binaries"
+    ],
+    "answersEN": [
+      "App configuration metadata",
+      "Only quiz answers",
+      "Swift functions",
+      "Compiled binaries"
+    ],
+    "correctAnswerBG": "App configuration metadata",
+    "correctAnswerEN": "App configuration metadata",
+    "explanationBG": "Правилният отговор е \"App configuration metadata\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"App configuration metadata\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-03",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "За какво е App lifecycle?",
+    "questionEN": "What is the App lifecycle about?",
+    "answersBG": [
+      "Как app стартира, работи и спира",
+      "Само icons",
+      "Само tests",
+      "Само colors"
+    ],
+    "answersEN": [
+      "How an app starts, runs, and stops",
+      "Only icons",
+      "Only tests",
+      "Only colors"
+    ],
+    "correctAnswerBG": "Как app стартира, работи и спира",
+    "correctAnswerEN": "How an app starts, runs, and stops",
+    "explanationBG": "Правилният отговор е \"Как app стартира, работи и спира\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"How an app starts, runs, and stops\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-04",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "С какво е свързан provisioning?",
+    "questionEN": "What does provisioning relate to?",
+    "answersBG": [
+      "Подписване и стартиране на apps на устройства",
+      "Създаване на arrays",
+      "Промяна на text",
+      "Писане на loops"
+    ],
+    "answersEN": [
+      "Signing and running apps on devices",
+      "Creating arrays",
+      "Changing text",
+      "Writing loops"
+    ],
+    "correctAnswerBG": "Подписване и стартиране на apps на устройства",
+    "correctAnswerEN": "Signing and running apps on devices",
+    "explanationBG": "Правилният отговор е \"Подписване и стартиране на apps на устройства\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Signing and running apps on devices\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-05",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Кой framework се използва за notifications?",
+    "questionEN": "Which framework is used for notifications?",
+    "answersBG": [
+      "UserNotifications",
+      "MapKit",
+      "SwiftUI",
+      "Само Foundation"
+    ],
+    "answersEN": [
+      "UserNotifications",
+      "MapKit",
+      "SwiftUI",
+      "Foundation only"
+    ],
+    "correctAnswerBG": "UserNotifications",
+    "correctAnswerEN": "UserNotifications",
+    "explanationBG": "Правилният отговор е \"UserNotifications\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"UserNotifications\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-06",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е sandboxing в iOS?",
+    "questionEN": "What is sandboxing on iOS?",
+    "answersBG": [
+      "Apps имат изолирано storage и permissions",
+      "Apps могат да редактират всички files",
+      "Apps пропускат signing",
+      "Apps не могат да пазят data"
+    ],
+    "answersEN": [
+      "Apps have isolated storage and permissions",
+      "Apps can edit all files",
+      "Apps skip signing",
+      "Apps cannot store data"
+    ],
+    "correctAnswerBG": "Apps имат изолирано storage и permissions",
+    "correctAnswerEN": "Apps have isolated storage and permissions",
+    "explanationBG": "Правилният отговор е \"Apps имат изолирано storage и permissions\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Apps have isolated storage and permissions\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-07",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "За какво се използва TestFlight?",
+    "questionEN": "What is TestFlight used for?",
+    "answersBG": [
+      "Beta testing на apps",
+      "Drawing views",
+      "Писане на functions",
+      "Създаване на assets"
+    ],
+    "answersEN": [
+      "Beta testing apps",
+      "Drawing views",
+      "Writing functions",
+      "Making assets"
+    ],
+    "correctAnswerBG": "Beta testing на apps",
+    "correctAnswerEN": "Beta testing apps",
+    "explanationBG": "Правилният отговор е \"Beta testing на apps\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Beta testing apps\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-08",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво поддържа localization?",
+    "questionEN": "What does localization support?",
+    "answersBG": [
+      "Множество езици и региони",
+      "Само dark mode",
+      "Само network calls",
+      "Само previews"
+    ],
+    "answersEN": [
+      "Multiple languages and regions",
+      "Only dark mode",
+      "Only network calls",
+      "Only previews"
+    ],
+    "correctAnswerBG": "Множество езици и региони",
+    "correctAnswerEN": "Multiple languages and regions",
+    "explanationBG": "Правилният отговор е \"Множество езици и региони\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Multiple languages and regions\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-09",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е target в Xcode?",
+    "questionEN": "What is a target in Xcode?",
+    "answersBG": [
+      "Build product configuration",
+      "Swift loop",
+      "Button style",
+      "Color asset"
+    ],
+    "answersEN": [
+      "A build product configuration",
+      "A Swift loop",
+      "A button style",
+      "A color asset"
+    ],
+    "correctAnswerBG": "Build product configuration",
+    "correctAnswerEN": "A build product configuration",
+    "explanationBG": "Правилният отговор е \"Build product configuration\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A build product configuration\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-intermediate-10",
+    "categoryId": "ios-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Какво е entitlement?",
+    "questionEN": "What is an entitlement?",
+    "answersBG": [
+      "Permission/capability за app services",
+      "Question type",
+      "View modifier",
+      "Number type"
+    ],
+    "answersEN": [
+      "A permission/capability for app services",
+      "A question type",
+      "A view modifier",
+      "A number type"
+    ],
+    "correctAnswerBG": "Permission/capability за app services",
+    "correctAnswerEN": "A permission/capability for app services",
+    "explanationBG": "Правилният отговор е \"Permission/capability за app services\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A permission/capability for app services\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-01",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво доказва code signing?",
+    "questionEN": "What does code signing prove?",
+    "answersBG": [
+      "App идва от идентифициран developer",
+      "UI е син",
+      "App няма bugs",
+      "App използва SwiftUI"
+    ],
+    "answersEN": [
+      "The app comes from an identified developer",
+      "The UI is blue",
+      "The app has no bugs",
+      "The app uses SwiftUI"
+    ],
+    "correctAnswerBG": "App идва от идентифициран developer",
+    "correctAnswerEN": "The app comes from an identified developer",
+    "explanationBG": "Правилният отговор е \"App идва от идентифициран developer\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The app comes from an identified developer\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-02",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "От какво е ограничено background execution?",
+    "questionEN": "What is background execution limited by?",
+    "answersBG": [
+      "System policies и capabilities",
+      "Само array length",
+      "Само font size",
+      "Само app name"
+    ],
+    "answersEN": [
+      "System policies and capabilities",
+      "Only array length",
+      "Only font size",
+      "Only app name"
+    ],
+    "correctAnswerBG": "System policies и capabilities",
+    "correctAnswerEN": "System policies and capabilities",
+    "explanationBG": "Правилният отговор е \"System policies и capabilities\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"System policies and capabilities\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-03",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Защо се искат permissions по време на runtime?",
+    "questionEN": "Why request permissions at runtime?",
+    "answersBG": [
+      "За да получим user consent за protected data",
+      "За по-бърза компилация",
+      "За създаване на structs",
+      "За рисуване на gradients"
+    ],
+    "answersEN": [
+      "To get user consent for protected data",
+      "To compile faster",
+      "To create structs",
+      "To draw gradients"
+    ],
+    "correctAnswerBG": "За да получим user consent за protected data",
+    "correctAnswerEN": "To get user consent for protected data",
+    "explanationBG": "Правилният отговор е \"За да получим user consent за protected data\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"To get user consent for protected data\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-04",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво е най-подходящо да пази Keychain?",
+    "questionEN": "What does Keychain store best?",
+    "answersBG": [
+      "Sensitive credentials",
+      "Големи videos",
+      "Всички source files",
+      "Preview code"
+    ],
+    "answersEN": [
+      "Sensitive credentials",
+      "Large videos",
+      "All source files",
+      "Preview code"
+    ],
+    "correctAnswerBG": "Sensitive credentials",
+    "correctAnswerEN": "Sensitive credentials",
+    "explanationBG": "Правилният отговор е \"Sensitive credentials\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Sensitive credentials\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-05",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво насърчава App Transport Security?",
+    "questionEN": "What does App Transport Security encourage?",
+    "answersBG": [
+      "Сигурни network connections",
+      "Повече animations",
+      "По-големи icons",
+      "Без optionals"
+    ],
+    "answersEN": [
+      "Secure network connections",
+      "More animations",
+      "Bigger icons",
+      "No optionals"
+    ],
+    "correctAnswerBG": "Сигурни network connections",
+    "correctAnswerEN": "Secure network connections",
+    "explanationBG": "Правилният отговор е \"Сигурни network connections\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Secure network connections\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-06",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво е deep link?",
+    "questionEN": "What is a deep link?",
+    "answersBG": [
+      "Link, който отваря конкретно място в app",
+      "Nested loop",
+      "Голям image",
+      "Compiler feature"
+    ],
+    "answersEN": [
+      "A link that opens a specific app location",
+      "A nested loop",
+      "A large image",
+      "A compiler feature"
+    ],
+    "correctAnswerBG": "Link, който отваря конкретно място в app",
+    "correctAnswerEN": "A link that opens a specific app location",
+    "explanationBG": "Правилният отговор е \"Link, който отваря конкретно място в app\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"A link that opens a specific app location\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-07",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво е memory pressure?",
+    "questionEN": "What is memory pressure?",
+    "answersBG": [
+      "System има нужда apps да намалят memory use",
+      "Syntax error",
+      "Липсваща icon",
+      "Само type mismatch"
+    ],
+    "answersEN": [
+      "The system needs apps to reduce memory use",
+      "A syntax error",
+      "A missing icon",
+      "A type mismatch only"
+    ],
+    "correctAnswerBG": "System има нужда apps да намалят memory use",
+    "correctAnswerEN": "The system needs apps to reduce memory use",
+    "explanationBG": "Правилният отговор е \"System има нужда apps да намалят memory use\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"The system needs apps to reduce memory use\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-08",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво помага да анализираме Instruments?",
+    "questionEN": "What does Instruments help analyze?",
+    "answersBG": [
+      "Performance и resource usage",
+      "Само quiz text",
+      "Само colors",
+      "Само localization"
+    ],
+    "answersEN": [
+      "Performance and resource usage",
+      "Only quiz text",
+      "Only colors",
+      "Only localization"
+    ],
+    "correctAnswerBG": "Performance и resource usage",
+    "correctAnswerEN": "Performance and resource usage",
+    "explanationBG": "Правилният отговор е \"Performance и resource usage\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Performance and resource usage\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-09",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "За какво е accessibility support?",
+    "questionEN": "What is accessibility support for?",
+    "answersBG": [
+      "Прави apps използваеми от повече хора",
+      "Скриване на UI",
+      "Пропускане на тестове",
+      "Намаляване на целия text"
+    ],
+    "answersEN": [
+      "Making apps usable by more people",
+      "Hiding UI",
+      "Skipping tests",
+      "Reducing all text"
+    ],
+    "correctAnswerBG": "Прави apps използваеми от повече хора",
+    "correctAnswerEN": "Making apps usable by more people",
+    "explanationBG": "Правилният отговор е \"Прави apps използваеми от повече хора\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Making apps usable by more people\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  },
+  {
+    "id": "ios-basics-advanced-10",
+    "categoryId": "ios-basics",
+    "difficulty": "advanced",
+    "questionBG": "Какво използва universal link?",
+    "questionEN": "What does universal link use?",
+    "answersBG": [
+      "Associated domains за отваряне на app content",
+      "Само local variables",
+      "Само previews",
+      "Само SF Symbols"
+    ],
+    "answersEN": [
+      "Associated domains to open app content",
+      "Only local variables",
+      "Only previews",
+      "Only SF Symbols"
+    ],
+    "correctAnswerBG": "Associated domains за отваряне на app content",
+    "correctAnswerEN": "Associated domains to open app content",
+    "explanationBG": "Правилният отговор е \"Associated domains за отваряне на app content\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
+    "explanationEN": "The correct answer is \"Associated domains to open app content\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+  }
+]

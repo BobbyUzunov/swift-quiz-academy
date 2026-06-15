@@ -5,13 +5,18 @@
 
 import Foundation
 
-struct QuizQuestion {
+struct QuizQuestion: Codable, Identifiable {
+    let id: String
+    let categoryId: String
+    let difficulty: Difficulty
     let questionBG: String
     let questionEN: String
     let answersBG: [String]
     let answersEN: [String]
-    let correctAnswerBG: Int
-    let correctAnswerEN: Int
+    let correctAnswerBG: String
+    let correctAnswerEN: String
+    let explanationBG: String
+    let explanationEN: String
 
     var text: String {
         questionEN
@@ -22,34 +27,49 @@ struct QuizQuestion {
     }
 
     var correctAnswerIndex: Int {
-        correctAnswerEN
+        correctAnswerIndex(for: .english)
     }
 
     init(
+        id: String,
+        categoryId: String,
+        difficulty: Difficulty,
         questionBG: String,
         questionEN: String,
         answersBG: [String],
         answersEN: [String],
-        correctAnswerBG: Int,
-        correctAnswerEN: Int
+        correctAnswerBG: String,
+        correctAnswerEN: String,
+        explanationBG: String,
+        explanationEN: String
     ) {
+        self.id = id
+        self.categoryId = categoryId
+        self.difficulty = difficulty
         self.questionBG = questionBG
         self.questionEN = questionEN
         self.answersBG = answersBG
         self.answersEN = answersEN
         self.correctAnswerBG = correctAnswerBG
         self.correctAnswerEN = correctAnswerEN
+        self.explanationBG = explanationBG
+        self.explanationEN = explanationEN
     }
 
     init(text: String, answers: [String], correctAnswerIndex: Int) {
+        id = UUID().uuidString
+        categoryId = "daily-challenge"
+        difficulty = .advanced
         questionEN = text
         questionBG = Self.localizedBulgarianQuestion(for: text)
         answersEN = answers
         answersBG = answers.map { answer in
             Self.localizedBulgarianAnswer(answer)
         }
-        correctAnswerEN = correctAnswerIndex
-        correctAnswerBG = correctAnswerIndex
+        correctAnswerEN = answers.indices.contains(correctAnswerIndex) ? answers[correctAnswerIndex] : ""
+        correctAnswerBG = answersBG.indices.contains(correctAnswerIndex) ? answersBG[correctAnswerIndex] : ""
+        explanationEN = "The correct answer is \"\(correctAnswerEN)\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+        explanationBG = "Правилният отговор е \"\(correctAnswerBG)\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код."
     }
 
     func questionText(for language: AppLanguage) -> String {
@@ -73,27 +93,27 @@ struct QuizQuestion {
     func correctAnswerIndex(for language: AppLanguage) -> Int {
         switch language {
         case .bulgarian:
+            return answersBG.firstIndex(of: correctAnswerBG) ?? 0
+        case .english:
+            return answersEN.firstIndex(of: correctAnswerEN) ?? 0
+        }
+    }
+
+    func correctAnswerText(for language: AppLanguage) -> String {
+        switch language {
+        case .bulgarian:
             return correctAnswerBG
         case .english:
             return correctAnswerEN
         }
     }
 
-    func correctAnswerText(for language: AppLanguage) -> String {
-        let localizedAnswers = answers(for: language)
-        let index = correctAnswerIndex(for: language)
-        guard localizedAnswers.indices.contains(index) else { return "" }
-        return localizedAnswers[index]
-    }
-
     func explanationText(for language: AppLanguage) -> String {
-        let correctAnswer = correctAnswerText(for: language)
-
         switch language {
         case .bulgarian:
-            return "Правилният отговор е \"\(correctAnswer)\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код."
+            return explanationBG
         case .english:
-            return "The correct answer is \"\(correctAnswer)\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+            return explanationEN
         }
     }
 

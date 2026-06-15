@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
-![Version](https://img.shields.io/badge/Version-1.1-success)
+![Version](https://img.shields.io/badge/Version-1.2-success)
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
@@ -15,7 +15,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 - [Screenshots](#screenshots)
 - [Features](#features)
-- [Version 1.1 Highlights](#version-11-highlights)
+- [Version 1.2 Highlights](#version-12-highlights)
 - [Requirements](#requirements)
 - [Getting Started](#getting-started)
 - [Architecture](#architecture)
@@ -40,6 +40,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 ## Features
 
 - Interactive quiz categories for Swift, SwiftUI, iOS, Logic, and AI
+- Local JSON question database for easier content expansion
 - Beginner, Intermediate, and Advanced difficulty levels
 - XP system with animated level progress
 - 10-level progression system with Swift-themed titles
@@ -73,6 +74,23 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
   - Perfect Quiz Master
 - Added reward claim animation and achievement confetti
 - Added focused unit tests for rewards, theme persistence, level progression, localization, and achievements
+
+---
+
+## Version 1.2 Highlights
+
+- Moved the main quiz question database from hardcoded Swift arrays into local JSON files.
+- Added one JSON file per learning category:
+  - `swift_basics.json`
+  - `swiftui.json`
+  - `ios_basics.json`
+  - `programming_logic.json`
+  - `ai_basics.json`
+- Added `QuestionLoader` for safe Bundle loading, decoding, validation, and grouping by category/difficulty.
+- Kept Bulgarian and English question text, answer choices, correct answers, and explanations in data files.
+- Made content expansion safer: adding questions no longer requires editing large Swift arrays.
+- Added safe empty state behavior if local question data fails to load.
+- Added unit tests for JSON loading, decoding, grouping, and difficulty filtering.
 
 ---
 
@@ -121,6 +139,7 @@ Key pieces:
 
 - `QuizViewModel` manages quiz state, XP, levels, rewards, achievements, statistics, and navigation.
 - `QuizProgressStore` centralizes UserDefaults persistence.
+- `QuestionLoader` loads and validates the local JSON question database.
 - `DailyRewardManager` handles daily reward and login streak calculations.
 - `AppTheme` manages Light, Dark, and System theme selection.
 
@@ -138,6 +157,14 @@ Swift Quiz Academy/
 │   ├── Difficulty.swift
 │   ├── QuizCategory.swift
 │   └── QuizQuestion.swift
+├── QuestionData/
+│   ├── ai_basics.json
+│   ├── ios_basics.json
+│   ├── programming_logic.json
+│   ├── swift_basics.json
+│   └── swiftui.json
+├── Services/
+│   └── QuestionLoader.swift
 ├── ViewModels/
 │   ├── QuizProgressStore.swift
 │   └── QuizViewModel.swift
@@ -176,6 +203,7 @@ The project includes unit tests for:
 - Achievement unlocking
 - Progress reset and reload
 - Bulgarian question localization
+- Local JSON loading, decoding, grouping, and difficulty filtering
 
 Latest local verification:
 
@@ -199,13 +227,13 @@ xcodebuild build \
 
 ## Roadmap
 
-### Version 1.2
+### Version 1.3
 
 - Cloud synchronization
 - User profiles
 - Online leaderboards
 - More quiz categories
-- Expanded question database
+- Expanded JSON question database
 
 ### Version 2.0
 

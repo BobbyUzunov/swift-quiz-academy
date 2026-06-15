@@ -2,6 +2,22 @@
 
 All notable changes to Swift Quiz Academy are documented here.
 
+## [1.2.0] - 2026-06-15
+
+### Added
+
+- Local JSON question database with one file per quiz category.
+- `QuestionLoader` service for Bundle loading, decoding, validation, and grouping questions by category and difficulty.
+- Safe empty state for missing or failed question loading.
+- Unit tests for JSON loading, decoding, grouping, and filtering by difficulty.
+
+### Changed
+
+- Refactored main quiz categories to load questions from JSON instead of hardcoded Swift arrays.
+- Updated `QuizQuestion` to support JSON fields for IDs, category IDs, difficulty, localized questions, localized answers, correct answer text, and localized explanations.
+- Made `Difficulty` codable for JSON decoding.
+- Updated README with Version 1.2 details.
+
 ## [1.1.0] - 2026-06-15
 
 ### Added
