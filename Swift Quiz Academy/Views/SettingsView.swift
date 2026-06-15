@@ -18,8 +18,11 @@ struct SettingsView: View {
     let xpToNextLevel: Int
     let currentDailyStreak: Int
     let bestDailyStreak: Int
+    let currentLoginStreak: Int
+    let bestLoginStreak: Int
     let achievements: [Achievement]
     @Binding var selectedLanguage: AppLanguage
+    @Binding var selectedTheme: AppTheme
     let onResetProgress: () -> Void
 
     @Environment(\.dismiss) private var dismiss
@@ -33,6 +36,15 @@ struct SettingsView: View {
                         Picker(localized("Език", "Language"), selection: $selectedLanguage) {
                             ForEach(AppLanguage.allCases) { language in
                                 Text(language.title).tag(language)
+                            }
+                        }
+                        .pickerStyle(.segmented)
+                    }
+
+                    settingsSection(title: localized("Тема", "Theme"), icon: "circle.lefthalf.filled") {
+                        Picker(localized("Тема", "Theme"), selection: $selectedTheme) {
+                            ForEach(AppTheme.allCases) { theme in
+                                Text(theme.title(for: selectedLanguage)).tag(theme)
                             }
                         }
                         .pickerStyle(.segmented)
@@ -69,8 +81,10 @@ struct SettingsView: View {
 
                     settingsSection(title: localized("Дневна поредица", "Daily Streak"), icon: "flame.fill") {
                         VStack(spacing: 10) {
-                            ProfileStatRow(title: localized("Текуща поредица", "Current Streak"), value: "\(currentDailyStreak)")
-                            ProfileStatRow(title: localized("Най-добра дневна поредица", "Best Daily Streak"), value: "\(bestDailyStreak)")
+                            ProfileStatRow(title: localized("Quiz поредица", "Quiz Streak"), value: "\(currentDailyStreak)")
+                            ProfileStatRow(title: localized("Най-добра quiz поредица", "Best Quiz Streak"), value: "\(bestDailyStreak)")
+                            ProfileStatRow(title: localized("Login поредица", "Login Streak"), value: "\(currentLoginStreak)")
+                            ProfileStatRow(title: localized("Най-добра login поредица", "Best Login Streak"), value: "\(bestLoginStreak)")
                         }
                     }
 

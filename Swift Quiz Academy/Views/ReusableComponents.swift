@@ -87,6 +87,7 @@ struct SwiftQuizAcademyRootView: View {
         .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.selectedAnswerIndex)
         .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.lives)
         .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.streak)
+        .preferredColorScheme(viewModel.selectedTheme.colorScheme)
     }
 
     private var homeView: some View {
@@ -108,16 +109,26 @@ struct SwiftQuizAcademyRootView: View {
             totalQuestionCount: viewModel.totalQuestionCount,
             currentDailyStreak: viewModel.savedCurrentDailyStreak,
             bestDailyStreak: viewModel.savedBestDailyStreak,
+            currentLoginStreak: viewModel.savedCurrentLoginStreak,
+            bestLoginStreak: viewModel.savedBestLoginStreak,
             achievements: viewModel.achievements,
+            recentAchievement: viewModel.recentAchievement,
             dailyBonusXP: viewModel.dailyBonusXP,
             isDailyChallengeAvailable: viewModel.isDailyChallengeAvailable,
+            availableDailyReward: viewModel.availableDailyReward,
             selectedLanguage: Binding(
                 get: { viewModel.selectedLanguage },
                 set: { viewModel.selectedLanguage = $0 }
             ),
+            selectedTheme: Binding(
+                get: { viewModel.selectedTheme },
+                set: { viewModel.selectedTheme = $0 }
+            ),
             onStartQuiz: viewModel.showCategories,
             onStartDailyChallenge: viewModel.startDailyChallenge,
             onPracticeMistakes: viewModel.startPracticeMistakes,
+            onClaimDailyReward: viewModel.claimDailyReward,
+            onClearRecentAchievement: viewModel.clearRecentAchievement,
             onResetProgress: viewModel.resetProgress
         )
     }
@@ -128,7 +139,7 @@ struct SwiftQuizAcademyRootView: View {
                 Color.indigo.opacity(0.35),
                 Color.blue.opacity(0.24),
                 Color.purple.opacity(0.16),
-                Color(.systemBackground)
+                Color(.systemBackground).opacity(0.92)
             ],
             startPoint: .topLeading,
             endPoint: .bottomTrailing

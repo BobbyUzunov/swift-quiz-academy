@@ -4,6 +4,7 @@
 //
 
 import Foundation
+import SwiftUI
 import Testing
 @testable import Swift_Quiz_Academy
 
@@ -161,6 +162,81 @@ struct Swift_Quiz_AcademyTests {
         viewModel.selectedLanguage = .bulgarian
 
         #expect(viewModel.currentLevelTitle == "Swift учащ")
+    }
+
+    @Test func dailyRewardCanBeClaimedOnlyOnceAndPersists() {
+        let userDefaults = makeUserDefaults()
+        let viewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(viewModel.availableDailyReward?.totalXP == viewModel.dailyRewardXP)
+
+        viewModel.claimDailyReward()
+
+        #expect(viewModel.savedTotalXP == viewModel.dailyRewardXP)
+        #expect(viewModel.savedCurrentLoginStreak == 1)
+        #expect(viewModel.savedBestLoginStreak == 1)
+        #expect(viewModel.availableDailyReward == nil)
+
+        let reloadedViewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(reloadedViewModel.savedTotalXP == viewModel.dailyRewardXP)
+        #expect(reloadedViewModel.availableDailyReward == nil)
+    }
+
+    @Test func dailyRewardManagerAwardsSevenDayBonus() {
+        var calendar = Calendar(identifier: .gregorian)
+        calendar.timeZone = TimeZone(secondsFromGMT: 0)!
+        let manager = DailyRewardManager(calendar: calendar)
+        let day = Date(timeIntervalSince1970: 24 * 60 * 60 * 10)
+        let yesterday = manager.yesterdayKey(date: day)
+
+        let reward = manager.claimReward(
+            lastRewardDate: yesterday,
+            currentStreak: 6,
+            bestStreak: 6,
+            date: day
+        )
+
+        #expect(reward?.baseXP == 25)
+        #expect(reward?.streakBonusXP == 100)
+        #expect(reward?.totalXP == 125)
+        #expect(reward?.currentStreak == 7)
+        #expect(reward?.bestStreak == 7)
+    }
+
+    @Test func themePreferencePersists() {
+        let userDefaults = makeUserDefaults()
+        let viewModel = QuizViewModel(userDefaults: userDefaults)
+
+        viewModel.selectedTheme = .dark
+
+        let reloadedViewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(reloadedViewModel.selectedTheme == .dark)
+        #expect(reloadedViewModel.selectedTheme.colorScheme == .dark)
+    }
+
+    @Test func newAchievementsUnlockAutomatically() {
+        let userDefaults = makeUserDefaults()
+        let store = QuizProgressStore(userDefaults: userDefaults)
+        store.saveTotals(
+            totalXP: 1000,
+            highestScore: 10,
+            totalGamesPlayed: 10,
+            bestStreak: 0,
+            correctAnswers: 50,
+            wrongAnswers: 0
+        )
+        store.saveDailyReward(date: "2026-6-14", currentStreak: 7, bestStreak: 7, totalXP: 1000)
+
+        let viewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(viewModel.unlockedAchievementIDs.contains("7-day-streak"))
+        #expect(viewModel.unlockedAchievementIDs.contains("500-xp"))
+        #expect(viewModel.unlockedAchievementIDs.contains("1000-xp"))
+        #expect(viewModel.unlockedAchievementIDs.contains("10-games"))
+        #expect(viewModel.unlockedAchievementIDs.contains("50-correct"))
+        #expect(viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
     }
 
     @Test func bulgarianQuestionsAreLocalized() {

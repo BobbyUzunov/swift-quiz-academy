@@ -17,8 +17,12 @@ struct QuizProgressSnapshot {
     var lastCategoryID: String
     var lastDifficulty: Difficulty
     var lastDailyChallengeDate: String
+    var lastDailyRewardDate: String
+    var currentLoginStreak: Int
+    var bestLoginStreak: Int
     var lastPlayDate: String
     var selectedLanguage: AppLanguage
+    var selectedTheme: AppTheme
     var mistakes: [MistakeRecord]
     var achievementIDs: Set<String>
 }
@@ -39,7 +43,11 @@ final class QuizProgressStore {
         static let lastCategoryID = "lastCategoryID"
         static let lastDifficulty = "lastDifficulty"
         static let lastDailyChallengeDate = "lastDailyChallengeDate"
+        static let lastDailyRewardDate = "lastDailyRewardDate"
+        static let currentLoginStreak = "currentLoginStreak"
+        static let bestLoginStreak = "bestLoginStreak"
         static let selectedLanguage = "selectedLanguage"
+        static let selectedTheme = "selectedTheme"
 
         static let all = [
             totalXP,
@@ -53,8 +61,12 @@ final class QuizProgressStore {
             lastCategoryID,
             lastDifficulty,
             lastDailyChallengeDate,
+            lastDailyRewardDate,
+            currentLoginStreak,
+            bestLoginStreak,
             lastPlayDate,
             selectedLanguage,
+            selectedTheme,
             mistakes,
             achievements
         ]
@@ -71,6 +83,8 @@ final class QuizProgressStore {
             .flatMap(Difficulty.init(rawValue:)) ?? .beginner
         let selectedLanguage = userDefaults.string(forKey: Key.selectedLanguage)
             .flatMap(AppLanguage.init(rawValue:)) ?? .english
+        let selectedTheme = userDefaults.string(forKey: Key.selectedTheme)
+            .flatMap(AppTheme.init(rawValue:)) ?? .system
 
         return QuizProgressSnapshot(
             totalXP: userDefaults.integer(forKey: Key.totalXP),
@@ -84,8 +98,12 @@ final class QuizProgressStore {
             lastCategoryID: userDefaults.string(forKey: Key.lastCategoryID) ?? "",
             lastDifficulty: lastDifficulty,
             lastDailyChallengeDate: userDefaults.string(forKey: Key.lastDailyChallengeDate) ?? "",
+            lastDailyRewardDate: userDefaults.string(forKey: Key.lastDailyRewardDate) ?? "",
+            currentLoginStreak: userDefaults.integer(forKey: Key.currentLoginStreak),
+            bestLoginStreak: userDefaults.integer(forKey: Key.bestLoginStreak),
             lastPlayDate: userDefaults.string(forKey: Key.lastPlayDate) ?? "",
             selectedLanguage: selectedLanguage,
+            selectedTheme: selectedTheme,
             mistakes: loadCodableArray(MistakeRecord.self, key: Key.mistakes),
             achievementIDs: Set(userDefaults.stringArray(forKey: Key.achievements) ?? [])
         )
@@ -95,6 +113,10 @@ final class QuizProgressStore {
         userDefaults.set(language.rawValue, forKey: Key.selectedLanguage)
     }
 
+    func saveTheme(_ theme: AppTheme) {
+        userDefaults.set(theme.rawValue, forKey: Key.selectedTheme)
+    }
+
     func saveLastSelection(categoryID: String, difficulty: Difficulty) {
         userDefaults.set(categoryID, forKey: Key.lastCategoryID)
         userDefaults.set(difficulty.rawValue, forKey: Key.lastDifficulty)
@@ -102,6 +124,13 @@ final class QuizProgressStore {
 
     func saveDailyChallengeDate(_ date: String) {
         userDefaults.set(date, forKey: Key.lastDailyChallengeDate)
+    }
+
+    func saveDailyReward(date: String, currentStreak: Int, bestStreak: Int, totalXP: Int) {
+        userDefaults.set(date, forKey: Key.lastDailyRewardDate)
+        userDefaults.set(currentStreak, forKey: Key.currentLoginStreak)
+        userDefaults.set(bestStreak, forKey: Key.bestLoginStreak)
+        userDefaults.set(totalXP, forKey: Key.totalXP)
     }
 
     func saveTotals(

@@ -23,22 +23,33 @@ struct HomeView: View {
     let totalQuestionCount: Int
     let currentDailyStreak: Int
     let bestDailyStreak: Int
+    let currentLoginStreak: Int
+    let bestLoginStreak: Int
     let achievements: [Achievement]
+    let recentAchievement: Achievement?
     let dailyBonusXP: Int
     let isDailyChallengeAvailable: Bool
+    let availableDailyReward: DailyRewardResult?
     @Binding var selectedLanguage: AppLanguage
+    @Binding var selectedTheme: AppTheme
     let onStartQuiz: () -> Void
     let onStartDailyChallenge: () -> Void
     let onPracticeMistakes: () -> Bool
+    let onClaimDailyReward: () -> Void
+    let onClearRecentAchievement: () -> Void
     let onResetProgress: () -> Void
 
     @State private var showsSettings = false
     @State private var showsNoMistakesAlert = false
+    @State private var showsDailyReward = false
+    @State private var isClaimingReward = false
+    @State private var startButtonPulse = false
+    @State private var confettiActive = false
 
     var body: some View {
         GeometryReader { proxy in
             ScrollView {
-                VStack(spacing: 23) {
+                VStack(spacing: 20) {
                     heroSection
                     levelProgressCard
                     dailyChallengeCard
@@ -57,7 +68,25 @@ struct HomeView: View {
                         .padding(.top, 10)
                         .padding(.trailing, 16)
                 }
+                .overlay(alignment: .top) {
+                    achievementToast
+                        .padding(.top, 18)
+                }
             }
+        }
+        .overlay {
+            if showsDailyReward, let availableDailyReward {
+                DailyRewardPopup(
+                    reward: availableDailyReward,
+                    selectedLanguage: selectedLanguage,
+                    isClaiming: isClaimingReward,
+                    onClaim: claimDailyReward
+                )
+                .transition(.scale(scale: 0.92).combined(with: .opacity))
+            }
+        }
+        .overlay {
+            ConfettiBurstView(isActive: confettiActive)
         }
         .sheet(isPresented: $showsSettings) {
             SettingsView(
@@ -73,8 +102,11 @@ struct HomeView: View {
                 xpToNextLevel: xpToNextLevel,
                 currentDailyStreak: currentDailyStreak,
                 bestDailyStreak: bestDailyStreak,
+                currentLoginStreak: currentLoginStreak,
+                bestLoginStreak: bestLoginStreak,
                 achievements: achievements,
                 selectedLanguage: $selectedLanguage,
+                selectedTheme: $selectedTheme,
                 onResetProgress: onResetProgress
             )
             .presentationDetents([.medium, .large])
@@ -84,6 +116,21 @@ struct HomeView: View {
             Button(localized("OK", "OK"), role: .cancel) { }
         } message: {
             Text(localized("Сгрешените въпроси ще се появят тук след quiz.", "Incorrect questions will appear here after a quiz."))
+        }
+        .onAppear {
+            startButtonPulse = true
+            if availableDailyReward != nil {
+                showsDailyReward = true
+            }
+        }
+        .onChange(of: availableDailyReward != nil) { _, hasReward in
+            if hasReward {
+                showsDailyReward = true
+            }
+        }
+        .onChange(of: recentAchievement?.id) { _, newValue in
+            guard newValue != nil else { return }
+            triggerConfetti()
         }
     }
 
@@ -166,13 +213,12 @@ struct HomeView: View {
             VStack(spacing: 8) {
                 ProgressView(value: xpProgress)
                     .tint(.blue)
+                    .animation(.spring(response: 0.55, dampingFraction: 0.82), value: xpProgress)
 
                 HStack {
-                    Text("\(currentLevelXP) XP")
+                    Text(localized("Ниво \(currentLevel)", "Level \(currentLevel)"))
                     Spacer()
-                    Text("\(savedTotalXP) XP")
-                    Spacer()
-                    Text(currentLevel == 10 ? localized("Макс ниво", "Max level") : "\(nextLevelXP) XP")
+                    Text(currentLevel == 10 ? "\(savedTotalXP) XP" : "\(savedTotalXP) / \(nextLevelXP) XP")
                 }
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.secondary)
@@ -184,12 +230,12 @@ struct HomeView: View {
         }
         .padding(18)
         .background(.regularMaterial)
-        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
         .overlay {
-            RoundedRectangle(cornerRadius: 18, style: .continuous)
+            RoundedRectangle(cornerRadius: 16, style: .continuous)
                 .stroke(Color.blue.opacity(0.14), lineWidth: 1)
         }
-        .shadow(color: .blue.opacity(0.10), radius: 14, x: 0, y: 8)
+        .shadow(color: .black.opacity(0.06), radius: 18, x: 0, y: 10)
     }
 
     private var statisticsSection: some View {
@@ -226,7 +272,9 @@ struct HomeView: View {
         .buttonStyle(.borderedProminent)
         .tint(.blue)
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
-        .shadow(color: .blue.opacity(0.12), radius: 10, x: 0, y: 6)
+        .scaleEffect(startButtonPulse ? 1.015 : 1)
+        .shadow(color: .blue.opacity(0.18), radius: startButtonPulse ? 18 : 10, x: 0, y: 8)
+        .animation(.easeInOut(duration: 1.25).repeatForever(autoreverses: true), value: startButtonPulse)
     }
 
     private var dailyChallengeCard: some View {
@@ -272,7 +320,7 @@ struct HomeView: View {
             RoundedRectangle(cornerRadius: 18, style: .continuous)
                 .stroke(Color.orange.opacity(0.2), lineWidth: 1)
         }
-        .shadow(color: .orange.opacity(0.12), radius: 14, x: 0, y: 8)
+        .shadow(color: .black.opacity(0.06), radius: 18, x: 0, y: 10)
     }
 
     private func statCard(title: String, value: String, icon: String, color: Color) -> some View {
@@ -295,7 +343,48 @@ struct HomeView: View {
         .padding(.vertical, 17)
         .background(.regularMaterial)
         .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
-        .shadow(color: .black.opacity(0.07), radius: 10, x: 0, y: 5)
+        .shadow(color: .black.opacity(0.055), radius: 14, x: 0, y: 8)
+    }
+
+    @ViewBuilder
+    private var achievementToast: some View {
+        if let recentAchievement {
+            Label(recentAchievement.title(for: selectedLanguage), systemImage: "trophy.fill")
+                .font(.subheadline.weight(.bold))
+                .foregroundStyle(.primary)
+                .padding(.horizontal, 14)
+                .padding(.vertical, 10)
+                .background(.regularMaterial)
+                .clipShape(Capsule())
+                .shadow(color: .black.opacity(0.12), radius: 14, x: 0, y: 8)
+                .transition(.move(edge: .top).combined(with: .opacity))
+        }
+    }
+
+    private func claimDailyReward() {
+        withAnimation(.spring(response: 0.32, dampingFraction: 0.62)) {
+            isClaimingReward = true
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
+            onClaimDailyReward()
+            withAnimation(.spring(response: 0.34, dampingFraction: 0.86)) {
+                showsDailyReward = false
+                isClaimingReward = false
+            }
+            triggerConfetti()
+        }
+    }
+
+    private func triggerConfetti() {
+        withAnimation {
+            confettiActive = true
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+            confettiActive = false
+            onClearRecentAchievement()
+        }
     }
 
     private func localized(_ bg: String, _ en: String) -> String {

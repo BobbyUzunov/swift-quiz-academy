@@ -36,12 +36,16 @@ final class QuizViewModel {
 
     let categories = QuizCategory.allCategories
     let dailyBonusXP = 50
+    let dailyRewardXP = 25
 
     var screen: AppScreen = .start
     var selectedCategory: QuizCategory?
     var selectedDifficulty: Difficulty = .beginner
     var selectedLanguage: AppLanguage = .english {
         didSet { progressStore.saveLanguage(selectedLanguage) }
+    }
+    var selectedTheme: AppTheme = .system {
+        didSet { progressStore.saveTheme(selectedTheme) }
     }
     var currentQuestionIndex = 0
     var selectedAnswerIndex: Int?
@@ -65,12 +69,17 @@ final class QuizViewModel {
     var savedWrongAnswers: Int
     var savedCurrentDailyStreak: Int
     var savedBestDailyStreak: Int
+    var savedCurrentLoginStreak: Int
+    var savedBestLoginStreak: Int
     var savedLastCategoryID: String
     var savedLastDifficulty: Difficulty
     var lastDailyChallengeDate: String
+    var lastDailyRewardDate: String
     var savedLastPlayDate: String
     var mistakeRecords: [MistakeRecord]
     var unlockedAchievementIDs: Set<String>
+    var availableDailyReward: DailyRewardResult?
+    var recentAchievementID: String?
 
     private var hasSavedCurrentGame = false
     private var isDailyChallenge = false
@@ -78,9 +87,11 @@ final class QuizViewModel {
     private var practiceMistakeQuestions: [QuizQuestion] = []
     private var practiceMistakeRecords: [MistakeRecord] = []
     private let progressStore: QuizProgressStore
+    private let dailyRewardManager: DailyRewardManager
 
     init(userDefaults: UserDefaults = .standard) {
         progressStore = QuizProgressStore(userDefaults: userDefaults)
+        dailyRewardManager = DailyRewardManager()
         let progress = progressStore.load()
         savedTotalXP = progress.totalXP
         savedHighestScore = progress.highestScore
@@ -90,14 +101,23 @@ final class QuizViewModel {
         savedWrongAnswers = progress.wrongAnswers
         savedCurrentDailyStreak = progress.currentDailyStreak
         savedBestDailyStreak = progress.bestDailyStreak
+        savedCurrentLoginStreak = progress.currentLoginStreak
+        savedBestLoginStreak = progress.bestLoginStreak
         savedLastCategoryID = progress.lastCategoryID
         savedLastDifficulty = progress.lastDifficulty
         selectedDifficulty = progress.lastDifficulty
         lastDailyChallengeDate = progress.lastDailyChallengeDate
+        lastDailyRewardDate = progress.lastDailyRewardDate
         savedLastPlayDate = progress.lastPlayDate
         selectedLanguage = progress.selectedLanguage
+        selectedTheme = progress.selectedTheme
         mistakeRecords = progress.mistakes
         unlockedAchievementIDs = progress.achievementIDs
+        availableDailyReward = dailyRewardManager.claimReward(
+            lastRewardDate: lastDailyRewardDate,
+            currentStreak: savedCurrentLoginStreak,
+            bestStreak: savedBestLoginStreak
+        )
 
         updateAchievements()
     }
@@ -171,6 +191,11 @@ final class QuizViewModel {
     }
 
     var achievements: [Achievement] { Achievement.all(unlockedIDs: unlockedAchievementIDs) }
+
+    var recentAchievement: Achievement? {
+        guard let recentAchievementID else { return nil }
+        return achievements.first { $0.id == recentAchievementID }
+    }
 
     var hasMistakes: Bool { !mistakeRecords.isEmpty }
 
@@ -333,15 +358,47 @@ final class QuizViewModel {
         savedWrongAnswers = 0
         savedCurrentDailyStreak = 0
         savedBestDailyStreak = 0
+        savedCurrentLoginStreak = 0
+        savedBestLoginStreak = 0
         savedLastCategoryID = ""
         savedLastDifficulty = .beginner
         selectedLanguage = .english
+        selectedTheme = .system
         selectedDifficulty = .beginner
         lastDailyChallengeDate = ""
+        lastDailyRewardDate = ""
         savedLastPlayDate = ""
         mistakeRecords = []
         unlockedAchievementIDs = []
+        availableDailyReward = dailyRewardManager.claimReward(
+            lastRewardDate: lastDailyRewardDate,
+            currentStreak: savedCurrentLoginStreak,
+            bestStreak: savedBestLoginStreak
+        )
+        recentAchievementID = nil
         returnToStart()
+    }
+
+    func claimDailyReward() {
+        guard let reward = availableDailyReward else { return }
+
+        lastDailyRewardDate = todayKey
+        savedCurrentLoginStreak = reward.currentStreak
+        savedBestLoginStreak = reward.bestStreak
+        savedTotalXP += reward.totalXP
+        availableDailyReward = nil
+
+        progressStore.saveDailyReward(
+            date: lastDailyRewardDate,
+            currentStreak: savedCurrentLoginStreak,
+            bestStreak: savedBestLoginStreak,
+            totalXP: savedTotalXP
+        )
+        updateAchievements()
+    }
+
+    func clearRecentAchievement() {
+        recentAchievementID = nil
     }
 
     func localized(_ bg: String, _ en: String) -> String { selectedLanguage.localized(bg, en) }
@@ -502,10 +559,19 @@ final class QuizViewModel {
         if savedHighestScore >= 10 { unlocked.insert("perfect-score") }
         if savedTotalXP >= 100 { unlocked.insert("100-xp") }
         if savedTotalXP >= 500 { unlocked.insert("500-xp") }
+        if savedTotalXP >= 1000 { unlocked.insert("1000-xp") }
         if savedTotalGamesPlayed >= 10 { unlocked.insert("10-games") }
         if savedCorrectAnswers >= 50 { unlocked.insert("50-correct") }
+        if savedBestDailyStreak >= 7 || savedBestLoginStreak >= 7 { unlocked.insert("7-day-streak") }
+        if savedHighestScore >= 10 { unlocked.insert("perfect-quiz-master") }
+
+        let newUnlocks = unlocked.subtracting(unlockedAchievementIDs)
         unlockedAchievementIDs = unlocked
         progressStore.saveAchievements(unlocked)
+
+        if let firstNewUnlock = newUnlocks.sorted().first {
+            recentAchievementID = firstNewUnlock
+        }
     }
 
     private func saveLastSelection(categoryID: String, difficulty: Difficulty) {
