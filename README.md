@@ -10,23 +10,6 @@ Swift Quiz Academy е iOS приложение, разработено със Sw
   <img src="screenshots/App.png" width="220">
 </p>
 
-### Home
-
-![Home](screenshots/Home.png)
-
-### Quiz
-
-![Quiz](screenshots/Quiz.png)
-
-### Settings
-
-![Settings](screenshots/Setting.png)
-
-### App
-
-![App](screenshots/App.png)
-⸻
-
 🚀 Features
 
 * Multiple Swift categories
