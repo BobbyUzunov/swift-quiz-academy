@@ -1,0 +1,497 @@
+//
+//  QuizViewModel.swift
+//  Swift Quiz Academy
+//
+
+import Foundation
+import Observation
+import SwiftUI
+
+struct MistakeRecord: Codable, Identifiable, Hashable {
+    var id: String { "\(categoryID)|\(difficultyRawValue)|\(questionEN)" }
+    let questionEN: String
+    let categoryID: String
+    let difficultyRawValue: String
+}
+
+@Observable
+final class QuizViewModel {
+    let categories = QuizCategory.allCategories
+    let dailyBonusXP = 50
+
+    var screen: AppScreen = .start
+    var selectedCategory: QuizCategory?
+    var selectedDifficulty: Difficulty = .beginner
+    var selectedLanguage: AppLanguage = .english {
+        didSet { userDefaults.set(selectedLanguage.rawValue, forKey: Self.selectedLanguageKey) }
+    }
+    var currentQuestionIndex = 0
+    var selectedAnswerIndex: Int?
+    var shuffledAnswerOptions: [AnswerOption] = []
+    var reviewItems: [QuizReviewItem] = []
+    var score = 0
+    var xp = 0
+    var lives = 3
+    var streak = 0
+    var bestStreakThisGame = 0
+    var correctAnswersThisGame = 0
+    var wrongAnswersThisGame = 0
+    var feedbackMessage: String?
+    var feedbackIsCorrect: Bool?
+    var dailyBonusAwarded = 0
+    var savedTotalXP: Int
+    var savedHighestScore: Int
+    var savedTotalGamesPlayed: Int
+    var savedBestStreak: Int
+    var savedCorrectAnswers: Int
+    var savedWrongAnswers: Int
+    var savedCurrentDailyStreak: Int
+    var savedBestDailyStreak: Int
+    var savedLastCategoryID: String
+    var savedLastDifficulty: Difficulty
+    var lastDailyChallengeDate: String
+    var savedLastPlayDate: String
+    var mistakeRecords: [MistakeRecord]
+    var unlockedAchievementIDs: Set<String>
+
+    private var hasSavedCurrentGame = false
+    private var isDailyChallenge = false
+    private var isPracticeMistakes = false
+    private var practiceMistakeQuestions: [QuizQuestion] = []
+    private var practiceMistakeRecords: [MistakeRecord] = []
+    private let userDefaults: UserDefaults
+
+    init(userDefaults: UserDefaults = .standard) {
+        self.userDefaults = userDefaults
+        savedTotalXP = userDefaults.integer(forKey: Self.totalXPKey)
+        savedHighestScore = userDefaults.integer(forKey: Self.highestScoreKey)
+        savedTotalGamesPlayed = userDefaults.integer(forKey: Self.totalGamesPlayedKey)
+        savedBestStreak = userDefaults.integer(forKey: Self.bestStreakKey)
+        savedCorrectAnswers = userDefaults.integer(forKey: Self.correctAnswersKey)
+        savedWrongAnswers = userDefaults.integer(forKey: Self.wrongAnswersKey)
+        savedCurrentDailyStreak = userDefaults.integer(forKey: Self.currentDailyStreakKey)
+        savedBestDailyStreak = userDefaults.integer(forKey: Self.bestDailyStreakKey)
+        savedLastCategoryID = userDefaults.string(forKey: Self.lastCategoryIDKey) ?? ""
+        savedLastPlayDate = userDefaults.string(forKey: Self.lastPlayDateKey) ?? ""
+        lastDailyChallengeDate = userDefaults.string(forKey: Self.lastDailyChallengeDateKey) ?? ""
+        mistakeRecords = Self.loadCodableArray(MistakeRecord.self, key: Self.mistakesKey, userDefaults: userDefaults)
+        unlockedAchievementIDs = Set(userDefaults.stringArray(forKey: Self.achievementsKey) ?? [])
+
+        if let rawDifficulty = userDefaults.string(forKey: Self.lastDifficultyKey), let difficulty = Difficulty(rawValue: rawDifficulty) {
+            savedLastDifficulty = difficulty
+            selectedDifficulty = difficulty
+        } else {
+            savedLastDifficulty = .beginner
+        }
+
+        if let rawLanguage = userDefaults.string(forKey: Self.selectedLanguageKey), let language = AppLanguage(rawValue: rawLanguage) {
+            selectedLanguage = language
+        }
+
+        updateAchievements()
+    }
+
+    var currentQuestions: [QuizQuestion] {
+        if isPracticeMistakes { return practiceMistakeQuestions }
+        guard let selectedCategory else { return [] }
+        return selectedCategory.questionsByDifficulty[selectedDifficulty] ?? []
+    }
+
+    var currentQuestion: QuizQuestion? {
+        guard currentQuestions.indices.contains(currentQuestionIndex) else { return nil }
+        return currentQuestions[currentQuestionIndex]
+    }
+
+    var isLastQuestion: Bool { currentQuestionIndex == currentQuestions.count - 1 }
+
+    var progressValue: Double {
+        guard !currentQuestions.isEmpty else { return 0 }
+        return Double(currentQuestionIndex + 1) / Double(currentQuestions.count)
+    }
+
+    var isDailyChallengeAvailable: Bool { lastDailyChallengeDate != todayKey }
+
+    var resultPercentage: Int {
+        guard !currentQuestions.isEmpty else { return 0 }
+        return Int((Double(score) / Double(currentQuestions.count) * 100).rounded())
+    }
+
+    var accuracyPercentage: Int {
+        let totalAnswers = savedCorrectAnswers + savedWrongAnswers
+        guard totalAnswers > 0 else { return 0 }
+        return Int((Double(savedCorrectAnswers) / Double(totalAnswers) * 100).rounded())
+    }
+
+    var currentLevel: Int {
+        switch savedTotalXP {
+        case 1000...: return 5
+        case 500..<1000: return 4
+        case 250..<500: return 3
+        case 100..<250: return 2
+        default: return 1
+        }
+    }
+
+    var achievements: [Achievement] { Achievement.all(unlockedIDs: unlockedAchievementIDs) }
+
+    var hasMistakes: Bool { !mistakeRecords.isEmpty }
+
+    func showCategories() { screen = .categories }
+
+    func showReviewAnswers() { screen = .reviewAnswers }
+
+    func returnToResults() { screen = .result }
+
+    func startQuiz(with category: QuizCategory) {
+        isDailyChallenge = false
+        isPracticeMistakes = false
+        selectedCategory = category
+        saveLastSelection(categoryID: category.id, difficulty: selectedDifficulty)
+        restartQuizState()
+        screen = .quiz
+    }
+
+    func startDailyChallenge() {
+        guard isDailyChallengeAvailable else { return }
+        isDailyChallenge = true
+        isPracticeMistakes = false
+        selectedCategory = .dailyChallenge
+        selectedDifficulty = .advanced
+        saveLastSelection(categoryID: QuizCategory.dailyChallenge.id, difficulty: .advanced)
+        restartQuizState()
+        screen = .quiz
+    }
+
+    func startPracticeMistakes() -> Bool {
+        let practiceItems: [(record: MistakeRecord, question: QuizQuestion)] = mistakeRecords.compactMap { record in
+            guard let difficulty = Difficulty(rawValue: record.difficultyRawValue),
+                  let question = findQuestion(questionEN: record.questionEN, categoryID: record.categoryID, difficulty: difficulty) else {
+                return nil
+            }
+            return (record, question)
+        }
+
+        if practiceItems.count != mistakeRecords.count {
+            mistakeRecords = practiceItems.map(\.record)
+            saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+        }
+
+        guard !practiceItems.isEmpty else { return false }
+
+        let questions = practiceItems.map(\.question)
+        practiceMistakeRecords = practiceItems.map(\.record)
+        isDailyChallenge = false
+        isPracticeMistakes = true
+        practiceMistakeQuestions = questions
+        selectedCategory = QuizCategory(
+            id: "practice-mistakes",
+            title: "Practice Mistakes",
+            description: "Review questions you answered incorrectly.",
+            icon: "exclamationmark.triangle.fill",
+            color: .red,
+            questionsByDifficulty: [selectedDifficulty: questions]
+        )
+        restartQuizState()
+        screen = .quiz
+        return true
+    }
+
+    func restartCurrentQuiz() {
+        if isDailyChallenge && !isDailyChallengeAvailable {
+            returnToStart()
+            return
+        }
+        restartQuizState()
+        screen = .quiz
+    }
+
+    func returnToStart() {
+        screen = .start
+        selectedCategory = nil
+        selectedDifficulty = .beginner
+        isDailyChallenge = false
+        isPracticeMistakes = false
+        practiceMistakeQuestions = []
+        practiceMistakeRecords = []
+        restartQuizState()
+    }
+
+    func selectAnswer(_ index: Int) {
+        guard selectedAnswerIndex == nil,
+              let currentQuestion,
+              shuffledAnswerOptions.indices.contains(index) else { return }
+
+        let selectedAnswer = shuffledAnswerOptions[index]
+        saveReviewItem(for: currentQuestion, selectedAnswer: selectedAnswer)
+
+        withAnimation(.spring(response: 0.32, dampingFraction: 0.78)) {
+            selectedAnswerIndex = index
+
+            if selectedAnswer.isCorrect {
+                score += 1
+                xp += 10
+                streak += 1
+                bestStreakThisGame = max(bestStreakThisGame, streak)
+                correctAnswersThisGame += 1
+                if isPracticeMistakes {
+                    removeCurrentPracticeMistake()
+                }
+                feedbackMessage = localized("Правилно!", "Correct!")
+                feedbackIsCorrect = true
+            } else {
+                lives = max(lives - 1, 0)
+                streak = 0
+                wrongAnswersThisGame += 1
+                saveMistake(for: currentQuestion)
+                feedbackMessage = localized("Грешен отговор", "Wrong Answer")
+                feedbackIsCorrect = false
+            }
+        }
+        updateAchievements()
+
+        if lives == 0 {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) { [weak self] in
+                guard let self else { return }
+                if lives == 0 && screen == .quiz { finishGame(with: .gameOver) }
+            }
+        }
+    }
+
+    func goToNextQuestion() {
+        guard selectedAnswerIndex != nil else { return }
+        if isLastQuestion {
+            finishGame(with: .result)
+        } else {
+            currentQuestionIndex += 1
+            selectedAnswerIndex = nil
+            feedbackMessage = nil
+            feedbackIsCorrect = nil
+            prepareAnswerOptionsForCurrentQuestion()
+        }
+    }
+
+    func resetProgress() {
+        [Self.totalXPKey, Self.highestScoreKey, Self.totalGamesPlayedKey, Self.bestStreakKey, Self.correctAnswersKey, Self.wrongAnswersKey, Self.currentDailyStreakKey, Self.bestDailyStreakKey, Self.lastCategoryIDKey, Self.lastDifficultyKey, Self.lastDailyChallengeDateKey, Self.lastPlayDateKey, Self.selectedLanguageKey, Self.mistakesKey, Self.achievementsKey].forEach {
+            userDefaults.removeObject(forKey: $0)
+        }
+
+        savedTotalXP = 0
+        savedHighestScore = 0
+        savedTotalGamesPlayed = 0
+        savedBestStreak = 0
+        savedCorrectAnswers = 0
+        savedWrongAnswers = 0
+        savedCurrentDailyStreak = 0
+        savedBestDailyStreak = 0
+        savedLastCategoryID = ""
+        savedLastDifficulty = .beginner
+        selectedLanguage = .english
+        selectedDifficulty = .beginner
+        lastDailyChallengeDate = ""
+        savedLastPlayDate = ""
+        mistakeRecords = []
+        unlockedAchievementIDs = []
+        returnToStart()
+    }
+
+    func localized(_ bg: String, _ en: String) -> String { selectedLanguage.localized(bg, en) }
+
+    func motivationalMessage(for percentage: Int) -> String {
+        switch percentage {
+        case 90...100: return localized("Отличен run! Вече мислиш като Swift developer.", "Excellent run! You are starting to think like a Swift developer.")
+        case 70..<90: return localized("Добра работа! Имаш стабилна основа и си близо до следващото ниво.", "Good job! You have a solid base and you are close to the next level.")
+        case 50..<70: return localized("Продължавай да тренираш! Още няколко опита и резултатът ще скочи.", "Keep practicing! A few more tries will push your score higher.")
+        default: return localized("Опитай пак. Всяка грешка е XP за следващия опит.", "Try again. Every mistake is XP for the next attempt.")
+        }
+    }
+
+    func medalText(for percentage: Int) -> MedalResult {
+        switch percentage {
+        case 90...100: return MedalResult(icon: "🥇", title: localized("Отлично", "Excellent"))
+        case 70..<90: return MedalResult(icon: "🥈", title: localized("Добра работа", "Good job"))
+        case 50..<70: return MedalResult(icon: "🥉", title: localized("Продължавай да тренираш", "Keep practicing"))
+        default: return MedalResult(icon: "🎯", title: localized("Опитай пак", "Try again"))
+        }
+    }
+
+    private static let totalXPKey = "totalXP"
+    private static let highestScoreKey = "highestScore"
+    private static let totalGamesPlayedKey = "totalGamesPlayed"
+    private static let bestStreakKey = "bestStreak"
+    private static let correctAnswersKey = "correctAnswers"
+    private static let wrongAnswersKey = "wrongAnswers"
+    private static let currentDailyStreakKey = "currentDailyStreak"
+    private static let bestDailyStreakKey = "bestDailyStreak"
+    private static let lastPlayDateKey = "lastPlayDate"
+    private static let mistakesKey = "mistakes"
+    private static let achievementsKey = "achievements"
+    private static let lastCategoryIDKey = "lastCategoryID"
+    private static let lastDifficultyKey = "lastDifficulty"
+    private static let lastDailyChallengeDateKey = "lastDailyChallengeDate"
+    private static let selectedLanguageKey = "selectedLanguage"
+
+    private var todayKey: String {
+        let components = Calendar.current.dateComponents([.year, .month, .day], from: Date())
+        return "\(components.year ?? 0)-\(components.month ?? 0)-\(components.day ?? 0)"
+    }
+
+    private func restartQuizState() {
+        currentQuestionIndex = 0
+        selectedAnswerIndex = nil
+        score = 0
+        xp = 0
+        lives = 3
+        streak = 0
+        bestStreakThisGame = 0
+        correctAnswersThisGame = 0
+        wrongAnswersThisGame = 0
+        feedbackMessage = nil
+        feedbackIsCorrect = nil
+        reviewItems = []
+        hasSavedCurrentGame = false
+        dailyBonusAwarded = 0
+        prepareAnswerOptionsForCurrentQuestion()
+    }
+
+    private func prepareAnswerOptionsForCurrentQuestion() {
+        guard let currentQuestion else {
+            shuffledAnswerOptions = []
+            return
+        }
+        let answers = currentQuestion.answers(for: selectedLanguage)
+        let correctAnswerIndex = currentQuestion.correctAnswerIndex(for: selectedLanguage)
+        shuffledAnswerOptions = answers.indices.map { AnswerOption(text: answers[$0], isCorrect: $0 == correctAnswerIndex) }.shuffled()
+    }
+
+    private func finishGame(with destination: AppScreen) {
+        saveCurrentGameStatsIfNeeded(destination: destination)
+        screen = destination
+    }
+
+    private func saveCurrentGameStatsIfNeeded(destination: AppScreen) {
+        guard !hasSavedCurrentGame else { return }
+
+        if isDailyChallenge {
+            lastDailyChallengeDate = todayKey
+            dailyBonusAwarded = destination == .result ? dailyBonusXP : 0
+            userDefaults.set(lastDailyChallengeDate, forKey: Self.lastDailyChallengeDateKey)
+        }
+
+        updateDailyStreak()
+        savedTotalXP += xp + dailyBonusAwarded
+        savedHighestScore = max(savedHighestScore, score)
+        savedTotalGamesPlayed += 1
+        savedBestStreak = max(savedBestStreak, bestStreakThisGame)
+        savedCorrectAnswers += correctAnswersThisGame
+        savedWrongAnswers += wrongAnswersThisGame
+
+        userDefaults.set(savedTotalXP, forKey: Self.totalXPKey)
+        userDefaults.set(savedHighestScore, forKey: Self.highestScoreKey)
+        userDefaults.set(savedTotalGamesPlayed, forKey: Self.totalGamesPlayedKey)
+        userDefaults.set(savedBestStreak, forKey: Self.bestStreakKey)
+        userDefaults.set(savedCorrectAnswers, forKey: Self.correctAnswersKey)
+        userDefaults.set(savedWrongAnswers, forKey: Self.wrongAnswersKey)
+        if destination == .result && resultPercentage == 100 {
+            unlockedAchievementIDs.insert("perfect-score")
+        }
+        updateAchievements()
+        hasSavedCurrentGame = true
+    }
+
+    private func updateDailyStreak() {
+        guard savedLastPlayDate != todayKey else { return }
+        let yesterday = Calendar.current.date(byAdding: .day, value: -1, to: Date()).map { date in
+            let components = Calendar.current.dateComponents([.year, .month, .day], from: date)
+            return "\(components.year ?? 0)-\(components.month ?? 0)-\(components.day ?? 0)"
+        }
+        savedCurrentDailyStreak = savedLastPlayDate == yesterday ? savedCurrentDailyStreak + 1 : 1
+        savedBestDailyStreak = max(savedBestDailyStreak, savedCurrentDailyStreak)
+        savedLastPlayDate = todayKey
+        userDefaults.set(savedCurrentDailyStreak, forKey: Self.currentDailyStreakKey)
+        userDefaults.set(savedBestDailyStreak, forKey: Self.bestDailyStreakKey)
+        userDefaults.set(savedLastPlayDate, forKey: Self.lastPlayDateKey)
+    }
+
+    private func saveReviewItem(for question: QuizQuestion, selectedAnswer: AnswerOption) {
+        let correctAnswer = shuffledAnswerOptions.first(where: { $0.isCorrect })?.text ?? question.correctAnswerText(for: selectedLanguage)
+        let item = QuizReviewItem(
+            question: question.questionText(for: selectedLanguage),
+            selectedAnswer: selectedAnswer.text,
+            correctAnswer: correctAnswer,
+            explanation: question.explanationText(for: selectedLanguage),
+            isCorrect: selectedAnswer.isCorrect
+        )
+        reviewItems.append(item)
+    }
+
+    private func saveMistake(for question: QuizQuestion) {
+        let record = currentMistakeRecord(for: question)
+        if !mistakeRecords.contains(record) {
+            mistakeRecords.append(record)
+            saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+        }
+    }
+
+    private func removeCurrentPracticeMistake() {
+        guard isPracticeMistakes,
+              practiceMistakeRecords.indices.contains(currentQuestionIndex) else { return }
+
+        let record = practiceMistakeRecords[currentQuestionIndex]
+        mistakeRecords.removeAll { $0.id == record.id }
+        saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+    }
+
+    private func currentMistakeRecord(for question: QuizQuestion) -> MistakeRecord {
+        if isPracticeMistakes, practiceMistakeRecords.indices.contains(currentQuestionIndex) {
+            return practiceMistakeRecords[currentQuestionIndex]
+        }
+
+        return MistakeRecord(
+            questionEN: question.questionEN,
+            categoryID: selectedCategory?.id ?? "unknown",
+            difficultyRawValue: selectedDifficulty.rawValue
+        )
+    }
+
+    private func findQuestion(questionEN: String, categoryID: String, difficulty: Difficulty) -> QuizQuestion? {
+        let allCategories = categories + [QuizCategory.dailyChallenge]
+        return allCategories.first(where: { $0.id == categoryID })?.questionsByDifficulty[difficulty]?.first(where: { $0.questionEN == questionEN })
+    }
+
+    private func updateAchievements() {
+        var unlocked = unlockedAchievementIDs
+        if savedTotalGamesPlayed >= 1 { unlocked.insert("first-quiz") }
+        if savedHighestScore >= 10 { unlocked.insert("perfect-score") }
+        if savedTotalXP >= 100 { unlocked.insert("100-xp") }
+        if savedTotalXP >= 500 { unlocked.insert("500-xp") }
+        if savedTotalGamesPlayed >= 10 { unlocked.insert("10-games") }
+        if savedCorrectAnswers >= 50 { unlocked.insert("50-correct") }
+        unlockedAchievementIDs = unlocked
+        userDefaults.set(Array(unlocked), forKey: Self.achievementsKey)
+    }
+
+    private func saveLastSelection(categoryID: String, difficulty: Difficulty) {
+        savedLastCategoryID = categoryID
+        savedLastDifficulty = difficulty
+        userDefaults.set(categoryID, forKey: Self.lastCategoryIDKey)
+        userDefaults.set(difficulty.rawValue, forKey: Self.lastDifficultyKey)
+    }
+
+    private func saveCodableArray<T: Encodable>(_ values: [T], key: String) {
+        if let data = try? JSONEncoder().encode(values) { userDefaults.set(data, forKey: key) }
+    }
+
+    private static func loadCodableArray<T: Decodable>(_ type: T.Type, key: String, userDefaults: UserDefaults) -> [T] {
+        guard let data = userDefaults.data(forKey: key), let values = try? JSONDecoder().decode([T].self, from: data) else { return [] }
+        return values
+    }
+}
+
+enum AppScreen {
+    case start
+    case categories
+    case quiz
+    case result
+    case reviewAnswers
+    case gameOver
+}
