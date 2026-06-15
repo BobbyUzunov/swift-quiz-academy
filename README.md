@@ -1,8 +1,16 @@
-Swift Quiz Academy
+# Swift Quiz Academy
 
-Swift Quiz Academy е iOS приложение, разработено със SwiftUI, което помага на начинаещи програмисти да учат Swift чрез интерактивни quiz въпроси, категории, XP система, постижения и проследяване на прогреса.
+![Swift](https://img.shields.io/badge/Swift-6.0-orange)
+![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
+![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
+![Version](https://img.shields.io/badge/Version-1.0-success)
+
+A modern SwiftUI-based educational application designed to help developers learn Swift through interactive quizzes, gamification, achievements, and progress tracking.
+
+---
 
 ## 📱 Screenshots
+
 <p align="center">
   <img src="screenshots/Home.png" width="220">
   <img src="screenshots/Quiz.png" width="220">
@@ -10,97 +18,96 @@ Swift Quiz Academy е iOS приложение, разработено със Sw
   <img src="screenshots/App.png" width="220">
 </p>
 
-🚀 Features
+---
 
-* Multiple Swift categories
-* Difficulty levels
-* XP progression system
-* Daily Challenge
-* Achievement system
-* Practice Mistakes mode
-* Review Answers screen
-* Bulgarian / English language support
-* Statistics tracking
-* High Score tracking
-* Streak system
-* Modern SwiftUI interface
+## ✨ Features
 
-⸻
+- Interactive Swift quizzes
+- Multiple learning categories
+- Difficulty levels
+- XP and progression system
+- Achievement system
+- Daily challenge mode
+- Practice mistakes mode
+- Answer review screen
+- Statistics tracking
+- High score tracking
+- Daily streak system
+- Bulgarian and English language support
+- Modern SwiftUI user interface
 
-🏆 Categories
+---
 
-* Swift Basics
-* SwiftUI
-* iOS Fundamentals
-* Architecture
-* Advanced Swift
+## 🏗 Architecture
 
-Each category contains multiple questions and XP rewards.
+The application follows the MVVM (Model-View-ViewModel) architecture pattern.
 
-⸻
+Project structure:
 
-🎯 Progression System
+```text
+Models/
+Views/
+ViewModels/
+Assets.xcassets/
+```
 
-Players can:
+Main technologies:
 
-* Earn XP
-* Unlock achievements
-* Build streaks
-* Improve high scores
-* Track statistics
-* Practice incorrect answers
+- Swift
+- SwiftUI
+- MVVM
+- UserDefaults
+- Xcode
+- Git & GitHub
 
-⸻
+---
 
-🛠 Technologies
+## 🎯 Learning Objectives
 
-* Swift
-* SwiftUI
-* MVVM Architecture
-* UserDefaults
-* Xcode
-* Git & GitHub
+Swift Quiz Academy was built to:
 
-⸻
+- Reinforce Swift fundamentals
+- Practice SwiftUI concepts
+- Improve iOS development knowledge
+- Encourage consistent learning habits
+- Demonstrate modern SwiftUI architecture
 
-📚 Learning Goals
+---
 
-Swift Quiz Academy is designed to help developers:
+## 🚀 Future Improvements
 
-* Learn Swift fundamentals
-* Practice SwiftUI concepts
-* Improve iOS development knowledge
-* Build consistent learning habits
-* Track long-term progress
+### Version 1.1
 
-⸻
+- User Levels
+- XP Progress Bar
+- More Categories
+- Expanded Question Database
+- Dark Mode
 
-🔮 Roadmap
+### Version 1.2
 
-Version 1.1
+- Cloud Synchronization
+- User Profiles
+- Online Leaderboards
+- Daily Rewards
 
-* Cloud Sync
-* User Profiles
-* Leaderboards
-* Additional Categories
-* More Questions
-* Improved Statistics
+### Version 2.0
 
-Version 2.0
+- Multiplayer Challenges
+- Community Features
+- Advanced Learning Paths
 
-* Online Challenges
-* Community Features
-* Daily Missions
-* Advanced Progression System
+---
 
-⸻
+## 👨‍💻 Author
 
-👨‍💻 Author
+Boncho Uzunov
 
-Created by Boncho Uzunov
+GitHub:
+https://github.com/BobbyUzunov
 
-GitHub: https://github.com/BobbyUzunov
+---
 
-⸻
+### ⭐ Support
 
-⭐ If you like this project, consider giving it a star.
+If you found this project useful, consider giving it a star.
