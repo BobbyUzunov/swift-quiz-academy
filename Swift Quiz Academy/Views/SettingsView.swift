@@ -14,6 +14,8 @@ struct SettingsView: View {
     let savedWrongAnswers: Int
     let accuracyPercentage: Int
     let currentLevel: Int
+    let currentLevelTitle: String
+    let xpToNextLevel: Int
     let currentDailyStreak: Int
     let bestDailyStreak: Int
     let achievements: [Achievement]
@@ -39,13 +41,15 @@ struct SettingsView: View {
                     settingsSection(title: localized("Профилни статистики", "Profile Statistics"), icon: "person.crop.circle.fill") {
                         VStack(spacing: 10) {
                             ProfileStatRow(title: localized("Ниво", "Level"), value: "\(currentLevel)")
+                            ProfileStatRow(title: localized("Титла", "Title"), value: currentLevelTitle)
+                            ProfileStatRow(title: localized("Общо XP", "Total XP"), value: "\(savedTotalXP)")
+                            ProfileStatRow(title: localized("XP до следващо ниво", "XP to Next Level"), value: currentLevel == 10 ? localized("Макс ниво", "Max level") : "\(xpToNextLevel)")
                             ProfileStatRow(title: localized("Най-добър резултат", "High Score"), value: "\(savedHighestScore)")
                             ProfileStatRow(title: localized("Изиграни игри", "Games Played"), value: "\(savedTotalGamesPlayed)")
                             ProfileStatRow(title: localized("Правилни отговори", "Correct Answers"), value: "\(savedCorrectAnswers)")
                             ProfileStatRow(title: localized("Грешни отговори", "Wrong Answers"), value: "\(savedWrongAnswers)")
                             ProfileStatRow(title: localized("Успеваемост", "Accuracy"), value: "\(accuracyPercentage)%")
                             ProfileStatRow(title: localized("Най-добър Streak", "Best Streak"), value: "\(savedBestStreak)")
-                            ProfileStatRow(title: localized("Общо XP", "Total XP"), value: "\(savedTotalXP)")
                         }
                     }
 

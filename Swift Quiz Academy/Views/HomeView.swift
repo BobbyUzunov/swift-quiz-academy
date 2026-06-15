@@ -14,6 +14,13 @@ struct HomeView: View {
     let savedWrongAnswers: Int
     let accuracyPercentage: Int
     let currentLevel: Int
+    let currentLevelTitle: String
+    let currentLevelXP: Int
+    let nextLevelXP: Int
+    let xpProgress: Double
+    let xpToNextLevel: Int
+    let totalCategoryCount: Int
+    let totalQuestionCount: Int
     let currentDailyStreak: Int
     let bestDailyStreak: Int
     let achievements: [Achievement]
@@ -33,6 +40,7 @@ struct HomeView: View {
             ScrollView {
                 VStack(spacing: 23) {
                     heroSection
+                    levelProgressCard
                     dailyChallengeCard
                     statisticsSection
                     practiceMistakesButton
@@ -61,6 +69,8 @@ struct HomeView: View {
                 savedWrongAnswers: savedWrongAnswers,
                 accuracyPercentage: accuracyPercentage,
                 currentLevel: currentLevel,
+                currentLevelTitle: currentLevelTitle,
+                xpToNextLevel: xpToNextLevel,
                 currentDailyStreak: currentDailyStreak,
                 bestDailyStreak: bestDailyStreak,
                 achievements: achievements,
@@ -125,10 +135,67 @@ struct HomeView: View {
         }
     }
 
+    private var levelProgressCard: some View {
+        VStack(alignment: .leading, spacing: 14) {
+            HStack(alignment: .center, spacing: 12) {
+                ZStack {
+                    Circle()
+                        .fill(Color.blue.opacity(0.14))
+                        .frame(width: 52, height: 52)
+
+                    Text("\(currentLevel)")
+                        .font(.title3.weight(.bold))
+                        .foregroundStyle(.blue)
+                }
+
+                VStack(alignment: .leading, spacing: 3) {
+                    Text(localized("Ниво \(currentLevel)", "Level \(currentLevel)"))
+                        .font(.caption.weight(.bold))
+                        .foregroundStyle(.secondary)
+
+                    Text(currentLevelTitle)
+                        .font(.title3.weight(.bold))
+                        .foregroundStyle(.primary)
+                        .lineLimit(1)
+                        .minimumScaleFactor(0.8)
+                }
+
+                Spacer(minLength: 8)
+            }
+
+            VStack(spacing: 8) {
+                ProgressView(value: xpProgress)
+                    .tint(.blue)
+
+                HStack {
+                    Text("\(currentLevelXP) XP")
+                    Spacer()
+                    Text("\(savedTotalXP) XP")
+                    Spacer()
+                    Text(currentLevel == 10 ? localized("Макс ниво", "Max level") : "\(nextLevelXP) XP")
+                }
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.secondary)
+            }
+
+            Text(currentLevel == 10 ? localized("Достигна най-високото Swift ниво.", "You reached the highest Swift level.") : localized("\(xpToNextLevel) XP до следващо ниво", "\(xpToNextLevel) XP to next level"))
+                .font(.subheadline.weight(.semibold))
+                .foregroundStyle(.blue)
+        }
+        .padding(18)
+        .background(.regularMaterial)
+        .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .overlay {
+            RoundedRectangle(cornerRadius: 18, style: .continuous)
+                .stroke(Color.blue.opacity(0.14), lineWidth: 1)
+        }
+        .shadow(color: .blue.opacity(0.10), radius: 14, x: 0, y: 8)
+    }
+
     private var statisticsSection: some View {
         HStack(spacing: 12) {
-            statCard(title: localized("Категории", "Categories"), value: "5", icon: "square.grid.2x2.fill", color: .blue)
-            statCard(title: localized("Въпроси", "Questions"), value: "150", icon: "questionmark.circle.fill", color: .purple)
+            statCard(title: localized("Категории", "Categories"), value: "\(totalCategoryCount)", icon: "square.grid.2x2.fill", color: .blue)
+            statCard(title: localized("Въпроси", "Questions"), value: "\(totalQuestionCount)", icon: "questionmark.circle.fill", color: .purple)
             statCard(title: localized("Общо XP", "Total XP"), value: "\(savedTotalXP)", icon: "bolt.fill", color: .orange)
         }
     }

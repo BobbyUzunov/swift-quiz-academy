@@ -16,6 +16,24 @@ struct MistakeRecord: Codable, Identifiable, Hashable {
 
 @Observable
 final class QuizViewModel {
+    private struct LevelMilestone {
+        let level: Int
+        let xp: Int
+    }
+
+    private static let levelMilestones: [LevelMilestone] = [
+        LevelMilestone(level: 1, xp: 0),
+        LevelMilestone(level: 2, xp: 100),
+        LevelMilestone(level: 3, xp: 250),
+        LevelMilestone(level: 4, xp: 500),
+        LevelMilestone(level: 5, xp: 1000),
+        LevelMilestone(level: 6, xp: 1500),
+        LevelMilestone(level: 7, xp: 2500),
+        LevelMilestone(level: 8, xp: 4000),
+        LevelMilestone(level: 9, xp: 6000),
+        LevelMilestone(level: 10, xp: 10000)
+    ]
+
     let categories = QuizCategory.allCategories
     let dailyBonusXP = 50
 
@@ -23,7 +41,7 @@ final class QuizViewModel {
     var selectedCategory: QuizCategory?
     var selectedDifficulty: Difficulty = .beginner
     var selectedLanguage: AppLanguage = .english {
-        didSet { userDefaults.set(selectedLanguage.rawValue, forKey: Self.selectedLanguageKey) }
+        didSet { progressStore.saveLanguage(selectedLanguage) }
     }
     var currentQuestionIndex = 0
     var selectedAnswerIndex: Int?
@@ -59,34 +77,27 @@ final class QuizViewModel {
     private var isPracticeMistakes = false
     private var practiceMistakeQuestions: [QuizQuestion] = []
     private var practiceMistakeRecords: [MistakeRecord] = []
-    private let userDefaults: UserDefaults
+    private let progressStore: QuizProgressStore
 
     init(userDefaults: UserDefaults = .standard) {
-        self.userDefaults = userDefaults
-        savedTotalXP = userDefaults.integer(forKey: Self.totalXPKey)
-        savedHighestScore = userDefaults.integer(forKey: Self.highestScoreKey)
-        savedTotalGamesPlayed = userDefaults.integer(forKey: Self.totalGamesPlayedKey)
-        savedBestStreak = userDefaults.integer(forKey: Self.bestStreakKey)
-        savedCorrectAnswers = userDefaults.integer(forKey: Self.correctAnswersKey)
-        savedWrongAnswers = userDefaults.integer(forKey: Self.wrongAnswersKey)
-        savedCurrentDailyStreak = userDefaults.integer(forKey: Self.currentDailyStreakKey)
-        savedBestDailyStreak = userDefaults.integer(forKey: Self.bestDailyStreakKey)
-        savedLastCategoryID = userDefaults.string(forKey: Self.lastCategoryIDKey) ?? ""
-        savedLastPlayDate = userDefaults.string(forKey: Self.lastPlayDateKey) ?? ""
-        lastDailyChallengeDate = userDefaults.string(forKey: Self.lastDailyChallengeDateKey) ?? ""
-        mistakeRecords = Self.loadCodableArray(MistakeRecord.self, key: Self.mistakesKey, userDefaults: userDefaults)
-        unlockedAchievementIDs = Set(userDefaults.stringArray(forKey: Self.achievementsKey) ?? [])
-
-        if let rawDifficulty = userDefaults.string(forKey: Self.lastDifficultyKey), let difficulty = Difficulty(rawValue: rawDifficulty) {
-            savedLastDifficulty = difficulty
-            selectedDifficulty = difficulty
-        } else {
-            savedLastDifficulty = .beginner
-        }
-
-        if let rawLanguage = userDefaults.string(forKey: Self.selectedLanguageKey), let language = AppLanguage(rawValue: rawLanguage) {
-            selectedLanguage = language
-        }
+        progressStore = QuizProgressStore(userDefaults: userDefaults)
+        let progress = progressStore.load()
+        savedTotalXP = progress.totalXP
+        savedHighestScore = progress.highestScore
+        savedTotalGamesPlayed = progress.totalGamesPlayed
+        savedBestStreak = progress.bestStreak
+        savedCorrectAnswers = progress.correctAnswers
+        savedWrongAnswers = progress.wrongAnswers
+        savedCurrentDailyStreak = progress.currentDailyStreak
+        savedBestDailyStreak = progress.bestDailyStreak
+        savedLastCategoryID = progress.lastCategoryID
+        savedLastDifficulty = progress.lastDifficulty
+        selectedDifficulty = progress.lastDifficulty
+        lastDailyChallengeDate = progress.lastDailyChallengeDate
+        savedLastPlayDate = progress.lastPlayDate
+        selectedLanguage = progress.selectedLanguage
+        mistakeRecords = progress.mistakes
+        unlockedAchievementIDs = progress.achievementIDs
 
         updateAchievements()
     }
@@ -123,18 +134,59 @@ final class QuizViewModel {
     }
 
     var currentLevel: Int {
-        switch savedTotalXP {
-        case 1000...: return 5
-        case 500..<1000: return 4
-        case 250..<500: return 3
-        case 100..<250: return 2
-        default: return 1
+        currentLevelMilestone.level
+    }
+
+    var currentLevelTitle: String {
+        switch currentLevel {
+        case 1: return localized("Swift начинаещ", "Swift Beginner")
+        case 2: return localized("Swift учащ", "Swift Learner")
+        case 3: return localized("Swift изследовател", "Swift Explorer")
+        case 4: return localized("Swift създател", "Swift Builder")
+        case 5: return localized("Swift разработчик", "Swift Developer")
+        case 6: return localized("Swift специалист", "Swift Specialist")
+        case 7: return localized("Swift експерт", "Swift Expert")
+        case 8: return localized("Swift архитект", "Swift Architect")
+        case 9: return localized("Swift майстор", "Swift Master")
+        default: return localized("Swift легенда", "Swift Legend")
         }
+    }
+
+    var currentLevelXP: Int { currentLevelMilestone.xp }
+
+    var nextLevelXP: Int {
+        nextLevelMilestone?.xp ?? currentLevelXP
+    }
+
+    var xpProgress: Double {
+        guard let nextLevelMilestone else { return 1 }
+        let levelRange = nextLevelMilestone.xp - currentLevelXP
+        guard levelRange > 0 else { return 1 }
+        let earnedInLevel = savedTotalXP - currentLevelXP
+        return min(max(Double(earnedInLevel) / Double(levelRange), 0), 1)
+    }
+
+    var xpToNextLevel: Int {
+        max(nextLevelXP - savedTotalXP, 0)
     }
 
     var achievements: [Achievement] { Achievement.all(unlockedIDs: unlockedAchievementIDs) }
 
     var hasMistakes: Bool { !mistakeRecords.isEmpty }
+
+    var totalCategoryCount: Int { categories.count }
+
+    var totalQuestionCount: Int {
+        categories.reduce(0) { $0 + $1.totalQuestionCount }
+    }
+
+    private var currentLevelMilestone: LevelMilestone {
+        Self.levelMilestones.last { savedTotalXP >= $0.xp } ?? Self.levelMilestones[0]
+    }
+
+    private var nextLevelMilestone: LevelMilestone? {
+        Self.levelMilestones.first { $0.xp > savedTotalXP }
+    }
 
     func showCategories() { screen = .categories }
 
@@ -173,7 +225,7 @@ final class QuizViewModel {
 
         if practiceItems.count != mistakeRecords.count {
             mistakeRecords = practiceItems.map(\.record)
-            saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+            progressStore.saveMistakes(mistakeRecords)
         }
 
         guard !practiceItems.isEmpty else { return false }
@@ -271,9 +323,7 @@ final class QuizViewModel {
     }
 
     func resetProgress() {
-        [Self.totalXPKey, Self.highestScoreKey, Self.totalGamesPlayedKey, Self.bestStreakKey, Self.correctAnswersKey, Self.wrongAnswersKey, Self.currentDailyStreakKey, Self.bestDailyStreakKey, Self.lastCategoryIDKey, Self.lastDifficultyKey, Self.lastDailyChallengeDateKey, Self.lastPlayDateKey, Self.selectedLanguageKey, Self.mistakesKey, Self.achievementsKey].forEach {
-            userDefaults.removeObject(forKey: $0)
-        }
+        progressStore.reset()
 
         savedTotalXP = 0
         savedHighestScore = 0
@@ -313,22 +363,6 @@ final class QuizViewModel {
         default: return MedalResult(icon: "🎯", title: localized("Опитай пак", "Try again"))
         }
     }
-
-    private static let totalXPKey = "totalXP"
-    private static let highestScoreKey = "highestScore"
-    private static let totalGamesPlayedKey = "totalGamesPlayed"
-    private static let bestStreakKey = "bestStreak"
-    private static let correctAnswersKey = "correctAnswers"
-    private static let wrongAnswersKey = "wrongAnswers"
-    private static let currentDailyStreakKey = "currentDailyStreak"
-    private static let bestDailyStreakKey = "bestDailyStreak"
-    private static let lastPlayDateKey = "lastPlayDate"
-    private static let mistakesKey = "mistakes"
-    private static let achievementsKey = "achievements"
-    private static let lastCategoryIDKey = "lastCategoryID"
-    private static let lastDifficultyKey = "lastDifficulty"
-    private static let lastDailyChallengeDateKey = "lastDailyChallengeDate"
-    private static let selectedLanguageKey = "selectedLanguage"
 
     private var todayKey: String {
         let components = Calendar.current.dateComponents([.year, .month, .day], from: Date())
@@ -374,7 +408,7 @@ final class QuizViewModel {
         if isDailyChallenge {
             lastDailyChallengeDate = todayKey
             dailyBonusAwarded = destination == .result ? dailyBonusXP : 0
-            userDefaults.set(lastDailyChallengeDate, forKey: Self.lastDailyChallengeDateKey)
+            progressStore.saveDailyChallengeDate(lastDailyChallengeDate)
         }
 
         updateDailyStreak()
@@ -385,12 +419,14 @@ final class QuizViewModel {
         savedCorrectAnswers += correctAnswersThisGame
         savedWrongAnswers += wrongAnswersThisGame
 
-        userDefaults.set(savedTotalXP, forKey: Self.totalXPKey)
-        userDefaults.set(savedHighestScore, forKey: Self.highestScoreKey)
-        userDefaults.set(savedTotalGamesPlayed, forKey: Self.totalGamesPlayedKey)
-        userDefaults.set(savedBestStreak, forKey: Self.bestStreakKey)
-        userDefaults.set(savedCorrectAnswers, forKey: Self.correctAnswersKey)
-        userDefaults.set(savedWrongAnswers, forKey: Self.wrongAnswersKey)
+        progressStore.saveTotals(
+            totalXP: savedTotalXP,
+            highestScore: savedHighestScore,
+            totalGamesPlayed: savedTotalGamesPlayed,
+            bestStreak: savedBestStreak,
+            correctAnswers: savedCorrectAnswers,
+            wrongAnswers: savedWrongAnswers
+        )
         if destination == .result && resultPercentage == 100 {
             unlockedAchievementIDs.insert("perfect-score")
         }
@@ -407,9 +443,11 @@ final class QuizViewModel {
         savedCurrentDailyStreak = savedLastPlayDate == yesterday ? savedCurrentDailyStreak + 1 : 1
         savedBestDailyStreak = max(savedBestDailyStreak, savedCurrentDailyStreak)
         savedLastPlayDate = todayKey
-        userDefaults.set(savedCurrentDailyStreak, forKey: Self.currentDailyStreakKey)
-        userDefaults.set(savedBestDailyStreak, forKey: Self.bestDailyStreakKey)
-        userDefaults.set(savedLastPlayDate, forKey: Self.lastPlayDateKey)
+        progressStore.saveDailyStreak(
+            current: savedCurrentDailyStreak,
+            best: savedBestDailyStreak,
+            lastPlayDate: savedLastPlayDate
+        )
     }
 
     private func saveReviewItem(for question: QuizQuestion, selectedAnswer: AnswerOption) {
@@ -428,7 +466,7 @@ final class QuizViewModel {
         let record = currentMistakeRecord(for: question)
         if !mistakeRecords.contains(record) {
             mistakeRecords.append(record)
-            saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+            progressStore.saveMistakes(mistakeRecords)
         }
     }
 
@@ -438,7 +476,7 @@ final class QuizViewModel {
 
         let record = practiceMistakeRecords[currentQuestionIndex]
         mistakeRecords.removeAll { $0.id == record.id }
-        saveCodableArray(mistakeRecords, key: Self.mistakesKey)
+        progressStore.saveMistakes(mistakeRecords)
     }
 
     private func currentMistakeRecord(for question: QuizQuestion) -> MistakeRecord {
@@ -467,23 +505,13 @@ final class QuizViewModel {
         if savedTotalGamesPlayed >= 10 { unlocked.insert("10-games") }
         if savedCorrectAnswers >= 50 { unlocked.insert("50-correct") }
         unlockedAchievementIDs = unlocked
-        userDefaults.set(Array(unlocked), forKey: Self.achievementsKey)
+        progressStore.saveAchievements(unlocked)
     }
 
     private func saveLastSelection(categoryID: String, difficulty: Difficulty) {
         savedLastCategoryID = categoryID
         savedLastDifficulty = difficulty
-        userDefaults.set(categoryID, forKey: Self.lastCategoryIDKey)
-        userDefaults.set(difficulty.rawValue, forKey: Self.lastDifficultyKey)
-    }
-
-    private func saveCodableArray<T: Encodable>(_ values: [T], key: String) {
-        if let data = try? JSONEncoder().encode(values) { userDefaults.set(data, forKey: key) }
-    }
-
-    private static func loadCodableArray<T: Decodable>(_ type: T.Type, key: String, userDefaults: UserDefaults) -> [T] {
-        guard let data = userDefaults.data(forKey: key), let values = try? JSONDecoder().decode([T].self, from: data) else { return [] }
-        return values
+        progressStore.saveLastSelection(categoryID: categoryID, difficulty: difficulty)
     }
 }
 
