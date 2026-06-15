@@ -4,8 +4,25 @@
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
 ![Version](https://img.shields.io/badge/Version-1.1-success)
+![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
+![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
 Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftUI, iOS concepts, logic, and AI fundamentals through interactive quizzes, XP progression, achievements, and daily learning habits.
+
+---
+
+## Table of Contents
+
+- [Screenshots](#screenshots)
+- [Features](#features)
+- [Version 1.1 Highlights](#version-11-highlights)
+- [Requirements](#requirements)
+- [Getting Started](#getting-started)
+- [Architecture](#architecture)
+- [Project Structure](#project-structure)
+- [Tests](#tests)
+- [Roadmap](#roadmap)
+- [Contributing](#contributing)
 
 ---
 
@@ -59,6 +76,35 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 ---
 
+## Requirements
+
+- macOS with Xcode installed
+- Xcode 16 or newer recommended
+- iOS Simulator or iOS device
+- Swift 6 compatible toolchain
+
+---
+
+## Getting Started
+
+1. Clone the repository:
+
+```bash
+git clone https://github.com/BobbyUzunov/swift-quiz-academy.git
+```
+
+2. Open the project in Xcode:
+
+```bash
+open "Swift Quiz Academy.xcodeproj"
+```
+
+3. Select the `Swift Quiz Academy` scheme.
+
+4. Build and run on an iOS Simulator.
+
+---
+
 ## Architecture
 
 The app follows an MVVM structure with small supporting models and persistence helpers.
@@ -77,6 +123,32 @@ Key pieces:
 - `QuizProgressStore` centralizes UserDefaults persistence.
 - `DailyRewardManager` handles daily reward and login streak calculations.
 - `AppTheme` manages Light, Dark, and System theme selection.
+
+---
+
+## Project Structure
+
+```text
+Swift Quiz Academy/
+├── Models/
+│   ├── Achievement.swift
+│   ├── AppLanguage.swift
+│   ├── AppTheme.swift
+│   ├── DailyReward.swift
+│   ├── Difficulty.swift
+│   ├── QuizCategory.swift
+│   └── QuizQuestion.swift
+├── ViewModels/
+│   ├── QuizProgressStore.swift
+│   └── QuizViewModel.swift
+├── Views/
+│   ├── HomeView.swift
+│   ├── QuizView.swift
+│   ├── SettingsView.swift
+│   └── CelebrationViews.swift
+├── Assets.xcassets/
+└── Swift_Quiz_AcademyApp.swift
+```
 
 ---
 
@@ -112,6 +184,17 @@ xcodebuild test   - passed
 xcodebuild build  - passed
 ```
 
+Run the app build locally:
+
+```bash
+DEVELOPER_DIR=/Applications/Xcode.app/Contents/Developer \
+xcodebuild build \
+  -project "Swift Quiz Academy.xcodeproj" \
+  -scheme "Swift Quiz Academy" \
+  -destination "generic/platform=iOS" \
+  CODE_SIGNING_ALLOWED=NO
+```
+
 ---
 
 ## Roadmap
@@ -130,6 +213,18 @@ xcodebuild build  - passed
 - Community features
 - Advanced learning paths
 - App Store polish
+
+---
+
+## Contributing
+
+Contributions, ideas, and improvements are welcome. Please see [CONTRIBUTING.md](CONTRIBUTING.md) for setup, branch, and pull request guidelines.
+
+---
+
+## License
+
+This project is available under the [MIT License](LICENSE).
 
 ---
 
