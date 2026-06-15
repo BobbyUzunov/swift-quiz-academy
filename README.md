@@ -2,16 +2,23 @@ Swift Quiz Academy
 
 Swift Quiz Academy е iOS приложение, разработено със SwiftUI, което помага на начинаещи програмисти да учат Swift чрез интерактивни quiz въпроси, категории, XP система, постижения и проследяване на прогреса.
 
-📱 Screenshots
+## 📱 Screenshots
 
-Home
+### Home
 
-Quiz
+![Home](screenshots/home.png)
 
-Setting
+### Quiz
 
-App
+![Quiz](screenshots/quiz.png)
 
+### Settings
+
+![Settings](screenshots/setting.png)
+
+### App
+
+![App](screenshots/app.png)
 ⸻
 
 🚀 Features
