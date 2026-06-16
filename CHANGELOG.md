@@ -2,6 +2,25 @@
 
 All notable changes to Swift Quiz Academy are documented here.
 
+## [1.4.0] - 2026-06-16
+
+### Added
+
+- Added a new Library destination to browse questions outside quiz mode.
+- Added Question Library totals and per-category question counts.
+- Added live Library search across question and explanation text in Bulgarian and English.
+- Added category and difficulty filters that work together.
+- Added favorite questions persisted in UserDefaults by stable `question.id`.
+- Added Favorite Questions browsing mode.
+- Added question detail study screen with answers, correct answer, explanation, category, and difficulty.
+- Added friendly empty states for empty database, no favorites, and no search results.
+- Added Library statistics for total favorites and searches performed.
+- Added unit tests for favorites persistence, search, filters, and empty states.
+
+### Changed
+
+- Updated main navigation to include Home, Library, and Settings.
+
 ## [1.3.1] - 2026-06-16
 
 ### Fixed

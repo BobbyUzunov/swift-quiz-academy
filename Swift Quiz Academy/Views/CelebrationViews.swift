@@ -79,6 +79,7 @@ struct DailyRewardPopup: View {
 
 struct ConfettiBurstView: View {
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var hasStarted = false
 
     let isActive: Bool
 
@@ -86,23 +87,28 @@ struct ConfettiBurstView: View {
 
     var body: some View {
         Group {
-            if !reduceMotion {
+            if isActive && !reduceMotion {
                 ZStack {
                     ForEach(0..<18, id: \.self) { index in
                         RoundedRectangle(cornerRadius: 2)
                             .fill(colors[index % colors.count])
                             .frame(width: 8, height: 12)
-                            .rotationEffect(.degrees(isActive ? Double(index * 23) : 0))
+                            .rotationEffect(.degrees(hasStarted ? Double(index * 23) : 0))
                             .offset(
-                                x: isActive ? CGFloat((index % 6) - 3) * 38 : 0,
-                                y: isActive ? CGFloat((index / 6) + 1) * 44 : 0
+                                x: hasStarted ? CGFloat((index % 6) - 3) * 38 : 0,
+                                y: hasStarted ? CGFloat((index / 6) + 1) * 44 : 0
                             )
-                            .opacity(isActive ? 0 : 1)
+                            .opacity(hasStarted ? 0 : 1)
+                    }
+                }
+                .onAppear {
+                    hasStarted = false
+                    withAnimation(.easeOut(duration: 1.0)) {
+                        hasStarted = true
                     }
                 }
             }
         }
         .allowsHitTesting(false)
-        .animation(reduceMotion ? nil : .easeOut(duration: 1.0), value: isActive)
     }
 }

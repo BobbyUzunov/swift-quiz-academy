@@ -7,6 +7,7 @@ import SwiftUI
 
 struct SwiftQuizAcademyRootView: View {
     @State private var viewModel = QuizViewModel()
+    @State private var libraryViewModel = LibraryViewModel(categories: QuizCategory.allCategories)
 
     var body: some View {
         ZStack {
@@ -14,7 +15,7 @@ struct SwiftQuizAcademyRootView: View {
 
             switch viewModel.screen {
             case .start:
-                homeView
+                mainTabs
             case .categories:
                 CategorySelectionView(
                     categories: viewModel.categories,
@@ -90,6 +91,28 @@ struct SwiftQuizAcademyRootView: View {
         .preferredColorScheme(viewModel.selectedTheme.colorScheme)
     }
 
+    private var mainTabs: some View {
+        TabView {
+            homeView
+                .tabItem {
+                    Label(viewModel.localized("Начало", "Home"), systemImage: "house.fill")
+                }
+
+            LibraryView(
+                viewModel: libraryViewModel,
+                selectedLanguage: viewModel.selectedLanguage
+            )
+            .tabItem {
+                Label(viewModel.localized("Библиотека", "Library"), systemImage: "books.vertical.fill")
+            }
+
+            settingsView(showsDoneButton: false)
+                .tabItem {
+                    Label(viewModel.localized("Настройки", "Settings"), systemImage: "gearshape.fill")
+                }
+        }
+    }
+
     private var homeView: some View {
         HomeView(
             savedTotalXP: viewModel.savedTotalXP,
@@ -111,6 +134,8 @@ struct SwiftQuizAcademyRootView: View {
             bestDailyStreak: viewModel.savedBestDailyStreak,
             currentLoginStreak: viewModel.savedCurrentLoginStreak,
             bestLoginStreak: viewModel.savedBestLoginStreak,
+            totalFavorites: libraryViewModel.totalFavorites,
+            librarySearchesPerformed: libraryViewModel.librarySearchesPerformed,
             categoryMasteryStats: viewModel.categoryMasteryStats,
             achievements: viewModel.achievements,
             recentAchievement: viewModel.recentAchievement,
@@ -130,8 +155,46 @@ struct SwiftQuizAcademyRootView: View {
             onPracticeMistakes: viewModel.startPracticeMistakes,
             onClaimDailyReward: viewModel.claimDailyReward,
             onClearRecentAchievement: viewModel.clearRecentAchievement,
-            onResetProgress: viewModel.resetProgress
+            onResetProgress: resetProgress
         )
+    }
+
+    private func settingsView(showsDoneButton: Bool) -> some View {
+        SettingsView(
+            savedTotalXP: viewModel.savedTotalXP,
+            savedHighestScore: viewModel.savedHighestScore,
+            savedTotalGamesPlayed: viewModel.savedTotalGamesPlayed,
+            savedBestStreak: viewModel.savedBestStreak,
+            savedCorrectAnswers: viewModel.savedCorrectAnswers,
+            savedWrongAnswers: viewModel.savedWrongAnswers,
+            accuracyPercentage: viewModel.accuracyPercentage,
+            currentLevel: viewModel.currentLevel,
+            currentLevelTitle: viewModel.currentLevelTitle,
+            xpToNextLevel: viewModel.xpToNextLevel,
+            currentDailyStreak: viewModel.savedCurrentDailyStreak,
+            bestDailyStreak: viewModel.savedBestDailyStreak,
+            currentLoginStreak: viewModel.savedCurrentLoginStreak,
+            bestLoginStreak: viewModel.savedBestLoginStreak,
+            totalFavorites: libraryViewModel.totalFavorites,
+            librarySearchesPerformed: libraryViewModel.librarySearchesPerformed,
+            categoryMasteryStats: viewModel.categoryMasteryStats,
+            achievements: viewModel.achievements,
+            selectedLanguage: Binding(
+                get: { viewModel.selectedLanguage },
+                set: { viewModel.selectedLanguage = $0 }
+            ),
+            selectedTheme: Binding(
+                get: { viewModel.selectedTheme },
+                set: { viewModel.selectedTheme = $0 }
+            ),
+            onResetProgress: resetProgress,
+            showsDoneButton: showsDoneButton
+        )
+    }
+
+    private func resetProgress() {
+        viewModel.resetProgress()
+        libraryViewModel.resetLibraryProgress()
     }
 
     private var backgroundView: some View {

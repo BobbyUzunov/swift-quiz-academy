@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
-![Version](https://img.shields.io/badge/Version-1.3.1-success)
+![Version](https://img.shields.io/badge/Version-1.4-success)
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
@@ -15,6 +15,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 - [Screenshots](#screenshots)
 - [Features](#features)
+- [Version 1.4 Highlights](#version-14-highlights)
 - [Version 1.3.1 Highlights](#version-131-highlights)
 - [Version 1.3 Highlights](#version-13-highlights)
 - [Version 1.2 Highlights](#version-12-highlights)
@@ -44,6 +45,10 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - Interactive quiz categories for Swift, SwiftUI, iOS, Logic, and AI
 - Expanded categories for Git & GitHub, Architecture & MVVM, and Xcode & Debugging
 - Local JSON question database for easier content expansion
+- Learning Library for browsing and studying questions outside quiz mode
+- Live search across question and explanation text in Bulgarian and English
+- Library filters for category, difficulty, and favorite questions
+- Favorite questions stored locally by stable question ID
 - Beginner, Intermediate, and Advanced difficulty levels
 - XP system with animated level progress
 - 10-level progression system with Swift-themed titles
@@ -55,10 +60,26 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - Answer review screen after quizzes
 - Statistics tracking for XP, games played, answers, accuracy, streaks, and high score
 - Category mastery statistics with completed questions and mastery percentage
+- Library statistics for favorite questions and searches performed
 - Bulgarian and English localization
 - Light, Dark, and System theme support
 - UserDefaults persistence for progress, language, theme, streaks, rewards, mistakes, and achievements
 - Modern SwiftUI interface with animated cards, reward popup, progress bar, and confetti feedback
+
+---
+
+## Version 1.4 Highlights
+
+- Added a new Library destination alongside Home and Settings.
+- Added a Question Library powered by the existing local JSON database.
+- Added total question count and per-category counts.
+- Added live search across question and explanation text in Bulgarian and English.
+- Added category and difficulty filters that work together.
+- Added favorite questions stored locally with stable `question.id` values.
+- Added a Favorite Questions mode and friendly empty states.
+- Added question detail study pages with answers, correct answer, explanation, category, and difficulty.
+- Added Library statistics for total favorites and searches performed.
+- Added tests for favorites persistence, search, filters, and empty states.
 
 ---
 

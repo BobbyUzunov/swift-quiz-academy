@@ -432,6 +432,74 @@ struct Swift_Quiz_AcademyTests {
         }
     }
 
+    @Test func libraryFavoritesPersistByQuestionID() {
+        let userDefaults = makeUserDefaults()
+        let categories = QuizCategory.allCategories
+        let question = categories[0].questionsByDifficulty[.beginner]![0]
+        let libraryViewModel = LibraryViewModel(categories: categories, userDefaults: userDefaults)
+
+        libraryViewModel.toggleFavorite(question)
+
+        let reloadedViewModel = LibraryViewModel(categories: categories, userDefaults: userDefaults)
+
+        #expect(reloadedViewModel.isFavorite(question))
+        #expect(reloadedViewModel.totalFavorites == 1)
+
+        reloadedViewModel.toggleFavorite(question)
+
+        let clearedViewModel = LibraryViewModel(categories: categories, userDefaults: userDefaults)
+
+        #expect(!clearedViewModel.isFavorite(question))
+        #expect(clearedViewModel.totalFavorites == 0)
+    }
+
+    @Test func librarySearchMatchesQuestionAndExplanationInBothLanguages() {
+        let libraryViewModel = LibraryViewModel(categories: QuizCategory.allCategories, userDefaults: makeUserDefaults())
+        let englishQuestion = libraryViewModel.allQuestions[0]
+        let bulgarianExplanation = libraryViewModel.allQuestions[1]
+        let englishQuery = englishQuestion.questionEN.split(separator: " ").first.map(String.init) ?? englishQuestion.questionEN
+        let bulgarianQuery = bulgarianExplanation.explanationBG.split(separator: " ").first.map(String.init) ?? bulgarianExplanation.explanationBG
+
+        libraryViewModel.updateSearchText(englishQuery)
+
+        #expect(libraryViewModel.filteredQuestions(for: .english).contains { $0.id == englishQuestion.id })
+        #expect(libraryViewModel.librarySearchesPerformed == 1)
+
+        libraryViewModel.updateSearchText("")
+        libraryViewModel.updateSearchText(bulgarianQuery)
+
+        #expect(libraryViewModel.filteredQuestions(for: .bulgarian).contains { $0.id == bulgarianExplanation.id })
+        #expect(libraryViewModel.librarySearchesPerformed == 2)
+    }
+
+    @Test func libraryFiltersCategoryAndDifficultyTogether() {
+        let libraryViewModel = LibraryViewModel(categories: QuizCategory.allCategories, userDefaults: makeUserDefaults())
+        libraryViewModel.selectedCategoryID = "swiftui"
+        libraryViewModel.selectedDifficulty = .advanced
+
+        let results = libraryViewModel.filteredQuestions(for: .english)
+
+        #expect(results.count == 21)
+        #expect(results.allSatisfy { $0.categoryId == "swiftui" })
+        #expect(results.allSatisfy { $0.difficulty == .advanced })
+    }
+
+    @Test func libraryEmptyStatesCoverEmptyDatabaseFavoritesAndNoResults() {
+        let emptyLibrary = LibraryViewModel(categories: [], userDefaults: makeUserDefaults())
+
+        #expect(emptyLibrary.emptyState(for: .english) == .emptyDatabase)
+
+        let libraryViewModel = LibraryViewModel(categories: QuizCategory.allCategories, userDefaults: makeUserDefaults())
+        libraryViewModel.showsFavoritesOnly = true
+
+        #expect(libraryViewModel.emptyState(for: .english) == .noFavorites)
+
+        libraryViewModel.showsFavoritesOnly = false
+        libraryViewModel.updateSearchText("no-question-should-match-this-search")
+
+        #expect(libraryViewModel.emptyState(for: .english) == .noResults)
+    }
+
     private func makeViewModel() -> QuizViewModel {
         QuizViewModel(userDefaults: makeUserDefaults())
     }

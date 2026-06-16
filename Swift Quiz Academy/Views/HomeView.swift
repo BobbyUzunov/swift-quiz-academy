@@ -27,6 +27,8 @@ struct HomeView: View {
     let bestDailyStreak: Int
     let currentLoginStreak: Int
     let bestLoginStreak: Int
+    let totalFavorites: Int
+    let librarySearchesPerformed: Int
     let categoryMasteryStats: [CategoryMasteryStat]
     let achievements: [Achievement]
     let recentAchievement: Achievement?
@@ -89,7 +91,9 @@ struct HomeView: View {
             }
         }
         .overlay {
-            ConfettiBurstView(isActive: confettiActive)
+            if confettiActive {
+                ConfettiBurstView(isActive: confettiActive)
+            }
         }
         .sheet(isPresented: $showsSettings) {
             SettingsView(
@@ -107,6 +111,8 @@ struct HomeView: View {
                 bestDailyStreak: bestDailyStreak,
                 currentLoginStreak: currentLoginStreak,
                 bestLoginStreak: bestLoginStreak,
+                totalFavorites: totalFavorites,
+                librarySearchesPerformed: librarySearchesPerformed,
                 categoryMasteryStats: categoryMasteryStats,
                 achievements: achievements,
                 selectedLanguage: $selectedLanguage,

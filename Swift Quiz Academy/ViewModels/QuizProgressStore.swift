@@ -26,6 +26,8 @@ struct QuizProgressSnapshot {
     var mistakes: [MistakeRecord]
     var achievementIDs: Set<String>
     var completedQuestionIDsByCategory: [String: Set<String>]
+    var favoriteQuestionIDs: Set<String>
+    var librarySearchesPerformed: Int
 }
 
 final class QuizProgressStore {
@@ -53,6 +55,8 @@ final class QuizProgressStore {
         static let selectedLanguage = "selectedLanguage"
         static let selectedTheme = "selectedTheme"
         static let completedQuestionsByCategory = "completedQuestionsByCategory"
+        static let favoriteQuestionIDs = "favoriteQuestionIDs"
+        static let librarySearchesPerformed = "librarySearchesPerformed"
 
         static let all = [
             schemaVersion,
@@ -75,7 +79,9 @@ final class QuizProgressStore {
             selectedTheme,
             mistakes,
             achievements,
-            completedQuestionsByCategory
+            completedQuestionsByCategory,
+            favoriteQuestionIDs,
+            librarySearchesPerformed
         ]
     }
 
@@ -118,7 +124,9 @@ final class QuizProgressStore {
             selectedTheme: selectedTheme,
             mistakes: loadCodableArray(MistakeRecord.self, key: Key.mistakes),
             achievementIDs: Set(userDefaults.stringArray(forKey: Key.achievements) ?? []),
-            completedQuestionIDsByCategory: loadCompletedQuestionsByCategory()
+            completedQuestionIDsByCategory: loadCompletedQuestionsByCategory(),
+            favoriteQuestionIDs: Set(userDefaults.stringArray(forKey: Key.favoriteQuestionIDs) ?? []),
+            librarySearchesPerformed: userDefaults.integer(forKey: Key.librarySearchesPerformed)
         )
     }
 
@@ -179,6 +187,14 @@ final class QuizProgressStore {
     func saveCompletedQuestionsByCategory(_ completedQuestionsByCategory: [String: Set<String>]) {
         let codableValue = completedQuestionsByCategory.mapValues { Array($0).sorted() }
         saveCodableValue(codableValue, key: Key.completedQuestionsByCategory)
+    }
+
+    func saveFavoriteQuestionIDs(_ favoriteQuestionIDs: Set<String>) {
+        userDefaults.set(Array(favoriteQuestionIDs).sorted(), forKey: Key.favoriteQuestionIDs)
+    }
+
+    func saveLibrarySearchesPerformed(_ searchesPerformed: Int) {
+        userDefaults.set(searchesPerformed, forKey: Key.librarySearchesPerformed)
     }
 
     func reset() {

@@ -20,11 +20,14 @@ struct SettingsView: View {
     let bestDailyStreak: Int
     let currentLoginStreak: Int
     let bestLoginStreak: Int
+    let totalFavorites: Int
+    let librarySearchesPerformed: Int
     let categoryMasteryStats: [CategoryMasteryStat]
     let achievements: [Achievement]
     @Binding var selectedLanguage: AppLanguage
     @Binding var selectedTheme: AppTheme
     let onResetProgress: () -> Void
+    var showsDoneButton = true
 
     @Environment(\.dismiss) private var dismiss
     @State private var showsResetConfirmation = false
@@ -63,6 +66,8 @@ struct SettingsView: View {
                             ProfileStatRow(title: localized("Грешни отговори", "Wrong Answers"), value: "\(savedWrongAnswers)")
                             ProfileStatRow(title: localized("Успеваемост", "Accuracy"), value: "\(accuracyPercentage)%")
                             ProfileStatRow(title: localized("Най-добър Streak", "Best Streak"), value: "\(savedBestStreak)")
+                            ProfileStatRow(title: localized("Любими въпроси", "Favorite Questions"), value: "\(totalFavorites)")
+                            ProfileStatRow(title: localized("Търсения в библиотеката", "Library Searches"), value: "\(librarySearchesPerformed)")
                         }
                     }
 
@@ -117,9 +122,11 @@ struct SettingsView: View {
             }
             .navigationTitle(localized("Настройки", "Settings"))
             .toolbar {
-                ToolbarItem(placement: .topBarTrailing) {
-                    Button(localized("Готово", "Done")) {
-                        dismiss()
+                if showsDoneButton {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button(localized("Готово", "Done")) {
+                            dismiss()
+                        }
                     }
                 }
             }
