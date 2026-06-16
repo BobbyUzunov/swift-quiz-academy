@@ -23,9 +23,12 @@ struct QuestionLoader {
     static let categoryDefinitions: [CategoryDefinition] = [
         CategoryDefinition(id: "swift-basics", title: "Swift Basics", description: "Variables, types, functions and optionals.", icon: "swift", color: .orange, fileName: "swift_basics"),
         CategoryDefinition(id: "swiftui", title: "SwiftUI", description: "Views, state, modifiers and layout basics.", icon: "square.stack.3d.up.fill", color: .blue, fileName: "swiftui"),
-        CategoryDefinition(id: "ios-basics", title: "iOS Basics", description: "Apps, screens, assets and Apple platform ideas.", icon: "iphone.gen3", color: .green, fileName: "ios_basics"),
+        CategoryDefinition(id: "ios-development", title: "iOS Development", description: "Apps, platform behavior, permissions and release basics.", icon: "iphone.gen3", color: .green, fileName: "ios_development"),
         CategoryDefinition(id: "programming-logic", title: "Programming Logic", description: "Conditions, loops, comparisons and problem solving.", icon: "brain.head.profile", color: .purple, fileName: "programming_logic"),
-        CategoryDefinition(id: "ai-basics", title: "AI Basics", description: "Core terms for modern AI and machine learning.", icon: "sparkles", color: .pink, fileName: "ai_basics")
+        CategoryDefinition(id: "ai-for-developers", title: "AI for Developers", description: "AI-assisted development, prompts, review and responsible use.", icon: "sparkles", color: .pink, fileName: "ai_for_developers"),
+        CategoryDefinition(id: "git-github", title: "Git & GitHub", description: "Commits, branches, pull requests and collaboration workflows.", icon: "point.3.connected.trianglepath.dotted", color: .mint, fileName: "git_github"),
+        CategoryDefinition(id: "architecture-mvvm", title: "Architecture & MVVM", description: "Separation of concerns, view models, services and testable design.", icon: "building.columns.fill", color: .indigo, fileName: "architecture_mvvm"),
+        CategoryDefinition(id: "xcode-debugging", title: "Xcode & Debugging", description: "Build errors, breakpoints, Instruments and debugging workflows.", icon: "ladybug.fill", color: .red, fileName: "xcode_debugging")
     ]
 
     private let bundle: Bundle
@@ -51,15 +54,23 @@ struct QuestionLoader {
 
     func loadAllQuestions() -> [QuizQuestion] {
         Self.categoryDefinitions.flatMap { definition in
-            (try? loadQuestions(fileName: definition.fileName)) ?? []
+            do {
+                return try loadQuestions(fileName: definition.fileName)
+            } catch {
+                logLoadingError(error, fileName: definition.fileName)
+                return []
+            }
         }
     }
 
     func loadGroupedQuestions(for definition: CategoryDefinition) -> [Difficulty: [QuizQuestion]] {
-        guard let questions = try? loadQuestions(fileName: definition.fileName) else {
+        do {
+            let questions = try loadQuestions(fileName: definition.fileName)
+            return Self.groupByDifficulty(questions.filter { $0.categoryId == definition.id })
+        } catch {
+            logLoadingError(error, fileName: definition.fileName)
             return [:]
         }
-        return Self.groupByDifficulty(questions.filter { $0.categoryId == definition.id })
     }
 
     func loadQuestions(fileName: String) throws -> [QuizQuestion] {
@@ -69,7 +80,15 @@ struct QuestionLoader {
 
         let data = try Data(contentsOf: url)
         let questions = try decoder.decode([QuizQuestion].self, from: data)
-        return questions.filter(Self.isValidQuestion)
+        let validQuestions = questions.filter(Self.isValidQuestion)
+
+        #if DEBUG
+        if validQuestions.count != questions.count {
+            print("Swift Quiz Academy QuestionLoader skipped \(questions.count - validQuestions.count) invalid question(s) in \(fileName).json")
+        }
+        #endif
+
+        return validQuestions
     }
 
     nonisolated static func groupByCategoryAndDifficulty(_ questions: [QuizQuestion]) -> [String: [Difficulty: [QuizQuestion]]] {
@@ -85,9 +104,15 @@ struct QuestionLoader {
         !question.categoryId.isEmpty &&
         !question.questionBG.isEmpty &&
         !question.questionEN.isEmpty &&
-        question.answersBG.count >= 2 &&
-        question.answersEN.count >= 2 &&
+        question.answersBG.count == 4 &&
+        question.answersEN.count == 4 &&
         question.answersBG.contains(question.correctAnswerBG) &&
         question.answersEN.contains(question.correctAnswerEN)
+    }
+
+    private func logLoadingError(_ error: Error, fileName: String) {
+        #if DEBUG
+        print("Swift Quiz Academy QuestionLoader failed to load \(fileName).json: \(error)")
+        #endif
     }
 }

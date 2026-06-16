@@ -3,690 +3,1449 @@
     "id": "swift-basics-beginner-01",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Коя ключова дума създава константа в Swift?",
-    "questionEN": "Which keyword creates a constant in Swift?",
+    "questionBG": "Начинаещ пази потребителско име, което не трябва да се променя след регистрация. Коя ключова дума трябва да използва?",
+    "questionEN": "A beginner stores a username that must not change after signup. Which keyword should be used?",
     "answersBG": [
-      "var",
       "let",
+      "var",
       "func",
       "class"
     ],
     "answersEN": [
-      "var",
       "let",
+      "var",
       "func",
       "class"
     ],
     "correctAnswerBG": "let",
     "correctAnswerEN": "let",
-    "explanationBG": "Правилният отговор е \"let\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"let\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "explanationBG": "Използвай let за стойности, които трябва да останат постоянни. Това показва намерение и предотвратява случайна промяна.",
+    "explanationEN": "Use let for values that should stay constant. It communicates intent and prevents accidental reassignment."
   },
   {
     "id": "swift-basics-beginner-02",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Кой тип съхранява цели числа?",
-    "questionEN": "Which type stores whole numbers?",
+    "questionBG": "Трябва да обновяваш резултат по време на quiz. С коя ключова дума трябва да създадеш променливата?",
+    "questionEN": "You need to update a score during a quiz. Which keyword should create the score variable?",
     "answersBG": [
-      "String",
-      "Bool",
-      "Int",
-      "Double"
+      "var",
+      "let",
+      "enum",
+      "import"
     ],
     "answersEN": [
-      "String",
-      "Bool",
-      "Int",
-      "Double"
+      "var",
+      "let",
+      "enum",
+      "import"
     ],
-    "correctAnswerBG": "Int",
-    "correctAnswerEN": "Int",
-    "explanationBG": "Правилният отговор е \"Int\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Int\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "var",
+    "correctAnswerEN": "var",
+    "explanationBG": "Използвай var, когато стойността ще се променя, например текущ резултат в quiz.",
+    "explanationEN": "Use var when a value is expected to change over time, such as a running quiz score."
   },
   {
     "id": "swift-basics-beginner-03",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Как се дефинира функция в Swift?",
-    "questionEN": "How do you define a function in Swift?",
+    "questionBG": "Функция трябва да върне поздрав като String. Кой синтаксис показва типа на връщане?",
+    "questionEN": "A function should return a greeting String. Which syntax shows the return type?",
     "answersBG": [
-      "function greet()",
-      "func greet()",
-      "def greet()",
-      "method greet()"
+      "func greet() -> String",
+      "func greet(): String",
+      "func greet() String",
+      "String func greet()"
     ],
     "answersEN": [
-      "function greet()",
-      "func greet()",
-      "def greet()",
-      "method greet()"
+      "func greet() -> String",
+      "func greet(): String",
+      "func greet() String",
+      "String func greet()"
     ],
-    "correctAnswerBG": "func greet()",
-    "correctAnswerEN": "func greet()",
-    "explanationBG": "Правилният отговор е \"func greet()\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"func greet()\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "func greet() -> String",
+    "correctAnswerEN": "func greet() -> String",
+    "explanationBG": "Swift използва стрелка, за да декларира типа на връщане след списъка с параметри.",
+    "explanationEN": "Swift uses an arrow to declare a function return type after the parameter list."
   },
   {
     "id": "swift-basics-beginner-04",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Кой оператор проверява равенство?",
-    "questionEN": "Which operator checks equality?",
+    "questionBG": "Мрежова стойност може да липсва. Кой тип я моделира безопасно?",
+    "questionEN": "A network value might be missing. Which type should model that safely?",
     "answersBG": [
-      "=",
-      "==",
-      "!=",
-      ">="
+      "String?",
+      "String!",
+      "String[]",
+      "MissingString"
     ],
     "answersEN": [
-      "=",
-      "==",
-      "!=",
-      ">="
+      "String?",
+      "String!",
+      "String[]",
+      "MissingString"
     ],
-    "correctAnswerBG": "==",
-    "correctAnswerEN": "==",
-    "explanationBG": "Правилният отговор е \"==\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"==\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "String?",
+    "correctAnswerEN": "String?",
+    "explanationBG": "Optional като String? явно моделира стойност, която може да съществува или да е nil.",
+    "explanationEN": "An optional such as String? explicitly models a value that can be present or nil."
   },
   {
     "id": "swift-basics-beginner-05",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Кой тип представя истина или лъжа?",
-    "questionEN": "Which type represents true or false?",
+    "questionBG": "Искаш да провериш дали две стойности са равни. Кой оператор трябва да използваш?",
+    "questionEN": "You want to check whether two values are equal. Which operator should you use?",
     "answersBG": [
-      "Bool",
-      "Int",
-      "Array",
-      "String"
+      "==",
+      "=",
+      "!=",
+      "===?"
     ],
     "answersEN": [
-      "Bool",
-      "Int",
-      "Array",
-      "String"
+      "==",
+      "=",
+      "!=",
+      "===?"
     ],
-    "correctAnswerBG": "Bool",
-    "correctAnswerEN": "Bool",
-    "explanationBG": "Правилният отговор е \"Bool\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Bool\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "==",
+    "correctAnswerEN": "==",
+    "explanationBG": "Операторът == сравнява равенство. Единичното = присвоява стойност.",
+    "explanationEN": "The == operator compares equality. A single = assigns a value."
   },
   {
     "id": "swift-basics-beginner-06",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Коя ключова дума създава променлива?",
-    "questionEN": "Which keyword creates a variable?",
+    "questionBG": "Списък със заглавия на уроци трябва да пази ред. Коя колекция е най-подходяща?",
+    "questionEN": "A list of lesson titles must keep order. Which collection fits best?",
     "answersBG": [
-      "let",
-      "var",
-      "set",
-      "new"
+      "Array",
+      "Set",
+      "Dictionary",
+      "Само tuple"
     ],
     "answersEN": [
-      "let",
-      "var",
-      "set",
-      "new"
+      "Array",
+      "Set",
+      "Dictionary",
+      "Tuple only"
     ],
-    "correctAnswerBG": "var",
-    "correctAnswerEN": "var",
-    "explanationBG": "Правилният отговор е \"var\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"var\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Array",
+    "correctAnswerEN": "Array",
+    "explanationBG": "Array пази реда и е подходящ за индексирани списъци от стойности.",
+    "explanationEN": "Array preserves order and is ideal for indexed lists of values."
   },
   {
     "id": "swift-basics-beginner-07",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Какво означава nil в Swift?",
-    "questionEN": "What does nil mean in Swift?",
+    "questionBG": "Трябват ти уникални тагове без значение за реда. Коя колекция е най-подходяща?",
+    "questionEN": "You need unique tags without caring about order. Which collection fits best?",
     "answersBG": [
-      "Нула",
-      "Липса на стойност",
-      "Празен масив",
+      "Set",
+      "Array",
+      "Dictionary",
       "String"
     ],
     "answersEN": [
-      "Zero",
-      "No value",
-      "Empty array",
-      "A string"
+      "Set",
+      "Array",
+      "Dictionary",
+      "String"
     ],
-    "correctAnswerBG": "Липса на стойност",
-    "correctAnswerEN": "No value",
-    "explanationBG": "Правилният отговор е \"Липса на стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"No value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Set",
+    "correctAnswerEN": "Set",
+    "explanationBG": "Set пази уникални стойности и е полезен, когато дубликатите трябва да се премахнат.",
+    "explanationEN": "Set stores unique values and is useful when duplicates should be removed."
   },
   {
     "id": "swift-basics-beginner-08",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Кой синтаксис създава Optional String?",
-    "questionEN": "Which syntax creates an optional String?",
+    "questionBG": "Екран свързва user ID с имена. Коя колекция изразява key-value търсене?",
+    "questionEN": "A screen maps user IDs to names. Which collection expresses key-value lookup?",
     "answersBG": [
-      "String!",
-      "String?",
-      "Optional.String",
-      "String.nil"
+      "Dictionary",
+      "Array",
+      "Set",
+      "Bool"
     ],
     "answersEN": [
-      "String!",
-      "String?",
-      "Optional.String",
-      "String.nil"
+      "Dictionary",
+      "Array",
+      "Set",
+      "Bool"
     ],
-    "correctAnswerBG": "String?",
-    "correctAnswerEN": "String?",
-    "explanationBG": "Правилният отговор е \"String?\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"String?\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Dictionary",
+    "correctAnswerEN": "Dictionary",
+    "explanationBG": "Dictionary пази стойности по ключ, което прави търсенето по ID директно.",
+    "explanationEN": "Dictionary stores values by key, which makes ID-based lookup straightforward."
   },
   {
     "id": "swift-basics-beginner-09",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Коя колекция пази подредени стойности?",
-    "questionEN": "Which collection keeps ordered values?",
+    "questionBG": "Условие трябва да се изпълни само когато isLoggedIn е true. Кой statement е подходящ?",
+    "questionEN": "A condition should run only when isLoggedIn is true. Which statement is appropriate?",
     "answersBG": [
-      "Set",
-      "Dictionary",
-      "Array",
-      "Enum"
+      "if isLoggedIn { ... }",
+      "for isLoggedIn { ... }",
+      "import isLoggedIn",
+      "return isLoggedIn { ... }"
     ],
     "answersEN": [
-      "Set",
-      "Dictionary",
-      "Array",
-      "Enum"
+      "if isLoggedIn { ... }",
+      "for isLoggedIn { ... }",
+      "import isLoggedIn",
+      "return isLoggedIn { ... }"
     ],
-    "correctAnswerBG": "Array",
-    "correctAnswerEN": "Array",
-    "explanationBG": "Правилният отговор е \"Array\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Array\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "if isLoggedIn { ... }",
+    "correctAnswerEN": "if isLoggedIn { ... }",
+    "explanationBG": "if statement изпълнява код само когато Boolean условието е true.",
+    "explanationEN": "An if statement executes code only when its Boolean condition is true."
   },
   {
     "id": "swift-basics-beginner-10",
     "categoryId": "swift-basics",
     "difficulty": "beginner",
-    "questionBG": "Коя ключова дума връща стойност от функция?",
-    "questionEN": "What keyword returns a value from a function?",
+    "questionBG": "Искаш да повториш работа за всеки отговор в answers. Кой цикъл е най-естествен?",
+    "questionEN": "You want to repeat work for every answer in answers. Which loop is most natural?",
     "answersBG": [
-      "send",
-      "return",
-      "break",
-      "yield"
+      "for answer in answers",
+      "if answer in answers",
+      "switch answers as answer",
+      "let answer repeat answers"
     ],
     "answersEN": [
-      "send",
-      "return",
-      "break",
-      "yield"
+      "for answer in answers",
+      "if answer in answers",
+      "switch answers as answer",
+      "let answer repeat answers"
     ],
-    "correctAnswerBG": "return",
-    "correctAnswerEN": "return",
-    "explanationBG": "Правилният отговор е \"return\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"return\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "for answer in answers",
+    "correctAnswerEN": "for answer in answers",
+    "explanationBG": "for-in цикълът обхожда всеки елемент от sequence като array.",
+    "explanationEN": "A for-in loop iterates through each element of a sequence such as an array."
+  },
+  {
+    "id": "swift-basics-beginner-11",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Стойност трябва да бъде true или false. Кой Swift тип трябва да използваш?",
+    "questionEN": "A value should be either true or false. Which Swift type should you use?",
+    "answersBG": [
+      "Bool",
+      "Int",
+      "String",
+      "Double"
+    ],
+    "answersEN": [
+      "Bool",
+      "Int",
+      "String",
+      "Double"
+    ],
+    "correctAnswerBG": "Bool",
+    "correctAnswerEN": "Bool",
+    "explanationBG": "Bool представя логическо true/false състояние и се използва в условия.",
+    "explanationEN": "Bool represents logical true/false state and is used in conditions."
+  },
+  {
+    "id": "swift-basics-beginner-12",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Цена има нужда от десетична точност. Кой тип обикновено е по-подходящ от Int?",
+    "questionEN": "A price needs decimal precision. Which type is usually better than Int?",
+    "answersBG": [
+      "Double",
+      "Bool",
+      "Character",
+      "Void"
+    ],
+    "answersEN": [
+      "Double",
+      "Bool",
+      "Character",
+      "Void"
+    ],
+    "correctAnswerBG": "Double",
+    "correctAnswerEN": "Double",
+    "explanationBG": "Double пази floating-point стойности и може да представя десетични числа.",
+    "explanationEN": "Double stores floating-point values and can represent decimal numbers."
+  },
+  {
+    "id": "swift-basics-beginner-13",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Трябва ти преизползваем блок с име calculateXP. Какво трябва да създадеш?",
+    "questionEN": "You need a reusable block named calculateXP. What should you create?",
+    "answersBG": [
+      "Функция",
+      "Само коментар",
+      "Color asset",
+      "Симулатор"
+    ],
+    "answersEN": [
+      "A function",
+      "Only a comment",
+      "A color asset",
+      "A simulator"
+    ],
+    "correctAnswerBG": "Функция",
+    "correctAnswerEN": "A function",
+    "explanationBG": "Функциите групират преизползваемо поведение зад име и параметри.",
+    "explanationEN": "Functions group reusable behavior behind a name and optional parameters."
+  },
+  {
+    "id": "swift-basics-beginner-14",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Функция няма полезна стойност за връщане. Кой return type представя това?",
+    "questionEN": "A function has no useful return value. Which return type represents that?",
+    "answersBG": [
+      "Void",
+      "Never?",
+      "EmptyString",
+      "NilType"
+    ],
+    "answersEN": [
+      "Void",
+      "Never?",
+      "EmptyString",
+      "NilType"
+    ],
+    "correctAnswerBG": "Void",
+    "correctAnswerEN": "Void",
+    "explanationBG": "Void означава, че функцията приключва без да връща смислена стойност.",
+    "explanationEN": "Void means the function completes without returning a meaningful value."
+  },
+  {
+    "id": "swift-basics-beginner-15",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Искаш да спреш функция рано, когато input е невалиден. Кой statement често се използва?",
+    "questionEN": "You want to stop a function early when input is invalid. Which statement is often used?",
+    "answersBG": [
+      "guard",
+      "import",
+      "actor",
+      "само extension"
+    ],
+    "answersEN": [
+      "guard",
+      "import",
+      "actor",
+      "extension only"
+    ],
+    "correctAnswerBG": "guard",
+    "correctAnswerEN": "guard",
+    "explanationBG": "guard често се използва за ранно излизане и пази валидния път по-малко вложен.",
+    "explanationEN": "guard is commonly used for early exits and keeps the valid path less nested."
+  },
+  {
+    "id": "swift-basics-beginner-16",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Optional username трябва да се unwrap-не само когато има стойност. Кой pattern е най-безопасен за начинаещи?",
+    "questionEN": "A username optional should be unwrapped only when it has a value. Which pattern is safest for beginners?",
+    "answersBG": [
+      "if let username = username",
+      "username!",
+      "изтрий username",
+      "String(username) винаги"
+    ],
+    "answersEN": [
+      "if let username = username",
+      "username!",
+      "delete username",
+      "String(username) always"
+    ],
+    "correctAnswerBG": "if let username = username",
+    "correctAnswerEN": "if let username = username",
+    "explanationBG": "Optional binding безопасно проверява и unwrap-ва optional преди употреба.",
+    "explanationEN": "Optional binding safely checks and unwraps an optional before using it."
+  },
+  {
+    "id": "swift-basics-beginner-17",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Трябва да добавиш нов елемент към Array. Кой метод е често използван?",
+    "questionEN": "You need to add a new item to an Array. Which method is common?",
+    "answersBG": [
+      "append",
+      "insertOnlyAtEndless",
+      "removeAllFirst",
+      "decode"
+    ],
+    "answersEN": [
+      "append",
+      "insertOnlyAtEndless",
+      "removeAllFirst",
+      "decode"
+    ],
+    "correctAnswerBG": "append",
+    "correctAnswerEN": "append",
+    "explanationBG": "append добавя нов елемент в края на array.",
+    "explanationEN": "append adds a new element to the end of an array."
+  },
+  {
+    "id": "swift-basics-beginner-18",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Стойност трябва да се вижда само в същия файл. Кой access level е подходящ?",
+    "questionEN": "A value should be visible only inside the same file. Which access level fits?",
+    "answersBG": [
+      "fileprivate",
+      "open",
+      "public",
+      "package винаги"
+    ],
+    "answersEN": [
+      "fileprivate",
+      "open",
+      "public",
+      "package always"
+    ],
+    "correctAnswerBG": "fileprivate",
+    "correctAnswerEN": "fileprivate",
+    "explanationBG": "fileprivate ограничава достъпа до декларации в същия source файл.",
+    "explanationEN": "fileprivate limits access to declarations within the same source file."
+  },
+  {
+    "id": "swift-basics-beginner-19",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Искаш да групираш свързани случаи като loading, success, failure. Кой тип е подходящ?",
+    "questionEN": "You want to group related cases like loading, success, failure. Which type fits?",
+    "answersBG": [
+      "enum",
+      "Double",
+      "само Array",
+      "Preview"
+    ],
+    "answersEN": [
+      "enum",
+      "Double",
+      "Array only",
+      "Preview"
+    ],
+    "correctAnswerBG": "enum",
+    "correctAnswerEN": "enum",
+    "explanationBG": "Enum-ите моделират фиксиран набор от свързани състояния ясно и безопасно.",
+    "explanationEN": "Enums model a fixed set of related states clearly and safely."
+  },
+  {
+    "id": "swift-basics-beginner-20",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Метод в struct променя property. Коя ключова дума може да е нужна?",
+    "questionEN": "A struct method changes one of its properties. Which keyword may be needed?",
+    "answersBG": [
+      "mutating",
+      "static",
+      "само lazy",
+      "само private(set)"
+    ],
+    "answersEN": [
+      "mutating",
+      "static",
+      "lazy only",
+      "private(set) only"
+    ],
+    "correctAnswerBG": "mutating",
+    "correctAnswerEN": "mutating",
+    "explanationBG": "Методи в struct, които променят stored properties, трябва да са marked mutating.",
+    "explanationEN": "Struct methods that change stored properties must be marked mutating."
+  },
+  {
+    "id": "swift-basics-beginner-21",
+    "categoryId": "swift-basics",
+    "difficulty": "beginner",
+    "questionBG": "Локална константа има очевидна стойност 42. Какво може да infer-не Swift?",
+    "questionEN": "A local constant has an obvious value of 42. What can Swift infer?",
+    "answersBG": [
+      "Типа й",
+      "App icon-а",
+      "Network permission-а",
+      "Git branch-а"
+    ],
+    "answersEN": [
+      "Its type",
+      "Its app icon",
+      "Its network permission",
+      "Its Git branch"
+    ],
+    "correctAnswerBG": "Типа й",
+    "correctAnswerEN": "Its type",
+    "explanationBG": "Type inference позволява на Swift да infer-не типове от присвоени стойности, когато смисълът е ясен.",
+    "explanationEN": "Type inference lets Swift infer types from assigned values when the meaning is clear."
   },
   {
     "id": "swift-basics-intermediate-01",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Какво позволява type inference на Swift?",
-    "questionEN": "What does type inference allow Swift to do?",
+    "questionBG": "View model показва read-only score, но го обновява вътрешно. Коя декларация помага?",
+    "questionEN": "A view model exposes a read-only score but updates it internally. Which declaration helps?",
     "answersBG": [
-      "Отгатва типа от зададената стойност",
-      "Пропуска компилацията",
-      "Конвертира всички стойности към String",
-      "Игнорира optional-и"
+      "private(set) var score",
+      "public let score винаги",
+      "open func score",
+      "weak var score"
     ],
     "answersEN": [
-      "Guess a type from the assigned value",
-      "Skip compilation",
-      "Convert all values to String",
-      "Ignore optionals"
+      "private(set) var score",
+      "public let score always",
+      "open func score",
+      "weak var score"
     ],
-    "correctAnswerBG": "Отгатва типа от зададената стойност",
-    "correctAnswerEN": "Guess a type from the assigned value",
-    "explanationBG": "Правилният отговор е \"Отгатва типа от зададената стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Guess a type from the assigned value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "private(set) var score",
+    "correctAnswerEN": "private(set) var score",
+    "explanationBG": "private(set) позволява външно четене, но ограничава промяната до деклариращия scope.",
+    "explanationEN": "private(set) allows external reading while limiting mutation to the declaring scope."
   },
   {
     "id": "swift-basics-intermediate-02",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Коя ключова дума маркира метод, който променя property на struct?",
-    "questionEN": "Which keyword marks a method that changes a struct property?",
+    "questionBG": "Подаваш поведение към sorting функция. Коя Swift feature често се използва?",
+    "questionEN": "You pass behavior into a sorting function. What Swift feature is commonly used?",
     "answersBG": [
-      "static",
-      "mutating",
-      "override",
-      "lazy"
+      "Closure",
+      "Storyboard",
+      "Bundle ID",
+      "Entitlement"
     ],
     "answersEN": [
-      "static",
-      "mutating",
-      "override",
-      "lazy"
+      "Closure",
+      "Storyboard",
+      "Bundle ID",
+      "Entitlement"
     ],
-    "correctAnswerBG": "mutating",
-    "correctAnswerEN": "mutating",
-    "explanationBG": "Правилният отговор е \"mutating\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"mutating\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Closure",
+    "correctAnswerEN": "Closure",
+    "explanationBG": "Closures са самостоятелни блокове функционалност, които могат да се подават.",
+    "explanationEN": "Closures are self-contained blocks of functionality that can be passed around."
   },
   {
     "id": "swift-basics-intermediate-03",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Какво прави optional binding с if let?",
-    "questionEN": "What does optional binding with if let do?",
+    "questionBG": "Result трябва да представя успех с Data или failure с Error. Кой тип изразява това?",
+    "questionEN": "A Result should represent success with Data or failure with Error. Which type expresses this?",
     "answersBG": [
-      "Безопасно unwrap-ва optional",
-      "Създава цикъл",
-      "Създава class",
-      "Сортира array"
+      "Result<Data, Error>",
+      "[Data: Error]",
+      "Optional<Error, Data>",
+      "Bool<Data>"
     ],
     "answersEN": [
-      "Safely unwraps an optional",
-      "Creates a loop",
-      "Builds a class",
-      "Sorts an array"
+      "Result<Data, Error>",
+      "[Data: Error]",
+      "Optional<Error, Data>",
+      "Bool<Data>"
     ],
-    "correctAnswerBG": "Безопасно unwrap-ва optional",
-    "correctAnswerEN": "Safely unwraps an optional",
-    "explanationBG": "Правилният отговор е \"Безопасно unwrap-ва optional\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Safely unwraps an optional\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Result<Data, Error>",
+    "correctAnswerEN": "Result<Data, Error>",
+    "explanationBG": "Result моделира или success стойност, или failure стойност по type-safe начин.",
+    "explanationEN": "Result models either a success value or a failure value in a type-safe way."
   },
   {
     "id": "swift-basics-intermediate-04",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Коя колекция пази уникални неподредени стойности?",
-    "questionEN": "Which collection stores unique unordered values?",
+    "questionBG": "Protocol има нужда conforming типовете да дадат ID тип. Какво може да декларира protocol-ът?",
+    "questionEN": "A protocol needs conforming types to provide an ID type. What can the protocol declare?",
     "answersBG": [
-      "Array",
-      "Set",
-      "Dictionary",
-      "Tuple"
+      "associatedtype",
+      "final class",
+      "defer",
+      "само Task"
     ],
     "answersEN": [
-      "Array",
-      "Set",
-      "Dictionary",
-      "Tuple"
+      "associatedtype",
+      "final class",
+      "defer",
+      "Task only"
     ],
-    "correctAnswerBG": "Set",
-    "correctAnswerEN": "Set",
-    "explanationBG": "Правилният отговор е \"Set\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Set\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "associatedtype",
+    "correctAnswerEN": "associatedtype",
+    "explanationBG": "associatedtype дефинира placeholder тип, който conforming типовете уточняват.",
+    "explanationEN": "associatedtype defines a placeholder type that conforming types specify."
   },
   {
     "id": "swift-basics-intermediate-05",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "За какво е полезен tuple?",
-    "questionEN": "What is a tuple useful for?",
+    "questionBG": "Искаш една функция да работи с много типове елементи без загуба на type safety. Какво помага?",
+    "questionEN": "You want one function to work with many element types without losing type safety. What helps?",
     "answersBG": [
-      "Групира няколко стойности заедно",
-      "Само networking",
-      "Изтриване на променливи",
-      "Създаване на икони"
+      "Generics",
+      "Force casts навсякъде",
+      "Глобални променливи",
+      "Само string interpolation"
     ],
     "answersEN": [
-      "Grouping multiple values together",
-      "Only networking",
-      "Deleting variables",
-      "Creating icons"
+      "Generics",
+      "Force casts everywhere",
+      "Global variables",
+      "String interpolation only"
     ],
-    "correctAnswerBG": "Групира няколко стойности заедно",
-    "correctAnswerEN": "Grouping multiple values together",
-    "explanationBG": "Правилният отговор е \"Групира няколко стойности заедно\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Grouping multiple values together\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Generics",
+    "correctAnswerEN": "Generics",
+    "explanationBG": "Generics позволяват преизползваем код, като пазят compile-time информацията за типа.",
+    "explanationEN": "Generics allow reusable code while preserving compile-time type information."
   },
   {
     "id": "swift-basics-intermediate-06",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Кой access level прави кода използваем само в същия файл?",
-    "questionEN": "Which access level keeps code usable only inside the same file?",
+    "questionBG": "Closure в class capture-ва self и може да се пази. Какво трябва да обмислиш, за да избегнеш leaks?",
+    "questionEN": "A class closure captures self and may be stored. What should you consider to avoid leaks?",
     "answersBG": [
-      "public",
-      "private",
-      "fileprivate",
-      "open"
+      "Използвай weak self когато е подходящо",
+      "Винаги force unwrap self",
+      "Направи всяко property глобално",
+      "Изключи ARC"
     ],
     "answersEN": [
-      "public",
-      "private",
-      "fileprivate",
-      "open"
+      "Use weak self when appropriate",
+      "Always force unwrap self",
+      "Make every property global",
+      "Disable ARC"
     ],
-    "correctAnswerBG": "fileprivate",
-    "correctAnswerEN": "fileprivate",
-    "explanationBG": "Правилният отговор е \"fileprivate\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"fileprivate\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Използвай weak self когато е подходящо",
+    "correctAnswerEN": "Use weak self when appropriate",
+    "explanationBG": "Weak captures могат да предотвратят strong reference cycles между обекти и stored closures.",
+    "explanationEN": "Weak captures can prevent strong reference cycles between objects and stored closures."
   },
   {
     "id": "swift-basics-intermediate-07",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "С какво обикновено помага guard?",
-    "questionEN": "What does guard usually help with?",
+    "questionBG": "Computed property derive-ва fullName от firstName и lastName. Къде се пази storage?",
+    "questionEN": "A computed property derives fullName from firstName and lastName. Where is storage kept?",
     "answersBG": [
-      "Ранно излизане, когато условие не е изпълнено",
-      "Рисуване на shapes",
-      "Импортиране на assets",
-      "Стартиране само на animations"
+      "В stored source properties",
+      "Автоматично вътре в computed property",
+      "Само в UserDefaults",
+      "В симулатора"
     ],
     "answersEN": [
-      "Early exit when a condition fails",
-      "Drawing shapes",
-      "Importing assets",
-      "Running animations only"
+      "In the stored source properties",
+      "Inside the computed property automatically",
+      "Only in UserDefaults",
+      "In the simulator"
     ],
-    "correctAnswerBG": "Ранно излизане, когато условие не е изпълнено",
-    "correctAnswerEN": "Early exit when a condition fails",
-    "explanationBG": "Правилният отговор е \"Ранно излизане, когато условие не е изпълнено\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Early exit when a condition fails\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "В stored source properties",
+    "correctAnswerEN": "In the stored source properties",
+    "explanationBG": "Computed properties изчисляват стойности и не пазят собствена стойност, освен ако не са backed by other storage.",
+    "explanationEN": "Computed properties calculate values and do not store their own value unless backed by other storage."
   },
   {
     "id": "swift-basics-intermediate-08",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Кой синтаксис дефинира closure parameter?",
-    "questionEN": "Which syntax defines a closure parameter?",
+    "questionBG": "Throwing функция се проваля при JSON loading. Как callers трябва да я обработят?",
+    "questionEN": "A throwing function fails while loading JSON. How should callers handle it?",
     "answersBG": [
-      "{ value in ... }",
-      "func value =>",
-      "class value",
-      "import value"
+      "Използват do/try/catch",
+      "Игнорират всяка грешка",
+      "Използват само print без try",
+      "Маркират app-а final"
     ],
     "answersEN": [
-      "{ value in ... }",
-      "func value =>",
-      "class value",
-      "import value"
+      "Use do/try/catch",
+      "Ignore every error",
+      "Use only print without try",
+      "Mark the app final"
     ],
-    "correctAnswerBG": "{ value in ... }",
-    "correctAnswerEN": "{ value in ... }",
-    "explanationBG": "Правилният отговор е \"{ value in ... }\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"{ value in ... }\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Използват do/try/catch",
+    "correctAnswerEN": "Use do/try/catch",
+    "explanationBG": "do/try/catch позволява на callers да реагират на thrown errors вместо crash или скриване на проблеми.",
+    "explanationEN": "do/try/catch lets callers respond to thrown errors instead of crashing or hiding failures."
   },
   {
     "id": "swift-basics-intermediate-09",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Какво прави append върху Array?",
-    "questionEN": "What does append do on an Array?",
+    "questionBG": "Трябва cleanup код да се изпълни преди функцията да излезе. Коя ключова дума помага?",
+    "questionEN": "You need cleanup code to run before a function exits. Which keyword helps?",
     "answersBG": [
-      "Добавя елемент",
-      "Премахва всички стойности",
-      "Сортира низходящо",
-      "Създава optional"
+      "defer",
+      "await",
+      "lazy",
+      "where"
     ],
     "answersEN": [
-      "Adds an element",
-      "Removes all values",
-      "Sorts descending",
-      "Creates an optional"
+      "defer",
+      "await",
+      "lazy",
+      "where"
     ],
-    "correctAnswerBG": "Добавя елемент",
-    "correctAnswerEN": "Adds an element",
-    "explanationBG": "Правилният отговор е \"Добавя елемент\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Adds an element\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "defer",
+    "correctAnswerEN": "defer",
+    "explanationBG": "defer насрочва код да се изпълни, когато текущият scope приключи.",
+    "explanationEN": "defer schedules code to run when the current scope exits."
   },
   {
     "id": "swift-basics-intermediate-10",
     "categoryId": "swift-basics",
     "difficulty": "intermediate",
-    "questionBG": "Коя ключова дума дефинира custom value type?",
-    "questionEN": "Which keyword defines a custom value type?",
+    "questionBG": "Стойност трябва да се инициализира чак при първа употреба. Кой property modifier помага?",
+    "questionEN": "A value should be initialized only when first used. Which property modifier can help?",
     "answersBG": [
-      "struct",
-      "package",
-      "screen",
-      "asset"
+      "lazy",
+      "weak",
+      "throws",
+      "open"
     ],
     "answersEN": [
-      "struct",
-      "package",
-      "screen",
-      "asset"
+      "lazy",
+      "weak",
+      "throws",
+      "open"
     ],
-    "correctAnswerBG": "struct",
-    "correctAnswerEN": "struct",
-    "explanationBG": "Правилният отговор е \"struct\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"struct\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "lazy",
+    "correctAnswerEN": "lazy",
+    "explanationBG": "lazy отлага инициализацията до първия достъп до property-то.",
+    "explanationEN": "lazy delays initialization until the property is accessed for the first time."
+  },
+  {
+    "id": "swift-basics-intermediate-11",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Трябва да сравниш enum cases с associated values четимо. Кой statement е полезен?",
+    "questionEN": "You need to compare enum cases with associated values in a readable way. Which statement is useful?",
+    "answersBG": [
+      "switch с pattern matching",
+      "import с pattern matching",
+      "само if true",
+      "първо force casting"
+    ],
+    "answersEN": [
+      "switch with pattern matching",
+      "import with pattern matching",
+      "only if true",
+      "force casting first"
+    ],
+    "correctAnswerBG": "switch с pattern matching",
+    "correctAnswerEN": "switch with pattern matching",
+    "explanationBG": "switch поддържа pattern matching и прави associated values ясни.",
+    "explanationEN": "switch supports pattern matching and makes associated values explicit."
+  },
+  {
+    "id": "swift-basics-intermediate-12",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Task обновява UI след async работа. На кой actor трябва да се изпълнят UI обновленията?",
+    "questionEN": "A task updates UI after async work. Which actor should UI updates run on?",
+    "answersBG": [
+      "MainActor",
+      "BackgroundActor винаги",
+      "FileActor",
+      "Никога actor"
+    ],
+    "answersEN": [
+      "MainActor",
+      "BackgroundActor always",
+      "FileActor",
+      "No actor ever"
+    ],
+    "correctAnswerBG": "MainActor",
+    "correctAnswerEN": "MainActor",
+    "explanationBG": "UI state трябва да се обновява на main actor, за да остане SwiftUI консистентен.",
+    "explanationEN": "UI state should be updated on the main actor to keep SwiftUI consistent."
+  },
+  {
+    "id": "swift-basics-intermediate-13",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Функция изпълнява network работа асинхронно. Коя ключова дума се появява при извикване?",
+    "questionEN": "A function performs network work asynchronously. Which keyword appears at the call site?",
+    "answersBG": [
+      "await",
+      "mutating",
+      "само inout",
+      "fileprivate"
+    ],
+    "answersEN": [
+      "await",
+      "mutating",
+      "inout only",
+      "fileprivate"
+    ],
+    "correctAnswerBG": "await",
+    "correctAnswerEN": "await",
+    "explanationBG": "await маркира suspension point, докато чака async работа да приключи.",
+    "explanationEN": "await marks a suspension point while waiting for async work to complete."
+  },
+  {
+    "id": "swift-basics-intermediate-14",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Function parameter трябва да се промени вътре и да се отрази отвън. Коя feature може това?",
+    "questionEN": "A function parameter should be modified inside and reflected outside. Which feature can do this?",
+    "answersBG": [
+      "inout",
+      "weak",
+      "lazy",
+      "final"
+    ],
+    "answersEN": [
+      "inout",
+      "weak",
+      "lazy",
+      "final"
+    ],
+    "correctAnswerBG": "inout",
+    "correctAnswerEN": "inout",
+    "explanationBG": "inout подава стойност така, че функцията да я промени и запише обратно.",
+    "explanationEN": "inout passes a value so a function can mutate it and write it back."
+  },
+  {
+    "id": "swift-basics-intermediate-15",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Трябва да добавиш helper към String без subclassing. Какво трябва да използваш?",
+    "questionEN": "You need to extend String with a helper without subclassing. What should you use?",
+    "answersBG": [
+      "extension",
+      "наследи String",
+      "копирай Foundation",
+      "преименувай String"
+    ],
+    "answersEN": [
+      "extension",
+      "inherit String",
+      "copy Foundation",
+      "rename String"
+    ],
+    "correctAnswerBG": "extension",
+    "correctAnswerEN": "extension",
+    "explanationBG": "Extensions добавят methods и computed properties към съществуващи типове.",
+    "explanationEN": "Extensions add methods and computed properties to existing types."
+  },
+  {
+    "id": "swift-basics-intermediate-16",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Model трябва да поддържа JSON encoding и decoding. Кой protocol е най-удобен?",
+    "questionEN": "A model should support JSON encoding and decoding. Which protocol is most convenient?",
+    "answersBG": [
+      "Codable",
+      "само Identifiable",
+      "само Hashable",
+      "само Sendable"
+    ],
+    "answersEN": [
+      "Codable",
+      "Identifiable only",
+      "Hashable only",
+      "Sendable only"
+    ],
+    "correctAnswerBG": "Codable",
+    "correctAnswerEN": "Codable",
+    "explanationBG": "Codable комбинира Encodable и Decodable за JSON workflows.",
+    "explanationEN": "Codable combines Encodable and Decodable for JSON workflows."
+  },
+  {
+    "id": "swift-basics-intermediate-17",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "List item има нужда от стабилна SwiftUI identity. Кой protocol/property често помага?",
+    "questionEN": "A list item needs stable SwiftUI identity. Which protocol/property often helps?",
+    "answersBG": [
+      "Identifiable с id",
+      "Comparable без id",
+      "Void",
+      "само AnyObject"
+    ],
+    "answersEN": [
+      "Identifiable with id",
+      "Comparable with no id",
+      "Void",
+      "AnyObject only"
+    ],
+    "correctAnswerBG": "Identifiable с id",
+    "correctAnswerEN": "Identifiable with id",
+    "explanationBG": "Identifiable дава на SwiftUI стабилен id за diffing и обновления.",
+    "explanationEN": "Identifiable gives SwiftUI a stable id for diffing and updates."
+  },
+  {
+    "id": "swift-basics-intermediate-18",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Искаш да премахнеш nil стойности докато map-ваш array. Кой метод е полезен?",
+    "questionEN": "You want to remove nil values while mapping an array. Which method is useful?",
+    "answersBG": [
+      "compactMap",
+      "flatError",
+      "forceMap",
+      "nilMapOnly"
+    ],
+    "answersEN": [
+      "compactMap",
+      "flatError",
+      "forceMap",
+      "nilMapOnly"
+    ],
+    "correctAnswerBG": "compactMap",
+    "correctAnswerEN": "compactMap",
+    "explanationBG": "compactMap трансформира стойности и премахва nil резултати.",
+    "explanationEN": "compactMap transforms values and discards nil results."
+  },
+  {
+    "id": "swift-basics-intermediate-19",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Искаш да комбинираш nested arrays в един array. Кой метод е често използван?",
+    "questionEN": "You want to combine nested arrays into one array. Which method is common?",
+    "answersBG": [
+      "flatMap",
+      "guardMap",
+      "weakMap",
+      "actorMap"
+    ],
+    "answersEN": [
+      "flatMap",
+      "guardMap",
+      "weakMap",
+      "actorMap"
+    ],
+    "correctAnswerBG": "flatMap",
+    "correctAnswerEN": "flatMap",
+    "explanationBG": "flatMap може да трансформира и flatten-не nested sequences в една sequence.",
+    "explanationEN": "flatMap can transform and flatten nested sequences into one sequence."
+  },
+  {
+    "id": "swift-basics-intermediate-20",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "String трябва да се построи от променливи вътре в текст. Коя Swift feature помага?",
+    "questionEN": "A String should be built from variables inside text. Which Swift feature helps?",
+    "answersBG": [
+      "String interpolation",
+      "Binary search",
+      "само ARC",
+      "Code signing"
+    ],
+    "answersEN": [
+      "String interpolation",
+      "Binary search",
+      "ARC only",
+      "Code signing"
+    ],
+    "correctAnswerBG": "String interpolation",
+    "correctAnswerEN": "String interpolation",
+    "explanationBG": "String interpolation вмъква стойности в string literals с (...).",
+    "explanationEN": "String interpolation inserts values into string literals using (...)."
+  },
+  {
+    "id": "swift-basics-intermediate-21",
+    "categoryId": "swift-basics",
+    "difficulty": "intermediate",
+    "questionBG": "Тип не трябва да се subclass-ва за яснота и performance. Коя ключова дума го изразява?",
+    "questionEN": "A type should not be subclassed for clarity and performance. Which keyword can express that?",
+    "answersBG": [
+      "final",
+      "lazy",
+      "weak",
+      "throws"
+    ],
+    "answersEN": [
+      "final",
+      "lazy",
+      "weak",
+      "throws"
+    ],
+    "correctAnswerBG": "final",
+    "correctAnswerEN": "final",
+    "explanationBG": "final предотвратява subclassing и прави намерението по-ясно.",
+    "explanationEN": "final prevents subclassing and can make intent clearer."
   },
   {
     "id": "swift-basics-advanced-01",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какъв проблем решават generics?",
-    "questionEN": "What problem do generics solve?",
+    "questionBG": "Shared cache се достъпва от много async tasks. Кой Swift тип помага да изолира mutable state?",
+    "questionEN": "A shared cache is accessed from multiple async tasks. Which Swift type helps isolate mutable state?",
     "answersBG": [
-      "Писане на преизползваем код за много типове",
-      "Избягване на всички типове",
-      "Drawing views",
-      "Пропускане на тестове"
+      "actor",
+      "tuple",
+      "само extension",
+      "enum без cases"
     ],
     "answersEN": [
-      "Writing reusable code for multiple types",
-      "Avoiding all types",
-      "Drawing views",
-      "Skipping tests"
+      "actor",
+      "tuple",
+      "extension only",
+      "enum without cases"
     ],
-    "correctAnswerBG": "Писане на преизползваем код за много типове",
-    "correctAnswerEN": "Writing reusable code for multiple types",
-    "explanationBG": "Правилният отговор е \"Писане на преизползваем код за много типове\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Writing reusable code for multiple types\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "actor",
+    "correctAnswerEN": "actor",
+    "explanationBG": "Actors защитават mutable state чрез сериализиране на достъпа между concurrent tasks.",
+    "explanationEN": "Actors protect mutable state by serializing access across concurrent tasks."
   },
   {
     "id": "swift-basics-advanced-02",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво дефинира associatedtype в protocol?",
-    "questionEN": "What does associatedtype define in a protocol?",
+    "questionBG": "Generic repository трябва да ограничи items да имат стабилни ID-та. Кое generic constraint е полезно?",
+    "questionEN": "A generic repository should constrain items to have stable IDs. Which generic constraint is likely useful?",
     "answersBG": [
-      "Placeholder тип, избран от conformer-ите",
-      "Фиксиран String",
-      "Икона на приложение",
-      "Само stored property"
+      "T: Identifiable",
+      "T == Void",
+      "T: Never",
+      "T: само Double"
     ],
     "answersEN": [
-      "A placeholder type chosen by conformers",
-      "A fixed String",
-      "An app icon",
-      "A stored property only"
+      "T: Identifiable",
+      "T == Void",
+      "T: Never",
+      "T: Double only"
     ],
-    "correctAnswerBG": "Placeholder тип, избран от conformer-ите",
-    "correctAnswerEN": "A placeholder type chosen by conformers",
-    "explanationBG": "Правилният отговор е \"Placeholder тип, избран от conformer-ите\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"A placeholder type chosen by conformers\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "T: Identifiable",
+    "correctAnswerEN": "T: Identifiable",
+    "explanationBG": "Generic constraints позволяват преизползваем код да разчита на нужни способности като id.",
+    "explanationEN": "Generic constraints let reusable code depend on required capabilities such as an id."
   },
   {
     "id": "swift-basics-advanced-03",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Коя функция помага да избегнем reference cycles?",
-    "questionEN": "Which feature helps avoid reference cycles?",
+    "questionBG": "Protocol method трябва да е наличен само когато Self е reference type. Кое constraint го изразява?",
+    "questionEN": "A protocol method should be available only when Self is a reference type. Which constraint can express this?",
     "answersBG": [
-      "weak references",
-      "for loops",
-      "arrays",
-      "tuples"
+      "where Self: AnyObject",
+      "where Self == Int",
+      "where Self: Void",
+      "where Self: Bundle"
     ],
     "answersEN": [
-      "weak references",
-      "for loops",
-      "arrays",
-      "tuples"
+      "where Self: AnyObject",
+      "where Self == Int",
+      "where Self: Void",
+      "where Self: Bundle"
     ],
-    "correctAnswerBG": "weak references",
-    "correctAnswerEN": "weak references",
-    "explanationBG": "Правилният отговор е \"weak references\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"weak references\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "where Self: AnyObject",
+    "correctAnswerEN": "where Self: AnyObject",
+    "explanationBG": "where clause в protocol extensions може да ограничи API-та до class-conforming типове.",
+    "explanationEN": "A where clause on protocol extensions can restrict APIs to class-conforming types."
   },
   {
     "id": "swift-basics-advanced-04",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво включва синтаксисът на throwing function?",
-    "questionEN": "What does throwing function syntax include?",
+    "questionBG": "Проектираш API, което никога не връща при fatal failure. Кой return type моделира това?",
+    "questionEN": "You design an API that must never return for fatal failure. Which return type can model this?",
     "answersBG": [
-      "throws",
-      "error",
-      "catching",
-      "failed"
+      "Never",
+      "Void?",
+      "Any",
+      "String.Empty"
     ],
     "answersEN": [
-      "throws",
-      "error",
-      "catching",
-      "failed"
+      "Never",
+      "Void?",
+      "Any",
+      "String.Empty"
     ],
-    "correctAnswerBG": "throws",
-    "correctAnswerEN": "throws",
-    "explanationBG": "Правилният отговор е \"throws\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"throws\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Never",
+    "correctAnswerEN": "Never",
+    "explanationBG": "Never показва, че функция не връща нормално, полезно за fatal paths.",
+    "explanationEN": "Never indicates a function does not return normally, useful for fatal paths."
   },
   {
     "id": "swift-basics-advanced-05",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво моделира async/await?",
-    "questionEN": "What does async await model?",
+    "questionBG": "Value type с висока честота се копира често. Какво трябва да провериш преди оптимизация?",
+    "questionEN": "A high-frequency value type is copied often. What should you inspect before optimizing?",
     "answersBG": [
-      "Асинхронна работа със suspension points",
-      "Само animations",
-      "Само strings",
-      "Само dictionaries"
+      "Реални profiling данни",
+      "Само дължина на име на файл",
+      "Размер на app icon",
+      "Брой коментари"
     ],
     "answersEN": [
-      "Asynchronous work with suspension points",
-      "Only animations",
-      "Only strings",
-      "Only dictionaries"
+      "Actual profiling data",
+      "Only file name length",
+      "App icon size",
+      "Number of comments"
     ],
-    "correctAnswerBG": "Асинхронна работа със suspension points",
-    "correctAnswerEN": "Asynchronous work with suspension points",
-    "explanationBG": "Правилният отговор е \"Асинхронна работа със suspension points\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Asynchronous work with suspension points\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Реални profiling данни",
+    "correctAnswerEN": "Actual profiling data",
+    "explanationBG": "Swift value types използват copy-on-write в много стандартни колекции, затова профилирай преди архитектурни промени.",
+    "explanationEN": "Swift value types use copy-on-write in many standard collections, so profile before changing architecture."
   },
   {
     "id": "swift-basics-advanced-06",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво означава value semantics при structs?",
-    "questionEN": "What does value semantics mean for structs?",
+    "questionBG": "Library API трябва да expose-ва минимална mutation и да пази invariants. Кой дизайн е най-добър?",
+    "questionEN": "A library API should expose minimal mutation while preserving invariants. Which design is best?",
     "answersBG": [
-      "Копията са независими стойности",
-      "Всички structs са global",
-      "Не могат да имат methods",
-      "Винаги са optional"
+      "Private storage с контролирани methods",
+      "Public vars навсякъде",
+      "Force unwrap на целия state",
+      "Само global mutable singleton"
     ],
     "answersEN": [
-      "Copies are independent values",
-      "All structs are global",
-      "They cannot have methods",
-      "They are always optional"
+      "Private storage with controlled methods",
+      "Public vars everywhere",
+      "Force unwrap all state",
+      "Global mutable singleton only"
     ],
-    "correctAnswerBG": "Копията са независими стойности",
-    "correctAnswerEN": "Copies are independent values",
-    "explanationBG": "Правилният отговор е \"Копията са независими стойности\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Copies are independent values\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Private storage с контролирани methods",
+    "correctAnswerEN": "Private storage with controlled methods",
+    "explanationBG": "Encapsulation прави невалидните състояния по-трудни за създаване и улеснява поддръжката.",
+    "explanationEN": "Encapsulation keeps invalid states harder to create and simplifies maintenance."
   },
   {
     "id": "swift-basics-advanced-07",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво е protocol-oriented programming?",
-    "questionEN": "What is protocol-oriented programming?",
+    "questionBG": "Closure подаден към Task capture-ва non-Sendable обект през concurrency граници. Какво трябва да обмислиш?",
+    "questionEN": "A closure passed to Task captures a non-Sendable object across concurrency boundaries. What should you consider?",
     "answersBG": [
-      "Дизайн около protocols и conformances",
-      "Използване само на classes",
-      "Избягване на extensions",
-      "Писане без типове"
+      "Isolation или Sendable correctness",
+      "Смяна на app name",
+      "Премахване на всички тестове",
+      "Повече force unwraps"
     ],
     "answersEN": [
-      "Designing around protocols and conformances",
-      "Only using classes",
-      "Avoiding extensions",
-      "Writing no types"
+      "Isolation or Sendable correctness",
+      "Changing app name",
+      "Removing all tests",
+      "Using more force unwraps"
     ],
-    "correctAnswerBG": "Дизайн около protocols и conformances",
-    "correctAnswerEN": "Designing around protocols and conformances",
-    "explanationBG": "Правилният отговор е \"Дизайн около protocols и conformances\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Designing around protocols and conformances\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Isolation или Sendable correctness",
+    "correctAnswerEN": "Isolation or Sendable correctness",
+    "explanationBG": "Swift concurrency checks помагат да се предотврати unsafe sharing на mutable state между tasks.",
+    "explanationEN": "Swift concurrency checks help prevent unsafe sharing of mutable state across tasks."
   },
   {
     "id": "swift-basics-advanced-08",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво могат да добавят extensions?",
-    "questionEN": "What can extensions add?",
+    "questionBG": "Parser връща много конкретни failure причини. Кой подход подобрява caller handling?",
+    "questionEN": "A parser returns many specific failure reasons. Which approach improves caller handling?",
     "answersBG": [
-      "Methods, computed properties и conformances",
-      "Stored properties винаги",
-      "Нови app targets",
-      "Само comments"
+      "Typed error enum",
+      "Само nil",
+      "Silent print",
+      "Random Bool"
     ],
     "answersEN": [
-      "Methods, computed properties, and conformances",
-      "Stored properties always",
-      "New app targets",
-      "Only comments"
+      "Typed error enum",
+      "Only nil",
+      "Silent print",
+      "Random Bool"
     ],
-    "correctAnswerBG": "Methods, computed properties и conformances",
-    "correctAnswerEN": "Methods, computed properties, and conformances",
-    "explanationBG": "Правилният отговор е \"Methods, computed properties и conformances\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Methods, computed properties, and conformances\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "Typed error enum",
+    "correctAnswerEN": "Typed error enum",
+    "explanationBG": "Typed error enum документира failure cases и позволява целенасочено възстановяване.",
+    "explanationEN": "A typed error enum documents failure cases and enables targeted recovery."
   },
   {
     "id": "swift-basics-advanced-09",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво прави defer?",
-    "questionEN": "What does defer do?",
+    "questionBG": "API приема closure, който може да escape-не функцията. Коя annotation може да е нужна?",
+    "questionEN": "An API takes a closure that may escape the function. Which annotation may be required?",
     "answersBG": [
-      "Изпълнява код при излизане от scope",
-      "Стартира task веднага",
-      "Изтрива memory",
-      "Създава class"
+      "@escaping",
+      "само @discardableResult",
+      "@objc винаги",
+      "@main"
     ],
     "answersEN": [
-      "Runs code when leaving scope",
-      "Starts a task immediately",
-      "Deletes memory",
-      "Creates a class"
+      "@escaping",
+      "@discardableResult only",
+      "@objc always",
+      "@main"
     ],
-    "correctAnswerBG": "Изпълнява код при излизане от scope",
-    "correctAnswerEN": "Runs code when leaving scope",
-    "explanationBG": "Правилният отговор е \"Изпълнява код при излизане от scope\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Runs code when leaving scope\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "@escaping",
+    "correctAnswerEN": "@escaping",
+    "explanationBG": "@escaping маркира closures, които се пазят или изпълняват след връщането на функцията.",
+    "explanationEN": "@escaping marks closures stored or executed after the function returns."
   },
   {
     "id": "swift-basics-advanced-10",
     "categoryId": "swift-basics",
     "difficulty": "advanced",
-    "questionBG": "Какво представя Result<Success, Failure>?",
-    "questionEN": "What does Result<Success, Failure> represent?",
+    "questionBG": "Резултат от функция може безопасно да се игнорира, но искаш да избегнеш warning. Кой attribute помага?",
+    "questionEN": "A function result can be ignored safely, but you want to avoid compiler warnings. Which attribute helps?",
     "answersBG": [
-      "Success или failure като стойност",
-      "Само integer",
-      "SwiftUI layout",
-      "Asset catalog"
+      "@discardableResult",
+      "@State",
+      "@Binding",
+      "@main"
     ],
     "answersEN": [
-      "Success or failure as a value",
-      "Only an integer",
-      "A SwiftUI layout",
-      "An asset catalog"
+      "@discardableResult",
+      "@State",
+      "@Binding",
+      "@main"
     ],
-    "correctAnswerBG": "Success или failure като стойност",
-    "correctAnswerEN": "Success or failure as a value",
-    "explanationBG": "Правилният отговор е \"Success или failure като стойност\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Success or failure as a value\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "@discardableResult",
+    "correctAnswerEN": "@discardableResult",
+    "explanationBG": "@discardableResult казва на компилатора, че callers могат да игнорират върнатата стойност.",
+    "explanationEN": "@discardableResult tells the compiler callers may ignore the returned value."
+  },
+  {
+    "id": "swift-basics-advanced-11",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Голям enum switch трябва да fail-не compile, когато се добавят нови cases. Какво трябва да избягваш?",
+    "questionEN": "A large enum switch should fail to compile when new cases are added. What should you avoid?",
+    "answersBG": [
+      "Широк default case",
+      "Explicit cases",
+      "Associated values",
+      "Pattern matching"
+    ],
+    "answersEN": [
+      "A broad default case",
+      "Explicit cases",
+      "Associated values",
+      "Pattern matching"
+    ],
+    "correctAnswerBG": "Широк default case",
+    "correctAnswerEN": "A broad default case",
+    "explanationBG": "Избягването на default кара компилатора да предупреди, когато нови enum cases не са обработени.",
+    "explanationEN": "Avoiding default forces the compiler to warn when new enum cases are not handled."
+  },
+  {
+    "id": "swift-basics-advanced-12",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Type-erased collection крие concrete model types зад един interface. Какъв tradeoff е често срещан?",
+    "questionEN": "A type-erased collection hides concrete model types behind one interface. What tradeoff is common?",
+    "answersBG": [
+      "Гъвкавост с по-малко static detail",
+      "Винаги повече compiler knowledge",
+      "Никога runtime cost",
+      "Изключва protocols"
+    ],
+    "answersEN": [
+      "Flexibility with less static detail",
+      "More compiler knowledge always",
+      "No runtime cost ever",
+      "It disables protocols"
+    ],
+    "correctAnswerBG": "Гъвкавост с по-малко static detail",
+    "correctAnswerEN": "Flexibility with less static detail",
+    "explanationBG": "Type erasure може да опрости API-та, но може да скрие concrete type information.",
+    "explanationEN": "Type erasure can simplify APIs but may hide concrete type information."
+  },
+  {
+    "id": "swift-basics-advanced-13",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Custom collection трябва да поддържа for-in loops. Кое protocol семейство е важно?",
+    "questionEN": "A custom collection should support for-in loops. Which protocol family matters?",
+    "answersBG": [
+      "Sequence / Collection",
+      "само Codable",
+      "само CaseIterable",
+      "само Observable"
+    ],
+    "answersEN": [
+      "Sequence / Collection",
+      "Codable only",
+      "CaseIterable only",
+      "Observable only"
+    ],
+    "correctAnswerBG": "Sequence / Collection",
+    "correctAnswerEN": "Sequence / Collection",
+    "explanationBG": "Sequence позволява iteration; Collection добавя по-силни indexing възможности.",
+    "explanationEN": "Sequence enables iteration; Collection adds stronger indexing capabilities."
+  },
+  {
+    "id": "swift-basics-advanced-14",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Performance-sensitive dictionary lookup се повтаря често. Каква е обичайната average complexity?",
+    "questionEN": "A performance-sensitive dictionary lookup is repeated often. What is usually expected average complexity?",
+    "answersBG": [
+      "O(1)",
+      "O(n!)",
+      "O(log log never)",
+      "Винаги O(n²)"
+    ],
+    "answersEN": [
+      "O(1)",
+      "O(n!)",
+      "O(log log never)",
+      "Always O(n²)"
+    ],
+    "correctAnswerBG": "O(1)",
+    "correctAnswerEN": "O(1)",
+    "explanationBG": "Hash table dictionaries обикновено предоставят constant-time average lookup.",
+    "explanationEN": "Hash table dictionaries generally provide constant-time average lookup."
+  },
+  {
+    "id": "swift-basics-advanced-15",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Task трябва да може да се cancel-не, когато view изчезне. Какво трябва да проверява async кодът?",
+    "questionEN": "A task should be cancelable when a view disappears. What should async code check?",
+    "answersBG": [
+      "Task cancellation",
+      "Само brightness",
+      "Git status",
+      "Bundle display name"
+    ],
+    "answersEN": [
+      "Task cancellation",
+      "Only screen brightness",
+      "Git status",
+      "Bundle display name"
+    ],
+    "correctAnswerBG": "Task cancellation",
+    "correctAnswerEN": "Task cancellation",
+    "explanationBG": "Проверката за cancellation позволява async работа да спре рано и да избегне излишни updates.",
+    "explanationEN": "Checking cancellation lets async work stop early and avoid wasted updates."
+  },
+  {
+    "id": "swift-basics-advanced-16",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Public API приема всякакъв Collection, но има нужда от random indexes. Кое constraint е по-точно?",
+    "questionEN": "A public API accepts any Collection but needs random indexes. Which constraint may be more accurate?",
+    "answersBG": [
+      "RandomAccessCollection",
+      "AnyObject",
+      "Error",
+      "само View"
+    ],
+    "answersEN": [
+      "RandomAccessCollection",
+      "AnyObject",
+      "Error",
+      "View only"
+    ],
+    "correctAnswerBG": "RandomAccessCollection",
+    "correctAnswerEN": "RandomAccessCollection",
+    "explanationBG": "RandomAccessCollection комуникира и гарантира ефективен random index access.",
+    "explanationEN": "RandomAccessCollection communicates and guarantees efficient random index access."
+  },
+  {
+    "id": "swift-basics-advanced-17",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Domain model трябва да е immutable след създаване, освен чрез нови копия. Какъв стил подкрепя това?",
+    "questionEN": "A domain model should be immutable after creation except through new copies. What style does this support?",
+    "answersBG": [
+      "Value semantics",
+      "Скрита глобална mutation",
+      "Ръчно memory management",
+      "Storyboard-only дизайн"
+    ],
+    "answersEN": [
+      "Value semantics",
+      "Hidden global mutation",
+      "Manual memory management",
+      "Storyboard-only design"
+    ],
+    "correctAnswerBG": "Value semantics",
+    "correctAnswerEN": "Value semantics",
+    "explanationBG": "Value semantics правят state промените явни и по-лесни за разбиране.",
+    "explanationEN": "Value semantics make state changes explicit and easier to reason about."
+  },
+  {
+    "id": "swift-basics-advanced-18",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Метод трябва да се извиква върху самия тип, не върху instance. Коя ключова дума се използва?",
+    "questionEN": "A method should be callable on the type itself instead of an instance. Which keyword is used?",
+    "answersBG": [
+      "static",
+      "weak",
+      "lazy",
+      "inout"
+    ],
+    "answersEN": [
+      "static",
+      "weak",
+      "lazy",
+      "inout"
+    ],
+    "correctAnswerBG": "static",
+    "correctAnswerEN": "static",
+    "explanationBG": "static members принадлежат на типа, а не на конкретен instance.",
+    "explanationEN": "static members belong to the type rather than a specific instance."
+  },
+  {
+    "id": "swift-basics-advanced-19",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Class иска customizable behavior в subclasses, докато expose-ва base method. Коя ключова дума позволява override?",
+    "questionEN": "A class wants customizable behavior in subclasses while exposing a stable base method. Which keyword permits overriding?",
+    "answersBG": [
+      "open",
+      "private",
+      "само fileprivate",
+      "let"
+    ],
+    "answersEN": [
+      "open",
+      "private",
+      "fileprivate only",
+      "let"
+    ],
+    "correctAnswerBG": "open",
+    "correctAnswerEN": "open",
+    "explanationBG": "open позволява subclassing и overriding извън дефиниращия module.",
+    "explanationEN": "open allows subclassing and overriding outside the defining module."
+  },
+  {
+    "id": "swift-basics-advanced-20",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Функция трябва да приеме autoclosure за lazy assertion-style evaluation. Коя feature се прилага?",
+    "questionEN": "A function should accept an autoclosure for lazy assertion-style evaluation. Which feature applies?",
+    "answersBG": [
+      "@autoclosure",
+      "@Environment",
+      "@Published",
+      "@SceneStorage"
+    ],
+    "answersEN": [
+      "@autoclosure",
+      "@Environment",
+      "@Published",
+      "@SceneStorage"
+    ],
+    "correctAnswerBG": "@autoclosure",
+    "correctAnswerEN": "@autoclosure",
+    "explanationBG": "@autoclosure отлага evaluation и позволява callers да подават expression-like arguments.",
+    "explanationEN": "@autoclosure delays evaluation and lets callers pass expression-like arguments."
+  },
+  {
+    "id": "swift-basics-advanced-21",
+    "categoryId": "swift-basics",
+    "difficulty": "advanced",
+    "questionBG": "Protocol със Self requirements не може директно да се използва като проста стойност в по-стари patterns. Какво често решава API дизайна?",
+    "questionEN": "A protocol with Self requirements cannot be used directly as a simple value in older patterns. What often solves API design?",
+    "answersBG": [
+      "Generics или type erasure",
+      "Само force unwraps",
+      "Премахване на protocols",
+      "Смяна на симулатора"
+    ],
+    "answersEN": [
+      "Generics or type erasure",
+      "Only force unwraps",
+      "Removing protocols",
+      "Changing simulator"
+    ],
+    "correctAnswerBG": "Generics или type erasure",
+    "correctAnswerEN": "Generics or type erasure",
+    "explanationBG": "Generics пазят concrete types, а type erasure ги крие зад стабилен wrapper.",
+    "explanationEN": "Generics preserve concrete types, while type erasure hides them behind a stable wrapper."
   }
 ]

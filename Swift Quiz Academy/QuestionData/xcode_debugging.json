@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "xcode-debugging-beginner-01",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to find compiler errors quickly. Which choice is best?",
+    "questionBG": "Developer трябва да намери compiler errors бързо. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Issue navigator",
+    "correctAnswerEN": "Issue navigator",
+    "explanationBG": "Issue navigator събира build errors и warnings.",
+    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-02",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
+    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Breakpoint",
+    "correctAnswerEN": "Breakpoint",
+    "explanationBG": "Breakpoint спира program execution за inspection.",
+    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-03",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
+    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
+    "answersBG": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "answersEN": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "correctAnswerBG": "LLDB",
+    "correctAnswerEN": "LLDB",
+    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
+    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-04",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to read print output. Which choice is best?",
+    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "Console",
+    "correctAnswerEN": "Console",
+    "explanationBG": "Console показва logs и runtime output.",
+    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-05",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "answersEN": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "correctAnswerBG": "Debug area",
+    "correctAnswerEN": "Debug area",
+    "explanationBG": "Debug area показва variables, stack и console.",
+    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-06",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "answersEN": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "correctAnswerBG": "View debugger",
+    "correctAnswerEN": "View debugger",
+    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
+    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-07",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to find retained objects. Which choice is best?",
+    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага за leaks и reference cycles.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-08",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to profile performance. Which choice is best?",
+    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "answersEN": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-09",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to choose app plus configuration. Which choice is best?",
+    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "answersEN": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "correctAnswerBG": "Scheme",
+    "correctAnswerEN": "Scheme",
+    "explanationBG": "Scheme определя target, run/test actions и configuration.",
+    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-10",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "answersEN": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "correctAnswerBG": "Target",
+    "correctAnswerEN": "Target",
+    "explanationBG": "Target описва product, sources, resources и build settings.",
+    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-11",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to change deployment target. Which choice is best?",
+    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "answersEN": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "correctAnswerBG": "Build settings",
+    "correctAnswerEN": "Build settings",
+    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
+    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-12",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
+    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "answersEN": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "correctAnswerBG": "Clean Build Folder",
+    "correctAnswerEN": "Clean Build Folder",
+    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
+    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-13",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
+    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "answersEN": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "correctAnswerBG": "DerivedData",
+    "correctAnswerEN": "DerivedData",
+    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
+    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-14",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
+    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "answersEN": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "correctAnswerBG": "Simulator logs",
+    "correctAnswerEN": "Simulator logs",
+    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
+    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-15",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to catch data races. Which choice is best?",
+    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "answersEN": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "correctAnswerBG": "Thread sanitizer",
+    "correctAnswerEN": "Thread sanitizer",
+    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
+    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-16",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
+    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "answersEN": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "correctAnswerBG": "Main Thread Checker",
+    "correctAnswerEN": "Main Thread Checker",
+    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
+    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-17",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
+    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "answersEN": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "correctAnswerBG": "Unit tests",
+    "correctAnswerEN": "Unit tests",
+    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
+    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-18",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
+    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "answersEN": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "correctAnswerBG": "Test navigator",
+    "correctAnswerEN": "Test navigator",
+    "explanationBG": "Test navigator показва test suites и results.",
+    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-19",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "answersEN": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "correctAnswerBG": "Preview diagnostics",
+    "correctAnswerEN": "Preview diagnostics",
+    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
+    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-20",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to read a production crash. Which choice is best?",
+    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Symbolicated crash log",
+    "correctAnswerEN": "Symbolicated crash log",
+    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
+    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-beginner-21",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
+    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Exception breakpoint",
+    "correctAnswerEN": "Exception breakpoint",
+    "explanationBG": "Exception breakpoint спира точно при exception source.",
+    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-01",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to find compiler errors practically. Which choice is best?",
+    "questionBG": "Developer трябва да намери compiler errors практичено. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Issue navigator",
+    "correctAnswerEN": "Issue navigator",
+    "explanationBG": "Issue navigator събира build errors и warnings.",
+    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-02",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
+    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Breakpoint",
+    "correctAnswerEN": "Breakpoint",
+    "explanationBG": "Breakpoint спира program execution за inspection.",
+    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-03",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
+    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
+    "answersBG": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "answersEN": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "correctAnswerBG": "LLDB",
+    "correctAnswerEN": "LLDB",
+    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
+    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-04",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to read print output. Which choice is best?",
+    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "Console",
+    "correctAnswerEN": "Console",
+    "explanationBG": "Console показва logs и runtime output.",
+    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-05",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "answersEN": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "correctAnswerBG": "Debug area",
+    "correctAnswerEN": "Debug area",
+    "explanationBG": "Debug area показва variables, stack и console.",
+    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-06",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "answersEN": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "correctAnswerBG": "View debugger",
+    "correctAnswerEN": "View debugger",
+    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
+    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-07",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to find retained objects. Which choice is best?",
+    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага за leaks и reference cycles.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-08",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to profile performance. Which choice is best?",
+    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "answersEN": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-09",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to choose app plus configuration. Which choice is best?",
+    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "answersEN": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "correctAnswerBG": "Scheme",
+    "correctAnswerEN": "Scheme",
+    "explanationBG": "Scheme определя target, run/test actions и configuration.",
+    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-10",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "answersEN": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "correctAnswerBG": "Target",
+    "correctAnswerEN": "Target",
+    "explanationBG": "Target описва product, sources, resources и build settings.",
+    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-11",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to change deployment target. Which choice is best?",
+    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "answersEN": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "correctAnswerBG": "Build settings",
+    "correctAnswerEN": "Build settings",
+    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
+    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-12",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
+    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "answersEN": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "correctAnswerBG": "Clean Build Folder",
+    "correctAnswerEN": "Clean Build Folder",
+    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
+    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-13",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
+    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "answersEN": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "correctAnswerBG": "DerivedData",
+    "correctAnswerEN": "DerivedData",
+    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
+    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-14",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
+    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "answersEN": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "correctAnswerBG": "Simulator logs",
+    "correctAnswerEN": "Simulator logs",
+    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
+    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-15",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to catch data races. Which choice is best?",
+    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "answersEN": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "correctAnswerBG": "Thread sanitizer",
+    "correctAnswerEN": "Thread sanitizer",
+    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
+    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-16",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
+    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "answersEN": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "correctAnswerBG": "Main Thread Checker",
+    "correctAnswerEN": "Main Thread Checker",
+    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
+    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-17",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
+    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "answersEN": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "correctAnswerBG": "Unit tests",
+    "correctAnswerEN": "Unit tests",
+    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
+    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-18",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
+    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "answersEN": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "correctAnswerBG": "Test navigator",
+    "correctAnswerEN": "Test navigator",
+    "explanationBG": "Test navigator показва test suites и results.",
+    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-19",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "answersEN": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "correctAnswerBG": "Preview diagnostics",
+    "correctAnswerEN": "Preview diagnostics",
+    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
+    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-20",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to read a production crash. Which choice is best?",
+    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Symbolicated crash log",
+    "correctAnswerEN": "Symbolicated crash log",
+    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
+    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-intermediate-21",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
+    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Exception breakpoint",
+    "correctAnswerEN": "Exception breakpoint",
+    "explanationBG": "Exception breakpoint спира точно при exception source.",
+    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-01",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to find compiler errors practically. Which choice is best?",
+    "questionBG": "Developer трябва да намери compiler errors практичено. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Issue navigator",
+    "correctAnswerEN": "Issue navigator",
+    "explanationBG": "Issue navigator събира build errors и warnings.",
+    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-02",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
+    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Breakpoint",
+    "correctAnswerEN": "Breakpoint",
+    "explanationBG": "Breakpoint спира program execution за inspection.",
+    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-03",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
+    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
+    "answersBG": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "answersEN": [
+      "LLDB",
+      "Console",
+      "Debug area",
+      "View debugger"
+    ],
+    "correctAnswerBG": "LLDB",
+    "correctAnswerEN": "LLDB",
+    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
+    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-04",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to read print output. Which choice is best?",
+    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "Console",
+      "Debug area",
+      "View debugger",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "Console",
+    "correctAnswerEN": "Console",
+    "explanationBG": "Console показва logs и runtime output.",
+    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-05",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "answersEN": [
+      "Debug area",
+      "View debugger",
+      "Memory graph",
+      "Instruments"
+    ],
+    "correctAnswerBG": "Debug area",
+    "correctAnswerEN": "Debug area",
+    "explanationBG": "Debug area показва variables, stack и console.",
+    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-06",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
+    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "answersEN": [
+      "View debugger",
+      "Memory graph",
+      "Instruments",
+      "Scheme"
+    ],
+    "correctAnswerBG": "View debugger",
+    "correctAnswerEN": "View debugger",
+    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
+    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-07",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to find retained objects. Which choice is best?",
+    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Instruments",
+      "Scheme",
+      "Target"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага за leaks и reference cycles.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-08",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to profile performance. Which choice is best?",
+    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "answersEN": [
+      "Instruments",
+      "Scheme",
+      "Target",
+      "Build settings"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-09",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to evaluate app plus configuration. Which choice is best?",
+    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "answersEN": [
+      "Scheme",
+      "Target",
+      "Build settings",
+      "DerivedData"
+    ],
+    "correctAnswerBG": "Scheme",
+    "correctAnswerEN": "Scheme",
+    "explanationBG": "Scheme определя target, run/test actions и configuration.",
+    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-10",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "answersEN": [
+      "Target",
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder"
+    ],
+    "correctAnswerBG": "Target",
+    "correctAnswerEN": "Target",
+    "explanationBG": "Target описва product, sources, resources и build settings.",
+    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-11",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to change deployment target. Which choice is best?",
+    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "answersEN": [
+      "Build settings",
+      "DerivedData",
+      "Clean Build Folder",
+      "Simulator logs"
+    ],
+    "correctAnswerBG": "Build settings",
+    "correctAnswerEN": "Build settings",
+    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
+    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-12",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
+    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "answersEN": [
+      "Clean Build Folder",
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer"
+    ],
+    "correctAnswerBG": "Clean Build Folder",
+    "correctAnswerEN": "Clean Build Folder",
+    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
+    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-13",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
+    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "answersEN": [
+      "DerivedData",
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker"
+    ],
+    "correctAnswerBG": "DerivedData",
+    "correctAnswerEN": "DerivedData",
+    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
+    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-14",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
+    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "answersEN": [
+      "Simulator logs",
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests"
+    ],
+    "correctAnswerBG": "Simulator logs",
+    "correctAnswerEN": "Simulator logs",
+    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
+    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-15",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to catch data races. Which choice is best?",
+    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "answersEN": [
+      "Thread sanitizer",
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator"
+    ],
+    "correctAnswerBG": "Thread sanitizer",
+    "correctAnswerEN": "Thread sanitizer",
+    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
+    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-16",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
+    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "answersEN": [
+      "Main Thread Checker",
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics"
+    ],
+    "correctAnswerBG": "Main Thread Checker",
+    "correctAnswerEN": "Main Thread Checker",
+    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
+    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-17",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
+    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "answersEN": [
+      "Unit tests",
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log"
+    ],
+    "correctAnswerBG": "Unit tests",
+    "correctAnswerEN": "Unit tests",
+    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
+    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-18",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
+    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "answersEN": [
+      "Test navigator",
+      "Preview diagnostics",
+      "Symbolicated crash log",
+      "Exception breakpoint"
+    ],
+    "correctAnswerBG": "Test navigator",
+    "correctAnswerEN": "Test navigator",
+    "explanationBG": "Test navigator показва test suites и results.",
+    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-19",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "answersEN": [
+      "Preview diagnostics",
+      "Issue navigator",
+      "Breakpoint",
+      "LLDB"
+    ],
+    "correctAnswerBG": "Preview diagnostics",
+    "correctAnswerEN": "Preview diagnostics",
+    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
+    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-20",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to read a production crash. Which choice is best?",
+    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "answersEN": [
+      "Symbolicated crash log",
+      "Breakpoint",
+      "LLDB",
+      "Console"
+    ],
+    "correctAnswerBG": "Symbolicated crash log",
+    "correctAnswerEN": "Symbolicated crash log",
+    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
+    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  },
+  {
+    "id": "xcode-debugging-advanced-21",
+    "categoryId": "xcode-debugging",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
+    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "answersEN": [
+      "Exception breakpoint",
+      "LLDB",
+      "Console",
+      "Debug area"
+    ],
+    "correctAnswerBG": "Exception breakpoint",
+    "correctAnswerEN": "Exception breakpoint",
+    "explanationBG": "Exception breakpoint спира точно при exception source.",
+    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+  }
+]

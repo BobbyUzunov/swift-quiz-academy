@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "git-github-beginner-01",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to see changed files. Which choice is best?",
+    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git status",
+    "correctAnswerEN": "git status",
+    "explanationBG": "git status показва working tree и staged changes.",
+    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-02",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
+    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git add",
+    "correctAnswerEN": "git add",
+    "explanationBG": "git add премества промени в staging area.",
+    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-03",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "answersEN": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "correctAnswerBG": "git commit",
+    "correctAnswerEN": "git commit",
+    "explanationBG": "git commit записва snapshot в локалната история.",
+    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-04",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
+    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "answersEN": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "correctAnswerBG": "git branch",
+    "correctAnswerEN": "git branch",
+    "explanationBG": "Branch позволява работа без директна промяна на main.",
+    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-05",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to move to another branch. Which choice is best?",
+    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git switch",
+    "correctAnswerEN": "git switch",
+    "explanationBG": "git switch сменя текущия branch.",
+    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-06",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git clone",
+    "correctAnswerEN": "git clone",
+    "explanationBG": "git clone създава локално копие на remote repository.",
+    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-07",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
+    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "answersEN": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "correctAnswerBG": "git push",
+    "correctAnswerEN": "git push",
+    "explanationBG": "git push качва локални commits към remote.",
+    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-08",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "answersEN": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "correctAnswerBG": "git pull",
+    "correctAnswerEN": "git pull",
+    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
+    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-09",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "answersEN": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "correctAnswerBG": "git fetch",
+    "correctAnswerEN": "git fetch",
+    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
+    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-10",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
+    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "answersEN": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "correctAnswerBG": "git merge",
+    "correctAnswerEN": "git merge",
+    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
+    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-11",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to request review before merging. Which choice is best?",
+    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "answersEN": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "correctAnswerBG": "pull request",
+    "correctAnswerEN": "pull request",
+    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
+    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-12",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
+    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "answersEN": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "correctAnswerBG": "code review",
+    "correctAnswerEN": "code review",
+    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
+    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-13",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
+    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
+    "answersBG": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "answersEN": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "correctAnswerBG": "merge conflict",
+    "correctAnswerEN": "merge conflict",
+    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
+    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-14",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
+    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "answersEN": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "correctAnswerBG": "GitHub Actions",
+    "correctAnswerEN": "GitHub Actions",
+    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
+    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-15",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
+    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "answersEN": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "correctAnswerBG": "tag",
+    "correctAnswerEN": "tag",
+    "explanationBG": "Tag сочи към конкретен commit, често за release.",
+    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-16",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
+    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "answersEN": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "correctAnswerBG": "release",
+    "correctAnswerEN": "release",
+    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
+    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-17",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
+    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "answersEN": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "correctAnswerBG": "fork",
+    "correctAnswerEN": "fork",
+    "explanationBG": "Fork създава GitHub copy за independent changes.",
+    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-18",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
+    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
+    "answersBG": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "answersEN": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "correctAnswerBG": "remote",
+    "correctAnswerEN": "remote",
+    "explanationBG": "Remote е named URL към repository извън локалната машина.",
+    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-19",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
+    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "answersEN": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "correctAnswerBG": "staging area",
+    "correctAnswerEN": "staging area",
+    "explanationBG": "Staging area позволява commit само на избрани промени.",
+    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-20",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
+    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git restore",
+    "correctAnswerEN": "git restore",
+    "explanationBG": "git restore може да върне working tree files към последния commit.",
+    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-beginner-21",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to see commit history. Which choice is best?",
+    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git log",
+    "correctAnswerEN": "git log",
+    "explanationBG": "git log показва commit history и metadata.",
+    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-01",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to see changed files. Which choice is best?",
+    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git status",
+    "correctAnswerEN": "git status",
+    "explanationBG": "git status показва working tree и staged changes.",
+    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-02",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
+    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git add",
+    "correctAnswerEN": "git add",
+    "explanationBG": "git add премества промени в staging area.",
+    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-03",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "answersEN": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "correctAnswerBG": "git commit",
+    "correctAnswerEN": "git commit",
+    "explanationBG": "git commit записва snapshot в локалната история.",
+    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-04",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
+    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "answersEN": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "correctAnswerBG": "git branch",
+    "correctAnswerEN": "git branch",
+    "explanationBG": "Branch позволява работа без директна промяна на main.",
+    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-05",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to move to another branch. Which choice is best?",
+    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git switch",
+    "correctAnswerEN": "git switch",
+    "explanationBG": "git switch сменя текущия branch.",
+    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-06",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git clone",
+    "correctAnswerEN": "git clone",
+    "explanationBG": "git clone създава локално копие на remote repository.",
+    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-07",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
+    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "answersEN": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "correctAnswerBG": "git push",
+    "correctAnswerEN": "git push",
+    "explanationBG": "git push качва локални commits към remote.",
+    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-08",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "answersEN": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "correctAnswerBG": "git pull",
+    "correctAnswerEN": "git pull",
+    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
+    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-09",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "answersEN": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "correctAnswerBG": "git fetch",
+    "correctAnswerEN": "git fetch",
+    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
+    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-10",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
+    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "answersEN": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "correctAnswerBG": "git merge",
+    "correctAnswerEN": "git merge",
+    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
+    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-11",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to request review before merging. Which choice is best?",
+    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "answersEN": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "correctAnswerBG": "pull request",
+    "correctAnswerEN": "pull request",
+    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
+    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-12",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
+    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "answersEN": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "correctAnswerBG": "code review",
+    "correctAnswerEN": "code review",
+    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
+    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-13",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
+    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
+    "answersBG": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "answersEN": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "correctAnswerBG": "merge conflict",
+    "correctAnswerEN": "merge conflict",
+    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
+    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-14",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
+    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "answersEN": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "correctAnswerBG": "GitHub Actions",
+    "correctAnswerEN": "GitHub Actions",
+    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
+    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-15",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
+    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "answersEN": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "correctAnswerBG": "tag",
+    "correctAnswerEN": "tag",
+    "explanationBG": "Tag сочи към конкретен commit, често за release.",
+    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-16",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
+    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "answersEN": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "correctAnswerBG": "release",
+    "correctAnswerEN": "release",
+    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
+    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-17",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
+    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "answersEN": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "correctAnswerBG": "fork",
+    "correctAnswerEN": "fork",
+    "explanationBG": "Fork създава GitHub copy за independent changes.",
+    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-18",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
+    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
+    "answersBG": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "answersEN": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "correctAnswerBG": "remote",
+    "correctAnswerEN": "remote",
+    "explanationBG": "Remote е named URL към repository извън локалната машина.",
+    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-19",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
+    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "answersEN": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "correctAnswerBG": "staging area",
+    "correctAnswerEN": "staging area",
+    "explanationBG": "Staging area позволява commit само на избрани промени.",
+    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-20",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
+    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git restore",
+    "correctAnswerEN": "git restore",
+    "explanationBG": "git restore може да върне working tree files към последния commit.",
+    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-intermediate-21",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to see commit history. Which choice is best?",
+    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git log",
+    "correctAnswerEN": "git log",
+    "explanationBG": "git log показва commit history и metadata.",
+    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-01",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to see changed files. Which choice is best?",
+    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git status",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git status",
+    "correctAnswerEN": "git status",
+    "explanationBG": "git status показва working tree и staged changes.",
+    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-02",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
+    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git add",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git add",
+    "correctAnswerEN": "git add",
+    "explanationBG": "git add премества промени в staging area.",
+    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-03",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "answersEN": [
+      "git commit",
+      "git branch",
+      "git checkout",
+      "git switch"
+    ],
+    "correctAnswerBG": "git commit",
+    "correctAnswerEN": "git commit",
+    "explanationBG": "git commit записва snapshot в локалната история.",
+    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-04",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
+    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "answersEN": [
+      "git branch",
+      "git checkout",
+      "git switch",
+      "git pull"
+    ],
+    "correctAnswerBG": "git branch",
+    "correctAnswerEN": "git branch",
+    "explanationBG": "Branch позволява работа без директна промяна на main.",
+    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-05",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to move to another branch. Which choice is best?",
+    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git switch",
+      "git checkout",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git switch",
+    "correctAnswerEN": "git switch",
+    "explanationBG": "git switch сменя текущия branch.",
+    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-06",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "answersEN": [
+      "git clone",
+      "git switch",
+      "git pull",
+      "git push"
+    ],
+    "correctAnswerBG": "git clone",
+    "correctAnswerEN": "git clone",
+    "explanationBG": "git clone създава локално копие на remote repository.",
+    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-07",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
+    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "answersEN": [
+      "git push",
+      "git pull",
+      "git fetch",
+      "git merge"
+    ],
+    "correctAnswerBG": "git push",
+    "correctAnswerEN": "git push",
+    "explanationBG": "git push качва локални commits към remote.",
+    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-08",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
+    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "answersEN": [
+      "git pull",
+      "git fetch",
+      "git merge",
+      "git rebase"
+    ],
+    "correctAnswerBG": "git pull",
+    "correctAnswerEN": "git pull",
+    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
+    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-09",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
+    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "answersEN": [
+      "git fetch",
+      "git merge",
+      "git rebase",
+      "pull request"
+    ],
+    "correctAnswerBG": "git fetch",
+    "correctAnswerEN": "git fetch",
+    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
+    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-10",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
+    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "answersEN": [
+      "git merge",
+      "git rebase",
+      "pull request",
+      "code review"
+    ],
+    "correctAnswerBG": "git merge",
+    "correctAnswerEN": "git merge",
+    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
+    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-11",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to request review before merging. Which choice is best?",
+    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
+    "answersBG": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "answersEN": [
+      "pull request",
+      "git rebase",
+      "code review",
+      "merge conflict"
+    ],
+    "correctAnswerBG": "pull request",
+    "correctAnswerEN": "pull request",
+    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
+    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-12",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
+    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "answersEN": [
+      "code review",
+      "pull request",
+      "merge conflict",
+      "GitHub Actions"
+    ],
+    "correctAnswerBG": "code review",
+    "correctAnswerEN": "code review",
+    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
+    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-13",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
+    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
+    "answersBG": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "answersEN": [
+      "merge conflict",
+      "code review",
+      "GitHub Actions",
+      "tag"
+    ],
+    "correctAnswerBG": "merge conflict",
+    "correctAnswerEN": "merge conflict",
+    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
+    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-14",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
+    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "answersEN": [
+      "GitHub Actions",
+      "merge conflict",
+      "tag",
+      "release"
+    ],
+    "correctAnswerBG": "GitHub Actions",
+    "correctAnswerEN": "GitHub Actions",
+    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
+    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-15",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
+    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "answersEN": [
+      "tag",
+      "GitHub Actions",
+      "release",
+      "fork"
+    ],
+    "correctAnswerBG": "tag",
+    "correctAnswerEN": "tag",
+    "explanationBG": "Tag сочи към конкретен commit, често за release.",
+    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-16",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
+    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "answersEN": [
+      "release",
+      "tag",
+      "fork",
+      "clone"
+    ],
+    "correctAnswerBG": "release",
+    "correctAnswerEN": "release",
+    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
+    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-17",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
+    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "answersEN": [
+      "fork",
+      "release",
+      "clone",
+      "remote"
+    ],
+    "correctAnswerBG": "fork",
+    "correctAnswerEN": "fork",
+    "explanationBG": "Fork създава GitHub copy за independent changes.",
+    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-18",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
+    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
+    "answersBG": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "answersEN": [
+      "remote",
+      "fork",
+      "clone",
+      "staging area"
+    ],
+    "correctAnswerBG": "remote",
+    "correctAnswerEN": "remote",
+    "explanationBG": "Remote е named URL към repository извън локалната машина.",
+    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-19",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
+    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
+    "answersBG": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "answersEN": [
+      "staging area",
+      "git status",
+      "git add",
+      "git commit"
+    ],
+    "correctAnswerBG": "staging area",
+    "correctAnswerEN": "staging area",
+    "explanationBG": "Staging area позволява commit само на избрани промени.",
+    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-20",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
+    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "answersEN": [
+      "git restore",
+      "git add",
+      "git commit",
+      "git branch"
+    ],
+    "correctAnswerBG": "git restore",
+    "correctAnswerEN": "git restore",
+    "explanationBG": "git restore може да върне working tree files към последния commit.",
+    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
+  },
+  {
+    "id": "git-github-advanced-21",
+    "categoryId": "git-github",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to see commit history. Which choice is best?",
+    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
+    "answersBG": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "answersEN": [
+      "git log",
+      "git commit",
+      "git branch",
+      "git checkout"
+    ],
+    "correctAnswerBG": "git log",
+    "correctAnswerEN": "git log",
+    "explanationBG": "git log показва commit history и metadata.",
+    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+  }
+]

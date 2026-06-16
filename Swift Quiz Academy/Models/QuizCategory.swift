@@ -27,12 +27,18 @@ struct QuizCategory: Identifiable {
             return language.localized("Swift основи", "Swift Basics")
         case "swiftui":
             return language.localized("SwiftUI", "SwiftUI")
-        case "ios-basics":
-            return language.localized("iOS основи", "iOS Basics")
+        case "ios-development":
+            return language.localized("iOS разработка", "iOS Development")
         case "programming-logic":
             return language.localized("Програмна логика", "Programming Logic")
-        case "ai-basics":
-            return language.localized("AI основи", "AI Basics")
+        case "ai-for-developers":
+            return language.localized("AI за разработчици", "AI for Developers")
+        case "git-github":
+            return language.localized("Git и GitHub", "Git & GitHub")
+        case "architecture-mvvm":
+            return language.localized("Архитектура и MVVM", "Architecture & MVVM")
+        case "xcode-debugging":
+            return language.localized("Xcode и debugging", "Xcode & Debugging")
         case "daily-challenge":
             return language.localized("Дневно предизвикателство", "Daily Challenge")
         case "practice-mistakes":
@@ -48,12 +54,18 @@ struct QuizCategory: Identifiable {
             return language.localized("Променливи, типове, функции и optional-и.", "Variables, types, functions and optionals.")
         case "swiftui":
             return language.localized("Views, state, modifiers и основи на layout.", "Views, state, modifiers and layout basics.")
-        case "ios-basics":
-            return language.localized("Приложения, екрани, assets и Apple platform идеи.", "Apps, screens, assets and Apple platform ideas.")
+        case "ios-development":
+            return language.localized("Apps, platform поведение, permissions и release основи.", "Apps, platform behavior, permissions and release basics.")
         case "programming-logic":
             return language.localized("Условия, цикли, сравнения и решаване на проблеми.", "Conditions, loops, comparisons and problem solving.")
-        case "ai-basics":
-            return language.localized("Основни понятия за модерен AI и машинно обучение.", "Core terms for modern AI and machine learning.")
+        case "ai-for-developers":
+            return language.localized("AI-assisted разработка, prompts, review и отговорна употреба.", "AI-assisted development, prompts, review and responsible use.")
+        case "git-github":
+            return language.localized("Commits, branches, pull requests и collaboration workflows.", "Commits, branches, pull requests and collaboration workflows.")
+        case "architecture-mvvm":
+            return language.localized("Separation of concerns, view models, services и testable design.", "Separation of concerns, view models, services and testable design.")
+        case "xcode-debugging":
+            return language.localized("Build errors, breakpoints, Instruments и debugging workflows.", "Build errors, breakpoints, Instruments and debugging workflows.")
         case "daily-challenge":
             return language.localized("Един специален смесен quiz на ден с bonus XP.", "One special mixed quiz per day with bonus XP.")
         case "practice-mistakes":

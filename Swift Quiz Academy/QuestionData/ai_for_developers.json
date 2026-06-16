@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "ai-for-developers-beginner-01",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
+    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "prompt",
+    "correctAnswerEN": "prompt",
+    "explanationBG": "Prompt е входът, който насочва AI системата.",
+    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-02",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
+    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
+    "answersBG": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "model",
+    "correctAnswerEN": "model",
+    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
+    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-03",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
+    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "token",
+    "correctAnswerEN": "token",
+    "explanationBG": "Tokens са парчета текст, с които language models работят.",
+    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-04",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
+    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "answersEN": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "correctAnswerBG": "context window",
+    "correctAnswerEN": "context window",
+    "explanationBG": "Context window е максималният обем input/output context.",
+    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-05",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "hallucination",
+    "correctAnswerEN": "hallucination",
+    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
+    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-06",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
+    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
+    "answersBG": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "human review",
+    "correctAnswerEN": "human review",
+    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
+    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-07",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
+    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "answersEN": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "correctAnswerBG": "privacy review",
+    "correctAnswerEN": "privacy review",
+    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
+    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-08",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
+    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "answersEN": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "correctAnswerBG": "prompt injection",
+    "correctAnswerEN": "prompt injection",
+    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
+    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-09",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
+    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
+    "answersBG": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "answersEN": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "correctAnswerBG": "grounding",
+    "correctAnswerEN": "grounding",
+    "explanationBG": "Grounding свързва output с надеждни източници.",
+    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-10",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
+    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
+    "answersBG": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "answersEN": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "correctAnswerBG": "retrieval",
+    "correctAnswerEN": "retrieval",
+    "explanationBG": "Retrieval добавя външен context към AI отговор.",
+    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-11",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
+    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "answersEN": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "correctAnswerBG": "embedding",
+    "correctAnswerEN": "embedding",
+    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
+    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-12",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
+    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
+    "answersBG": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "answersEN": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "correctAnswerBG": "temperature",
+    "correctAnswerEN": "temperature",
+    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
+    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-13",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
+    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "answersEN": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "correctAnswerBG": "evals",
+    "correctAnswerEN": "evals",
+    "explanationBG": "Evals проверяват quality, safety и regressions.",
+    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-14",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to label input into categories. Which choice is best?",
+    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
+    "answersBG": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "answersEN": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "correctAnswerBG": "classification",
+    "correctAnswerEN": "classification",
+    "explanationBG": "Classification избира category label за input.",
+    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-15",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
+    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
+    "answersBG": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "answersEN": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "correctAnswerBG": "regression",
+    "correctAnswerEN": "regression",
+    "explanationBG": "Regression прогнозира числова стойност.",
+    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-16",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
+    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "answersEN": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "correctAnswerBG": "inference",
+    "correctAnswerEN": "inference",
+    "explanationBG": "Inference използва model-а след training.",
+    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-17",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
+    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
+    "answersBG": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "answersEN": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "correctAnswerBG": "bias",
+    "correctAnswerEN": "bias",
+    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
+    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-18",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
+    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "answersEN": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "correctAnswerBG": "overfitting",
+    "correctAnswerEN": "overfitting",
+    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
+    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-19",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to test during model development. Which choice is best?",
+    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
+    "answersBG": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "answersEN": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "correctAnswerBG": "validation set",
+    "correctAnswerEN": "validation set",
+    "explanationBG": "Validation set помага да се оценява model без training leakage.",
+    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-20",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
+    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "fine-tuning",
+    "correctAnswerEN": "fine-tuning",
+    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
+    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-beginner-21",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
+    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
+    "answersBG": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "system prompt",
+    "correctAnswerEN": "system prompt",
+    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
+    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-01",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
+    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "prompt",
+    "correctAnswerEN": "prompt",
+    "explanationBG": "Prompt е входът, който насочва AI системата.",
+    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-02",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
+    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
+    "answersBG": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "model",
+    "correctAnswerEN": "model",
+    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
+    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-03",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
+    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "token",
+    "correctAnswerEN": "token",
+    "explanationBG": "Tokens са парчета текст, с които language models работят.",
+    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-04",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
+    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "answersEN": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "correctAnswerBG": "context window",
+    "correctAnswerEN": "context window",
+    "explanationBG": "Context window е максималният обем input/output context.",
+    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-05",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "hallucination",
+    "correctAnswerEN": "hallucination",
+    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
+    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-06",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
+    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
+    "answersBG": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "human review",
+    "correctAnswerEN": "human review",
+    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
+    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-07",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
+    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "answersEN": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "correctAnswerBG": "privacy review",
+    "correctAnswerEN": "privacy review",
+    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
+    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-08",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
+    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "answersEN": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "correctAnswerBG": "prompt injection",
+    "correctAnswerEN": "prompt injection",
+    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
+    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-09",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
+    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
+    "answersBG": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "answersEN": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "correctAnswerBG": "grounding",
+    "correctAnswerEN": "grounding",
+    "explanationBG": "Grounding свързва output с надеждни източници.",
+    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-10",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
+    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
+    "answersBG": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "answersEN": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "correctAnswerBG": "retrieval",
+    "correctAnswerEN": "retrieval",
+    "explanationBG": "Retrieval добавя външен context към AI отговор.",
+    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-11",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
+    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "answersEN": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "correctAnswerBG": "embedding",
+    "correctAnswerEN": "embedding",
+    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
+    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-12",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
+    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
+    "answersBG": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "answersEN": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "correctAnswerBG": "temperature",
+    "correctAnswerEN": "temperature",
+    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
+    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-13",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
+    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "answersEN": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "correctAnswerBG": "evals",
+    "correctAnswerEN": "evals",
+    "explanationBG": "Evals проверяват quality, safety и regressions.",
+    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-14",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to label input into categories. Which choice is best?",
+    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
+    "answersBG": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "answersEN": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "correctAnswerBG": "classification",
+    "correctAnswerEN": "classification",
+    "explanationBG": "Classification избира category label за input.",
+    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-15",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
+    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
+    "answersBG": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "answersEN": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "correctAnswerBG": "regression",
+    "correctAnswerEN": "regression",
+    "explanationBG": "Regression прогнозира числова стойност.",
+    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-16",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
+    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "answersEN": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "correctAnswerBG": "inference",
+    "correctAnswerEN": "inference",
+    "explanationBG": "Inference използва model-а след training.",
+    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-17",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
+    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
+    "answersBG": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "answersEN": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "correctAnswerBG": "bias",
+    "correctAnswerEN": "bias",
+    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
+    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-18",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
+    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "answersEN": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "correctAnswerBG": "overfitting",
+    "correctAnswerEN": "overfitting",
+    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
+    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-19",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to test during model development. Which choice is best?",
+    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
+    "answersBG": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "answersEN": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "correctAnswerBG": "validation set",
+    "correctAnswerEN": "validation set",
+    "explanationBG": "Validation set помага да се оценява model без training leakage.",
+    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-20",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
+    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "fine-tuning",
+    "correctAnswerEN": "fine-tuning",
+    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
+    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-intermediate-21",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
+    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
+    "answersBG": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "system prompt",
+    "correctAnswerEN": "system prompt",
+    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
+    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-01",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
+    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "prompt",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "prompt",
+    "correctAnswerEN": "prompt",
+    "explanationBG": "Prompt е входът, който насочва AI системата.",
+    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-02",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
+    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
+    "answersBG": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "model",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "model",
+    "correctAnswerEN": "model",
+    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
+    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-03",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
+    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "token",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "token",
+    "correctAnswerEN": "token",
+    "explanationBG": "Tokens са парчета текст, с които language models работят.",
+    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-04",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
+    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
+    "answersBG": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "answersEN": [
+      "context window",
+      "fine-tuning",
+      "embedding",
+      "token"
+    ],
+    "correctAnswerBG": "context window",
+    "correctAnswerEN": "context window",
+    "explanationBG": "Context window е максималният обем input/output context.",
+    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-05",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "hallucination",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "hallucination",
+    "correctAnswerEN": "hallucination",
+    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
+    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-06",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
+    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
+    "answersBG": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "answersEN": [
+      "human review",
+      "embedding",
+      "token",
+      "temperature"
+    ],
+    "correctAnswerBG": "human review",
+    "correctAnswerEN": "human review",
+    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
+    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-07",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
+    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
+    "answersBG": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "answersEN": [
+      "privacy review",
+      "token",
+      "temperature",
+      "validation set"
+    ],
+    "correctAnswerBG": "privacy review",
+    "correctAnswerEN": "privacy review",
+    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
+    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-08",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
+    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
+    "answersBG": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "answersEN": [
+      "prompt injection",
+      "temperature",
+      "validation set",
+      "human review"
+    ],
+    "correctAnswerBG": "prompt injection",
+    "correctAnswerEN": "prompt injection",
+    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
+    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-09",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
+    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
+    "answersBG": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "answersEN": [
+      "grounding",
+      "validation set",
+      "human review",
+      "privacy review"
+    ],
+    "correctAnswerBG": "grounding",
+    "correctAnswerEN": "grounding",
+    "explanationBG": "Grounding свързва output с надеждни източници.",
+    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-10",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
+    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
+    "answersBG": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "answersEN": [
+      "retrieval",
+      "privacy review",
+      "prompt injection",
+      "system prompt"
+    ],
+    "correctAnswerBG": "retrieval",
+    "correctAnswerEN": "retrieval",
+    "explanationBG": "Retrieval добавя външен context към AI отговор.",
+    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-11",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
+    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "answersEN": [
+      "embedding",
+      "prompt injection",
+      "system prompt",
+      "grounding"
+    ],
+    "correctAnswerBG": "embedding",
+    "correctAnswerEN": "embedding",
+    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
+    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-12",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
+    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
+    "answersBG": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "answersEN": [
+      "temperature",
+      "system prompt",
+      "grounding",
+      "evals"
+    ],
+    "correctAnswerBG": "temperature",
+    "correctAnswerEN": "temperature",
+    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
+    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-13",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
+    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
+    "answersBG": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "answersEN": [
+      "evals",
+      "system prompt",
+      "grounding",
+      "classification"
+    ],
+    "correctAnswerBG": "evals",
+    "correctAnswerEN": "evals",
+    "explanationBG": "Evals проверяват quality, safety и regressions.",
+    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-14",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to label input into categories. Which choice is best?",
+    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
+    "answersBG": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "answersEN": [
+      "classification",
+      "grounding",
+      "evals",
+      "regression"
+    ],
+    "correctAnswerBG": "classification",
+    "correctAnswerEN": "classification",
+    "explanationBG": "Classification избира category label за input.",
+    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-15",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
+    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
+    "answersBG": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "answersEN": [
+      "regression",
+      "evals",
+      "classification",
+      "bias"
+    ],
+    "correctAnswerBG": "regression",
+    "correctAnswerEN": "regression",
+    "explanationBG": "Regression прогнозира числова стойност.",
+    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-16",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
+    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "answersEN": [
+      "inference",
+      "classification",
+      "regression",
+      "bias"
+    ],
+    "correctAnswerBG": "inference",
+    "correctAnswerEN": "inference",
+    "explanationBG": "Inference използва model-а след training.",
+    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-17",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
+    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
+    "answersBG": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "answersEN": [
+      "bias",
+      "regression",
+      "overfitting",
+      "inference"
+    ],
+    "correctAnswerBG": "bias",
+    "correctAnswerEN": "bias",
+    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
+    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-18",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
+    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
+    "answersBG": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "answersEN": [
+      "overfitting",
+      "bias",
+      "inference",
+      "model"
+    ],
+    "correctAnswerBG": "overfitting",
+    "correctAnswerEN": "overfitting",
+    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
+    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-19",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to test during model development. Which choice is best?",
+    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
+    "answersBG": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "answersEN": [
+      "validation set",
+      "prompt",
+      "context window",
+      "hallucination"
+    ],
+    "correctAnswerBG": "validation set",
+    "correctAnswerEN": "validation set",
+    "explanationBG": "Validation set помага да се оценява model без training leakage.",
+    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-20",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
+    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
+    "answersBG": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "answersEN": [
+      "fine-tuning",
+      "context window",
+      "hallucination",
+      "retrieval"
+    ],
+    "correctAnswerBG": "fine-tuning",
+    "correctAnswerEN": "fine-tuning",
+    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
+    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
+  },
+  {
+    "id": "ai-for-developers-advanced-21",
+    "categoryId": "ai-for-developers",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
+    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
+    "answersBG": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "answersEN": [
+      "system prompt",
+      "hallucination",
+      "retrieval",
+      "fine-tuning"
+    ],
+    "correctAnswerBG": "system prompt",
+    "correctAnswerEN": "system prompt",
+    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
+    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+  }
+]

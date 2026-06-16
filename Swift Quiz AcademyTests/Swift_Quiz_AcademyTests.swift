@@ -123,15 +123,15 @@ struct Swift_Quiz_AcademyTests {
 
         #expect(viewModel.totalCategoryCount == viewModel.categories.count)
         #expect(viewModel.totalQuestionCount == viewModel.categories.reduce(0) { $0 + $1.totalQuestionCount })
-        #expect(viewModel.totalQuestionCount == 150)
+        #expect(viewModel.totalQuestionCount == 504)
     }
 
     @Test func jsonQuestionLoaderLoadsLocalDatabase() {
         let loader = QuestionLoader()
         let questions = loader.loadAllQuestions()
 
-        #expect(questions.count == 150)
-        #expect(Set(questions.map(\.categoryId)).count == 5)
+        #expect(questions.count == 504)
+        #expect(Set(questions.map(\.categoryId)).count == 8)
         #expect(questions.allSatisfy { !$0.id.isEmpty })
         #expect(questions.allSatisfy { $0.answersBG.contains($0.correctAnswerBG) })
         #expect(questions.allSatisfy { $0.answersEN.contains($0.correctAnswerEN) })
@@ -169,28 +169,140 @@ struct Swift_Quiz_AcademyTests {
         let loader = QuestionLoader()
         let grouped = QuestionLoader.groupByCategoryAndDifficulty(loader.loadAllQuestions())
 
-        #expect(grouped.keys.count == 5)
+        #expect(grouped.keys.count == 8)
 
         for definition in QuestionLoader.categoryDefinitions {
             let categoryGroup = grouped[definition.id] ?? [:]
 
-            #expect((categoryGroup[.beginner] ?? []).count >= 5)
-            #expect((categoryGroup[.intermediate] ?? []).count >= 5)
-            #expect((categoryGroup[.advanced] ?? []).count >= 5)
-            #expect(categoryGroup.values.reduce(0) { $0 + $1.count } >= 20)
+            #expect((categoryGroup[.beginner] ?? []).count >= 20)
+            #expect((categoryGroup[.intermediate] ?? []).count >= 20)
+            #expect((categoryGroup[.advanced] ?? []).count >= 20)
+            #expect(categoryGroup.values.reduce(0) { $0 + $1.count } >= 60)
         }
     }
 
     @Test func categoryQuestionsFilterByDifficultyFromJSON() {
         let categories = QuestionLoader().loadCategories()
 
-        #expect(categories.count == 5)
+        #expect(categories.count == 8)
 
         for category in categories {
-            #expect(category.questionCount(for: .beginner) == 10)
-            #expect(category.questionCount(for: .intermediate) == 10)
-            #expect(category.questionCount(for: .advanced) == 10)
+            #expect(category.questionCount(for: .beginner) == 21)
+            #expect(category.questionCount(for: .intermediate) == 21)
+            #expect(category.questionCount(for: .advanced) == 21)
         }
+    }
+
+    @Test func questionDatabasePassesStrictValidation() {
+        let questions = QuestionLoader().loadAllQuestions()
+        let categoryIDs = Set(QuestionLoader.categoryDefinitions.map(\.id))
+        let errors = QuestionDatabaseTestValidator.validate(questions: questions, categoryIDs: categoryIDs)
+
+        #expect(errors.isEmpty)
+    }
+
+    @Test func questionValidationDetectsDuplicateIDs() {
+        let question = makeQuestion(id: "duplicate-id")
+        let errors = QuestionDatabaseTestValidator.validate(
+            questions: [question, makeQuestion(id: "duplicate-id")],
+            categoryIDs: ["swift-basics"]
+        )
+
+        #expect(errors.contains { $0.contains("duplicate id") })
+    }
+
+    @Test func questionValidationDetectsMissingTranslations() {
+        let question = makeQuestion(questionBG: "", questionEN: "")
+        let errors = QuestionDatabaseTestValidator.validate(questions: [question], categoryIDs: ["swift-basics"])
+
+        #expect(errors.contains { $0.contains("questionBG") })
+        #expect(errors.contains { $0.contains("questionEN") })
+    }
+
+    @Test func questionValidationDetectsInvalidAnswerCount() {
+        let question = makeQuestion(answersBG: ["A", "B", "C"], answersEN: ["A", "B", "C"])
+        let errors = QuestionDatabaseTestValidator.validate(questions: [question], categoryIDs: ["swift-basics"])
+
+        #expect(errors.contains { $0.contains("answersBG") })
+        #expect(errors.contains { $0.contains("answersEN") })
+    }
+
+    @Test func progressStoreInitializesCurrentSchemaVersion() {
+        let userDefaults = makeUserDefaults()
+        let store = QuizProgressStore(userDefaults: userDefaults)
+
+        #expect(store.storedSchemaVersion == QuizProgressStore.currentSchemaVersion)
+    }
+
+    @Test func legacyMistakesMigrateToStableQuestionIDsAndDeduplicate() {
+        let userDefaults = makeUserDefaults()
+        let category = QuizCategory.allCategories[0]
+        let question = category.questionsByDifficulty[.beginner]![0]
+        let legacyRecord = MistakeRecord(
+            questionID: "",
+            questionEN: question.questionEN,
+            categoryID: category.id,
+            difficultyRawValue: Difficulty.beginner.rawValue
+        )
+        let store = QuizProgressStore(userDefaults: userDefaults)
+        store.saveMistakes([legacyRecord, legacyRecord])
+
+        let viewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(viewModel.mistakeRecords.count == 1)
+        #expect(viewModel.mistakeRecords[0].questionID == question.id)
+        #expect(viewModel.mistakeRecords[0].id == question.id)
+    }
+
+    @Test func categoryMasteryTracksCompletedQuestionIDs() {
+        let viewModel = makeViewModel()
+
+        viewModel.startQuiz(with: viewModel.categories[0])
+        answerCurrentQuestion(in: viewModel, correctly: true)
+
+        let firstCategoryStat = viewModel.categoryMasteryStats[0]
+
+        #expect(firstCategoryStat.totalQuestions == 63)
+        #expect(firstCategoryStat.completedQuestions == 1)
+        #expect(firstCategoryStat.masteryPercentage == 2)
+    }
+
+    @Test func perfectAchievementsUnlockForTwentyOneOfTwentyOne() {
+        let viewModel = makeViewModel()
+
+        completeFirstQuiz(in: viewModel, correctAnswers: 21)
+
+        #expect(viewModel.resultPercentage == 100)
+        #expect(viewModel.unlockedAchievementIDs.contains("perfect-score"))
+        #expect(viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
+    }
+
+    @Test func perfectAchievementsDoNotUnlockForTwentyOfTwentyOne() {
+        let viewModel = makeViewModel()
+
+        completeFirstQuiz(in: viewModel, correctAnswers: 20)
+
+        #expect(viewModel.resultPercentage < 100)
+        #expect(!viewModel.unlockedAchievementIDs.contains("perfect-score"))
+        #expect(!viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
+    }
+
+    @Test func perfectAchievementsDoNotUnlockForTenOfTwentyOne() {
+        let userDefaults = makeUserDefaults()
+        let store = QuizProgressStore(userDefaults: userDefaults)
+        store.saveTotals(
+            totalXP: 0,
+            highestScore: 10,
+            totalGamesPlayed: 1,
+            bestStreak: 10,
+            correctAnswers: 10,
+            wrongAnswers: 11
+        )
+
+        let viewModel = QuizViewModel(userDefaults: userDefaults)
+
+        #expect(!viewModel.unlockedAchievementIDs.contains("perfect-score"))
+        #expect(!viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
     }
 
     @Test func levelSystemUsesVersionOnePointOneProgression() {
@@ -303,7 +415,7 @@ struct Swift_Quiz_AcademyTests {
         #expect(viewModel.unlockedAchievementIDs.contains("1000-xp"))
         #expect(viewModel.unlockedAchievementIDs.contains("10-games"))
         #expect(viewModel.unlockedAchievementIDs.contains("50-correct"))
-        #expect(viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
+        #expect(!viewModel.unlockedAchievementIDs.contains("perfect-quiz-master"))
     }
 
     @Test func bulgarianQuestionsAreLocalized() {
@@ -312,7 +424,7 @@ struct Swift_Quiz_AcademyTests {
             category.questionsByDifficulty.values.flatMap { $0 }
         }
 
-        #expect(allQuestions.count == 160)
+        #expect(allQuestions.count == 514)
 
         for question in allQuestions {
             #expect(question.questionText(for: .bulgarian) != question.questionText(for: .english))
@@ -348,5 +460,98 @@ struct Swift_Quiz_AcademyTests {
     private func answerCurrentQuestion(in viewModel: QuizViewModel, correctly: Bool) {
         let index = viewModel.shuffledAnswerOptions.firstIndex { $0.isCorrect == correctly }!
         viewModel.selectAnswer(index)
+    }
+
+    private func completeFirstQuiz(in viewModel: QuizViewModel, correctAnswers: Int) {
+        viewModel.startQuiz(with: viewModel.categories[0])
+        let totalQuestions = viewModel.currentQuestions.count
+
+        for questionIndex in 0..<totalQuestions {
+            answerCurrentQuestion(in: viewModel, correctly: questionIndex < correctAnswers)
+            viewModel.goToNextQuestion()
+        }
+    }
+
+    private func makeQuestion(
+        id: String = "sample-id",
+        categoryId: String = "swift-basics",
+        difficulty: Difficulty = .beginner,
+        questionBG: String = "BG въпрос?",
+        questionEN: String = "EN question?",
+        answersBG: [String] = ["A", "B", "C", "D"],
+        answersEN: [String] = ["A", "B", "C", "D"],
+        correctAnswerBG: String = "A",
+        correctAnswerEN: String = "A",
+        explanationBG: String = "BG explanation.",
+        explanationEN: String = "EN explanation."
+    ) -> QuizQuestion {
+        QuizQuestion(
+            id: id,
+            categoryId: categoryId,
+            difficulty: difficulty,
+            questionBG: questionBG,
+            questionEN: questionEN,
+            answersBG: answersBG,
+            answersEN: answersEN,
+            correctAnswerBG: correctAnswerBG,
+            correctAnswerEN: correctAnswerEN,
+            explanationBG: explanationBG,
+            explanationEN: explanationEN
+        )
+    }
+}
+
+private enum QuestionDatabaseTestValidator {
+    static func validate(questions: [QuizQuestion], categoryIDs: Set<String>) -> [String] {
+        var errors: [String] = []
+        var seenIDs: Set<String> = []
+
+        for question in questions {
+            if question.id.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                errors.append("missing id")
+            }
+
+            if !seenIDs.insert(question.id).inserted {
+                errors.append("\(question.id): duplicate id")
+            }
+
+            if !categoryIDs.contains(question.categoryId) {
+                errors.append("\(question.id): category does not exist")
+            }
+
+            if question.questionBG.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                errors.append("\(question.id): questionBG is missing")
+            }
+
+            if question.questionEN.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                errors.append("\(question.id): questionEN is missing")
+            }
+
+            if question.explanationBG.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                errors.append("\(question.id): explanationBG is missing")
+            }
+
+            if question.explanationEN.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+                errors.append("\(question.id): explanationEN is missing")
+            }
+
+            if question.answersBG.count != 4 {
+                errors.append("\(question.id): answersBG must contain exactly 4 answers")
+            }
+
+            if question.answersEN.count != 4 {
+                errors.append("\(question.id): answersEN must contain exactly 4 answers")
+            }
+
+            if !question.answersBG.contains(question.correctAnswerBG) {
+                errors.append("\(question.id): correctAnswerBG is invalid")
+            }
+
+            if !question.answersEN.contains(question.correctAnswerEN) {
+                errors.append("\(question.id): correctAnswerEN is invalid")
+            }
+        }
+
+        return errors
     }
 }

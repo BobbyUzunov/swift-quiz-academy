@@ -243,6 +243,8 @@ struct QuizView: View {
         }
         .buttonStyle(.plain)
         .disabled(selectedAnswerIndex != nil)
+        .accessibilityLabel(localized("Отговор \(String(UnicodeScalar(65 + index)!)): \(answerOption.text)", "Answer \(String(UnicodeScalar(65 + index)!)): \(answerOption.text)"))
+        .accessibilityAddTraits(isSelected ? .isSelected : [])
     }
 
     private func answerBackgroundColor(isSelected: Bool, isCorrect: Bool) -> Color {

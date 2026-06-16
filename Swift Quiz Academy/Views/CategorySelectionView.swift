@@ -34,7 +34,7 @@ struct CategorySelectionView: View {
                         .fontWeight(.bold)
                         .multilineTextAlignment(.center)
 
-                    Text(localized("Избери категория и трудност. Всяка категория има 30 въпроса.", "Choose a category and difficulty. Each category has 30 questions."))
+                    Text(localized("Избери категория и трудност. Всяка категория има 60+ въпроса.", "Choose a category and difficulty. Each category has 60+ questions."))
                         .font(.headline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)

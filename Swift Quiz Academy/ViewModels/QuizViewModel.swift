@@ -8,10 +8,50 @@ import Observation
 import SwiftUI
 
 struct MistakeRecord: Codable, Identifiable, Hashable {
-    var id: String { "\(categoryID)|\(difficultyRawValue)|\(questionEN)" }
+    var id: String {
+        if !questionID.isEmpty {
+            return questionID
+        }
+        return "\(categoryID)|\(difficultyRawValue)|\(questionEN)"
+    }
+    let questionID: String
     let questionEN: String
     let categoryID: String
     let difficultyRawValue: String
+
+    init(questionID: String, questionEN: String = "", categoryID: String, difficultyRawValue: String) {
+        self.questionID = questionID
+        self.questionEN = questionEN
+        self.categoryID = categoryID
+        self.difficultyRawValue = difficultyRawValue
+    }
+
+    private enum CodingKeys: String, CodingKey {
+        case questionID
+        case questionEN
+        case categoryID
+        case difficultyRawValue
+    }
+
+    init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: CodingKeys.self)
+        questionID = try container.decodeIfPresent(String.self, forKey: .questionID) ?? ""
+        questionEN = try container.decodeIfPresent(String.self, forKey: .questionEN) ?? ""
+        categoryID = try container.decode(String.self, forKey: .categoryID)
+        difficultyRawValue = try container.decode(String.self, forKey: .difficultyRawValue)
+    }
+}
+
+struct CategoryMasteryStat: Identifiable, Hashable {
+    let id: String
+    let title: String
+    let totalQuestions: Int
+    let completedQuestions: Int
+
+    var masteryPercentage: Int {
+        guard totalQuestions > 0 else { return 0 }
+        return Int((Double(completedQuestions) / Double(totalQuestions) * 100).rounded())
+    }
 }
 
 @Observable
@@ -78,6 +118,7 @@ final class QuizViewModel {
     var savedLastPlayDate: String
     var mistakeRecords: [MistakeRecord]
     var unlockedAchievementIDs: Set<String>
+    var completedQuestionIDsByCategory: [String: Set<String>]
     var availableDailyReward: DailyRewardResult?
     var recentAchievementID: String?
 
@@ -113,12 +154,14 @@ final class QuizViewModel {
         selectedTheme = progress.selectedTheme
         mistakeRecords = progress.mistakes
         unlockedAchievementIDs = progress.achievementIDs
+        completedQuestionIDsByCategory = progress.completedQuestionIDsByCategory
         availableDailyReward = dailyRewardManager.claimReward(
             lastRewardDate: lastDailyRewardDate,
             currentStreak: savedCurrentLoginStreak,
             bestStreak: savedBestLoginStreak
         )
 
+        migrateMistakeRecordsIfNeeded()
         updateAchievements()
     }
 
@@ -205,6 +248,21 @@ final class QuizViewModel {
         categories.reduce(0) { $0 + $1.totalQuestionCount }
     }
 
+    var categoryMasteryStats: [CategoryMasteryStat] {
+        categories.map { category in
+            let completedIDs = completedQuestionIDsByCategory[category.id] ?? []
+            let validQuestionIDs = Set(category.questionsByDifficulty.values.flatMap { $0.map(\.id) })
+            let completedCount = completedIDs.intersection(validQuestionIDs).count
+
+            return CategoryMasteryStat(
+                id: category.id,
+                title: category.title(for: selectedLanguage),
+                totalQuestions: category.totalQuestionCount,
+                completedQuestions: completedCount
+            )
+        }
+    }
+
     private var currentLevelMilestone: LevelMilestone {
         Self.levelMilestones.last { savedTotalXP >= $0.xp } ?? Self.levelMilestones[0]
     }
@@ -242,10 +300,10 @@ final class QuizViewModel {
     func startPracticeMistakes() -> Bool {
         let practiceItems: [(record: MistakeRecord, question: QuizQuestion)] = mistakeRecords.compactMap { record in
             guard let difficulty = Difficulty(rawValue: record.difficultyRawValue),
-                  let question = findQuestion(questionEN: record.questionEN, categoryID: record.categoryID, difficulty: difficulty) else {
+                  let question = findQuestion(for: record, categoryID: record.categoryID, difficulty: difficulty) else {
                 return nil
             }
-            return (record, question)
+            return (normalizedMistakeRecord(for: question, categoryID: record.categoryID, difficulty: difficulty), question)
         }
 
         if practiceItems.count != mistakeRecords.count {
@@ -310,6 +368,7 @@ final class QuizViewModel {
                 streak += 1
                 bestStreakThisGame = max(bestStreakThisGame, streak)
                 correctAnswersThisGame += 1
+                saveCompletedQuestion(question: currentQuestion)
                 if isPracticeMistakes {
                     removeCurrentPracticeMistake()
                 }
@@ -370,6 +429,7 @@ final class QuizViewModel {
         savedLastPlayDate = ""
         mistakeRecords = []
         unlockedAchievementIDs = []
+        completedQuestionIDsByCategory = [:]
         availableDailyReward = dailyRewardManager.claimReward(
             lastRewardDate: lastDailyRewardDate,
             currentStreak: savedCurrentLoginStreak,
@@ -484,8 +544,9 @@ final class QuizViewModel {
             correctAnswers: savedCorrectAnswers,
             wrongAnswers: savedWrongAnswers
         )
-        if destination == .result && resultPercentage == 100 {
+        if destination == .result && score == currentQuestions.count {
             unlockedAchievementIDs.insert("perfect-score")
+            unlockedAchievementIDs.insert("perfect-quiz-master")
         }
         updateAchievements()
         hasSavedCurrentGame = true
@@ -521,10 +582,19 @@ final class QuizViewModel {
 
     private func saveMistake(for question: QuizQuestion) {
         let record = currentMistakeRecord(for: question)
-        if !mistakeRecords.contains(record) {
+        if !mistakeRecords.contains(where: { $0.id == record.id }) {
             mistakeRecords.append(record)
             progressStore.saveMistakes(mistakeRecords)
         }
+    }
+
+    private func saveCompletedQuestion(question: QuizQuestion) {
+        guard categories.contains(where: { $0.id == question.categoryId }) else { return }
+
+        var completedIDs = completedQuestionIDsByCategory[question.categoryId] ?? []
+        guard completedIDs.insert(question.id).inserted else { return }
+        completedQuestionIDsByCategory[question.categoryId] = completedIDs
+        progressStore.saveCompletedQuestionsByCategory(completedQuestionIDsByCategory)
     }
 
     private func removeCurrentPracticeMistake() {
@@ -542,28 +612,63 @@ final class QuizViewModel {
         }
 
         return MistakeRecord(
+            questionID: question.id,
             questionEN: question.questionEN,
             categoryID: selectedCategory?.id ?? "unknown",
             difficultyRawValue: selectedDifficulty.rawValue
         )
     }
 
-    private func findQuestion(questionEN: String, categoryID: String, difficulty: Difficulty) -> QuizQuestion? {
+    private func findQuestion(for record: MistakeRecord, categoryID: String, difficulty: Difficulty) -> QuizQuestion? {
         let allCategories = categories + [QuizCategory.dailyChallenge]
-        return allCategories.first(where: { $0.id == categoryID })?.questionsByDifficulty[difficulty]?.first(where: { $0.questionEN == questionEN })
+        let questions = allCategories.first(where: { $0.id == categoryID })?.questionsByDifficulty[difficulty] ?? []
+
+        if let question = questions.first(where: { $0.id == record.questionID }) {
+            return question
+        }
+
+        return questions.first(where: { $0.questionEN == record.questionEN })
+    }
+
+    private func normalizedMistakeRecord(for question: QuizQuestion, categoryID: String, difficulty: Difficulty) -> MistakeRecord {
+        MistakeRecord(
+            questionID: question.id,
+            questionEN: question.questionEN,
+            categoryID: categoryID,
+            difficultyRawValue: difficulty.rawValue
+        )
+    }
+
+    private func migrateMistakeRecordsIfNeeded() {
+        var normalizedRecords: [MistakeRecord] = []
+        var seenIDs: Set<String> = []
+
+        for record in mistakeRecords {
+            guard let difficulty = Difficulty(rawValue: record.difficultyRawValue),
+                  let question = findQuestion(for: record, categoryID: record.categoryID, difficulty: difficulty) else {
+                continue
+            }
+
+            let normalizedRecord = normalizedMistakeRecord(for: question, categoryID: record.categoryID, difficulty: difficulty)
+            guard seenIDs.insert(normalizedRecord.id).inserted else { continue }
+            normalizedRecords.append(normalizedRecord)
+        }
+
+        if normalizedRecords != mistakeRecords {
+            mistakeRecords = normalizedRecords
+            progressStore.saveMistakes(mistakeRecords)
+        }
     }
 
     private func updateAchievements() {
         var unlocked = unlockedAchievementIDs
         if savedTotalGamesPlayed >= 1 { unlocked.insert("first-quiz") }
-        if savedHighestScore >= 10 { unlocked.insert("perfect-score") }
         if savedTotalXP >= 100 { unlocked.insert("100-xp") }
         if savedTotalXP >= 500 { unlocked.insert("500-xp") }
         if savedTotalXP >= 1000 { unlocked.insert("1000-xp") }
         if savedTotalGamesPlayed >= 10 { unlocked.insert("10-games") }
         if savedCorrectAnswers >= 50 { unlocked.insert("50-correct") }
         if savedBestDailyStreak >= 7 || savedBestLoginStreak >= 7 { unlocked.insert("7-day-streak") }
-        if savedHighestScore >= 10 { unlocked.insert("perfect-quiz-master") }
 
         let newUnlocks = unlocked.subtracting(unlockedAchievementIDs)
         unlockedAchievementIDs = unlocked

@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "architecture-mvvm-beginner-01",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to render UI from state. Which choice is best?",
+    "questionBG": "Developer трябва да рендерира UI от state. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "View",
+    "correctAnswerEN": "View",
+    "explanationBG": "View трябва основно да описва UI според подадения state.",
+    "explanationEN": "View is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-02",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to prepare screen state and actions. Which choice is best?",
+    "questionBG": "Developer трябва да подготви screen state и actions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "ViewModel",
+    "correctAnswerEN": "ViewModel",
+    "explanationBG": "ViewModel държи presentation state и user actions.",
+    "explanationEN": "ViewModel is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-03",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to represent app data rules. Which choice is best?",
+    "questionBG": "Developer трябва да представи app data rules. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "answersEN": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "correctAnswerBG": "Model",
+    "correctAnswerEN": "Model",
+    "explanationBG": "Model описва domain data и rules.",
+    "explanationEN": "Model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-04",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to perform reusable external work. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни reusable external work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "answersEN": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "correctAnswerBG": "Service",
+    "correctAnswerEN": "Service",
+    "explanationBG": "Service капсулира работа като loading, networking или persistence.",
+    "explanationEN": "Service is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-05",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to hide data source details. Which choice is best?",
+    "questionBG": "Developer трябва да скрие data source details. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "answersEN": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "correctAnswerBG": "Repository",
+    "correctAnswerEN": "Repository",
+    "explanationBG": "Repository предоставя data API без ViewModel да знае storage details.",
+    "explanationEN": "Repository is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-06",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to pass dependencies from outside. Which choice is best?",
+    "questionBG": "Developer трябва да подаде dependencies отвън. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "answersEN": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "correctAnswerBG": "Dependency Injection",
+    "correctAnswerEN": "Dependency Injection",
+    "explanationBG": "Dependency Injection прави типовете по-testable и по-слабо coupled.",
+    "explanationEN": "Dependency Injection is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-07",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to keep one reason to change. Which choice is best?",
+    "questionBG": "Developer трябва да запази една причина за промяна. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "answersEN": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "correctAnswerBG": "Single Responsibility",
+    "correctAnswerEN": "Single Responsibility",
+    "explanationBG": "Single Responsibility намалява complexity и side effects.",
+    "explanationEN": "Single Responsibility is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-08",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to separate navigation decisions. Which choice is best?",
+    "questionBG": "Developer трябва да раздели navigation decisions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "answersEN": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "correctAnswerBG": "Coordinator",
+    "correctAnswerEN": "Coordinator",
+    "explanationBG": "Coordinator може да изолира navigation flow от views.",
+    "explanationEN": "Coordinator is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-09",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to publish changes to SwiftUI. Which choice is best?",
+    "questionBG": "Developer трябва да публикува changes към SwiftUI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "answersEN": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "correctAnswerBG": "Observable state",
+    "correctAnswerEN": "Observable state",
+    "explanationBG": "Observable state позволява UI да реагира на промени.",
+    "explanationEN": "Observable state is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-10",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to centralize UserDefaults keys. Which choice is best?",
+    "questionBG": "Developer трябва да централизира UserDefaults keys. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "answersEN": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "correctAnswerBG": "UserDefaults store",
+    "correctAnswerEN": "UserDefaults store",
+    "explanationBG": "Store намалява duplicate keys и улеснява migrations.",
+    "explanationEN": "UserDefaults store is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-11",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to define testable contracts. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира testable contracts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "answersEN": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "correctAnswerBG": "Protocol",
+    "correctAnswerEN": "Protocol",
+    "explanationBG": "Protocol описва contract и позволява mocks.",
+    "explanationEN": "Protocol is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-12",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to replace real dependency in tests. Which choice is best?",
+    "questionBG": "Developer трябва да замени real dependency в tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "answersEN": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "correctAnswerBG": "Mock",
+    "correctAnswerEN": "Mock",
+    "explanationBG": "Mock позволява контролирано поведение в unit tests.",
+    "explanationEN": "Mock is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-13",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to verify state transitions. Which choice is best?",
+    "questionBG": "Developer трябва да провери state transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "answersEN": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "correctAnswerBG": "Unit test",
+    "correctAnswerEN": "Unit test",
+    "explanationBG": "Unit tests са бързи за ViewModel и business logic.",
+    "explanationEN": "Unit test is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-14",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to avoid mixing UI and persistence. Which choice is best?",
+    "questionBG": "Developer трябва да избегне смесване на UI и persistence. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "answersEN": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "correctAnswerBG": "Separation of concerns",
+    "correctAnswerEN": "Separation of concerns",
+    "explanationBG": "Separation of concerns прави code paths по-ясни.",
+    "explanationEN": "Separation of concerns is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-15",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to store business meaning. Which choice is best?",
+    "questionBG": "Developer трябва да пази business meaning. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "answersEN": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "correctAnswerBG": "Domain model",
+    "correctAnswerEN": "Domain model",
+    "explanationBG": "Domain model представя concepts от problem space.",
+    "explanationEN": "Domain model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-16",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to represent API payload shape. Which choice is best?",
+    "questionBG": "Developer трябва да представи API payload shape. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "answersEN": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "correctAnswerBG": "DTO",
+    "correctAnswerEN": "DTO",
+    "explanationBG": "DTO е data transfer shape, често различен от domain model.",
+    "explanationEN": "DTO is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-17",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to convert DTO to domain. Which choice is best?",
+    "questionBG": "Developer трябва да конвертира DTO към domain. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "answersEN": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "correctAnswerBG": "Mapper",
+    "correctAnswerEN": "Mapper",
+    "explanationBG": "Mapper отделя transport format от app model.",
+    "explanationEN": "Mapper is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-18",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to encapsulate one business action. Which choice is best?",
+    "questionBG": "Developer трябва да капсулира едно business action. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "answersEN": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "correctAnswerBG": "Use case",
+    "correctAnswerEN": "Use case",
+    "explanationBG": "Use case държи конкретна operation отделена от UI.",
+    "explanationEN": "Use case is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-19",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to recognize too many responsibilities. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае твърде много responsibilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "answersEN": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "correctAnswerBG": "God Object",
+    "correctAnswerEN": "God Object",
+    "explanationBG": "God Object знае и прави прекалено много неща.",
+    "explanationEN": "God Object is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-20",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to model loading success failure. Which choice is best?",
+    "questionBG": "Developer трябва да моделира loading success failure. Кой избор е най-подходящ?",
+    "answersBG": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "State machine",
+    "correctAnswerEN": "State machine",
+    "explanationBG": "State machine прави allowed states и transitions ясни.",
+    "explanationEN": "State machine is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-beginner-21",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to show safe failure UI. Which choice is best?",
+    "questionBG": "Developer трябва да покаже safe failure UI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "Error boundary",
+    "correctAnswerEN": "Error boundary",
+    "explanationBG": "Error boundary предотвратява crash-like UX и показва recovery.",
+    "explanationEN": "Error boundary is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-01",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to render UI from state. Which choice is best?",
+    "questionBG": "Developer трябва да рендерира UI от state. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "View",
+    "correctAnswerEN": "View",
+    "explanationBG": "View трябва основно да описва UI според подадения state.",
+    "explanationEN": "View is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-02",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to prepare screen state and actions. Which choice is best?",
+    "questionBG": "Developer трябва да подготви screen state и actions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "ViewModel",
+    "correctAnswerEN": "ViewModel",
+    "explanationBG": "ViewModel държи presentation state и user actions.",
+    "explanationEN": "ViewModel is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-03",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to represent app data rules. Which choice is best?",
+    "questionBG": "Developer трябва да представи app data rules. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "answersEN": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "correctAnswerBG": "Model",
+    "correctAnswerEN": "Model",
+    "explanationBG": "Model описва domain data и rules.",
+    "explanationEN": "Model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-04",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to perform reusable external work. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни reusable external work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "answersEN": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "correctAnswerBG": "Service",
+    "correctAnswerEN": "Service",
+    "explanationBG": "Service капсулира работа като loading, networking или persistence.",
+    "explanationEN": "Service is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-05",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to hide data source details. Which choice is best?",
+    "questionBG": "Developer трябва да скрие data source details. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "answersEN": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "correctAnswerBG": "Repository",
+    "correctAnswerEN": "Repository",
+    "explanationBG": "Repository предоставя data API без ViewModel да знае storage details.",
+    "explanationEN": "Repository is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-06",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to pass dependencies from outside. Which choice is best?",
+    "questionBG": "Developer трябва да подаде dependencies отвън. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "answersEN": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "correctAnswerBG": "Dependency Injection",
+    "correctAnswerEN": "Dependency Injection",
+    "explanationBG": "Dependency Injection прави типовете по-testable и по-слабо coupled.",
+    "explanationEN": "Dependency Injection is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-07",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to keep one reason to change. Which choice is best?",
+    "questionBG": "Developer трябва да запази една причина за промяна. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "answersEN": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "correctAnswerBG": "Single Responsibility",
+    "correctAnswerEN": "Single Responsibility",
+    "explanationBG": "Single Responsibility намалява complexity и side effects.",
+    "explanationEN": "Single Responsibility is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-08",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to separate navigation decisions. Which choice is best?",
+    "questionBG": "Developer трябва да раздели navigation decisions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "answersEN": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "correctAnswerBG": "Coordinator",
+    "correctAnswerEN": "Coordinator",
+    "explanationBG": "Coordinator може да изолира navigation flow от views.",
+    "explanationEN": "Coordinator is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-09",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to publish changes to SwiftUI. Which choice is best?",
+    "questionBG": "Developer трябва да публикува changes към SwiftUI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "answersEN": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "correctAnswerBG": "Observable state",
+    "correctAnswerEN": "Observable state",
+    "explanationBG": "Observable state позволява UI да реагира на промени.",
+    "explanationEN": "Observable state is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-10",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to centralize UserDefaults keys. Which choice is best?",
+    "questionBG": "Developer трябва да централизира UserDefaults keys. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "answersEN": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "correctAnswerBG": "UserDefaults store",
+    "correctAnswerEN": "UserDefaults store",
+    "explanationBG": "Store намалява duplicate keys и улеснява migrations.",
+    "explanationEN": "UserDefaults store is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-11",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to define testable contracts. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира testable contracts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "answersEN": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "correctAnswerBG": "Protocol",
+    "correctAnswerEN": "Protocol",
+    "explanationBG": "Protocol описва contract и позволява mocks.",
+    "explanationEN": "Protocol is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-12",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to replace real dependency in tests. Which choice is best?",
+    "questionBG": "Developer трябва да замени real dependency в tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "answersEN": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "correctAnswerBG": "Mock",
+    "correctAnswerEN": "Mock",
+    "explanationBG": "Mock позволява контролирано поведение в unit tests.",
+    "explanationEN": "Mock is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-13",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to verify state transitions. Which choice is best?",
+    "questionBG": "Developer трябва да провери state transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "answersEN": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "correctAnswerBG": "Unit test",
+    "correctAnswerEN": "Unit test",
+    "explanationBG": "Unit tests са бързи за ViewModel и business logic.",
+    "explanationEN": "Unit test is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-14",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to avoid mixing UI and persistence. Which choice is best?",
+    "questionBG": "Developer трябва да избегне смесване на UI и persistence. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "answersEN": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "correctAnswerBG": "Separation of concerns",
+    "correctAnswerEN": "Separation of concerns",
+    "explanationBG": "Separation of concerns прави code paths по-ясни.",
+    "explanationEN": "Separation of concerns is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-15",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to store business meaning. Which choice is best?",
+    "questionBG": "Developer трябва да пази business meaning. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "answersEN": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "correctAnswerBG": "Domain model",
+    "correctAnswerEN": "Domain model",
+    "explanationBG": "Domain model представя concepts от problem space.",
+    "explanationEN": "Domain model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-16",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to represent API payload shape. Which choice is best?",
+    "questionBG": "Developer трябва да представи API payload shape. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "answersEN": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "correctAnswerBG": "DTO",
+    "correctAnswerEN": "DTO",
+    "explanationBG": "DTO е data transfer shape, често различен от domain model.",
+    "explanationEN": "DTO is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-17",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to convert DTO to domain. Which choice is best?",
+    "questionBG": "Developer трябва да конвертира DTO към domain. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "answersEN": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "correctAnswerBG": "Mapper",
+    "correctAnswerEN": "Mapper",
+    "explanationBG": "Mapper отделя transport format от app model.",
+    "explanationEN": "Mapper is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-18",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to encapsulate one business action. Which choice is best?",
+    "questionBG": "Developer трябва да капсулира едно business action. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "answersEN": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "correctAnswerBG": "Use case",
+    "correctAnswerEN": "Use case",
+    "explanationBG": "Use case държи конкретна operation отделена от UI.",
+    "explanationEN": "Use case is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-19",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to recognize too many responsibilities. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае твърде много responsibilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "answersEN": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "correctAnswerBG": "God Object",
+    "correctAnswerEN": "God Object",
+    "explanationBG": "God Object знае и прави прекалено много неща.",
+    "explanationEN": "God Object is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-20",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to model loading success failure. Which choice is best?",
+    "questionBG": "Developer трябва да моделира loading success failure. Кой избор е най-подходящ?",
+    "answersBG": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "State machine",
+    "correctAnswerEN": "State machine",
+    "explanationBG": "State machine прави allowed states и transitions ясни.",
+    "explanationEN": "State machine is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-intermediate-21",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to show safe failure UI. Which choice is best?",
+    "questionBG": "Developer трябва да покаже safe failure UI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "Error boundary",
+    "correctAnswerEN": "Error boundary",
+    "explanationBG": "Error boundary предотвратява crash-like UX и показва recovery.",
+    "explanationEN": "Error boundary is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-01",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to render UI from state. Which choice is best?",
+    "questionBG": "Developer трябва да рендерира UI от state. Кой избор е най-подходящ?",
+    "answersBG": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "View",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "View",
+    "correctAnswerEN": "View",
+    "explanationBG": "View трябва основно да описва UI според подадения state.",
+    "explanationEN": "View is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-02",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to prepare screen state and actions. Which choice is best?",
+    "questionBG": "Developer трябва да подготви screen state и actions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "ViewModel",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "ViewModel",
+    "correctAnswerEN": "ViewModel",
+    "explanationBG": "ViewModel държи presentation state и user actions.",
+    "explanationEN": "ViewModel is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-03",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to represent app data rules. Which choice is best?",
+    "questionBG": "Developer трябва да представи app data rules. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "answersEN": [
+      "Model",
+      "Service",
+      "Repository",
+      "Dependency Injection"
+    ],
+    "correctAnswerBG": "Model",
+    "correctAnswerEN": "Model",
+    "explanationBG": "Model описва domain data и rules.",
+    "explanationEN": "Model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-04",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to perform reusable external work. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни reusable external work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "answersEN": [
+      "Service",
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility"
+    ],
+    "correctAnswerBG": "Service",
+    "correctAnswerEN": "Service",
+    "explanationBG": "Service капсулира работа като loading, networking или persistence.",
+    "explanationEN": "Service is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-05",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to hide data source details. Which choice is best?",
+    "questionBG": "Developer трябва да скрие data source details. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "answersEN": [
+      "Repository",
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator"
+    ],
+    "correctAnswerBG": "Repository",
+    "correctAnswerEN": "Repository",
+    "explanationBG": "Repository предоставя data API без ViewModel да знае storage details.",
+    "explanationEN": "Repository is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-06",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to pass dependencies from outside. Which choice is best?",
+    "questionBG": "Developer трябва да подаде dependencies отвън. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "answersEN": [
+      "Dependency Injection",
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state"
+    ],
+    "correctAnswerBG": "Dependency Injection",
+    "correctAnswerEN": "Dependency Injection",
+    "explanationBG": "Dependency Injection прави типовете по-testable и по-слабо coupled.",
+    "explanationEN": "Dependency Injection is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-07",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to keep one reason to change. Which choice is best?",
+    "questionBG": "Developer трябва да запази една причина за промяна. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "answersEN": [
+      "Single Responsibility",
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store"
+    ],
+    "correctAnswerBG": "Single Responsibility",
+    "correctAnswerEN": "Single Responsibility",
+    "explanationBG": "Single Responsibility намалява complexity и side effects.",
+    "explanationEN": "Single Responsibility is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-08",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to separate navigation decisions. Which choice is best?",
+    "questionBG": "Developer трябва да раздели navigation decisions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "answersEN": [
+      "Coordinator",
+      "Observable state",
+      "UserDefaults store",
+      "Protocol"
+    ],
+    "correctAnswerBG": "Coordinator",
+    "correctAnswerEN": "Coordinator",
+    "explanationBG": "Coordinator може да изолира navigation flow от views.",
+    "explanationEN": "Coordinator is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-09",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to publish changes to SwiftUI. Which choice is best?",
+    "questionBG": "Developer трябва да публикува changes към SwiftUI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "answersEN": [
+      "Observable state",
+      "UserDefaults store",
+      "Protocol",
+      "Mock"
+    ],
+    "correctAnswerBG": "Observable state",
+    "correctAnswerEN": "Observable state",
+    "explanationBG": "Observable state позволява UI да реагира на промени.",
+    "explanationEN": "Observable state is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-10",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to centralize UserDefaults keys. Which choice is best?",
+    "questionBG": "Developer трябва да централизира UserDefaults keys. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "answersEN": [
+      "UserDefaults store",
+      "Protocol",
+      "Mock",
+      "Unit test"
+    ],
+    "correctAnswerBG": "UserDefaults store",
+    "correctAnswerEN": "UserDefaults store",
+    "explanationBG": "Store намалява duplicate keys и улеснява migrations.",
+    "explanationEN": "UserDefaults store is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-11",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to define testable contracts. Which choice is best?",
+    "questionBG": "Developer трябва да дефинира testable contracts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "answersEN": [
+      "Protocol",
+      "Mock",
+      "Unit test",
+      "Separation of concerns"
+    ],
+    "correctAnswerBG": "Protocol",
+    "correctAnswerEN": "Protocol",
+    "explanationBG": "Protocol описва contract и позволява mocks.",
+    "explanationEN": "Protocol is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-12",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to replace real dependency in tests. Which choice is best?",
+    "questionBG": "Developer трябва да замени real dependency в tests. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "answersEN": [
+      "Mock",
+      "Unit test",
+      "Separation of concerns",
+      "Domain model"
+    ],
+    "correctAnswerBG": "Mock",
+    "correctAnswerEN": "Mock",
+    "explanationBG": "Mock позволява контролирано поведение в unit tests.",
+    "explanationEN": "Mock is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-13",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to verify state transitions. Which choice is best?",
+    "questionBG": "Developer трябва да провери state transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "answersEN": [
+      "Unit test",
+      "Separation of concerns",
+      "Domain model",
+      "DTO"
+    ],
+    "correctAnswerBG": "Unit test",
+    "correctAnswerEN": "Unit test",
+    "explanationBG": "Unit tests са бързи за ViewModel и business logic.",
+    "explanationEN": "Unit test is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-14",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to avoid mixing UI and persistence. Which choice is best?",
+    "questionBG": "Developer трябва да избегне смесване на UI и persistence. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "answersEN": [
+      "Separation of concerns",
+      "Domain model",
+      "DTO",
+      "Mapper"
+    ],
+    "correctAnswerBG": "Separation of concerns",
+    "correctAnswerEN": "Separation of concerns",
+    "explanationBG": "Separation of concerns прави code paths по-ясни.",
+    "explanationEN": "Separation of concerns is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-15",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to store business meaning. Which choice is best?",
+    "questionBG": "Developer трябва да пази business meaning. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "answersEN": [
+      "Domain model",
+      "DTO",
+      "Mapper",
+      "Use case"
+    ],
+    "correctAnswerBG": "Domain model",
+    "correctAnswerEN": "Domain model",
+    "explanationBG": "Domain model представя concepts от problem space.",
+    "explanationEN": "Domain model is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-16",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to represent API payload shape. Which choice is best?",
+    "questionBG": "Developer трябва да представи API payload shape. Кой избор е най-подходящ?",
+    "answersBG": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "answersEN": [
+      "DTO",
+      "Mapper",
+      "Use case",
+      "God Object"
+    ],
+    "correctAnswerBG": "DTO",
+    "correctAnswerEN": "DTO",
+    "explanationBG": "DTO е data transfer shape, често различен от domain model.",
+    "explanationEN": "DTO is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-17",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to convert DTO to domain. Which choice is best?",
+    "questionBG": "Developer трябва да конвертира DTO към domain. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "answersEN": [
+      "Mapper",
+      "Use case",
+      "God Object",
+      "State machine"
+    ],
+    "correctAnswerBG": "Mapper",
+    "correctAnswerEN": "Mapper",
+    "explanationBG": "Mapper отделя transport format от app model.",
+    "explanationEN": "Mapper is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-18",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to encapsulate one business action. Which choice is best?",
+    "questionBG": "Developer трябва да капсулира едно business action. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "answersEN": [
+      "Use case",
+      "God Object",
+      "State machine",
+      "Error boundary"
+    ],
+    "correctAnswerBG": "Use case",
+    "correctAnswerEN": "Use case",
+    "explanationBG": "Use case държи конкретна operation отделена от UI.",
+    "explanationEN": "Use case is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-19",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to recognize too many responsibilities. Which choice is best?",
+    "questionBG": "Developer трябва да разпознае твърде много responsibilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "answersEN": [
+      "God Object",
+      "View",
+      "ViewModel",
+      "Model"
+    ],
+    "correctAnswerBG": "God Object",
+    "correctAnswerEN": "God Object",
+    "explanationBG": "God Object знае и прави прекалено много неща.",
+    "explanationEN": "God Object is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-20",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to model loading success failure. Which choice is best?",
+    "questionBG": "Developer трябва да моделира loading success failure. Кой избор е най-подходящ?",
+    "answersBG": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "answersEN": [
+      "State machine",
+      "ViewModel",
+      "Model",
+      "Service"
+    ],
+    "correctAnswerBG": "State machine",
+    "correctAnswerEN": "State machine",
+    "explanationBG": "State machine прави allowed states и transitions ясни.",
+    "explanationEN": "State machine is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  },
+  {
+    "id": "architecture-mvvm-advanced-21",
+    "categoryId": "architecture-mvvm",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to show safe failure UI. Which choice is best?",
+    "questionBG": "Developer трябва да покаже safe failure UI. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "answersEN": [
+      "Error boundary",
+      "Model",
+      "Service",
+      "Repository"
+    ],
+    "correctAnswerBG": "Error boundary",
+    "correctAnswerEN": "Error boundary",
+    "explanationBG": "Error boundary предотвратява crash-like UX и показва recovery.",
+    "explanationEN": "Error boundary is the best fit here because it directly supports the described Architecture & MVVM workflow."
+  }
+]

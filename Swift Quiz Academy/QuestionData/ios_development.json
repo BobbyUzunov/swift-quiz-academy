@@ -1,0 +1,1451 @@
+[
+  {
+    "id": "ios-development-beginner-01",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to run the app without a physical device. Which choice is best?",
+    "questionBG": "Developer трябва да стартира app без физическо устройство. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Simulator",
+    "correctAnswerEN": "Simulator",
+    "explanationBG": "Simulator позволява бързо тестване на device-like среда.",
+    "explanationEN": "Simulator is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-02",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to store app images and colors. Which choice is best?",
+    "questionBG": "Developer трябва да пази app images и colors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Assets catalog",
+    "correctAnswerEN": "Assets catalog",
+    "explanationBG": "Assets catalog организира images, colors и app icons.",
+    "explanationEN": "Assets catalog is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-03",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to identify the app uniquely. Which choice is best?",
+    "questionBG": "Developer трябва да идентифицира app-а уникално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Bundle identifier",
+    "correctAnswerEN": "Bundle identifier",
+    "explanationBG": "Bundle identifier е уникалното име на app-а в системата и App Store.",
+    "explanationEN": "Bundle identifier is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-04",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to show the launch screen. Which choice is best?",
+    "questionBG": "Developer трябва да покаже launch screen. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "answersEN": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "correctAnswerBG": "Launch screen",
+    "correctAnswerEN": "Launch screen",
+    "explanationBG": "Launch screen се показва при стартиране, докато app-ът се подготвя.",
+    "explanationEN": "Launch screen is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-05",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to test pre-release builds externally. Which choice is best?",
+    "questionBG": "Developer трябва да тества pre-release builds външно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "answersEN": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "correctAnswerBG": "TestFlight",
+    "correctAnswerEN": "TestFlight",
+    "explanationBG": "TestFlight позволява beta разпространение към testers.",
+    "explanationEN": "TestFlight is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-06",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to manage store listing and builds. Which choice is best?",
+    "questionBG": "Developer трябва да управлява store listing и builds. Кой избор е най-подходящ?",
+    "answersBG": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "answersEN": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "correctAnswerBG": "App Store Connect",
+    "correctAnswerEN": "App Store Connect",
+    "explanationBG": "App Store Connect управлява metadata, builds и releases.",
+    "explanationEN": "App Store Connect is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-07",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to store small non-sensitive settings. Which choice is best?",
+    "questionBG": "Developer трябва да пази малки нечувствителни настройки. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "answersEN": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "correctAnswerBG": "UserDefaults",
+    "correctAnswerEN": "UserDefaults",
+    "explanationBG": "UserDefaults е подходящ за малки локални preferences.",
+    "explanationEN": "UserDefaults is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-08",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to store secrets or tokens securely. Which choice is best?",
+    "questionBG": "Developer трябва да пази secrets или tokens сигурно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Keychain",
+    "correctAnswerEN": "Keychain",
+    "explanationBG": "Keychain е предназначен за sensitive credentials.",
+    "explanationEN": "Keychain is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-09",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to request camera permission text. Which choice is best?",
+    "questionBG": "Developer трябва да добави текст за camera permission. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Info.plist privacy key",
+    "correctAnswerEN": "Info.plist privacy key",
+    "explanationBG": "Permission dialogs изискват usage description в Info.plist.",
+    "explanationEN": "Info.plist privacy key is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-10",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to keep apps isolated from each other. Which choice is best?",
+    "questionBG": "Developer трябва да държи apps изолирани един от друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "answersEN": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "correctAnswerBG": "Sandbox",
+    "correctAnswerEN": "Sandbox",
+    "explanationBG": "iOS sandbox ограничава достъпа на app-а до неговите данни.",
+    "explanationEN": "Sandbox is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-11",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to debug memory growth visually. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не memory growth визуално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага да се видят reference cycles и задържани objects.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-12",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to profile CPU and leaks. Which choice is best?",
+    "questionBG": "Developer трябва да профилира CPU и leaks. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "answersEN": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments анализира runtime performance и memory поведение.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-13",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to support opening from a custom URL. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа отваряне от custom URL. Кой избор е най-подходящ?",
+    "answersBG": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "URL schemes",
+    "correctAnswerEN": "URL schemes",
+    "explanationBG": "URL schemes позволяват app launch чрез custom URL pattern.",
+    "explanationEN": "URL schemes is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-14",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to open content from a web link. Which choice is best?",
+    "questionBG": "Developer трябва да отваря content от web link. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "answersEN": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "correctAnswerBG": "Universal Links",
+    "correctAnswerEN": "Universal Links",
+    "explanationBG": "Universal Links свързват website URLs директно с app content.",
+    "explanationEN": "Universal Links is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-15",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to declare special system capabilities. Which choice is best?",
+    "questionBG": "Developer трябва да декларира специални system capabilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "answersEN": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "correctAnswerBG": "Entitlements",
+    "correctAnswerEN": "Entitlements",
+    "explanationBG": "Entitlements разрешават capabilities като iCloud или push notifications.",
+    "explanationEN": "Entitlements is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-16",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to prepare signing for device install. Which choice is best?",
+    "questionBG": "Developer трябва да подготви signing за device install. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "answersEN": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "correctAnswerBG": "Provisioning profile",
+    "correctAnswerEN": "Provisioning profile",
+    "explanationBG": "Provisioning profile свързва app ID, certificate и devices/capabilities.",
+    "explanationEN": "Provisioning profile is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-17",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to handle multiple window scenes. Which choice is best?",
+    "questionBG": "Developer трябва да обработи multiple window scenes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "answersEN": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "correctAnswerBG": "Scene lifecycle",
+    "correctAnswerEN": "Scene lifecycle",
+    "explanationBG": "Scene lifecycle управлява UI lifecycle за window scenes.",
+    "explanationEN": "Scene lifecycle is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-18",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to receive remote alerts. Which choice is best?",
+    "questionBG": "Developer трябва да получи remote alerts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "answersEN": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "correctAnswerBG": "Push notifications",
+    "correctAnswerEN": "Push notifications",
+    "explanationBG": "Push notifications доставят съобщения от server към device.",
+    "explanationEN": "Push notifications is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-19",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to avoid insecure network defaults. Which choice is best?",
+    "questionBG": "Developer трябва да избегне insecure network defaults. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "answersEN": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "correctAnswerBG": "ATS",
+    "correctAnswerEN": "ATS",
+    "explanationBG": "App Transport Security насърчава secure HTTPS connections.",
+    "explanationEN": "ATS is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-20",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to document required-reason APIs. Which choice is best?",
+    "questionBG": "Developer трябва да документира required-reason APIs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Privacy manifest",
+    "correctAnswerEN": "Privacy manifest",
+    "explanationBG": "Privacy manifest описва data collection и required-reason API употреба.",
+    "explanationEN": "Privacy manifest is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-beginner-21",
+    "categoryId": "ios-development",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to support background audio or fetch. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа background audio или fetch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Background modes",
+    "correctAnswerEN": "Background modes",
+    "explanationBG": "Background modes декларират разрешени background behaviors.",
+    "explanationEN": "Background modes is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-01",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to run the app without a physical device. Which choice is best?",
+    "questionBG": "Developer трябва да стартира app без физическо устройство. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Simulator",
+    "correctAnswerEN": "Simulator",
+    "explanationBG": "Simulator позволява бързо тестване на device-like среда.",
+    "explanationEN": "Simulator is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-02",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to store app images and colors. Which choice is best?",
+    "questionBG": "Developer трябва да пази app images и colors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Assets catalog",
+    "correctAnswerEN": "Assets catalog",
+    "explanationBG": "Assets catalog организира images, colors и app icons.",
+    "explanationEN": "Assets catalog is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-03",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to identify the app uniquely. Which choice is best?",
+    "questionBG": "Developer трябва да идентифицира app-а уникално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Bundle identifier",
+    "correctAnswerEN": "Bundle identifier",
+    "explanationBG": "Bundle identifier е уникалното име на app-а в системата и App Store.",
+    "explanationEN": "Bundle identifier is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-04",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to show the launch screen. Which choice is best?",
+    "questionBG": "Developer трябва да покаже launch screen. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "answersEN": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "correctAnswerBG": "Launch screen",
+    "correctAnswerEN": "Launch screen",
+    "explanationBG": "Launch screen се показва при стартиране, докато app-ът се подготвя.",
+    "explanationEN": "Launch screen is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-05",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to test pre-release builds externally. Which choice is best?",
+    "questionBG": "Developer трябва да тества pre-release builds външно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "answersEN": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "correctAnswerBG": "TestFlight",
+    "correctAnswerEN": "TestFlight",
+    "explanationBG": "TestFlight позволява beta разпространение към testers.",
+    "explanationEN": "TestFlight is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-06",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to manage store listing and builds. Which choice is best?",
+    "questionBG": "Developer трябва да управлява store listing и builds. Кой избор е най-подходящ?",
+    "answersBG": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "answersEN": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "correctAnswerBG": "App Store Connect",
+    "correctAnswerEN": "App Store Connect",
+    "explanationBG": "App Store Connect управлява metadata, builds и releases.",
+    "explanationEN": "App Store Connect is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-07",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to store small non-sensitive settings. Which choice is best?",
+    "questionBG": "Developer трябва да пази малки нечувствителни настройки. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "answersEN": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "correctAnswerBG": "UserDefaults",
+    "correctAnswerEN": "UserDefaults",
+    "explanationBG": "UserDefaults е подходящ за малки локални preferences.",
+    "explanationEN": "UserDefaults is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-08",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to store secrets or tokens securely. Which choice is best?",
+    "questionBG": "Developer трябва да пази secrets или tokens сигурно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Keychain",
+    "correctAnswerEN": "Keychain",
+    "explanationBG": "Keychain е предназначен за sensitive credentials.",
+    "explanationEN": "Keychain is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-09",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to request camera permission text. Which choice is best?",
+    "questionBG": "Developer трябва да добави текст за camera permission. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Info.plist privacy key",
+    "correctAnswerEN": "Info.plist privacy key",
+    "explanationBG": "Permission dialogs изискват usage description в Info.plist.",
+    "explanationEN": "Info.plist privacy key is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-10",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to keep apps isolated from each other. Which choice is best?",
+    "questionBG": "Developer трябва да държи apps изолирани един от друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "answersEN": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "correctAnswerBG": "Sandbox",
+    "correctAnswerEN": "Sandbox",
+    "explanationBG": "iOS sandbox ограничава достъпа на app-а до неговите данни.",
+    "explanationEN": "Sandbox is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-11",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to debug memory growth visually. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не memory growth визуално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага да се видят reference cycles и задържани objects.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-12",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to profile CPU and leaks. Which choice is best?",
+    "questionBG": "Developer трябва да профилира CPU и leaks. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "answersEN": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments анализира runtime performance и memory поведение.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-13",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to support opening from a custom URL. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа отваряне от custom URL. Кой избор е най-подходящ?",
+    "answersBG": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "URL schemes",
+    "correctAnswerEN": "URL schemes",
+    "explanationBG": "URL schemes позволяват app launch чрез custom URL pattern.",
+    "explanationEN": "URL schemes is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-14",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to open content from a web link. Which choice is best?",
+    "questionBG": "Developer трябва да отваря content от web link. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "answersEN": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "correctAnswerBG": "Universal Links",
+    "correctAnswerEN": "Universal Links",
+    "explanationBG": "Universal Links свързват website URLs директно с app content.",
+    "explanationEN": "Universal Links is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-15",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to declare special system capabilities. Which choice is best?",
+    "questionBG": "Developer трябва да декларира специални system capabilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "answersEN": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "correctAnswerBG": "Entitlements",
+    "correctAnswerEN": "Entitlements",
+    "explanationBG": "Entitlements разрешават capabilities като iCloud или push notifications.",
+    "explanationEN": "Entitlements is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-16",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to prepare signing for device install. Which choice is best?",
+    "questionBG": "Developer трябва да подготви signing за device install. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "answersEN": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "correctAnswerBG": "Provisioning profile",
+    "correctAnswerEN": "Provisioning profile",
+    "explanationBG": "Provisioning profile свързва app ID, certificate и devices/capabilities.",
+    "explanationEN": "Provisioning profile is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-17",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to handle multiple window scenes. Which choice is best?",
+    "questionBG": "Developer трябва да обработи multiple window scenes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "answersEN": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "correctAnswerBG": "Scene lifecycle",
+    "correctAnswerEN": "Scene lifecycle",
+    "explanationBG": "Scene lifecycle управлява UI lifecycle за window scenes.",
+    "explanationEN": "Scene lifecycle is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-18",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to receive remote alerts. Which choice is best?",
+    "questionBG": "Developer трябва да получи remote alerts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "answersEN": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "correctAnswerBG": "Push notifications",
+    "correctAnswerEN": "Push notifications",
+    "explanationBG": "Push notifications доставят съобщения от server към device.",
+    "explanationEN": "Push notifications is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-19",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to avoid insecure network defaults. Which choice is best?",
+    "questionBG": "Developer трябва да избегне insecure network defaults. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "answersEN": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "correctAnswerBG": "ATS",
+    "correctAnswerEN": "ATS",
+    "explanationBG": "App Transport Security насърчава secure HTTPS connections.",
+    "explanationEN": "ATS is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-20",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to document required-reason APIs. Which choice is best?",
+    "questionBG": "Developer трябва да документира required-reason APIs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Privacy manifest",
+    "correctAnswerEN": "Privacy manifest",
+    "explanationBG": "Privacy manifest описва data collection и required-reason API употреба.",
+    "explanationEN": "Privacy manifest is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-intermediate-21",
+    "categoryId": "ios-development",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to support background audio or fetch. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа background audio или fetch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Background modes",
+    "correctAnswerEN": "Background modes",
+    "explanationBG": "Background modes декларират разрешени background behaviors.",
+    "explanationEN": "Background modes is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-01",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to run the app without a physical device. Which choice is best?",
+    "questionBG": "Developer трябва да стартира app без физическо устройство. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Simulator",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Simulator",
+    "correctAnswerEN": "Simulator",
+    "explanationBG": "Simulator позволява бързо тестване на device-like среда.",
+    "explanationEN": "Simulator is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-02",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to store app images and colors. Which choice is best?",
+    "questionBG": "Developer трябва да пази app images и colors. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Assets catalog",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Assets catalog",
+    "correctAnswerEN": "Assets catalog",
+    "explanationBG": "Assets catalog организира images, colors и app icons.",
+    "explanationEN": "Assets catalog is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-03",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to identify the app uniquely. Which choice is best?",
+    "questionBG": "Developer трябва да идентифицира app-а уникално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Bundle identifier",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Bundle identifier",
+    "correctAnswerEN": "Bundle identifier",
+    "explanationBG": "Bundle identifier е уникалното име на app-а в системата и App Store.",
+    "explanationEN": "Bundle identifier is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-04",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to show the launch screen. Which choice is best?",
+    "questionBG": "Developer трябва да покаже launch screen. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "answersEN": [
+      "Launch screen",
+      "UserDefaults",
+      "TestFlight",
+      "App Store Connect"
+    ],
+    "correctAnswerBG": "Launch screen",
+    "correctAnswerEN": "Launch screen",
+    "explanationBG": "Launch screen се показва при стартиране, докато app-ът се подготвя.",
+    "explanationEN": "Launch screen is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-05",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to test pre-release builds externally. Which choice is best?",
+    "questionBG": "Developer трябва да тества pre-release builds външно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "answersEN": [
+      "TestFlight",
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier"
+    ],
+    "correctAnswerBG": "TestFlight",
+    "correctAnswerEN": "TestFlight",
+    "explanationBG": "TestFlight позволява beta разпространение към testers.",
+    "explanationEN": "TestFlight is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-06",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to manage store listing and builds. Which choice is best?",
+    "questionBG": "Developer трябва да управлява store listing и builds. Кой избор е най-подходящ?",
+    "answersBG": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "answersEN": [
+      "App Store Connect",
+      "Provisioning profile",
+      "Bundle identifier",
+      "Entitlements"
+    ],
+    "correctAnswerBG": "App Store Connect",
+    "correctAnswerEN": "App Store Connect",
+    "explanationBG": "App Store Connect управлява metadata, builds и releases.",
+    "explanationEN": "App Store Connect is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-07",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to store small non-sensitive settings. Which choice is best?",
+    "questionBG": "Developer трябва да пази малки нечувствителни настройки. Кой избор е най-подходящ?",
+    "answersBG": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "answersEN": [
+      "UserDefaults",
+      "Bundle identifier",
+      "Entitlements",
+      "Background modes"
+    ],
+    "correctAnswerBG": "UserDefaults",
+    "correctAnswerEN": "UserDefaults",
+    "explanationBG": "UserDefaults е подходящ за малки локални preferences.",
+    "explanationEN": "UserDefaults is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-08",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to store secrets or tokens securely. Which choice is best?",
+    "questionBG": "Developer трябва да пази secrets или tokens сигурно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Keychain",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Keychain",
+    "correctAnswerEN": "Keychain",
+    "explanationBG": "Keychain е предназначен за sensitive credentials.",
+    "explanationEN": "Keychain is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-09",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to request camera permission text. Which choice is best?",
+    "questionBG": "Developer трябва да добави текст за camera permission. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "answersEN": [
+      "Info.plist privacy key",
+      "Entitlements",
+      "Background modes",
+      "Push notifications"
+    ],
+    "correctAnswerBG": "Info.plist privacy key",
+    "correctAnswerEN": "Info.plist privacy key",
+    "explanationBG": "Permission dialogs изискват usage description в Info.plist.",
+    "explanationEN": "Info.plist privacy key is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-10",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to keep apps isolated from each other. Which choice is best?",
+    "questionBG": "Developer трябва да държи apps изолирани един от друг. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "answersEN": [
+      "Sandbox",
+      "Background modes",
+      "Push notifications",
+      "URL schemes"
+    ],
+    "correctAnswerBG": "Sandbox",
+    "correctAnswerEN": "Sandbox",
+    "explanationBG": "iOS sandbox ограничава достъпа на app-а до неговите данни.",
+    "explanationEN": "Sandbox is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-11",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to debug memory growth visually. Which choice is best?",
+    "questionBG": "Developer трябва да debug-не memory growth визуално. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "answersEN": [
+      "Memory graph",
+      "Push notifications",
+      "URL schemes",
+      "Universal Links"
+    ],
+    "correctAnswerBG": "Memory graph",
+    "correctAnswerEN": "Memory graph",
+    "explanationBG": "Memory graph помага да се видят reference cycles и задържани objects.",
+    "explanationEN": "Memory graph is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-12",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to profile CPU and leaks. Which choice is best?",
+    "questionBG": "Developer трябва да профилира CPU и leaks. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "answersEN": [
+      "Instruments",
+      "URL schemes",
+      "Universal Links",
+      "ATS"
+    ],
+    "correctAnswerBG": "Instruments",
+    "correctAnswerEN": "Instruments",
+    "explanationBG": "Instruments анализира runtime performance и memory поведение.",
+    "explanationEN": "Instruments is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-13",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to support opening from a custom URL. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа отваряне от custom URL. Кой избор е най-подходящ?",
+    "answersBG": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "answersEN": [
+      "URL schemes",
+      "ATS",
+      "Instruments",
+      "Memory graph"
+    ],
+    "correctAnswerBG": "URL schemes",
+    "correctAnswerEN": "URL schemes",
+    "explanationBG": "URL schemes позволяват app launch чрез custom URL pattern.",
+    "explanationEN": "URL schemes is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-14",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to open content from a web link. Which choice is best?",
+    "questionBG": "Developer трябва да отваря content от web link. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "answersEN": [
+      "Universal Links",
+      "Instruments",
+      "Memory graph",
+      "Scene lifecycle"
+    ],
+    "correctAnswerBG": "Universal Links",
+    "correctAnswerEN": "Universal Links",
+    "explanationBG": "Universal Links свързват website URLs директно с app content.",
+    "explanationEN": "Universal Links is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-15",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to declare special system capabilities. Which choice is best?",
+    "questionBG": "Developer трябва да декларира специални system capabilities. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "answersEN": [
+      "Entitlements",
+      "Memory graph",
+      "Scene lifecycle",
+      "AppDelegate"
+    ],
+    "correctAnswerBG": "Entitlements",
+    "correctAnswerEN": "Entitlements",
+    "explanationBG": "Entitlements разрешават capabilities като iCloud или push notifications.",
+    "explanationEN": "Entitlements is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-16",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to prepare signing for device install. Which choice is best?",
+    "questionBG": "Developer трябва да подготви signing за device install. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "answersEN": [
+      "Provisioning profile",
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog"
+    ],
+    "correctAnswerBG": "Provisioning profile",
+    "correctAnswerEN": "Provisioning profile",
+    "explanationBG": "Provisioning profile свързва app ID, certificate и devices/capabilities.",
+    "explanationEN": "Provisioning profile is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-17",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to handle multiple window scenes. Which choice is best?",
+    "questionBG": "Developer трябва да обработи multiple window scenes. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "answersEN": [
+      "Scene lifecycle",
+      "AppDelegate",
+      "Assets catalog",
+      "Privacy manifest"
+    ],
+    "correctAnswerBG": "Scene lifecycle",
+    "correctAnswerEN": "Scene lifecycle",
+    "explanationBG": "Scene lifecycle управлява UI lifecycle за window scenes.",
+    "explanationEN": "Scene lifecycle is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-18",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to receive remote alerts. Which choice is best?",
+    "questionBG": "Developer трябва да получи remote alerts. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "answersEN": [
+      "Push notifications",
+      "Assets catalog",
+      "Privacy manifest",
+      "Sandbox"
+    ],
+    "correctAnswerBG": "Push notifications",
+    "correctAnswerEN": "Push notifications",
+    "explanationBG": "Push notifications доставят съобщения от server към device.",
+    "explanationEN": "Push notifications is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-19",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to avoid insecure network defaults. Which choice is best?",
+    "questionBG": "Developer трябва да избегне insecure network defaults. Кой избор е най-подходящ?",
+    "answersBG": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "answersEN": [
+      "ATS",
+      "Simulator",
+      "Info.plist",
+      "Keychain"
+    ],
+    "correctAnswerBG": "ATS",
+    "correctAnswerEN": "ATS",
+    "explanationBG": "App Transport Security насърчава secure HTTPS connections.",
+    "explanationEN": "ATS is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-20",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to document required-reason APIs. Which choice is best?",
+    "questionBG": "Developer трябва да документира required-reason APIs. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "answersEN": [
+      "Privacy manifest",
+      "Info.plist",
+      "Keychain",
+      "UserDefaults"
+    ],
+    "correctAnswerBG": "Privacy manifest",
+    "correctAnswerEN": "Privacy manifest",
+    "explanationBG": "Privacy manifest описва data collection и required-reason API употреба.",
+    "explanationEN": "Privacy manifest is the best fit here because it directly supports the described iOS Development workflow."
+  },
+  {
+    "id": "ios-development-advanced-21",
+    "categoryId": "ios-development",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to support background audio or fetch. Which choice is best?",
+    "questionBG": "Developer трябва да поддържа background audio или fetch. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "answersEN": [
+      "Background modes",
+      "Keychain",
+      "UserDefaults",
+      "TestFlight"
+    ],
+    "correctAnswerBG": "Background modes",
+    "correctAnswerEN": "Background modes",
+    "explanationBG": "Background modes декларират разрешени background behaviors.",
+    "explanationEN": "Background modes is the best fit here because it directly supports the described iOS Development workflow."
+  }
+]

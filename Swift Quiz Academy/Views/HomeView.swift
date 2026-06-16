@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct HomeView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     let savedTotalXP: Int
     let savedHighestScore: Int
     let savedTotalGamesPlayed: Int
@@ -25,6 +27,7 @@ struct HomeView: View {
     let bestDailyStreak: Int
     let currentLoginStreak: Int
     let bestLoginStreak: Int
+    let categoryMasteryStats: [CategoryMasteryStat]
     let achievements: [Achievement]
     let recentAchievement: Achievement?
     let dailyBonusXP: Int
@@ -104,6 +107,7 @@ struct HomeView: View {
                 bestDailyStreak: bestDailyStreak,
                 currentLoginStreak: currentLoginStreak,
                 bestLoginStreak: bestLoginStreak,
+                categoryMasteryStats: categoryMasteryStats,
                 achievements: achievements,
                 selectedLanguage: $selectedLanguage,
                 selectedTheme: $selectedTheme,
@@ -118,7 +122,7 @@ struct HomeView: View {
             Text(localized("Сгрешените въпроси ще се появят тук след quiz.", "Incorrect questions will appear here after a quiz."))
         }
         .onAppear {
-            startButtonPulse = true
+            startButtonPulse = !reduceMotion
             if availableDailyReward != nil {
                 showsDailyReward = true
             }
@@ -213,7 +217,9 @@ struct HomeView: View {
             VStack(spacing: 8) {
                 ProgressView(value: xpProgress)
                     .tint(.blue)
-                    .animation(.spring(response: 0.55, dampingFraction: 0.82), value: xpProgress)
+                    .animation(reduceMotion ? nil : .spring(response: 0.55, dampingFraction: 0.82), value: xpProgress)
+                    .accessibilityLabel(localized("XP прогрес", "XP progress"))
+                    .accessibilityValue(currentLevel == 10 ? "\(savedTotalXP) XP" : "\(savedTotalXP) / \(nextLevelXP) XP")
 
                 HStack {
                     Text(localized("Ниво \(currentLevel)", "Level \(currentLevel)"))
@@ -274,7 +280,7 @@ struct HomeView: View {
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
         .scaleEffect(startButtonPulse ? 1.015 : 1)
         .shadow(color: .blue.opacity(0.18), radius: startButtonPulse ? 18 : 10, x: 0, y: 8)
-        .animation(.easeInOut(duration: 1.25).repeatForever(autoreverses: true), value: startButtonPulse)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 1.25).repeatForever(autoreverses: true), value: startButtonPulse)
     }
 
     private var dailyChallengeCard: some View {
@@ -362,13 +368,13 @@ struct HomeView: View {
     }
 
     private func claimDailyReward() {
-        withAnimation(.spring(response: 0.32, dampingFraction: 0.62)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.62)) {
             isClaimingReward = true
         }
 
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.45) {
             onClaimDailyReward()
-            withAnimation(.spring(response: 0.34, dampingFraction: 0.86)) {
+            withAnimation(reduceMotion ? nil : .spring(response: 0.34, dampingFraction: 0.86)) {
                 showsDailyReward = false
                 isClaimingReward = false
             }
@@ -377,6 +383,12 @@ struct HomeView: View {
     }
 
     private func triggerConfetti() {
+        guard !reduceMotion else {
+            confettiActive = false
+            onClearRecentAchievement()
+            return
+        }
+
         withAnimation {
             confettiActive = true
         }

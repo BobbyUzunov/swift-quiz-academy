@@ -18,10 +18,22 @@ jobs:
       - name: Select Xcode
         run: sudo xcode-select -s /Applications/Xcode.app
 
+      - name: Validate question database
+        run: node Scripts/validate_questions.js
+
       - name: Build
         run: |
           xcodebuild build \
             -project "Swift Quiz Academy.xcodeproj" \
             -scheme "Swift Quiz Academy" \
             -destination "generic/platform=iOS" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: Unit Tests
+        run: |
+          xcodebuild test \
+            -project "Swift Quiz Academy.xcodeproj" \
+            -scheme "Swift Quiz Academy" \
+            -destination "platform=iOS Simulator,name=iPhone 17" \
+            -only-testing:"Swift Quiz AcademyTests" \
             CODE_SIGNING_ALLOWED=NO

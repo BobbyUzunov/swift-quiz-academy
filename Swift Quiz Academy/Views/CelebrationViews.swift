@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct DailyRewardPopup: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     let reward: DailyRewardResult
     let selectedLanguage: AppLanguage
     let isClaiming: Bool
@@ -27,8 +29,8 @@ struct DailyRewardPopup: View {
                         .font(.system(size: 38, weight: .bold))
                         .foregroundStyle(.white)
                 }
-                .scaleEffect(isClaiming ? 1.16 : 1)
-                .rotationEffect(.degrees(isClaiming ? 7 : 0))
+                .scaleEffect(!reduceMotion && isClaiming ? 1.16 : 1)
+                .rotationEffect(.degrees(!reduceMotion && isClaiming ? 7 : 0))
 
                 VStack(spacing: 8) {
                     Text(selectedLanguage.localized("Дневна награда", "Daily Reward"))
@@ -69,30 +71,38 @@ struct DailyRewardPopup: View {
             }
             .shadow(color: .black.opacity(0.18), radius: 28, x: 0, y: 16)
             .padding(.horizontal, 22)
+            .accessibilityElement(children: .contain)
+            .accessibilityLabel(selectedLanguage.localized("Дневна награда \(reward.totalXP) XP. Поредица \(reward.currentStreak) дни.", "Daily reward \(reward.totalXP) XP. Streak \(reward.currentStreak) days."))
         }
     }
 }
 
 struct ConfettiBurstView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     let isActive: Bool
 
     private let colors: [Color] = [.blue, .orange, .green, .pink, .yellow, .purple]
 
     var body: some View {
-        ZStack {
-            ForEach(0..<18, id: \.self) { index in
-                RoundedRectangle(cornerRadius: 2)
-                    .fill(colors[index % colors.count])
-                    .frame(width: 8, height: 12)
-                    .rotationEffect(.degrees(isActive ? Double(index * 23) : 0))
-                    .offset(
-                        x: isActive ? CGFloat((index % 6) - 3) * 38 : 0,
-                        y: isActive ? CGFloat((index / 6) + 1) * 44 : 0
-                    )
-                    .opacity(isActive ? 0 : 1)
+        Group {
+            if !reduceMotion {
+                ZStack {
+                    ForEach(0..<18, id: \.self) { index in
+                        RoundedRectangle(cornerRadius: 2)
+                            .fill(colors[index % colors.count])
+                            .frame(width: 8, height: 12)
+                            .rotationEffect(.degrees(isActive ? Double(index * 23) : 0))
+                            .offset(
+                                x: isActive ? CGFloat((index % 6) - 3) * 38 : 0,
+                                y: isActive ? CGFloat((index / 6) + 1) * 44 : 0
+                            )
+                            .opacity(isActive ? 0 : 1)
+                    }
+                }
             }
         }
         .allowsHitTesting(false)
-        .animation(.easeOut(duration: 1.0), value: isActive)
+        .animation(reduceMotion ? nil : .easeOut(duration: 1.0), value: isActive)
     }
 }

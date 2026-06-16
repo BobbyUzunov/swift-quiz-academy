@@ -20,6 +20,7 @@ struct SettingsView: View {
     let bestDailyStreak: Int
     let currentLoginStreak: Int
     let bestLoginStreak: Int
+    let categoryMasteryStats: [CategoryMasteryStat]
     let achievements: [Achievement]
     @Binding var selectedLanguage: AppLanguage
     @Binding var selectedTheme: AppTheme
@@ -62,6 +63,17 @@ struct SettingsView: View {
                             ProfileStatRow(title: localized("Грешни отговори", "Wrong Answers"), value: "\(savedWrongAnswers)")
                             ProfileStatRow(title: localized("Успеваемост", "Accuracy"), value: "\(accuracyPercentage)%")
                             ProfileStatRow(title: localized("Най-добър Streak", "Best Streak"), value: "\(savedBestStreak)")
+                        }
+                    }
+
+                    settingsSection(title: localized("Усвояване по категории", "Category Mastery"), icon: "chart.bar.fill") {
+                        VStack(spacing: 10) {
+                            ForEach(categoryMasteryStats) { stat in
+                                ProfileStatRow(
+                                    title: stat.title,
+                                    value: "\(stat.completedQuestions)/\(stat.totalQuestions) • \(stat.masteryPercentage)%"
+                                )
+                            }
                         }
                     }
 

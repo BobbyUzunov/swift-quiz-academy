@@ -25,10 +25,14 @@ struct QuizProgressSnapshot {
     var selectedTheme: AppTheme
     var mistakes: [MistakeRecord]
     var achievementIDs: Set<String>
+    var completedQuestionIDsByCategory: [String: Set<String>]
 }
 
 final class QuizProgressStore {
+    static let currentSchemaVersion = 1
+
     private enum Key {
+        static let schemaVersion = "persistenceSchemaVersion"
         static let totalXP = "totalXP"
         static let highestScore = "highestScore"
         static let totalGamesPlayed = "totalGamesPlayed"
@@ -48,8 +52,10 @@ final class QuizProgressStore {
         static let bestLoginStreak = "bestLoginStreak"
         static let selectedLanguage = "selectedLanguage"
         static let selectedTheme = "selectedTheme"
+        static let completedQuestionsByCategory = "completedQuestionsByCategory"
 
         static let all = [
+            schemaVersion,
             totalXP,
             highestScore,
             totalGamesPlayed,
@@ -68,7 +74,8 @@ final class QuizProgressStore {
             selectedLanguage,
             selectedTheme,
             mistakes,
-            achievements
+            achievements,
+            completedQuestionsByCategory
         ]
     }
 
@@ -76,6 +83,11 @@ final class QuizProgressStore {
 
     init(userDefaults: UserDefaults = .standard) {
         self.userDefaults = userDefaults
+        migrateIfNeeded()
+    }
+
+    var storedSchemaVersion: Int {
+        userDefaults.integer(forKey: Key.schemaVersion)
     }
 
     func load() -> QuizProgressSnapshot {
@@ -105,7 +117,8 @@ final class QuizProgressStore {
             selectedLanguage: selectedLanguage,
             selectedTheme: selectedTheme,
             mistakes: loadCodableArray(MistakeRecord.self, key: Key.mistakes),
-            achievementIDs: Set(userDefaults.stringArray(forKey: Key.achievements) ?? [])
+            achievementIDs: Set(userDefaults.stringArray(forKey: Key.achievements) ?? []),
+            completedQuestionIDsByCategory: loadCompletedQuestionsByCategory()
         )
     }
 
@@ -163,21 +176,78 @@ final class QuizProgressStore {
         userDefaults.set(Array(achievementIDs), forKey: Key.achievements)
     }
 
+    func saveCompletedQuestionsByCategory(_ completedQuestionsByCategory: [String: Set<String>]) {
+        let codableValue = completedQuestionsByCategory.mapValues { Array($0).sorted() }
+        saveCodableValue(codableValue, key: Key.completedQuestionsByCategory)
+    }
+
     func reset() {
         Key.all.forEach { userDefaults.removeObject(forKey: $0) }
+        saveCurrentSchemaVersion()
     }
 
     private func saveCodableArray<T: Encodable>(_ values: [T], key: String) {
-        if let data = try? JSONEncoder().encode(values) {
+        saveCodableValue(values, key: key)
+    }
+
+    private func saveCodableValue<T: Encodable>(_ value: T, key: String) {
+        do {
+            let data = try JSONEncoder().encode(value)
             userDefaults.set(data, forKey: key)
+        } catch {
+            #if DEBUG
+            print("Swift Quiz Academy persistence encode failed for \(key): \(error)")
+            #endif
         }
     }
 
     private func loadCodableArray<T: Decodable>(_ type: T.Type, key: String) -> [T] {
-        guard let data = userDefaults.data(forKey: key),
-              let values = try? JSONDecoder().decode([T].self, from: data) else {
+        guard let data = userDefaults.data(forKey: key) else {
             return []
         }
-        return values
+
+        do {
+            return try JSONDecoder().decode([T].self, from: data)
+        } catch {
+            #if DEBUG
+            print("Swift Quiz Academy persistence decode failed for \(key): \(error)")
+            #endif
+            return []
+        }
+    }
+
+    private func loadCompletedQuestionsByCategory() -> [String: Set<String>] {
+        let stored: [String: [String]] = loadCodableValue([String: [String]].self, key: Key.completedQuestionsByCategory) ?? [:]
+        return stored.mapValues(Set.init)
+    }
+
+    private func loadCodableValue<T: Decodable>(_ type: T.Type, key: String) -> T? {
+        guard let data = userDefaults.data(forKey: key) else {
+            return nil
+        }
+
+        do {
+            return try JSONDecoder().decode(T.self, from: data)
+        } catch {
+            #if DEBUG
+            print("Swift Quiz Academy persistence decode failed for \(key): \(error)")
+            #endif
+            return nil
+        }
+    }
+
+    private func migrateIfNeeded() {
+        let storedVersion = userDefaults.integer(forKey: Key.schemaVersion)
+        guard storedVersion < Self.currentSchemaVersion else { return }
+
+        #if DEBUG
+        print("Swift Quiz Academy persistence migration: \(storedVersion) -> \(Self.currentSchemaVersion)")
+        #endif
+
+        saveCurrentSchemaVersion()
+    }
+
+    private func saveCurrentSchemaVersion() {
+        userDefaults.set(Self.currentSchemaVersion, forKey: Key.schemaVersion)
     }
 }

@@ -111,6 +111,7 @@ struct SwiftQuizAcademyRootView: View {
             bestDailyStreak: viewModel.savedBestDailyStreak,
             currentLoginStreak: viewModel.savedCurrentLoginStreak,
             bestLoginStreak: viewModel.savedBestLoginStreak,
+            categoryMasteryStats: viewModel.categoryMasteryStats,
             achievements: viewModel.achievements,
             recentAchievement: viewModel.recentAchievement,
             dailyBonusXP: viewModel.dailyBonusXP,

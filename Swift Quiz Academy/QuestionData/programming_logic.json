@@ -3,690 +3,1449 @@
     "id": "programming-logic-beginner-01",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Кой statement изпълнява код само когато условието е вярно?",
-    "questionEN": "Which statement runs code only when a condition is true?",
+    "questionEN": "A developer needs to run code only when a condition is true. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни код само когато условие е true. Кой избор е най-подходящ?",
     "answersBG": [
-      "if",
-      "let",
-      "import",
-      "return"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
     "answersEN": [
-      "if",
-      "let",
-      "import",
-      "return"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
-    "correctAnswerBG": "if",
-    "correctAnswerEN": "if",
-    "explanationBG": "Правилният отговор е \"if\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"if\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "if statement",
+    "correctAnswerEN": "if statement",
+    "explanationBG": "if statement проверява Boolean условие преди изпълнение.",
+    "explanationEN": "if statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-02",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Кой цикъл минава през елементи в колекция?",
-    "questionEN": "Which loop repeats over items in a collection?",
+    "questionEN": "A developer needs to choose between many known cases. Which choice is best?",
+    "questionBG": "Developer трябва да избере между много известни cases. Кой избор е най-подходящ?",
     "answersBG": [
-      "for-in",
-      "switch",
-      "guard",
-      "struct"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
     "answersEN": [
-      "for-in",
-      "switch",
-      "guard",
-      "struct"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
-    "correctAnswerBG": "for-in",
-    "correctAnswerEN": "for-in",
-    "explanationBG": "Правилният отговор е \"for-in\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"for-in\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "switch statement",
+    "correctAnswerEN": "switch statement",
+    "explanationBG": "switch statement прави multi-case branching четимо.",
+    "explanationEN": "switch statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-03",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво означава && в условие?",
-    "questionEN": "What does && mean in a condition?",
+    "questionEN": "A developer needs to repeat work for each item. Which choice is best?",
+    "questionBG": "Developer трябва да повтори работа за всеки item. Кой избор е най-подходящ?",
     "answersBG": [
-      "И",
-      "ИЛИ",
-      "НЕ",
-      "РАВНО"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
     "answersEN": [
-      "AND",
-      "OR",
-      "NOT",
-      "EQUAL"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
-    "correctAnswerBG": "И",
-    "correctAnswerEN": "AND",
-    "explanationBG": "Правилният отговор е \"И\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"AND\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "for loop",
+    "correctAnswerEN": "for loop",
+    "explanationBG": "for loop обхожда collection или range.",
+    "explanationEN": "for loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-04",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво означава || в условие?",
-    "questionEN": "What does || mean in a condition?",
+    "questionEN": "A developer needs to repeat while a condition remains true. Which choice is best?",
+    "questionBG": "Developer трябва да повтаря докато условие остава true. Кой избор е най-подходящ?",
     "answersBG": [
-      "И",
-      "ИЛИ",
-      "ПО-МАЛКО",
-      "ПЛЮС"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
     "answersEN": [
-      "AND",
-      "OR",
-      "LESS",
-      "PLUS"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
-    "correctAnswerBG": "ИЛИ",
-    "correctAnswerEN": "OR",
-    "explanationBG": "Правилният отговор е \"ИЛИ\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"OR\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "while loop",
+    "correctAnswerEN": "while loop",
+    "explanationBG": "while loop продължава, докато условието е true.",
+    "explanationEN": "while loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-05",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Кой оператор означава различно?",
-    "questionEN": "Which operator means not equal?",
+    "questionEN": "A developer needs to require two conditions to pass. Which choice is best?",
+    "questionBG": "Developer трябва да изисква две условия да минат. Кой избор е най-подходящ?",
     "answersBG": [
-      "==",
-      "!=",
-      "<=",
-      "="
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
     "answersEN": [
-      "==",
-      "!=",
-      "<=",
-      "="
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
-    "correctAnswerBG": "!=",
-    "correctAnswerEN": "!=",
-    "explanationBG": "Правилният отговор е \"!=\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"!=\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "&&",
+    "correctAnswerEN": "&&",
+    "explanationBG": "&& е logical AND и изисква двете страни да са true.",
+    "explanationEN": "&& is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-06",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво е алгоритъм?",
-    "questionEN": "What is an algorithm?",
+    "questionEN": "A developer needs to allow either condition to pass. Which choice is best?",
+    "questionBG": "Developer трябва да позволи което и да е от две условия да мине. Кой избор е най-подходящ?",
     "answersBG": [
-      "Решение стъпка по стъпка",
-      "Color",
-      "Device",
-      "A random number"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
     "answersEN": [
-      "A step-by-step solution",
-      "A color",
-      "A device",
-      "A random number"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
-    "correctAnswerBG": "Решение стъпка по стъпка",
-    "correctAnswerEN": "A step-by-step solution",
-    "explanationBG": "Правилният отговор е \"Решение стъпка по стъпка\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"A step-by-step solution\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "||",
+    "correctAnswerEN": "||",
+    "explanationBG": "|| е logical OR и изисква поне една true страна.",
+    "explanationEN": "|| is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-07",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво става, когато условието на цикъл никога не става false?",
-    "questionEN": "What happens when a loop condition never becomes false?",
+    "questionEN": "A developer needs to invert a Boolean condition. Which choice is best?",
+    "questionBG": "Developer трябва да обърне Boolean условие. Кой избор е най-подходящ?",
     "answersBG": [
-      "Безкраен цикъл",
-      "Optional",
-      "Compilation",
-      "Import"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
     "answersEN": [
-      "Infinite loop",
-      "Optional",
-      "Compilation",
-      "Import"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
-    "correctAnswerBG": "Безкраен цикъл",
-    "correctAnswerEN": "Infinite loop",
-    "explanationBG": "Правилният отговор е \"Безкраен цикъл\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Infinite loop\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!",
+    "correctAnswerEN": "!",
+    "explanationBG": "! превръща true във false и обратно.",
+    "explanationEN": "! is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-08",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Кой statement избира между множество случаи?",
-    "questionEN": "Which statement chooses between multiple cases?",
+    "questionEN": "A developer needs to check equality. Which choice is best?",
+    "questionBG": "Developer трябва да провери равенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "switch",
-      "var",
-      "Text",
-      "Array"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
     "answersEN": [
-      "switch",
-      "var",
-      "Text",
-      "Array"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
-    "correctAnswerBG": "switch",
-    "correctAnswerEN": "switch",
-    "explanationBG": "Правилният отговор е \"switch\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"switch\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "==",
+    "correctAnswerEN": "==",
+    "explanationBG": "== сравнява дали две стойности са равни.",
+    "explanationEN": "== is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-09",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво е debugging?",
-    "questionEN": "What is debugging?",
+    "questionEN": "A developer needs to check inequality. Which choice is best?",
+    "questionBG": "Developer трябва да провери неравенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "Намиране и поправяне на проблеми",
-      "Добавяне на icons",
-      "Публикуване веднага",
-      "Само промяна на font size"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
     "answersEN": [
-      "Finding and fixing problems",
-      "Adding icons",
-      "Publishing instantly",
-      "Changing font size only"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
-    "correctAnswerBG": "Намиране и поправяне на проблеми",
-    "correctAnswerEN": "Finding and fixing problems",
-    "explanationBG": "Правилният отговор е \"Намиране и поправяне на проблеми\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Finding and fixing problems\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!=",
+    "correctAnswerEN": "!=",
+    "explanationBG": "!= проверява дали две стойности са различни.",
+    "explanationEN": "!= is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-beginner-10",
     "categoryId": "programming-logic",
     "difficulty": "beginner",
-    "questionBG": "Какво трябва да връща Boolean expression?",
-    "questionEN": "What should a Boolean expression produce?",
+    "questionEN": "A developer needs to find a remainder after division. Which choice is best?",
+    "questionBG": "Developer трябва да намери остатък след деление. Кой избор е най-подходящ?",
     "answersBG": [
-      "true или false",
-      "Само text",
-      "Само images",
-      "File"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
     "answersEN": [
-      "true or false",
-      "Only text",
-      "Only images",
-      "A file"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
-    "correctAnswerBG": "true или false",
-    "correctAnswerEN": "true or false",
-    "explanationBG": "Правилният отговор е \"true или false\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"true or false\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "modulo",
+    "correctAnswerEN": "modulo",
+    "explanationBG": "Modulo връща остатъка от целочислено деление.",
+    "explanationEN": "modulo is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-11",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to handle the first item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи първия item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "answersEN": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "correctAnswerBG": "queue",
+    "correctAnswerEN": "queue",
+    "explanationBG": "Queue следва FIFO: first in, first out.",
+    "explanationEN": "queue is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-12",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to handle the last item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи последния item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "stack",
+    "correctAnswerEN": "stack",
+    "explanationBG": "Stack следва LIFO: last in, first out.",
+    "explanationEN": "stack is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-13",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to stop recursion safely. Which choice is best?",
+    "questionBG": "Developer трябва да спре recursion безопасно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "base case",
+    "correctAnswerEN": "base case",
+    "explanationBG": "Base case предотвратява безкрайна recursion.",
+    "explanationEN": "base case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-14",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to describe unusual input. Which choice is best?",
+    "questionBG": "Developer трябва да опише необичаен input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "answersEN": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "correctAnswerBG": "edge case",
+    "correctAnswerEN": "edge case",
+    "explanationBG": "Edge case е рядка или крайна ситуация, която може да счупи logic.",
+    "explanationEN": "edge case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-15",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to estimate algorithm growth. Which choice is best?",
+    "questionBG": "Developer трябва да оцени растежа на algorithm. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "answersEN": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "correctAnswerBG": "Big O",
+    "correctAnswerEN": "Big O",
+    "explanationBG": "Big O описва как cost расте спрямо input size.",
+    "explanationEN": "Big O is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-16",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to represent constant-time work. Which choice is best?",
+    "questionBG": "Developer трябва да представи constant-time work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "answersEN": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "correctAnswerBG": "O(1)",
+    "correctAnswerEN": "O(1)",
+    "explanationBG": "O(1) означава, че cost не расте с input size.",
+    "explanationEN": "O(1) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-17",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to represent linear work. Which choice is best?",
+    "questionBG": "Developer трябва да представи linear work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "answersEN": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "correctAnswerBG": "O(n)",
+    "correctAnswerEN": "O(n)",
+    "explanationBG": "O(n) расте приблизително пропорционално на input size.",
+    "explanationEN": "O(n) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-18",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to track allowed transitions. Which choice is best?",
+    "questionBG": "Developer трябва да следи позволени transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "answersEN": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "correctAnswerBG": "state machine",
+    "correctAnswerEN": "state machine",
+    "explanationBG": "State machine моделира states и валидни transitions.",
+    "explanationEN": "state machine is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-19",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to store lookup by key. Which choice is best?",
+    "questionBG": "Developer трябва да пази lookup по key. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "answersEN": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "correctAnswerBG": "hash map",
+    "correctAnswerEN": "hash map",
+    "explanationBG": "Hash map осигурява бързо average lookup по key.",
+    "explanationEN": "hash map is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-20",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to search sorted data efficiently. Which choice is best?",
+    "questionBG": "Developer трябва да търси sorted data ефективно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "answersEN": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "correctAnswerBG": "binary search",
+    "correctAnswerEN": "binary search",
+    "explanationBG": "Binary search дели sorted search space наполовина.",
+    "explanationEN": "binary search is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-beginner-21",
+    "categoryId": "programming-logic",
+    "difficulty": "beginner",
+    "questionEN": "A developer needs to break a problem into parts. Which choice is best?",
+    "questionBG": "Developer трябва да разбие проблем на части. Кой избор е най-подходящ?",
+    "answersBG": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "answersEN": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "correctAnswerBG": "decomposition",
+    "correctAnswerEN": "decomposition",
+    "explanationBG": "Decomposition прави сложните problems по-малки и управляеми.",
+    "explanationEN": "decomposition is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-01",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво означава decomposition?",
-    "questionEN": "What does decomposition mean?",
+    "questionEN": "A developer needs to run code only when a condition is true. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни код само когато условие е true. Кой избор е най-подходящ?",
     "answersBG": [
-      "Разделяне на проблем на по-малки части",
-      "Изтриване на код",
-      "Changing colors",
-      "Compiling twice"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
     "answersEN": [
-      "Breaking a problem into smaller parts",
-      "Deleting code",
-      "Changing colors",
-      "Compiling twice"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
-    "correctAnswerBG": "Разделяне на проблем на по-малки части",
-    "correctAnswerEN": "Breaking a problem into smaller parts",
-    "explanationBG": "Правилният отговор е \"Разделяне на проблем на по-малки части\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Breaking a problem into smaller parts\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "if statement",
+    "correctAnswerEN": "if statement",
+    "explanationBG": "if statement проверява Boolean условие преди изпълнение.",
+    "explanationEN": "if statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-02",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво е scope на променлива?",
-    "questionEN": "What is a variable's scope?",
+    "questionEN": "A developer needs to choose between many known cases. Which choice is best?",
+    "questionBG": "Developer трябва да избере между много известни cases. Кой избор е най-подходящ?",
     "answersBG": [
-      "Къде може да бъде достъпена",
-      "Нейният цвят",
-      "Нейната icon",
-      "Нейното device"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
     "answersEN": [
-      "Where it can be accessed",
-      "Its color",
-      "Its icon",
-      "Its device"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
-    "correctAnswerBG": "Къде може да бъде достъпена",
-    "correctAnswerEN": "Where it can be accessed",
-    "explanationBG": "Правилният отговор е \"Къде може да бъде достъпена\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Where it can be accessed\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "switch statement",
+    "correctAnswerEN": "switch statement",
+    "explanationBG": "switch statement прави multi-case branching четимо.",
+    "explanationEN": "switch statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-03",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво прави short-circuit evaluation?",
-    "questionEN": "What does short-circuit evaluation do?",
+    "questionEN": "A developer needs to repeat work for each item. Which choice is best?",
+    "questionBG": "Developer трябва да повтори работа за всеки item. Кой избор е най-подходящ?",
     "answersBG": [
-      "Спира проверката, щом резултатът е ясен",
-      "Изтрива всички conditions",
-      "Изпълнява всеки branch",
-      "Пропуска компилация"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
     "answersEN": [
-      "Stops checking once the result is known",
-      "Deletes all conditions",
-      "Runs every branch",
-      "Skips compilation"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
-    "correctAnswerBG": "Спира проверката, щом резултатът е ясен",
-    "correctAnswerEN": "Stops checking once the result is known",
-    "explanationBG": "Правилният отговор е \"Спира проверката, щом резултатът е ясен\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Stops checking once the result is known\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "for loop",
+    "correctAnswerEN": "for loop",
+    "explanationBG": "for loop обхожда collection или range.",
+    "explanationEN": "for loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-04",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Коя data structure работи first-in, first-out?",
-    "questionEN": "Which data structure works first-in, first-out?",
+    "questionEN": "A developer needs to repeat while a condition remains true. Which choice is best?",
+    "questionBG": "Developer трябва да повтаря докато условие остава true. Кой избор е най-подходящ?",
     "answersBG": [
-      "Queue",
-      "Stack",
-      "Set",
-      "Tree"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
     "answersEN": [
-      "Queue",
-      "Stack",
-      "Set",
-      "Tree"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
-    "correctAnswerBG": "Queue",
-    "correctAnswerEN": "Queue",
-    "explanationBG": "Правилният отговор е \"Queue\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Queue\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "while loop",
+    "correctAnswerEN": "while loop",
+    "explanationBG": "while loop продължава, докато условието е true.",
+    "explanationEN": "while loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-05",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Коя data structure работи last-in, first-out?",
-    "questionEN": "Which data structure works last-in, first-out?",
+    "questionEN": "A developer needs to require two conditions to pass. Which choice is best?",
+    "questionBG": "Developer трябва да изисква две условия да минат. Кой избор е най-подходящ?",
     "answersBG": [
-      "Stack",
-      "Queue",
-      "Array only",
-      "Dictionary"
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
     "answersEN": [
-      "Stack",
-      "Queue",
-      "Array only",
-      "Dictionary"
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
-    "correctAnswerBG": "Stack",
-    "correctAnswerEN": "Stack",
-    "explanationBG": "Правилният отговор е \"Stack\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Stack\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "&&",
+    "correctAnswerEN": "&&",
+    "explanationBG": "&& е logical AND и изисква двете страни да са true.",
+    "explanationEN": "&& is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-06",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво е base case в recursion?",
-    "questionEN": "What is a base case in recursion?",
+    "questionEN": "A developer needs to allow either condition to pass. Which choice is best?",
+    "questionBG": "Developer трябва да позволи което и да е от две условия да мине. Кой избор е най-подходящ?",
     "answersBG": [
-      "Условието, което спира recursion",
-      "Най-големият array",
-      "The app icon",
-      "Boolean operator"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
     "answersEN": [
-      "The condition that stops recursion",
-      "The largest array",
-      "The app icon",
-      "A Boolean operator"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
-    "correctAnswerBG": "Условието, което спира recursion",
-    "correctAnswerEN": "The condition that stops recursion",
-    "explanationBG": "Правилният отговор е \"Условието, което спира recursion\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"The condition that stops recursion\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "||",
+    "correctAnswerEN": "||",
+    "explanationBG": "|| е logical OR и изисква поне една true страна.",
+    "explanationEN": "|| is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-07",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво прави sorting?",
-    "questionEN": "What does sorting do?",
+    "questionEN": "A developer needs to invert a Boolean condition. Which choice is best?",
+    "questionBG": "Developer трябва да обърне Boolean условие. Кой избор е най-подходящ?",
     "answersBG": [
-      "Подрежда стойности по правило",
-      "Изтрива стойности",
-      "Създава UI",
-      "Импортира modules"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
     "answersEN": [
-      "Arranges values by a rule",
-      "Deletes values",
-      "Creates UI",
-      "Imports modules"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
-    "correctAnswerBG": "Подрежда стойности по правило",
-    "correctAnswerEN": "Arranges values by a rule",
-    "explanationBG": "Правилният отговор е \"Подрежда стойности по правило\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Arranges values by a rule\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!",
+    "correctAnswerEN": "!",
+    "explanationBG": "! превръща true във false и обратно.",
+    "explanationEN": "! is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-08",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво е precondition?",
-    "questionEN": "What is a precondition?",
+    "questionEN": "A developer needs to check equality. Which choice is best?",
+    "questionBG": "Developer трябва да провери равенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "Нещо, което се очаква да е вярно преди code да се изпълни",
-      "Font",
-      "An asset",
-      "Device"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
     "answersEN": [
-      "Something expected to be true before code runs",
-      "A font",
-      "An asset",
-      "A device"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
-    "correctAnswerBG": "Нещо, което се очаква да е вярно преди code да се изпълни",
-    "correctAnswerEN": "Something expected to be true before code runs",
-    "explanationBG": "Правилният отговор е \"Нещо, което се очаква да е вярно преди code да се изпълни\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Something expected to be true before code runs\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "==",
+    "correctAnswerEN": "==",
+    "explanationBG": "== сравнява дали две стойности са равни.",
+    "explanationEN": "== is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-09",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво връща modulo (%)?",
-    "questionEN": "What does modulo (%) return?",
+    "questionEN": "A developer needs to check inequality. Which choice is best?",
+    "questionBG": "Developer трябва да провери неравенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "Остатъкът",
-      "Частното",
-      "String",
-      "Само Boolean"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
     "answersEN": [
-      "The remainder",
-      "The quotient",
-      "A string",
-      "A Boolean only"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
-    "correctAnswerBG": "Остатъкът",
-    "correctAnswerEN": "The remainder",
-    "explanationBG": "Правилният отговор е \"Остатъкът\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"The remainder\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!=",
+    "correctAnswerEN": "!=",
+    "explanationBG": "!= проверява дали две стойности са различни.",
+    "explanationEN": "!= is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-intermediate-10",
     "categoryId": "programming-logic",
     "difficulty": "intermediate",
-    "questionBG": "Какво е edge case?",
-    "questionEN": "What is an edge case?",
+    "questionEN": "A developer needs to find a remainder after division. Which choice is best?",
+    "questionBG": "Developer трябва да намери остатък след деление. Кой избор е най-подходящ?",
     "answersBG": [
-      "Необичаен input, който може да счупи logic",
-      "Ръб на екрана",
-      "Color",
-      "A package"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
     "answersEN": [
-      "An unusual input that may break logic",
-      "A screen edge",
-      "A color",
-      "A package"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
-    "correctAnswerBG": "Необичаен input, който може да счупи logic",
-    "correctAnswerEN": "An unusual input that may break logic",
-    "explanationBG": "Правилният отговор е \"Необичаен input, който може да счупи logic\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"An unusual input that may break logic\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "modulo",
+    "correctAnswerEN": "modulo",
+    "explanationBG": "Modulo връща остатъка от целочислено деление.",
+    "explanationEN": "modulo is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-11",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to handle the first item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи първия item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "answersEN": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "correctAnswerBG": "queue",
+    "correctAnswerEN": "queue",
+    "explanationBG": "Queue следва FIFO: first in, first out.",
+    "explanationEN": "queue is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-12",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to handle the last item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи последния item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "stack",
+    "correctAnswerEN": "stack",
+    "explanationBG": "Stack следва LIFO: last in, first out.",
+    "explanationEN": "stack is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-13",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to stop recursion safely. Which choice is best?",
+    "questionBG": "Developer трябва да спре recursion безопасно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "base case",
+    "correctAnswerEN": "base case",
+    "explanationBG": "Base case предотвратява безкрайна recursion.",
+    "explanationEN": "base case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-14",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to describe unusual input. Which choice is best?",
+    "questionBG": "Developer трябва да опише необичаен input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "answersEN": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "correctAnswerBG": "edge case",
+    "correctAnswerEN": "edge case",
+    "explanationBG": "Edge case е рядка или крайна ситуация, която може да счупи logic.",
+    "explanationEN": "edge case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-15",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to estimate algorithm growth. Which choice is best?",
+    "questionBG": "Developer трябва да оцени растежа на algorithm. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "answersEN": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "correctAnswerBG": "Big O",
+    "correctAnswerEN": "Big O",
+    "explanationBG": "Big O описва как cost расте спрямо input size.",
+    "explanationEN": "Big O is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-16",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to represent constant-time work. Which choice is best?",
+    "questionBG": "Developer трябва да представи constant-time work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "answersEN": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "correctAnswerBG": "O(1)",
+    "correctAnswerEN": "O(1)",
+    "explanationBG": "O(1) означава, че cost не расте с input size.",
+    "explanationEN": "O(1) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-17",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to represent linear work. Which choice is best?",
+    "questionBG": "Developer трябва да представи linear work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "answersEN": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "correctAnswerBG": "O(n)",
+    "correctAnswerEN": "O(n)",
+    "explanationBG": "O(n) расте приблизително пропорционално на input size.",
+    "explanationEN": "O(n) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-18",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to track allowed transitions. Which choice is best?",
+    "questionBG": "Developer трябва да следи позволени transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "answersEN": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "correctAnswerBG": "state machine",
+    "correctAnswerEN": "state machine",
+    "explanationBG": "State machine моделира states и валидни transitions.",
+    "explanationEN": "state machine is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-19",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to store lookup by key. Which choice is best?",
+    "questionBG": "Developer трябва да пази lookup по key. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "answersEN": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "correctAnswerBG": "hash map",
+    "correctAnswerEN": "hash map",
+    "explanationBG": "Hash map осигурява бързо average lookup по key.",
+    "explanationEN": "hash map is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-20",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to search sorted data efficiently. Which choice is best?",
+    "questionBG": "Developer трябва да търси sorted data ефективно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "answersEN": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "correctAnswerBG": "binary search",
+    "correctAnswerEN": "binary search",
+    "explanationBG": "Binary search дели sorted search space наполовина.",
+    "explanationEN": "binary search is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-intermediate-21",
+    "categoryId": "programming-logic",
+    "difficulty": "intermediate",
+    "questionEN": "A developer needs to break a problem into parts. Which choice is best?",
+    "questionBG": "Developer трябва да разбие проблем на части. Кой избор е най-подходящ?",
+    "answersBG": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "answersEN": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "correctAnswerBG": "decomposition",
+    "correctAnswerEN": "decomposition",
+    "explanationBG": "Decomposition прави сложните problems по-малки и управляеми.",
+    "explanationEN": "decomposition is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-01",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "За какво се използва Big O notation?",
-    "questionEN": "What is Big O notation used for?",
+    "questionEN": "A developer needs to run code only when a condition is true. Which choice is best?",
+    "questionBG": "Developer трябва да изпълни код само когато условие е true. Кой избор е най-подходящ?",
     "answersBG": [
-      "Описване на растежа на algorithm",
-      "Рисуване на circles",
-      "Именуване на variables",
-      "Подписване на apps"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
     "answersEN": [
-      "Describing algorithm growth",
-      "Drawing circles",
-      "Naming variables",
-      "Signing apps"
+      "if statement",
+      "switch statement",
+      "for loop",
+      "while loop"
     ],
-    "correctAnswerBG": "Описване на растежа на algorithm",
-    "correctAnswerEN": "Describing algorithm growth",
-    "explanationBG": "Правилният отговор е \"Описване на растежа на algorithm\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Describing algorithm growth\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "if statement",
+    "correctAnswerEN": "if statement",
+    "explanationBG": "if statement проверява Boolean условие преди изпълнение.",
+    "explanationEN": "if statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-02",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво означава O(1)?",
-    "questionEN": "What does O(1) mean?",
+    "questionEN": "A developer needs to evaluate between many known cases. Which choice is best?",
+    "questionBG": "Developer трябва да избере между много известни cases. Кой избор е най-подходящ?",
     "answersBG": [
-      "Константно време",
-      "Линейно време",
-      "Експоненциално време",
-      "Без време"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
     "answersEN": [
-      "Constant time",
-      "Linear time",
-      "Exponential time",
-      "No time"
+      "switch statement",
+      "for loop",
+      "while loop",
+      "&&"
     ],
-    "correctAnswerBG": "Константно време",
-    "correctAnswerEN": "Constant time",
-    "explanationBG": "Правилният отговор е \"Константно време\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Constant time\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "switch statement",
+    "correctAnswerEN": "switch statement",
+    "explanationBG": "switch statement прави multi-case branching четимо.",
+    "explanationEN": "switch statement is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-03",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво изисква binary search?",
-    "questionEN": "What does binary search require?",
+    "questionEN": "A developer needs to repeat work for each item. Which choice is best?",
+    "questionBG": "Developer трябва да повтори работа за всеки item. Кой избор е най-подходящ?",
     "answersBG": [
-      "Сортирани данни",
-      "Случайни данни",
-      "Images",
-      "Network"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
     "answersEN": [
-      "Sorted data",
-      "Random data",
-      "Images",
-      "A network"
+      "for loop",
+      "while loop",
+      "&&",
+      "||"
     ],
-    "correctAnswerBG": "Сортирани данни",
-    "correctAnswerEN": "Sorted data",
-    "explanationBG": "Правилният отговор е \"Сортирани данни\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Sorted data\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "for loop",
+    "correctAnswerEN": "for loop",
+    "explanationBG": "for loop обхожда collection или range.",
+    "explanationEN": "for loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-04",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "От какво е съставен graph?",
-    "questionEN": "What is a graph made of?",
+    "questionEN": "A developer needs to repeat while a condition remains true. Which choice is best?",
+    "questionBG": "Developer трябва да повтаря докато условие остава true. Кой избор е най-подходящ?",
     "answersBG": [
-      "Nodes и edges",
-      "Само arrays",
-      "Само strings",
-      "Само views"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
     "answersEN": [
-      "Nodes and edges",
-      "Only arrays",
-      "Only strings",
-      "Only views"
+      "while loop",
+      "&&",
+      "||",
+      "!"
     ],
-    "correctAnswerBG": "Nodes и edges",
-    "correctAnswerEN": "Nodes and edges",
-    "explanationBG": "Правилният отговор е \"Nodes и edges\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Nodes and edges\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "while loop",
+    "correctAnswerEN": "while loop",
+    "explanationBG": "while loop продължава, докато условието е true.",
+    "explanationEN": "while loop is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-05",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "За какво често се използва dynamic programming?",
-    "questionEN": "What is dynamic programming often used for?",
+    "questionEN": "A developer needs to require two conditions to pass. Which choice is best?",
+    "questionBG": "Developer трябва да изисква две условия да минат. Кой избор е най-подходящ?",
     "answersBG": [
-      "Преизползване на резултати от припокриващи се subproblems",
-      "Промяна на icons",
-      "Importing packages",
-      "Writing comments"
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
     "answersEN": [
-      "Reusing overlapping subproblem results",
-      "Changing icons",
-      "Importing packages",
-      "Writing comments"
+      "&&",
+      "||",
+      "!",
+      "=="
     ],
-    "correctAnswerBG": "Преизползване на резултати от припокриващи се subproblems",
-    "correctAnswerEN": "Reusing overlapping subproblem results",
-    "explanationBG": "Правилният отговор е \"Преизползване на резултати от припокриващи се subproblems\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Reusing overlapping subproblem results\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "&&",
+    "correctAnswerEN": "&&",
+    "explanationBG": "&& е logical AND и изисква двете страни да са true.",
+    "explanationEN": "&& is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-06",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво помага да намалим immutability?",
-    "questionEN": "What does immutability help reduce?",
+    "questionEN": "A developer needs to allow either condition to pass. Which choice is best?",
+    "questionBG": "Developer трябва да позволи което и да е от две условия да мине. Кой избор е най-подходящ?",
     "answersBG": [
-      "Неочаквани state changes",
-      "Цялото memory use",
-      "Целият UI code",
-      "Всички functions"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
     "answersEN": [
-      "Unexpected state changes",
-      "All memory use",
-      "All UI code",
-      "All functions"
+      "||",
+      "!",
+      "==",
+      "!="
     ],
-    "correctAnswerBG": "Неочаквани state changes",
-    "correctAnswerEN": "Unexpected state changes",
-    "explanationBG": "Правилният отговор е \"Неочаквани state changes\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Unexpected state changes\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "||",
+    "correctAnswerEN": "||",
+    "explanationBG": "|| е logical OR и изисква поне една true страна.",
+    "explanationEN": "|| is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-07",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво е race condition?",
-    "questionEN": "What is a race condition?",
+    "questionEN": "A developer needs to invert a Boolean condition. Which choice is best?",
+    "questionBG": "Developer трябва да обърне Boolean условие. Кой избор е най-подходящ?",
     "answersBG": [
-      "Output зависи от timing на operations",
-      "Само бърз loop",
-      "Sorting rule",
-      "Compiler setting"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
     "answersEN": [
-      "Output depends on timing of operations",
-      "A fast loop only",
-      "A sorting rule",
-      "A compiler setting"
+      "!",
+      "==",
+      "!=",
+      "modulo"
     ],
-    "correctAnswerBG": "Output зависи от timing на operations",
-    "correctAnswerEN": "Output depends on timing of operations",
-    "explanationBG": "Правилният отговор е \"Output зависи от timing на operations\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Output depends on timing of operations\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!",
+    "correctAnswerEN": "!",
+    "explanationBG": "! превръща true във false и обратно.",
+    "explanationEN": "! is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-08",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво е memoization?",
-    "questionEN": "What is memoization?",
+    "questionEN": "A developer needs to check equality. Which choice is best?",
+    "questionBG": "Developer трябва да провери равенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "Кеширане на предишни резултати",
-      "Изтриване на предишни резултати",
-      "Рисуване на tables",
-      "Промяна на text"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
     "answersEN": [
-      "Caching previous results",
-      "Deleting previous results",
-      "Drawing tables",
-      "Changing text"
+      "==",
+      "!=",
+      "modulo",
+      "stack"
     ],
-    "correctAnswerBG": "Кеширане на предишни резултати",
-    "correctAnswerEN": "Caching previous results",
-    "explanationBG": "Правилният отговор е \"Кеширане на предишни резултати\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Caching previous results\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "==",
+    "correctAnswerEN": "==",
+    "explanationBG": "== сравнява дали две стойности са равни.",
+    "explanationEN": "== is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-09",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво означава idempotent?",
-    "questionEN": "What does idempotent mean?",
+    "questionEN": "A developer needs to check inequality. Which choice is best?",
+    "questionBG": "Developer трябва да провери неравенство. Кой избор е най-подходящ?",
     "answersBG": [
-      "Повторните calls имат същия ефект",
-      "Calls винаги fail-ват",
-      "Calls са random",
-      "Calls изискват UI"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
     "answersEN": [
-      "Repeated calls have the same effect",
-      "Calls always fail",
-      "Calls are random",
-      "Calls require UI"
+      "!=",
+      "modulo",
+      "stack",
+      "queue"
     ],
-    "correctAnswerBG": "Повторните calls имат същия ефект",
-    "correctAnswerEN": "Repeated calls have the same effect",
-    "explanationBG": "Правилният отговор е \"Повторните calls имат същия ефект\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"Repeated calls have the same effect\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "!=",
+    "correctAnswerEN": "!=",
+    "explanationBG": "!= проверява дали две стойности са различни.",
+    "explanationEN": "!= is the best fit here because it directly supports the described Programming Logic workflow."
   },
   {
     "id": "programming-logic-advanced-10",
     "categoryId": "programming-logic",
     "difficulty": "advanced",
-    "questionBG": "Какво е state machine?",
-    "questionEN": "What is a state machine?",
+    "questionEN": "A developer needs to find a remainder after division. Which choice is best?",
+    "questionBG": "Developer трябва да намери остатък след деление. Кой избор е най-подходящ?",
     "answersBG": [
-      "Model със states и transitions",
-      "Hardware-only feature",
-      "Font system",
-      "Image type"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
     "answersEN": [
-      "A model with states and transitions",
-      "A hardware-only feature",
-      "A font system",
-      "An image type"
+      "modulo",
+      "stack",
+      "queue",
+      "recursion"
     ],
-    "correctAnswerBG": "Model със states и transitions",
-    "correctAnswerEN": "A model with states and transitions",
-    "explanationBG": "Правилният отговор е \"Model със states и transitions\". Това е ключовата идея зад въпроса и е важно да я разпознаваш, когато пишеш Swift код.",
-    "explanationEN": "The correct answer is \"A model with states and transitions\". This is the key idea behind the question and it is important to recognize it when writing Swift code."
+    "correctAnswerBG": "modulo",
+    "correctAnswerEN": "modulo",
+    "explanationBG": "Modulo връща остатъка от целочислено деление.",
+    "explanationEN": "modulo is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-11",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to handle the first item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи първия item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "answersEN": [
+      "queue",
+      "stack",
+      "recursion",
+      "binary search"
+    ],
+    "correctAnswerBG": "queue",
+    "correctAnswerEN": "queue",
+    "explanationBG": "Queue следва FIFO: first in, first out.",
+    "explanationEN": "queue is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-12",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to handle the last item processed first. Which choice is best?",
+    "questionBG": "Developer трябва да обработи последния item първи. Кой избор е най-подходящ?",
+    "answersBG": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "stack",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "stack",
+    "correctAnswerEN": "stack",
+    "explanationBG": "Stack следва LIFO: last in, first out.",
+    "explanationEN": "stack is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-13",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to stop recursion safely. Which choice is best?",
+    "questionBG": "Developer трябва да спре recursion безопасно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "answersEN": [
+      "base case",
+      "recursion",
+      "binary search",
+      "hash map"
+    ],
+    "correctAnswerBG": "base case",
+    "correctAnswerEN": "base case",
+    "explanationBG": "Base case предотвратява безкрайна recursion.",
+    "explanationEN": "base case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-14",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to describe unusual input. Which choice is best?",
+    "questionBG": "Developer трябва да опише необичаен input. Кой избор е най-подходящ?",
+    "answersBG": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "answersEN": [
+      "edge case",
+      "binary search",
+      "hash map",
+      "base case"
+    ],
+    "correctAnswerBG": "edge case",
+    "correctAnswerEN": "edge case",
+    "explanationBG": "Edge case е рядка или крайна ситуация, която може да счупи logic.",
+    "explanationEN": "edge case is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-15",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to estimate algorithm growth. Which choice is best?",
+    "questionBG": "Developer трябва да оцени растежа на algorithm. Кой избор е най-подходящ?",
+    "answersBG": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "answersEN": [
+      "Big O",
+      "hash map",
+      "base case",
+      "edge case"
+    ],
+    "correctAnswerBG": "Big O",
+    "correctAnswerEN": "Big O",
+    "explanationBG": "Big O описва как cost расте спрямо input size.",
+    "explanationEN": "Big O is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-16",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to represent constant-time work. Which choice is best?",
+    "questionBG": "Developer трябва да представи constant-time work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "answersEN": [
+      "O(1)",
+      "base case",
+      "edge case",
+      "Big O"
+    ],
+    "correctAnswerBG": "O(1)",
+    "correctAnswerEN": "O(1)",
+    "explanationBG": "O(1) означава, че cost не расте с input size.",
+    "explanationEN": "O(1) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-17",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to represent linear work. Which choice is best?",
+    "questionBG": "Developer трябва да представи linear work. Кой избор е най-подходящ?",
+    "answersBG": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "answersEN": [
+      "O(n)",
+      "edge case",
+      "Big O",
+      "O(1)"
+    ],
+    "correctAnswerBG": "O(n)",
+    "correctAnswerEN": "O(n)",
+    "explanationBG": "O(n) расте приблизително пропорционално на input size.",
+    "explanationEN": "O(n) is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-18",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to track allowed transitions. Which choice is best?",
+    "questionBG": "Developer трябва да следи позволени transitions. Кой избор е най-подходящ?",
+    "answersBG": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "answersEN": [
+      "state machine",
+      "Big O",
+      "O(1)",
+      "O(n)"
+    ],
+    "correctAnswerBG": "state machine",
+    "correctAnswerEN": "state machine",
+    "explanationBG": "State machine моделира states и валидни transitions.",
+    "explanationEN": "state machine is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-19",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to store lookup by key. Which choice is best?",
+    "questionBG": "Developer трябва да пази lookup по key. Кой избор е най-подходящ?",
+    "answersBG": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "answersEN": [
+      "hash map",
+      "if statement",
+      "switch statement",
+      "for loop"
+    ],
+    "correctAnswerBG": "hash map",
+    "correctAnswerEN": "hash map",
+    "explanationBG": "Hash map осигурява бързо average lookup по key.",
+    "explanationEN": "hash map is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-20",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to search sorted data efficiently. Which choice is best?",
+    "questionBG": "Developer трябва да търси sorted data ефективно. Кой избор е най-подходящ?",
+    "answersBG": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "answersEN": [
+      "binary search",
+      "switch statement",
+      "for loop",
+      "while loop"
+    ],
+    "correctAnswerBG": "binary search",
+    "correctAnswerEN": "binary search",
+    "explanationBG": "Binary search дели sorted search space наполовина.",
+    "explanationEN": "binary search is the best fit here because it directly supports the described Programming Logic workflow."
+  },
+  {
+    "id": "programming-logic-advanced-21",
+    "categoryId": "programming-logic",
+    "difficulty": "advanced",
+    "questionEN": "A developer needs to break a problem into parts. Which choice is best?",
+    "questionBG": "Developer трябва да разбие проблем на части. Кой избор е най-подходящ?",
+    "answersBG": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "answersEN": [
+      "decomposition",
+      "for loop",
+      "while loop",
+      "&&"
+    ],
+    "correctAnswerBG": "decomposition",
+    "correctAnswerEN": "decomposition",
+    "explanationBG": "Decomposition прави сложните problems по-малки и управляеми.",
+    "explanationEN": "decomposition is the best fit here because it directly supports the described Programming Logic workflow."
   }
 ]
