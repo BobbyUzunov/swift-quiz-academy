@@ -33,8 +33,9 @@ struct QuizView: View {
                         Label(localized("Назад", "Back"), systemImage: "chevron.left")
                             .font(.headline)
                     }
-                    .buttonStyle(.plain)
-                    .foregroundStyle(.blue)
+                .buttonStyle(.plain)
+                .foregroundStyle(.blue)
+                .accessibilityIdentifier("quizBackButton")
 
                     Spacer()
                 }
@@ -88,6 +89,7 @@ struct QuizView: View {
                 .tint(.blue)
                 .disabled(selectedAnswerIndex == nil || lives == 0)
                 .opacity(selectedAnswerIndex == nil || lives == 0 ? 0.55 : 1)
+                .accessibilityIdentifier(isLastQuestion ? "seeResultButton" : "nextQuestionButton")
             }
             .padding(20)
             .frame(maxWidth: 680)
@@ -144,18 +146,29 @@ struct QuizView: View {
                 .fontWeight(.bold)
                 .multilineTextAlignment(.center)
 
-            HStack(spacing: 10) {
-                metricPill(text: "\(xp) XP", icon: "bolt.fill", color: .orange)
-                metricPill(text: localized("Поредица \(streak)", "Streak \(streak)"), icon: "flame.fill", color: .red)
-                Spacer()
-                heartsView
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 10) {
+                    metricPill(text: "\(xp) XP", icon: "bolt.fill", color: .orange)
+                    metricPill(text: localized("Поредица \(streak)", "Streak \(streak)"), icon: "flame.fill", color: .red)
+                    Spacer(minLength: 8)
+                    heartsView
+                }
+
+                VStack(alignment: .leading, spacing: 10) {
+                    HStack(spacing: 10) {
+                        metricPill(text: "\(xp) XP", icon: "bolt.fill", color: .orange)
+                        metricPill(text: localized("Поредица \(streak)", "Streak \(streak)"), icon: "flame.fill", color: .red)
+                    }
+                    heartsView
+                }
             }
 
             VStack(spacing: 8) {
-                HStack {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(localized("Въпрос \(currentQuestionIndex + 1) / \(totalQuestions)", "Question \(currentQuestionIndex + 1) / \(totalQuestions)"))
-                    Spacer()
+                    Spacer(minLength: 8)
                     Text("\(Int((progressValue * 100).rounded()))%")
+                        .multilineTextAlignment(.trailing)
                 }
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(.secondary)
@@ -209,7 +222,7 @@ struct QuizView: View {
             onSelectAnswer(index)
         } label: {
             HStack(spacing: 12) {
-                Text(String(UnicodeScalar(65 + index)!))
+                Text(answerLetter(for: index))
                     .font(.headline)
                     .frame(width: 34, height: 34)
                     .background(Color.white.opacity(shouldHighlight ? 0.24 : 0.72))
@@ -243,8 +256,14 @@ struct QuizView: View {
         }
         .buttonStyle(.plain)
         .disabled(selectedAnswerIndex != nil)
-        .accessibilityLabel(localized("Отговор \(String(UnicodeScalar(65 + index)!)): \(answerOption.text)", "Answer \(String(UnicodeScalar(65 + index)!)): \(answerOption.text)"))
+        .accessibilityLabel(localized("Отговор \(answerLetter(for: index)): \(answerOption.text)", "Answer \(answerLetter(for: index)): \(answerOption.text)"))
         .accessibilityAddTraits(isSelected ? .isSelected : [])
+        .accessibilityIdentifier(answerOption.isCorrect ? "answerButton_correct" : "answerButton_\(index)")
+    }
+
+    private func answerLetter(for index: Int) -> String {
+        guard let scalar = UnicodeScalar(65 + index) else { return "\(index + 1)" }
+        return String(scalar)
     }
 
     private func answerBackgroundColor(isSelected: Bool, isCorrect: Bool) -> Color {

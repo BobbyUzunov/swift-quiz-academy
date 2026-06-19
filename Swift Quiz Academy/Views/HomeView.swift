@@ -50,6 +50,7 @@ struct HomeView: View {
     @State private var isClaimingReward = false
     @State private var startButtonPulse = false
     @State private var confettiActive = false
+    @State private var confettiRemovalTask: Task<Void, Never>?
 
     var body: some View {
         GeometryReader { proxy in
@@ -87,11 +88,11 @@ struct HomeView: View {
                     isClaiming: isClaimingReward,
                     onClaim: claimDailyReward
                 )
-                .transition(.scale(scale: 0.92).combined(with: .opacity))
+                .transition(reduceMotion ? .identity : .scale(scale: 0.92).combined(with: .opacity))
             }
         }
         .overlay {
-            if confettiActive {
+            if confettiActive && !reduceMotion {
                 ConfettiBurstView(isActive: confettiActive)
             }
         }
@@ -133,6 +134,11 @@ struct HomeView: View {
                 showsDailyReward = true
             }
         }
+        .onDisappear {
+            confettiRemovalTask?.cancel()
+            confettiRemovalTask = nil
+            confettiActive = false
+        }
         .onChange(of: availableDailyReward != nil) { _, hasReward in
             if hasReward {
                 showsDailyReward = true
@@ -161,6 +167,7 @@ struct HomeView: View {
             }
             .buttonStyle(.plain)
             .accessibilityLabel(localized("Настройки", "Settings"))
+            .accessibilityIdentifier("homeSettingsButton")
         }
     }
 
@@ -213,8 +220,7 @@ struct HomeView: View {
                     Text(currentLevelTitle)
                         .font(.title3.weight(.bold))
                         .foregroundStyle(.primary)
-                        .lineLimit(1)
-                        .minimumScaleFactor(0.8)
+                        .fixedSize(horizontal: false, vertical: true)
                 }
 
                 Spacer(minLength: 8)
@@ -227,10 +233,11 @@ struct HomeView: View {
                     .accessibilityLabel(localized("XP прогрес", "XP progress"))
                     .accessibilityValue(currentLevel == 10 ? "\(savedTotalXP) XP" : "\(savedTotalXP) / \(nextLevelXP) XP")
 
-                HStack {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(localized("Ниво \(currentLevel)", "Level \(currentLevel)"))
-                    Spacer()
+                    Spacer(minLength: 8)
                     Text(currentLevel == 10 ? "\(savedTotalXP) XP" : "\(savedTotalXP) / \(nextLevelXP) XP")
+                        .multilineTextAlignment(.trailing)
                 }
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.secondary)
@@ -251,7 +258,7 @@ struct HomeView: View {
     }
 
     private var statisticsSection: some View {
-        HStack(spacing: 12) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 104), spacing: 12)], spacing: 12) {
             statCard(title: localized("Категории", "Categories"), value: "\(totalCategoryCount)", icon: "square.grid.2x2.fill", color: .blue)
             statCard(title: localized("Въпроси", "Questions"), value: "\(totalQuestionCount)", icon: "questionmark.circle.fill", color: .purple)
             statCard(title: localized("Общо XP", "Total XP"), value: "\(savedTotalXP)", icon: "bolt.fill", color: .orange)
@@ -272,6 +279,7 @@ struct HomeView: View {
         .buttonStyle(.bordered)
         .tint(.orange)
         .clipShape(RoundedRectangle(cornerRadius: 18, style: .continuous))
+        .accessibilityIdentifier("practiceMistakesButton")
     }
 
     private var startButton: some View {
@@ -287,6 +295,7 @@ struct HomeView: View {
         .scaleEffect(startButtonPulse ? 1.015 : 1)
         .shadow(color: .blue.opacity(0.18), radius: startButtonPulse ? 18 : 10, x: 0, y: 8)
         .animation(reduceMotion ? nil : .easeInOut(duration: 1.25).repeatForever(autoreverses: true), value: startButtonPulse)
+        .accessibilityIdentifier("startQuizButton")
     }
 
     private var dailyChallengeCard: some View {
@@ -324,6 +333,7 @@ struct HomeView: View {
             .buttonStyle(.borderedProminent)
             .tint(isDailyChallengeAvailable ? .orange : .gray)
             .disabled(!isDailyChallengeAvailable)
+            .accessibilityIdentifier("dailyChallengeButton")
         }
         .padding(20)
         .background(.regularMaterial)
@@ -348,8 +358,8 @@ struct HomeView: View {
             Text(title)
                 .font(.subheadline.weight(.semibold))
                 .foregroundStyle(.secondary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.7)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 17)
@@ -391,16 +401,21 @@ struct HomeView: View {
     private func triggerConfetti() {
         guard !reduceMotion else {
             confettiActive = false
+            confettiRemovalTask?.cancel()
+            confettiRemovalTask = nil
             onClearRecentAchievement()
             return
         }
 
-        withAnimation {
-            confettiActive = true
-        }
+        confettiRemovalTask?.cancel()
+        confettiActive = false
+        confettiActive = true
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1.1) {
+        confettiRemovalTask = Task { @MainActor in
+            try? await Task.sleep(for: .seconds(1.1))
+            guard !Task.isCancelled else { return }
             confettiActive = false
+            confettiRemovalTask = nil
             onClearRecentAchievement()
         }
     }

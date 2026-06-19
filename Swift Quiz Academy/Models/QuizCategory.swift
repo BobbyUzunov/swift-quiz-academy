@@ -84,18 +84,27 @@ struct QuizCategory: Identifiable {
         icon: "calendar.badge.clock",
         color: .orange,
         questionsByDifficulty: [
-            .advanced: [
-                QuizQuestion(text: "Daily Swift: Which keyword creates an immutable value?", answers: ["var", "let", "mutating", "static"], correctAnswerIndex: 1),
-                QuizQuestion(text: "Daily SwiftUI: Which wrapper stores simple local state?", answers: ["@State", "@Binding", "@SceneStorage", "@Environment"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily iOS: What does a Preview help you inspect?", answers: ["The app UI", "Only network logs", "App Store reviews", "Device storage"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily Logic: What does an if statement use?", answers: ["A condition", "Only an image", "A file path", "A package name"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily AI: What is a prompt?", answers: ["Input for an AI system", "A screen size", "An app icon", "A compiler"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily Swift: Which collection stores key-value pairs?", answers: ["Array", "Set", "Dictionary", "String"], correctAnswerIndex: 2),
-                QuizQuestion(text: "Daily SwiftUI: Which layout places views horizontally?", answers: ["VStack", "HStack", "ZStack", "Spacer"], correctAnswerIndex: 1),
-                QuizQuestion(text: "Daily iOS: What is the simulator used for?", answers: ["Running apps like a device", "Writing emails", "Editing icons only", "Deleting code"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily Logic: What does == check?", answers: ["Equality", "Assignment", "Importing", "Looping"], correctAnswerIndex: 0),
-                QuizQuestion(text: "Daily AI: Why should AI output be checked?", answers: ["It can make mistakes", "It never uses data", "It cannot answer", "It only draws UI"], correctAnswerIndex: 0)
-            ]
+            .advanced: Self.makeDailyChallengeQuestions()
         ]
     )
+
+    private static func makeDailyChallengeQuestions() -> [QuizQuestion] {
+        let categoryQuestions = allCategories.compactMap { category in
+            Difficulty.allCases.compactMap { difficulty in
+                category.questionsByDifficulty[difficulty]?.first
+            }.first
+        }
+
+        let extraQuestions = allCategories.flatMap { category in
+            Difficulty.allCases.flatMap { difficulty in
+                category.questionsByDifficulty[difficulty] ?? []
+            }
+        }
+        .filter { question in
+            !categoryQuestions.contains { $0.id == question.id }
+        }
+        .prefix(2)
+
+        return categoryQuestions + Array(extraQuestions)
+    }
 }

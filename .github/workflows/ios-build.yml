@@ -31,9 +31,16 @@ jobs:
 
       - name: Unit Tests
         run: |
+          DESTINATION_ID="$(xcrun simctl list devices available | awk -F '[()]' '/iPhone/ { print $2; exit }')"
+          if [ -z "$DESTINATION_ID" ]; then
+            echo "No available iPhone simulator found."
+            xcrun simctl list devices available
+            exit 1
+          fi
+
           xcodebuild test \
             -project "Swift Quiz Academy.xcodeproj" \
             -scheme "Swift Quiz Academy" \
-            -destination "platform=iOS Simulator,name=iPhone 17" \
+            -destination "id=$DESTINATION_ID" \
             -only-testing:"Swift Quiz AcademyTests" \
             CODE_SIGNING_ALLOWED=NO

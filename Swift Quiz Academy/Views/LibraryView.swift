@@ -37,7 +37,7 @@ struct LibraryView: View {
     }
 
     private var summarySection: some View {
-        HStack(spacing: 12) {
+        LazyVGrid(columns: [GridItem(.adaptive(minimum: 104), spacing: 12)], spacing: 12) {
             libraryStatCard(
                 title: localized("Въпроси", "Questions"),
                 value: "\(viewModel.totalQuestionCount)",
@@ -65,39 +65,15 @@ struct LibraryView: View {
                 .font(.headline)
                 .foregroundStyle(.blue)
 
-            HStack(spacing: 10) {
-                Menu {
-                    Button(localized("Всички категории", "All Categories")) {
-                        viewModel.selectedCategoryID = nil
-                    }
-
-                    ForEach(viewModel.categories) { category in
-                        Button(category.title(for: selectedLanguage)) {
-                            viewModel.selectedCategoryID = category.id
-                        }
-                    }
-                } label: {
-                    filterLabel(
-                        title: selectedCategoryTitle,
-                        icon: "square.grid.2x2.fill"
-                    )
+            ViewThatFits(in: .horizontal) {
+                HStack(spacing: 10) {
+                    categoryFilterMenu
+                    difficultyFilterMenu
                 }
 
-                Menu {
-                    Button(localized("Всички нива", "All Levels")) {
-                        viewModel.selectedDifficulty = nil
-                    }
-
-                    ForEach(Difficulty.allCases) { difficulty in
-                        Button(difficulty.title(for: selectedLanguage)) {
-                            viewModel.selectedDifficulty = difficulty
-                        }
-                    }
-                } label: {
-                    filterLabel(
-                        title: viewModel.selectedDifficulty?.title(for: selectedLanguage) ?? localized("Всички нива", "All Levels"),
-                        icon: "slider.horizontal.3"
-                    )
+                VStack(spacing: 10) {
+                    categoryFilterMenu
+                    difficultyFilterMenu
                 }
             }
 
@@ -116,14 +92,53 @@ struct LibraryView: View {
         .libraryCard()
     }
 
+    private var categoryFilterMenu: some View {
+        Menu {
+            Button(localized("Всички категории", "All Categories")) {
+                viewModel.selectedCategoryID = nil
+            }
+
+            ForEach(viewModel.categories) { category in
+                Button(category.title(for: selectedLanguage)) {
+                    viewModel.selectedCategoryID = category.id
+                }
+            }
+        } label: {
+            filterLabel(
+                title: selectedCategoryTitle,
+                icon: "square.grid.2x2.fill"
+            )
+        }
+    }
+
+    private var difficultyFilterMenu: some View {
+        Menu {
+            Button(localized("Всички нива", "All Levels")) {
+                viewModel.selectedDifficulty = nil
+            }
+
+            ForEach(Difficulty.allCases) { difficulty in
+                Button(difficulty.title(for: selectedLanguage)) {
+                    viewModel.selectedDifficulty = difficulty
+                }
+            }
+        } label: {
+            filterLabel(
+                title: viewModel.selectedDifficulty?.title(for: selectedLanguage) ?? localized("Всички нива", "All Levels"),
+                icon: "slider.horizontal.3"
+            )
+        }
+    }
+
     private var favoriteSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            HStack {
+            HStack(alignment: .firstTextBaseline) {
                 Label(localized("Любими въпроси", "Favorite Questions"), systemImage: "star.fill")
                     .font(.headline)
                     .foregroundStyle(.yellow)
+                    .fixedSize(horizontal: false, vertical: true)
 
-                Spacer()
+                Spacer(minLength: 8)
 
                 Text("\(viewModel.totalFavorites)")
                     .font(.headline.weight(.bold))
@@ -133,6 +148,7 @@ struct LibraryView: View {
             Toggle(isOn: $viewModel.showsFavoritesOnly) {
                 Text(localized("Покажи само любими", "Show favorites only"))
                     .font(.subheadline.weight(.semibold))
+                    .fixedSize(horizontal: false, vertical: true)
             }
             .toggleStyle(.switch)
         }
@@ -146,10 +162,11 @@ struct LibraryView: View {
                 .foregroundStyle(.blue)
 
             ForEach(viewModel.categoryCounts(for: selectedLanguage)) { category in
-                HStack {
+                HStack(alignment: .firstTextBaseline, spacing: 8) {
                     Text(category.title)
                         .font(.subheadline.weight(.semibold))
-                    Spacer()
+                        .fixedSize(horizontal: false, vertical: true)
+                    Spacer(minLength: 8)
                     Text("(\(category.count))")
                         .font(.subheadline.weight(.bold))
                         .foregroundStyle(.secondary)
@@ -195,11 +212,9 @@ struct LibraryView: View {
                                 isFavorite: viewModel.isFavorite(question)
                             )
                         }
-                        .buttonStyle(.plain)
                     }
                 }
             }
-            .libraryCard()
         }
     }
 
@@ -221,8 +236,8 @@ struct LibraryView: View {
             Text(title)
                 .font(.caption.weight(.semibold))
                 .foregroundStyle(.secondary)
-                .lineLimit(1)
-                .minimumScaleFactor(0.75)
+                .multilineTextAlignment(.center)
+                .fixedSize(horizontal: false, vertical: true)
         }
         .frame(maxWidth: .infinity)
         .padding(.vertical, 14)
@@ -233,8 +248,6 @@ struct LibraryView: View {
     private func filterLabel(title: String, icon: String) -> some View {
         Label(title, systemImage: icon)
             .font(.subheadline.weight(.bold))
-            .lineLimit(1)
-            .minimumScaleFactor(0.75)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 10)
     }
@@ -269,6 +282,7 @@ private struct LibraryQuestionRow: View {
                 }
                 .font(.caption.weight(.bold))
                 .foregroundStyle(.secondary)
+                .fixedSize(horizontal: false, vertical: true)
             }
 
             Spacer(minLength: 8)

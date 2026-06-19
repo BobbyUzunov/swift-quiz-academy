@@ -59,7 +59,8 @@ struct DailyRewardPopup: View {
                 }
                 .buttonStyle(.borderedProminent)
                 .tint(.orange)
-                .scaleEffect(isClaiming ? 1.05 : 1)
+                .scaleEffect(!reduceMotion && isClaiming ? 1.05 : 1)
+                .accessibilityIdentifier("claimDailyRewardButton")
             }
             .padding(22)
             .frame(maxWidth: 360)
@@ -107,8 +108,12 @@ struct ConfettiBurstView: View {
                         hasStarted = true
                     }
                 }
+                .onDisappear {
+                    hasStarted = false
+                }
             }
         }
         .allowsHitTesting(false)
+        .accessibilityHidden(true)
     }
 }

@@ -91,12 +91,16 @@ struct ResultView: View {
     }
 
     private func resultRow(title: String, value: String) -> some View {
-        HStack {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text(title)
                 .foregroundStyle(.secondary)
-            Spacer()
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 8)
             Text(value)
                 .fontWeight(.bold)
+                .multilineTextAlignment(.trailing)
+                .fixedSize(horizontal: false, vertical: true)
+                .layoutPriority(1)
         }
         .font(.headline)
     }

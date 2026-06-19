@@ -6,6 +6,8 @@
 import SwiftUI
 
 struct CategorySelectionView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+
     let categories: [QuizCategory]
     let selectedLanguage: AppLanguage
     @Binding var selectedDifficulty: Difficulty
@@ -66,6 +68,7 @@ struct CategorySelectionView: View {
                             .buttonStyle(CategoryCardButtonStyle())
                             .disabled(questionCount == 0)
                             .opacity(questionCount == 0 ? 0.62 : 1)
+                            .accessibilityIdentifier("categoryButton_\(category.id)")
                         }
                     }
                 }
@@ -131,8 +134,8 @@ struct CategorySelectionView: View {
                 .stroke(isSelected ? category.color.opacity(0.9) : category.color.opacity(0.18), lineWidth: isSelected ? 2 : 1)
         }
         .shadow(color: category.color.opacity(isSelected ? 0.28 : 0.16), radius: isSelected ? 22 : 16, x: 0, y: isSelected ? 12 : 8)
-        .scaleEffect(isSelected ? 0.985 : 1)
-        .animation(.spring(response: 0.28, dampingFraction: 0.78), value: isSelected)
+        .scaleEffect(!reduceMotion && isSelected ? 0.985 : 1)
+        .animation(reduceMotion ? nil : .spring(response: 0.28, dampingFraction: 0.78), value: isSelected)
     }
 
     private func categoryIcon(_ category: QuizCategory) -> some View {
@@ -208,7 +211,7 @@ struct CategorySelectionView: View {
     }
 
     private func select(_ category: QuizCategory) {
-        withAnimation(.spring(response: 0.25, dampingFraction: 0.75)) {
+        withAnimation(reduceMotion ? nil : .spring(response: 0.25, dampingFraction: 0.75)) {
             selectedCategoryID = category.id
         }
 

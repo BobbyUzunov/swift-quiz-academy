@@ -6,6 +6,7 @@
 import SwiftUI
 
 struct SwiftQuizAcademyRootView: View {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     @State private var viewModel = QuizViewModel()
     @State private var libraryViewModel = LibraryViewModel(categories: QuizCategory.allCategories)
 
@@ -84,10 +85,10 @@ struct SwiftQuizAcademyRootView: View {
                 )
             }
         }
-        .animation(.easeInOut(duration: 0.25), value: viewModel.screen)
-        .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.selectedAnswerIndex)
-        .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.lives)
-        .animation(.spring(response: 0.32, dampingFraction: 0.82), value: viewModel.streak)
+        .animation(reduceMotion ? nil : .easeInOut(duration: 0.25), value: viewModel.screen)
+        .animation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.82), value: viewModel.selectedAnswerIndex)
+        .animation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.82), value: viewModel.lives)
+        .animation(reduceMotion ? nil : .spring(response: 0.32, dampingFraction: 0.82), value: viewModel.streak)
         .preferredColorScheme(viewModel.selectedTheme.colorScheme)
     }
 
@@ -217,12 +218,16 @@ struct ProfileStatRow: View {
     let value: String
 
     var body: some View {
-        HStack {
+        HStack(alignment: .firstTextBaseline, spacing: 12) {
             Text(title)
                 .foregroundStyle(.secondary)
-            Spacer()
+                .fixedSize(horizontal: false, vertical: true)
+            Spacer(minLength: 8)
             Text(value)
                 .fontWeight(.bold)
+                .multilineTextAlignment(.trailing)
+                .fixedSize(horizontal: false, vertical: true)
+                .layoutPriority(1)
         }
         .font(.subheadline)
     }
