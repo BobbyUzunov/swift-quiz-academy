@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
-![Version](https://img.shields.io/badge/Version-1.4-success)
+![Version](https://img.shields.io/badge/Version-1.4.1-success)
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
@@ -15,6 +15,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 - [Screenshots](#screenshots)
 - [Features](#features)
+- [Version 1.4.1 Highlights](#version-141-highlights)
 - [Version 1.4 Highlights](#version-14-highlights)
 - [Version 1.3.1 Highlights](#version-131-highlights)
 - [Version 1.3 Highlights](#version-13-highlights)
@@ -65,6 +66,17 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - Light, Dark, and System theme support
 - UserDefaults persistence for progress, language, theme, streaks, rewards, mistakes, and achievements
 - Modern SwiftUI interface with animated cards, reward popup, progress bar, and confetti feedback
+
+---
+
+## Version 1.4.1 Highlights
+
+- Fixed celebration/confetti cleanup so no leftover particles remain on the Home screen.
+- Improved Reduce Motion support by disabling decorative animations while keeping app flows functional.
+- Improved Dynamic Type resilience across Home, Library, Quiz, Result, and shared profile/stat rows.
+- Updated Daily Challenge to reuse the JSON-backed question database instead of hardcoded challenge questions.
+- Added UI smoke tests for launch, quiz start, quiz completion, Settings, and Library flows.
+- Improved GitHub Actions by selecting an available iOS Simulator dynamically instead of relying on a hardcoded device name.
 
 ---
 

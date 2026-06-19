@@ -2,6 +2,24 @@
 
 All notable changes to Swift Quiz Academy are documented here.
 
+## [1.4.1] - 2026-06-19
+
+### Fixed
+
+- Fixed celebration/confetti cleanup so no leftover particles or colored artifacts remain visible after the animation ends.
+- Improved animation cleanup by removing the confetti overlay when inactive.
+- Improved Dynamic Type behavior in Home, Library, Quiz, Result, and shared profile/stat layouts to reduce truncation and compressed text.
+
+### Changed
+
+- Daily Challenge now reuses the JSON-backed question database instead of hardcoded challenge questions.
+- Decorative animations now respect the system Reduce Motion setting.
+- GitHub Actions now selects an available iOS Simulator dynamically instead of depending on a hardcoded iPhone simulator name.
+
+### Added
+
+- Added UI smoke tests for app launch, starting a quiz, completing a quiz, opening Settings, and opening Library.
+
 ## [1.4.0] - 2026-06-16
 
 ### Added
