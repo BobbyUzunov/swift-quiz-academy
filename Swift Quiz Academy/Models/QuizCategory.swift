@@ -67,7 +67,7 @@ struct QuizCategory: Identifiable {
         case "xcode-debugging":
             return language.localized("Build errors, breakpoints, Instruments и debugging workflows.", "Build errors, breakpoints, Instruments and debugging workflows.")
         case "daily-challenge":
-            return language.localized("Един специален смесен quiz на ден с bonus XP.", "One special mixed quiz per day with bonus XP.")
+            return language.localized("Смесен quiz от всички категории и трудности с bonus XP.", "Mixed quiz across categories and difficulties with bonus XP.")
         case "practice-mistakes":
             return language.localized("Преговори въпросите, на които си отговорил грешно.", "Review questions you answered incorrectly.")
         default:
@@ -77,34 +77,17 @@ struct QuizCategory: Identifiable {
 
     static let allCategories: [QuizCategory] = QuestionLoader().loadCategories()
 
-    static let dailyChallenge = QuizCategory(
-        id: "daily-challenge",
-        title: "Daily Challenge",
-        description: "One special mixed quiz per day with bonus XP.",
-        icon: "calendar.badge.clock",
-        color: .orange,
-        questionsByDifficulty: [
-            .advanced: Self.makeDailyChallengeQuestions()
-        ]
-    )
-
-    private static func makeDailyChallengeQuestions() -> [QuizQuestion] {
-        let categoryQuestions = allCategories.compactMap { category in
-            Difficulty.allCases.compactMap { difficulty in
-                category.questionsByDifficulty[difficulty]?.first
-            }.first
-        }
-
-        let extraQuestions = allCategories.flatMap { category in
-            Difficulty.allCases.flatMap { difficulty in
-                category.questionsByDifficulty[difficulty] ?? []
-            }
-        }
-        .filter { question in
-            !categoryQuestions.contains { $0.id == question.id }
-        }
-        .prefix(2)
-
-        return categoryQuestions + Array(extraQuestions)
+    static func dailyChallenge(on date: Date = Date()) -> QuizCategory {
+        let questions = DailyChallengeBuilder.build(from: allCategories, on: date)
+        return QuizCategory(
+            id: "daily-challenge",
+            title: "Daily Challenge",
+            description: "One special mixed quiz per day with bonus XP.",
+            icon: "calendar.badge.clock",
+            color: .orange,
+            questionsByDifficulty: [
+                .advanced: questions
+            ]
+        )
     }
 }

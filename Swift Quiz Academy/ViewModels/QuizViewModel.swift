@@ -300,9 +300,9 @@ final class QuizViewModel {
         guard isDailyChallengeAvailable else { return }
         isDailyChallenge = true
         isPracticeMistakes = false
-        selectedCategory = .dailyChallenge
+        selectedCategory = QuizCategory.dailyChallenge()
         selectedDifficulty = .advanced
-        saveLastSelection(categoryID: QuizCategory.dailyChallenge.id, difficulty: .advanced)
+        saveLastSelection(categoryID: "daily-challenge", difficulty: .advanced)
         restartQuizState()
         screen = .quiz
     }
@@ -533,9 +533,11 @@ final class QuizViewModel {
         guard !hasSavedCurrentGame else { return }
 
         if isDailyChallenge {
-            lastDailyChallengeDate = todayKey
             dailyBonusAwarded = destination == .result ? dailyBonusXP : 0
-            progressStore.saveDailyChallengeDate(lastDailyChallengeDate)
+            if destination == .result {
+                lastDailyChallengeDate = todayKey
+                progressStore.saveDailyChallengeDate(lastDailyChallengeDate)
+            }
         }
 
         updateDailyStreak()
@@ -630,7 +632,7 @@ final class QuizViewModel {
     }
 
     private func findQuestion(for record: MistakeRecord, categoryID: String, difficulty: Difficulty) -> QuizQuestion? {
-        let allCategories = categories + [QuizCategory.dailyChallenge]
+        let allCategories = categories + [QuizCategory.dailyChallenge()]
         let questions = allCategories.first(where: { $0.id == categoryID })?.questionsByDifficulty[difficulty] ?? []
 
         if let question = questions.first(where: { $0.id == record.questionID }) {

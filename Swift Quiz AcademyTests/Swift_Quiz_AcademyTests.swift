@@ -76,6 +76,54 @@ struct Swift_Quiz_AcademyTests {
         #expect(viewModel.savedTotalGamesPlayed == 1)
     }
 
+    @Test func dailyChallengeIncludesEveryCategoryAndBonusQuestions() {
+        let categories = QuizCategory.allCategories
+        let referenceDate = Calendar.current.date(from: DateComponents(year: 2026, month: 6, day: 15))!
+        let questions = DailyChallengeBuilder.build(from: categories, on: referenceDate)
+
+        #expect(questions.count == categories.count + DailyChallengeBuilder.bonusQuestionCount)
+        #expect(Set(questions.map(\.categoryId)).count == categories.count)
+    }
+
+    @Test func dailyChallengeRotatesByDay() {
+        let categories = QuizCategory.allCategories
+        let dayOne = Calendar.current.date(from: DateComponents(year: 2026, month: 6, day: 1))!
+        let dayTwo = Calendar.current.date(from: DateComponents(year: 2026, month: 6, day: 2))!
+        let firstIDs = DailyChallengeBuilder.build(from: categories, on: dayOne).map(\.id)
+        let secondIDs = DailyChallengeBuilder.build(from: categories, on: dayTwo).map(\.id)
+
+        #expect(firstIDs != secondIDs)
+    }
+
+    @Test func dailyChallengeUsesMixedDifficulties() {
+        let categories = QuizCategory.allCategories
+        let referenceDate = Calendar.current.date(from: DateComponents(year: 2026, month: 6, day: 15))!
+        let difficulties = Set(DailyChallengeBuilder.build(from: categories, on: referenceDate).map(\.difficulty))
+
+        #expect(difficulties.count >= 2)
+    }
+
+    @Test func dailyChallengeGameOverAllowsRetry() async throws {
+        let viewModel = makeViewModel()
+        viewModel.startDailyChallenge()
+
+        for _ in 0..<3 {
+            answerCurrentQuestion(in: viewModel, correctly: false)
+            viewModel.goToNextQuestion()
+        }
+
+        try await Task.sleep(for: .seconds(1.1))
+
+        #expect(viewModel.screen == .gameOver)
+        #expect(viewModel.isDailyChallengeAvailable)
+
+        viewModel.returnToStart()
+        viewModel.startDailyChallenge()
+
+        #expect(viewModel.screen == .quiz)
+        #expect(viewModel.currentQuestions.count == QuizCategory.allCategories.count + DailyChallengeBuilder.bonusQuestionCount)
+    }
+
     @Test func resetProgressClearsSavedStateAndReturnsHome() {
         let viewModel = makeViewModel()
 
@@ -419,7 +467,7 @@ struct Swift_Quiz_AcademyTests {
     }
 
     @Test func bulgarianQuestionsAreLocalized() {
-        let allCategories = QuizCategory.allCategories + [QuizCategory.dailyChallenge]
+        let allCategories = QuizCategory.allCategories + [QuizCategory.dailyChallenge()]
         let allQuestions = allCategories.flatMap { category in
             category.questionsByDifficulty.values.flatMap { $0 }
         }

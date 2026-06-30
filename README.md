@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
-![Version](https://img.shields.io/badge/Version-1.4.1-success)
+![Version](https://img.shields.io/badge/Version-1.4.2-success)
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
@@ -15,6 +15,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 - [Screenshots](#screenshots)
 - [Features](#features)
+- [Version 1.4.2 Highlights](#version-142-highlights)
 - [Version 1.4.1 Highlights](#version-141-highlights)
 - [Version 1.4 Highlights](#version-14-highlights)
 - [Version 1.3.1 Highlights](#version-131-highlights)
@@ -55,7 +56,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - 10-level progression system with Swift-themed titles
 - Daily Reward system: +25 XP once per day
 - 7-day login streak bonus: +100 XP
-- Daily Challenge mode with bonus XP
+- Daily Challenge mode with a date-based mixed quiz and bonus XP
 - Achievement system with automatic unlocks
 - Practice Mistakes mode for reviewing missed questions
 - Answer review screen after quizzes
@@ -66,6 +67,18 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - Light, Dark, and System theme support
 - UserDefaults persistence for progress, language, theme, streaks, rewards, mistakes, and achievements
 - Modern SwiftUI interface with animated cards, reward popup, progress bar, and confetti feedback
+
+---
+
+## Version 1.4.2 Highlights
+
+- Rebuilt Daily Challenge with date-based rotation across categories and mixed difficulty levels.
+- Daily Challenge now completes only after a successful result, so Game Over no longer blocks the rest of the day.
+- Removed legacy hardcoded question translation tables from `QuizQuestion`.
+- Added `DailyChallengeBuilder` for deterministic daily quiz composition.
+- Aligned the app display name with the project name: Swift Quiz Academy.
+- Updated README project structure and documentation.
+- Added unit tests for daily challenge rotation, mixed difficulties, and retry-after-game-over behavior.
 
 ---
 
@@ -207,8 +220,10 @@ Swift Quiz Academy/
 Key pieces:
 
 - `QuizViewModel` manages quiz state, XP, levels, rewards, achievements, statistics, and navigation.
+- `LibraryViewModel` powers search, filters, favorites, and study browsing.
 - `QuizProgressStore` centralizes UserDefaults persistence.
 - `QuestionLoader` loads and validates the local JSON question database.
+- `DailyChallengeBuilder` composes the daily mixed quiz from the JSON database.
 - `DailyRewardManager` handles daily reward and login streak calculations.
 - `AppTheme` manages Light, Dark, and System theme selection.
 
@@ -226,12 +241,15 @@ Privacy and persistence:
 Swift Quiz Academy/
 ├── Models/
 │   ├── Achievement.swift
+│   ├── AnswerOption.swift
 │   ├── AppLanguage.swift
 │   ├── AppTheme.swift
 │   ├── DailyReward.swift
 │   ├── Difficulty.swift
+│   ├── LibraryModels.swift
 │   ├── QuizCategory.swift
-│   └── QuizQuestion.swift
+│   ├── QuizQuestion.swift
+│   └── QuizReviewItem.swift
 ├── QuestionData/
 │   ├── ai_for_developers.json
 │   ├── architecture_mvvm.json
@@ -243,16 +261,26 @@ Swift Quiz Academy/
 │   └── xcode_debugging.json
 ├── PrivacyInfo.xcprivacy
 ├── Services/
+│   ├── DailyChallengeBuilder.swift
 │   └── QuestionLoader.swift
 ├── ViewModels/
+│   ├── LibraryViewModel.swift
 │   ├── QuizProgressStore.swift
 │   └── QuizViewModel.swift
 ├── Views/
+│   ├── AchievementView.swift
+│   ├── CategorySelectionView.swift
+│   ├── CelebrationViews.swift
+│   ├── GameOverView.swift
 │   ├── HomeView.swift
+│   ├── LibraryView.swift
 │   ├── QuizView.swift
-│   ├── SettingsView.swift
-│   └── CelebrationViews.swift
+│   ├── ResultView.swift
+│   ├── ReviewAnswersView.swift
+│   ├── ReusableComponents.swift
+│   └── SettingsView.swift
 ├── Assets.xcassets/
+├── ContentView.swift
 └── Swift_Quiz_AcademyApp.swift
 ```
 
@@ -276,7 +304,7 @@ The project includes unit tests for:
 
 - Quiz answer flow
 - XP and level progression
-- Daily Challenge reward behavior
+- Daily Challenge rotation, mixed difficulties, and retry behavior
 - Daily Reward claiming and 7-day bonus
 - Theme preference persistence
 - Achievement unlocking

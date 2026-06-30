@@ -2,6 +2,26 @@
 
 All notable changes to Swift Quiz Academy are documented here.
 
+## [1.4.2] - 2026-06-30
+
+### Fixed
+
+- Daily Challenge now rotates by calendar day instead of always using the same beginner-first question set.
+- Daily Challenge now marks completion only after a successful result, so Game Over no longer consumes the daily attempt.
+- Aligned the on-device display name with the project name: Swift Quiz Academy.
+
+### Changed
+
+- Removed legacy hardcoded translation tables and the unused convenience initializer from `QuizQuestion`.
+- Added `DailyChallengeBuilder` for deterministic daily mixed-quiz composition.
+- Updated Daily Challenge copy to describe the mixed category/difficulty experience.
+- Updated README architecture, project structure, and version documentation.
+- Removed the placeholder launch screenshot UI test target file.
+
+### Added
+
+- Unit tests for daily challenge rotation, mixed difficulties, category coverage, and retry-after-game-over behavior.
+
 ## [1.4.1] - 2026-06-19
 
 ### Fixed

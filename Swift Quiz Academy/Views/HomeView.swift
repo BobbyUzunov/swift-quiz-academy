@@ -315,7 +315,7 @@ struct HomeView: View {
                     Text(localized("Дневно предизвикателство", "Daily Challenge"))
                         .font(.title3.weight(.bold))
 
-                    Text(isDailyChallengeAvailable ? localized("Специален quiz за днес. Bonus +\(dailyBonusXP) XP.", "Special quiz for today. Bonus +\(dailyBonusXP) XP.") : localized("Днешното предизвикателство е завършено.", "Today's challenge is complete."))
+                    Text(isDailyChallengeAvailable ? localized("Смесен quiz за днес от всички категории. Bonus +\(dailyBonusXP) XP.", "Mixed quiz for today across all categories. Bonus +\(dailyBonusXP) XP.") : localized("Днешното предизвикателство е завършено.", "Today's challenge is complete."))
                         .font(.body)
                         .foregroundStyle(.secondary)
                         .fixedSize(horizontal: false, vertical: true)
