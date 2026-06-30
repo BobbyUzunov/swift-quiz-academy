@@ -3,7 +3,7 @@
 ![Swift](https://img.shields.io/badge/Swift-6.0-orange)
 ![SwiftUI](https://img.shields.io/badge/SwiftUI-iOS-blue)
 ![Architecture](https://img.shields.io/badge/MVVM-Architecture-green)
-![Version](https://img.shields.io/badge/Version-1.4.2-success)
+![Version](https://img.shields.io/badge/Version-1.5.0-success)
 ![Platform](https://img.shields.io/badge/Platform-iOS-lightgrey)
 ![Persistence](https://img.shields.io/badge/Persistence-UserDefaults-blueviolet)
 
@@ -15,6 +15,7 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 
 - [Screenshots](#screenshots)
 - [Features](#features)
+- [Version 1.5.0 Highlights](#version-150-highlights)
 - [Version 1.4.2 Highlights](#version-142-highlights)
 - [Version 1.4.1 Highlights](#version-141-highlights)
 - [Version 1.4 Highlights](#version-14-highlights)
@@ -67,6 +68,28 @@ Swift Quiz Academy is a modern SwiftUI learning app for practicing Swift, SwiftU
 - Light, Dark, and System theme support
 - UserDefaults persistence for progress, language, theme, streaks, rewards, mistakes, and achievements
 - Modern SwiftUI interface with animated cards, reward popup, progress bar, and confetti feedback
+
+---
+
+## Version 1.5.0 Highlights
+
+- Rebuilt **441 quiz questions** across Git, iOS, MVVM, AI, Programming Logic, Xcode Debugging, and SwiftUI.
+- Each difficulty level now has **unique scenario-based questions** (504 unique stems, zero cross-difficulty duplicates).
+- Replaced generic template explanations and lazy Bulgarian translations with specific teaching explanations.
+- Added `Scripts/question_banks/` modules and `Scripts/rebuild_question_database.mjs` for maintainable content updates.
+- CI now validates that committed JSON matches the question bank source files.
+
+Run JSON validation locally:
+
+```bash
+node Scripts/validate_questions.js
+```
+
+Rebuild question JSON from banks:
+
+```bash
+node Scripts/rebuild_question_database.mjs
+```
 
 ---
 

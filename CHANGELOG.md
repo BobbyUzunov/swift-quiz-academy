@@ -2,6 +2,27 @@
 
 All notable changes to Swift Quiz Academy are documented here.
 
+## [1.5.0] - 2026-06-30
+
+### Fixed
+
+- Rebuilt intermediate and advanced questions for Git & GitHub, iOS Development, Architecture & MVVM, AI for Developers, Programming Logic, and Xcode & Debugging so each difficulty level is unique.
+- Removed cross-difficulty duplicate question text (same stem on beginner, intermediate, and advanced).
+- Replaced generic explanation templates and lazy Bulgarian prompts (`Developer трябва…`) with specific scenario-based copy.
+- Rewrote SwiftUI English prompts to match the improved Bulgarian scenarios.
+
+### Added
+
+- Question bank modules in `Scripts/question_banks/` for maintainable content authoring.
+- `Scripts/rebuild_question_database.mjs` to regenerate JSON from banks.
+- CI guard that fails if committed `QuestionData` JSON drifts from question banks.
+- Validation rule that rejects duplicate question text across difficulty levels in the same category.
+
+### Changed
+
+- Question database now contains **504 unique English question stems** (up from ~255 unique with heavy duplication).
+- Marketing version bumped to **1.5.0**.
+
 ## [1.4.2] - 2026-06-30
 
 ### Fixed

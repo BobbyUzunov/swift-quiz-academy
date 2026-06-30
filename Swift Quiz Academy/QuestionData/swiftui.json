@@ -3,1449 +3,1449 @@
     "id": "swiftui-beginner-01",
     "categoryId": "swiftui",
     "difficulty": "beginner",
-    "questionEN": "A developer needs to store simple local view state. Which choice is best?",
-    "questionBG": "Developer трябва да пази просто локално state във view. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@State",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
+    "questionEN": "A settings screen toggle must keep its value locally on that screen. Which property wrapper fits?",
+    "questionBG": "Локален toggle трябва да пази стойността си в екрана за настройки. Кой property wrapper е подходящ?",
     "answersEN": [
       "@State",
       "@Binding",
       "@Environment",
       "VStack"
     ],
-    "correctAnswerBG": "@State",
+    "answersBG": [
+      "@State",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
     "correctAnswerEN": "@State",
-    "explanationBG": "@State пази source-of-truth state, притежаван от текущия view.",
-    "explanationEN": "@State is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-02",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to let a child edit parent-owned state. Which choice is best?",
-    "questionBG": "Developer трябва да позволи на child да редактира state от parent. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@Binding",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "answersEN": [
-      "@Binding",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "correctAnswerBG": "@Binding",
-    "correctAnswerEN": "@Binding",
-    "explanationBG": "@Binding свързва child view към state, който е собственост на друг view.",
-    "explanationEN": "@Binding is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-03",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to arrange views vertically. Which choice is best?",
-    "questionBG": "Developer трябва да подреди views вертикално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "VStack",
-      "@Environment",
-      "HStack",
-      "ZStack"
-    ],
-    "answersEN": [
-      "VStack",
-      "@Environment",
-      "HStack",
-      "ZStack"
-    ],
-    "correctAnswerBG": "VStack",
-    "correctAnswerEN": "VStack",
-    "explanationBG": "VStack поставя child views един под друг.",
-    "explanationEN": "VStack is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-04",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to arrange views horizontally. Which choice is best?",
-    "questionBG": "Developer трябва да подреди views хоризонтално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "HStack",
-      "VStack",
-      "ZStack",
-      "List"
-    ],
-    "answersEN": [
-      "HStack",
-      "VStack",
-      "ZStack",
-      "List"
-    ],
-    "correctAnswerBG": "HStack",
-    "correctAnswerEN": "HStack",
-    "explanationBG": "HStack поставя child views един до друг.",
-    "explanationEN": "HStack is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-05",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to overlay views on top of each other. Which choice is best?",
-    "questionBG": "Developer трябва да наслои views един върху друг. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ZStack",
-      "HStack",
-      "List",
-      "Button"
-    ],
-    "answersEN": [
-      "ZStack",
-      "HStack",
-      "List",
-      "Button"
-    ],
-    "correctAnswerBG": "ZStack",
-    "correctAnswerEN": "ZStack",
-    "explanationBG": "ZStack рисува child views в дълбочина.",
-    "explanationEN": "ZStack is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-06",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to show a short piece of text. Which choice is best?",
-    "questionBG": "Developer трябва да покаже кратък текст. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Text",
-      "ZStack",
-      "List",
-      "Button"
-    ],
-    "answersEN": [
-      "Text",
-      "ZStack",
-      "List",
-      "Button"
-    ],
-    "correctAnswerBG": "Text",
-    "correctAnswerEN": "Text",
-    "explanationBG": "Text е стандартният SwiftUI view за текстово съдържание.",
-    "explanationEN": "Text is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-07",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to show an SF Symbol. Which choice is best?",
-    "questionBG": "Developer трябва да покаже SF Symbol. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Image(systemName:)",
-      "List",
-      "Button",
-      "Text"
-    ],
-    "answersEN": [
-      "Image(systemName:)",
-      "List",
-      "Button",
-      "Text"
-    ],
-    "correctAnswerBG": "Image(systemName:)",
-    "correctAnswerEN": "Image(systemName:)",
-    "explanationBG": "Image(systemName:) зарежда символ от SF Symbols.",
-    "explanationEN": "Image(systemName:) is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-08",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to handle a tap action. Which choice is best?",
-    "questionBG": "Developer трябва да обработи tap действие. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Button",
-      "Text",
-      "Image",
-      "Spacer"
-    ],
-    "answersEN": [
-      "Button",
-      "Text",
-      "Image",
-      "Spacer"
-    ],
-    "correctAnswerBG": "Button",
-    "correctAnswerEN": "Button",
-    "explanationBG": "Button изпълнява action, когато потребителят го натисне.",
-    "explanationEN": "Button is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-09",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to push content apart with flexible space. Which choice is best?",
-    "questionBG": "Developer трябва да раздалечи съдържание с гъвкаво пространство. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Spacer",
-      "Text",
-      "Image",
-      "NavigationStack"
-    ],
-    "answersEN": [
-      "Spacer",
-      "Text",
-      "Image",
-      "NavigationStack"
-    ],
-    "correctAnswerBG": "Spacer",
-    "correctAnswerEN": "Spacer",
-    "explanationBG": "Spacer заема свободното място в stack layout.",
-    "explanationEN": "Spacer is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-10",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to display rows of data. Which choice is best?",
-    "questionBG": "Developer трябва да покаже редове от данни. Кой избор е най-подходящ?",
-    "answersBG": [
-      "List",
-      "Spacer",
-      "NavigationStack",
-      "ProgressView"
-    ],
-    "answersEN": [
-      "List",
-      "Spacer",
-      "NavigationStack",
-      "ProgressView"
-    ],
-    "correctAnswerBG": "List",
-    "correctAnswerEN": "List",
-    "explanationBG": "List е подходящ за скролируеми редове и basic tables.",
-    "explanationEN": "List is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-11",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to navigate between screens. Which choice is best?",
-    "questionBG": "Developer трябва да навигира между екрани. Кой избор е най-подходящ?",
-    "answersBG": [
-      "NavigationStack",
-      "Spacer",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "answersEN": [
-      "NavigationStack",
-      "Spacer",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "correctAnswerBG": "NavigationStack",
-    "correctAnswerEN": "NavigationStack",
-    "explanationBG": "NavigationStack управлява modern SwiftUI navigation.",
-    "explanationEN": "NavigationStack is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-12",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to add inner spacing around content. Which choice is best?",
-    "questionBG": "Developer трябва да добави вътрешно разстояние около съдържание. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".padding()",
-      "NavigationStack",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "answersEN": [
-      ".padding()",
-      "NavigationStack",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "correctAnswerBG": ".padding()",
-    "correctAnswerEN": ".padding()",
-    "explanationBG": ".padding() добавя пространство вътре около view съдържанието.",
-    "explanationEN": ".padding() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-13",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to change text style. Which choice is best?",
-    "questionBG": "Developer трябва да промени стила на текст. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".font()",
-      "ProgressView",
-      "ScrollView",
-      "ForEach"
-    ],
-    "answersEN": [
-      ".font()",
-      "ProgressView",
-      "ScrollView",
-      "ForEach"
-    ],
-    "correctAnswerBG": ".font()",
-    "correctAnswerEN": ".font()",
-    "explanationBG": ".font() контролира typography стила на SwiftUI text.",
-    "explanationEN": ".font() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-14",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to change foreground color or style. Which choice is best?",
-    "questionBG": "Developer трябва да промени foreground цвят или стил. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".foregroundStyle()",
-      "ScrollView",
-      "ForEach",
-      "@StateObject"
-    ],
-    "answersEN": [
-      ".foregroundStyle()",
-      "ScrollView",
-      "ForEach",
-      "@StateObject"
-    ],
-    "correctAnswerBG": ".foregroundStyle()",
-    "correctAnswerEN": ".foregroundStyle()",
-    "explanationBG": ".foregroundStyle() задава визуален стил за текст, символи и shapes.",
-    "explanationEN": ".foregroundStyle() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-15",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to draw a background behind a view. Which choice is best?",
-    "questionBG": "Developer трябва да нарисува background зад view. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".background()",
-      "ForEach",
-      "@StateObject",
-      "@ObservedObject"
-    ],
-    "answersEN": [
-      ".background()",
-      "ForEach",
-      "@StateObject",
-      "@ObservedObject"
-    ],
-    "correctAnswerBG": ".background()",
-    "correctAnswerEN": ".background()",
-    "explanationBG": ".background() поставя друг view зад текущия.",
-    "explanationEN": ".background() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-16",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to make corners rounded. Which choice is best?",
-    "questionBG": "Developer трябва да закръгли ъглите. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".clipShape()",
-      "@StateObject",
-      "@ObservedObject",
-      "@Namespace"
-    ],
-    "answersEN": [
-      ".clipShape()",
-      "@StateObject",
-      "@ObservedObject",
-      "@Namespace"
-    ],
-    "correctAnswerBG": ".clipShape()",
-    "correctAnswerEN": ".clipShape()",
-    "explanationBG": ".clipShape() може да изреже view към RoundedRectangle или друга shape.",
-    "explanationEN": ".clipShape() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-17",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to repeat UI for each model item. Which choice is best?",
-    "questionBG": "Developer трябва да повтори UI за всеки model item. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ForEach",
-      "@Namespace",
-      "GeometryReader",
-      "PreferenceKey"
-    ],
-    "answersEN": [
-      "ForEach",
-      "@Namespace",
-      "GeometryReader",
-      "PreferenceKey"
-    ],
-    "correctAnswerBG": "ForEach",
-    "correctAnswerEN": "ForEach",
-    "explanationBG": "ForEach създава views от колекция с разпознаваема identity.",
-    "explanationEN": "ForEach is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-18",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to show scrollable vertical content. Which choice is best?",
-    "questionBG": "Developer трябва да покаже вертикално scroll съдържание. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ScrollView",
-      "GeometryReader",
-      "PreferenceKey",
-      "Layout"
-    ],
-    "answersEN": [
-      "ScrollView",
-      "GeometryReader",
-      "PreferenceKey",
-      "Layout"
-    ],
-    "correctAnswerBG": "ScrollView",
-    "correctAnswerEN": "ScrollView",
-    "explanationBG": "ScrollView позволява съдържание по-голямо от екрана да се скролира.",
-    "explanationEN": "ScrollView is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-19",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to show loading progress. Which choice is best?",
-    "questionBG": "Developer трябва да покаже loading progress. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ProgressView",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
-    "answersEN": [
-      "ProgressView",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
-    "correctAnswerBG": "ProgressView",
-    "correctAnswerEN": "ProgressView",
-    "explanationBG": "ProgressView показва determinate или indeterminate progress.",
-    "explanationEN": "ProgressView is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-20",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to read system values like color scheme. Which choice is best?",
-    "questionBG": "Developer трябва да прочете системни стойности като color scheme. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@Environment",
-      "@Binding",
-      "VStack",
-      "HStack"
-    ],
-    "answersEN": [
-      "@Environment",
-      "@Binding",
-      "VStack",
-      "HStack"
-    ],
-    "correctAnswerBG": "@Environment",
-    "correctAnswerEN": "@Environment",
-    "explanationBG": "@Environment чете стойности, предоставени от SwiftUI environment.",
-    "explanationEN": "@Environment is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-beginner-21",
-    "categoryId": "swiftui",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to disable a control temporarily. Which choice is best?",
-    "questionBG": "Developer трябва да деактивира control временно. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".disabled(true)",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "answersEN": [
-      ".disabled(true)",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "correctAnswerBG": ".disabled(true)",
-    "correctAnswerEN": ".disabled(true)",
-    "explanationBG": ".disabled(true) предотвратява interaction с control-а.",
-    "explanationEN": ".disabled(true) is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "@State",
+    "explanationEN": "@State lets the view own simple value-type state locally. SwiftUI recreates the view on updates, but @State storage survives redraws.",
+    "explanationBG": "@State позволява на изгледа да притежава просто локално състояние. SwiftUI пресъздава изгледа при обновявания, но @State съхранението оцелява при redraw."
   },
   {
     "id": "swiftui-intermediate-01",
     "categoryId": "swiftui",
     "difficulty": "intermediate",
-    "questionEN": "A developer needs to own an observable object for the lifetime of a view. Which choice is best?",
-    "questionBG": "Developer трябва да притежава observable object за живота на view. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@StateObject",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
+    "questionEN": "A quiz screen creates QuizViewModel and must not lose it on redraw. Which wrapper owns the object?",
+    "questionBG": "Екранът създава QuizViewModel и не трябва да го губи при redraw. Кой wrapper притежава обекта?",
     "answersEN": [
       "@StateObject",
       "@State",
       "@Binding",
       "@Environment"
     ],
-    "correctAnswerBG": "@StateObject",
+    "answersBG": [
+      "@StateObject",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
     "correctAnswerEN": "@StateObject",
-    "explanationBG": "@StateObject създава и пази observable object през view refresh-и.",
-    "explanationEN": "@StateObject is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-02",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to observe an object owned elsewhere. Which choice is best?",
-    "questionBG": "Developer трябва да наблюдава object, притежаван другаде. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@ObservedObject",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
-    "answersEN": [
-      "@ObservedObject",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
-    "correctAnswerBG": "@ObservedObject",
-    "correctAnswerEN": "@ObservedObject",
-    "explanationBG": "@ObservedObject е за object, който се подава отвън и не се притежава от view-а.",
-    "explanationEN": "@ObservedObject is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-03",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to persist small view state per scene. Which choice is best?",
-    "questionBG": "Developer трябва да запази малко view state за scene. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@SceneStorage",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "answersEN": [
-      "@SceneStorage",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "correctAnswerBG": "@SceneStorage",
-    "correctAnswerEN": "@SceneStorage",
-    "explanationBG": "@SceneStorage пази малки стойности, свързани със scene restoration.",
-    "explanationEN": "@SceneStorage is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-04",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to persist a small user setting. Which choice is best?",
-    "questionBG": "Developer трябва да запази малка user настройка. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@AppStorage",
-      "VStack",
-      "HStack",
-      "ZStack"
-    ],
-    "answersEN": [
-      "@AppStorage",
-      "VStack",
-      "HStack",
-      "ZStack"
-    ],
-    "correctAnswerBG": "@AppStorage",
-    "correctAnswerEN": "@AppStorage",
-    "explanationBG": "@AppStorage свързва SwiftUI state с UserDefaults key.",
-    "explanationEN": "@AppStorage is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-05",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to present a modal screen. Which choice is best?",
-    "questionBG": "Developer трябва да покаже modal екран. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".sheet()",
-      "HStack",
-      "ZStack",
-      "List"
-    ],
-    "answersEN": [
-      ".sheet()",
-      "HStack",
-      "ZStack",
-      "List"
-    ],
-    "correctAnswerBG": ".sheet()",
-    "correctAnswerEN": ".sheet()",
-    "explanationBG": ".sheet() представя modal view върху текущия context.",
-    "explanationEN": ".sheet() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-06",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to show a confirmation message. Which choice is best?",
-    "questionBG": "Developer трябва да покаже confirmation съобщение. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".alert()",
-      "ZStack",
-      "List",
-      "Button"
-    ],
-    "answersEN": [
-      ".alert()",
-      "ZStack",
-      "List",
-      "Button"
-    ],
-    "correctAnswerBG": ".alert()",
-    "correctAnswerEN": ".alert()",
-    "explanationBG": ".alert() показва system alert с actions.",
-    "explanationEN": ".alert() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-07",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to run work when a view appears. Which choice is best?",
-    "questionBG": "Developer трябва да изпълни работа при появяване на view. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".task()",
-      "List",
-      "Button",
-      "Text"
-    ],
-    "answersEN": [
-      ".task()",
-      "List",
-      "Button",
-      "Text"
-    ],
-    "correctAnswerBG": ".task()",
-    "correctAnswerEN": ".task()",
-    "explanationBG": ".task() стартира async работа, свързана с lifecycle на view.",
-    "explanationEN": ".task() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-08",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to react to a state value changing. Which choice is best?",
-    "questionBG": "Developer трябва да реагира на промяна на state стойност. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".onChange()",
-      "Button",
-      "Text",
-      "Image"
-    ],
-    "answersEN": [
-      ".onChange()",
-      "Button",
-      "Text",
-      "Image"
-    ],
-    "correctAnswerBG": ".onChange()",
-    "correctAnswerEN": ".onChange()",
-    "explanationBG": ".onChange() изпълнява closure при промяна на наблюдавана стойност.",
-    "explanationEN": ".onChange() is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-09",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to avoid unstable list updates. Which choice is best?",
-    "questionBG": "Developer трябва да избегне нестабилни list updates. Кой избор е най-подходящ?",
-    "answersBG": [
-      "stable identity",
-      "Text",
-      "Image",
-      "Spacer"
-    ],
-    "answersEN": [
-      "stable identity",
-      "Text",
-      "Image",
-      "Spacer"
-    ],
-    "correctAnswerBG": "stable identity",
-    "correctAnswerEN": "stable identity",
-    "explanationBG": "Стабилната identity позволява на SwiftUI правилно да diff-ва редове.",
-    "explanationEN": "stable identity is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-10",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to build a grid of cards. Which choice is best?",
-    "questionBG": "Developer трябва да построи grid от cards. Кой избор е най-подходящ?",
-    "answersBG": [
-      "LazyVGrid",
-      "Image",
-      "Spacer",
-      "NavigationStack"
-    ],
-    "answersEN": [
-      "LazyVGrid",
-      "Image",
-      "Spacer",
-      "NavigationStack"
-    ],
-    "correctAnswerBG": "LazyVGrid",
-    "correctAnswerEN": "LazyVGrid",
-    "explanationBG": "LazyVGrid създава ефективен вертикален grid layout.",
-    "explanationEN": "LazyVGrid is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-11",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to measure available size. Which choice is best?",
-    "questionBG": "Developer трябва да измери наличния размер. Кой избор е най-подходящ?",
-    "answersBG": [
-      "GeometryReader",
-      "Spacer",
-      "NavigationStack",
-      "ProgressView"
-    ],
-    "answersEN": [
-      "GeometryReader",
-      "Spacer",
-      "NavigationStack",
-      "ProgressView"
-    ],
-    "correctAnswerBG": "GeometryReader",
-    "correctAnswerEN": "GeometryReader",
-    "explanationBG": "GeometryReader дава достъп до размера и coordinate space.",
-    "explanationEN": "GeometryReader is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-12",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to share matched animation identity. Which choice is best?",
-    "questionBG": "Developer трябва да сподели matched animation identity. Кой избор е най-подходящ?",
-    "answersBG": [
-      "@Namespace",
-      "NavigationStack",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "answersEN": [
-      "@Namespace",
-      "NavigationStack",
-      "ProgressView",
-      "ScrollView"
-    ],
-    "correctAnswerBG": "@Namespace",
-    "correctAnswerEN": "@Namespace",
-    "explanationBG": "@Namespace създава identity scope за matchedGeometryEffect.",
-    "explanationEN": "@Namespace is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-13",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to animate state-driven changes. Which choice is best?",
-    "questionBG": "Developer трябва да анимира state-driven промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      ".animation(_:value:)",
-      "ProgressView",
-      "ScrollView",
-      "ForEach"
-    ],
-    "answersEN": [
-      ".animation(_:value:)",
-      "ProgressView",
-      "ScrollView",
-      "ForEach"
-    ],
-    "correctAnswerBG": ".animation(_:value:)",
-    "correctAnswerEN": ".animation(_:value:)",
-    "explanationBG": ".animation(_:value:) свързва animation с конкретна state стойност.",
-    "explanationEN": ".animation(_:value:) is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-14",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to customize a button consistently. Which choice is best?",
-    "questionBG": "Developer трябва да customize-не button консистентно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ButtonStyle",
-      "ScrollView",
-      "ForEach",
-      "@StateObject"
-    ],
-    "answersEN": [
-      "ButtonStyle",
-      "ScrollView",
-      "ForEach",
-      "@StateObject"
-    ],
-    "correctAnswerBG": "ButtonStyle",
-    "correctAnswerEN": "ButtonStyle",
-    "explanationBG": "ButtonStyle капсулира pressed/normal presentation за buttons.",
-    "explanationEN": "ButtonStyle is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-15",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to create reusable view modifiers. Which choice is best?",
-    "questionBG": "Developer трябва да създаде reusable view modifiers. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ViewModifier",
-      "ForEach",
-      "@StateObject",
-      "@ObservedObject"
-    ],
-    "answersEN": [
-      "ViewModifier",
-      "ForEach",
-      "@StateObject",
-      "@ObservedObject"
-    ],
-    "correctAnswerBG": "ViewModifier",
-    "correctAnswerEN": "ViewModifier",
-    "explanationBG": "ViewModifier капсулира повтарящи се view transformations.",
-    "explanationEN": "ViewModifier is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-16",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to pass data up from children. Which choice is best?",
-    "questionBG": "Developer трябва да подаде данни нагоре от children. Кой избор е най-подходящ?",
-    "answersBG": [
-      "PreferenceKey",
-      "@StateObject",
-      "@ObservedObject",
-      "@Namespace"
-    ],
-    "answersEN": [
-      "PreferenceKey",
-      "@StateObject",
-      "@ObservedObject",
-      "@Namespace"
-    ],
-    "correctAnswerBG": "PreferenceKey",
-    "correctAnswerEN": "PreferenceKey",
-    "explanationBG": "PreferenceKey позволява child views да подават layout-related values към parent.",
-    "explanationEN": "PreferenceKey is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-17",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to keep expensive work out of body. Which choice is best?",
-    "questionBG": "Developer трябва да държи тежка работа извън body. Кой избор е най-подходящ?",
-    "answersBG": [
-      "move work to model or task",
-      "@ObservedObject",
-      "@Namespace",
-      "GeometryReader"
-    ],
-    "answersEN": [
-      "move work to model or task",
-      "@ObservedObject",
-      "@Namespace",
-      "GeometryReader"
-    ],
-    "correctAnswerBG": "move work to model or task",
-    "correctAnswerEN": "move work to model or task",
-    "explanationBG": "body трябва да описва UI; тежка работа там води до чести преизчисления.",
-    "explanationEN": "move work to model or task is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-18",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to support dynamic text sizes. Which choice is best?",
-    "questionBG": "Developer трябва да поддържа dynamic text sizes. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Dynamic Type",
-      "@Namespace",
-      "GeometryReader",
-      "PreferenceKey"
-    ],
-    "answersEN": [
-      "Dynamic Type",
-      "@Namespace",
-      "GeometryReader",
-      "PreferenceKey"
-    ],
-    "correctAnswerBG": "Dynamic Type",
-    "correctAnswerEN": "Dynamic Type",
-    "explanationBG": "Dynamic Type прави текста достъпен за потребителски настройки.",
-    "explanationEN": "Dynamic Type is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-19",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to make a custom container layout. Which choice is best?",
-    "questionBG": "Developer трябва да създаде custom container layout. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Layout protocol",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
-    "answersEN": [
-      "Layout protocol",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
-    "correctAnswerBG": "Layout protocol",
-    "correctAnswerEN": "Layout protocol",
-    "explanationBG": "Layout protocol позволява собствен алгоритъм за измерване и подреждане.",
-    "explanationEN": "Layout protocol is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-20",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to control transaction animation behavior. Which choice is best?",
-    "questionBG": "Developer трябва да контролира transaction animation behavior. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Transaction",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
-    "answersEN": [
-      "Transaction",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
-    "correctAnswerBG": "Transaction",
-    "correctAnswerEN": "Transaction",
-    "explanationBG": "Transaction носи animation context през view update.",
-    "explanationEN": "Transaction is the best fit here because it directly supports the described SwiftUI workflow."
-  },
-  {
-    "id": "swiftui-intermediate-21",
-    "categoryId": "swiftui",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to separate view from state logic. Which choice is best?",
-    "questionBG": "Developer трябва да раздели view от state logic. Кой избор е най-подходящ?",
-    "answersBG": [
-      "ViewModel",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "answersEN": [
-      "ViewModel",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
-    "correctAnswerBG": "ViewModel",
-    "correctAnswerEN": "ViewModel",
-    "explanationBG": "ViewModel държи presentation state и actions извън SwiftUI view.",
-    "explanationEN": "ViewModel is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "@StateObject",
+    "explanationEN": "@StateObject creates and retains an ObservableObject for the view's lifetime, avoiding accidental recreation.",
+    "explanationBG": "@StateObject създава и задържа ObservableObject за живота на изгледа и избягва случайно пресъздаване."
   },
   {
     "id": "swiftui-advanced-01",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to debug a view that redraws too often. Which choice is best?",
-    "questionBG": "Developer трябва да debug-не view, който се redraw-ва твърде често. Кой избор е най-подходящ?",
-    "answersBG": [
-      "inspect state ownership and identity",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
+    "questionEN": "A list flickers on every keystroke in the search field. What do you check first for excess redraws?",
+    "questionBG": "List премигва при всеки keystroke в search. Какво проверяваш първо за излишни redraw-и?",
     "answersEN": [
       "inspect state ownership and identity",
       "@State",
       "@Binding",
       "@Environment"
     ],
-    "correctAnswerBG": "inspect state ownership and identity",
+    "answersBG": [
+      "inspect state ownership and identity",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
     "correctAnswerEN": "inspect state ownership and identity",
-    "explanationBG": "Неправилен state ownership или нестабилна identity често причиняват излишни updates.",
-    "explanationEN": "inspect state ownership and identity is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "inspect state ownership and identity",
+    "explanationEN": "Excess redraws often come from unstable IDs or state owned at the wrong level; auditing ownership fixes the root cause.",
+    "explanationBG": "Излишните redraw-и често идват от нестабилни ID или състояние на грешно ниво; одит на собствеността оправя коренната причина."
+  },
+  {
+    "id": "swiftui-beginner-02",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A child Toggle must change isOn owned by the parent screen. Which wrapper links them?",
+    "questionBG": "Дъщерен Toggle трябва да променя isOn, притежавано от родителския екран. Кой wrapper свързва двете страни?",
+    "answersEN": [
+      "@Binding",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "answersBG": [
+      "@Binding",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "correctAnswerEN": "@Binding",
+    "correctAnswerBG": "@Binding",
+    "explanationEN": "@Binding creates a two-way reference to state owned elsewhere, so a child can edit a parent value without copying it.",
+    "explanationBG": "@Binding създава двупосочна връзка към състояние, притежавано другаде, и дъщерен изглед може да редактира родителска стойност без копие."
+  },
+  {
+    "id": "swiftui-intermediate-02",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A child view receives an existing SettingsStore from its parent. Which wrapper only observes it?",
+    "questionBG": "Child view получава вече създаден SettingsStore от родителя. Кой wrapper само наблюдава?",
+    "answersEN": [
+      "@ObservedObject",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
+    "answersBG": [
+      "@ObservedObject",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
+    "correctAnswerEN": "@ObservedObject",
+    "correctAnswerBG": "@ObservedObject",
+    "explanationEN": "@ObservedObject observes an object created and owned outside the view, such as one passed from a parent.",
+    "explanationBG": "@ObservedObject наблюдава обект, създаден и притежаван извън изгледа, например подаден от родител."
   },
   {
     "id": "swiftui-advanced-02",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to reduce unnecessary row invalidation. Which choice is best?",
-    "questionBG": "Developer трябва да намали ненужно invalidation на редове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "stable Identifiable models",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
+    "questionEN": "Editing one row rebuilds the entire list. What data model helps the diff?",
+    "questionBG": "Промяна на един ред преизгражда целия списък. Какъв модел на данните помага на diff-а?",
     "answersEN": [
       "stable Identifiable models",
       "@Binding",
       "@Environment",
       "VStack"
     ],
-    "correctAnswerBG": "stable Identifiable models",
+    "answersBG": [
+      "stable Identifiable models",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
     "correctAnswerEN": "stable Identifiable models",
-    "explanationBG": "Стабилните Identifiable models помагат на List/ForEach diffing.",
-    "explanationEN": "stable Identifiable models is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "stable Identifiable models",
+    "explanationEN": "Identifiable models with stable IDs help List and ForEach update only changed rows instead of rebuilding all cells.",
+    "explanationBG": "Identifiable модели със стабилни ID помагат на List и ForEach да обновяват само променените редове, а не целия списък."
+  },
+  {
+    "id": "swiftui-beginner-03",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A profile screen must stack avatar, name, and buttons vertically. Which layout container do you use?",
+    "questionBG": "Екран за профил трябва да подреди аватар, име и бутони един под друг. Кой layout container използваш?",
+    "answersEN": [
+      "VStack",
+      "@Environment",
+      "HStack",
+      "ZStack"
+    ],
+    "answersBG": [
+      "VStack",
+      "@Environment",
+      "HStack",
+      "ZStack"
+    ],
+    "correctAnswerEN": "VStack",
+    "correctAnswerBG": "VStack",
+    "explanationEN": "VStack arranges child views vertically in document order, which is the standard layout for top-to-bottom content.",
+    "explanationBG": "VStack подрежда дъщерните изгледи вертикално в реда на дефиниция и е стандартният layout за съдържание отгоре надолу."
+  },
+  {
+    "id": "swiftui-intermediate-03",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "An iPad's second window must remember its selected tab after a scene restart. Which wrapper persists scene state?",
+    "questionBG": "На iPad вторият прозорец трябва да запомни избран таб след рестарт на scene. Кой wrapper пази scene state?",
+    "answersEN": [
+      "@SceneStorage",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "answersBG": [
+      "@SceneStorage",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "correctAnswerEN": "@SceneStorage",
+    "correctAnswerBG": "@SceneStorage",
+    "explanationEN": "@SceneStorage persists small state per scene so SwiftUI can restore UI state after process termination.",
+    "explanationBG": "@SceneStorage пази малко състояние за всяка scene, за да възстанови UI след прекратяване на процеса."
   },
   {
     "id": "swiftui-advanced-03",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to avoid retaining a view model accidentally. Which choice is best?",
-    "questionBG": "Developer трябва да избегне случайно задържане на view model. Кой избор е най-подходящ?",
-    "answersBG": [
-      "review closure captures",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
+    "questionEN": "A view model is not released after dismissing a sheet. What do you review in action closures?",
+    "questionBG": "ViewModel не се освобождава след dismiss на sheet. Какво преглеждаш в action closure-ите?",
     "answersEN": [
       "review closure captures",
       "@Environment",
       "VStack",
       "HStack"
     ],
-    "correctAnswerBG": "review closure captures",
+    "answersBG": [
+      "review closure captures",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
     "correctAnswerEN": "review closure captures",
-    "explanationBG": "Stored closures могат да capture-нат objects; capture lists помагат при reference cycles.",
-    "explanationEN": "review closure captures is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "review closure captures",
+    "explanationEN": "Closures in views can strongly capture objects and extend lifetimes; reviewing captures prevents leaks and stale updates.",
+    "explanationBG": "Closure-ите в изгледи могат силно да capture-нат обекти и да удължат живота им; прегледът на capture-ите предотвратява течове и остарели обновявания."
+  },
+  {
+    "id": "swiftui-beginner-04",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A toolbar row must place an icon and title on one line. Which container is correct?",
+    "questionBG": "Toolbar ред трябва да подреди икона и заглавие в един ред. Кой container е правилен?",
+    "answersEN": [
+      "HStack",
+      "VStack",
+      "ZStack",
+      "List"
+    ],
+    "answersBG": [
+      "HStack",
+      "VStack",
+      "ZStack",
+      "List"
+    ],
+    "correctAnswerEN": "HStack",
+    "correctAnswerBG": "HStack",
+    "explanationEN": "HStack places views side by side horizontally, ideal for toolbars, badges, and inline controls.",
+    "explanationBG": "HStack поставя изгледите един до друг хоризонтално — подходящ за toolbar-и, badge-ове и inline контроли."
+  },
+  {
+    "id": "swiftui-intermediate-04",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "The user picks a language and that choice must survive between launches. Which wrapper syncs with UserDefaults?",
+    "questionBG": "Потребителят избира език и изборът трябва да оцелее между стартирания. Кой wrapper синхронизира с UserDefaults?",
+    "answersEN": [
+      "@AppStorage",
+      "VStack",
+      "HStack",
+      "ZStack"
+    ],
+    "answersBG": [
+      "@AppStorage",
+      "VStack",
+      "HStack",
+      "ZStack"
+    ],
+    "correctAnswerEN": "@AppStorage",
+    "correctAnswerBG": "@AppStorage",
+    "explanationEN": "@AppStorage syncs a property with UserDefaults using a key, ideal for lightweight user preferences.",
+    "explanationBG": "@AppStorage синхронизира свойство с UserDefaults чрез ключ — подходящ за леки потребителски настройки."
   },
   {
     "id": "swiftui-advanced-04",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to coordinate a hero-style transition. Which choice is best?",
-    "questionBG": "Developer трябва да координира hero-style transition. Кой избор е най-подходящ?",
-    "answersBG": [
-      "matchedGeometryEffect",
-      "VStack",
-      "HStack",
-      "ZStack"
-    ],
+    "questionEN": "A photo must smoothly expand from a grid cell to a detail screen. Which geometry modifier creates the hero effect?",
+    "questionBG": "Снимката трябва плавно да се разшири от grid към detail. Кой geometry modifier прави hero ефект?",
     "answersEN": [
       "matchedGeometryEffect",
       "VStack",
       "HStack",
       "ZStack"
     ],
-    "correctAnswerBG": "matchedGeometryEffect",
+    "answersBG": [
+      "matchedGeometryEffect",
+      "VStack",
+      "HStack",
+      "ZStack"
+    ],
     "correctAnswerEN": "matchedGeometryEffect",
-    "explanationBG": "matchedGeometryEffect свързва geometry между два view states.",
-    "explanationEN": "matchedGeometryEffect is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "matchedGeometryEffect",
+    "explanationEN": "matchedGeometryEffect animates shared geometry between two views, enabling smooth hero transitions.",
+    "explanationBG": "matchedGeometryEffect анимира споделена геометрия между два изгледа и позволява плавни hero преходи."
+  },
+  {
+    "id": "swiftui-beginner-05",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A badge must sit on the corner of an icon. Which container layers the views?",
+    "questionBG": "Badge трябва да седи върху иконата в ъгъла. Кой container наслоява изгледите?",
+    "answersEN": [
+      "ZStack",
+      "HStack",
+      "List",
+      "Button"
+    ],
+    "answersBG": [
+      "ZStack",
+      "HStack",
+      "List",
+      "Button"
+    ],
+    "correctAnswerEN": "ZStack",
+    "correctAnswerBG": "ZStack",
+    "explanationEN": "ZStack layers views on the z-axis so backgrounds, overlays, and badges can share the same frame.",
+    "explanationBG": "ZStack наслоява изгледи по z-оста, така че фон, overlay и badge могат да споделят една и съща рамка."
+  },
+  {
+    "id": "swiftui-intermediate-05",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "Settings must open as a modal screen from Home. Which presentation modifier do you use?",
+    "questionBG": "Settings трябва да се отвори като модален екран от Home. Кой presentation modifier използваш?",
+    "answersEN": [
+      ".sheet()",
+      "HStack",
+      "ZStack",
+      "List"
+    ],
+    "answersBG": [
+      ".sheet()",
+      "HStack",
+      "ZStack",
+      "List"
+    ],
+    "correctAnswerEN": ".sheet()",
+    "correctAnswerBG": ".sheet()",
+    "explanationEN": ".sheet() presents a modal view above the current hierarchy, typically for secondary tasks.",
+    "explanationBG": ".sheet() показва модален изглед над текущата йерархия — обикновено за вторични задачи."
   },
   {
     "id": "swiftui-advanced-05",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to profile animation hitches. Which choice is best?",
-    "questionBG": "Developer трябва да профилира animation hitches. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Instruments",
-      "HStack",
-      "ZStack",
-      "List"
-    ],
+    "questionEN": "A scroll animation stutters on a real device. Which Xcode tool profiles frame timing?",
+    "questionBG": "Scroll анимацията заеква на реално устройство. Кой Xcode инструмент профилира frame timing?",
     "answersEN": [
       "Instruments",
       "HStack",
       "ZStack",
       "List"
     ],
-    "correctAnswerBG": "Instruments",
+    "answersBG": [
+      "Instruments",
+      "HStack",
+      "ZStack",
+      "List"
+    ],
     "correctAnswerEN": "Instruments",
-    "explanationBG": "Instruments показва CPU, rendering и frame timing проблеми.",
-    "explanationEN": "Instruments is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "Instruments",
+    "explanationEN": "Instruments profiles CPU, GPU, and frame timing to diagnose animation hitches and rendering bottlenecks.",
+    "explanationBG": "Instruments профилира CPU, GPU и frame timing, за да диагностицира animation hitches и rendering bottleneck-и."
+  },
+  {
+    "id": "swiftui-beginner-06",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The screen must display the title \"Daily Challenge\". Which view is most appropriate?",
+    "questionBG": "Екранът трябва да покаже заглавие „Daily Challenge“. Кой view е най-подходящ?",
+    "answersEN": [
+      "Text",
+      "ZStack",
+      "List",
+      "Button"
+    ],
+    "answersBG": [
+      "Text",
+      "ZStack",
+      "List",
+      "Button"
+    ],
+    "correctAnswerEN": "Text",
+    "correctAnswerBG": "Text",
+    "explanationEN": "Text is SwiftUI's primitive for styled strings and is the correct choice for displaying readable content.",
+    "explanationBG": "Text е основният SwiftUI примитив за стилизирани низове и е правилният избор за показване на четимо съдържание."
+  },
+  {
+    "id": "swiftui-intermediate-06",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "The user deletes progress and needs confirmation before the action proceeds. Which modifier shows an alert?",
+    "questionBG": "Потребителят изтрива прогрес и трябва потвърждение преди действие. Кой modifier показва alert?",
+    "answersEN": [
+      ".alert()",
+      "ZStack",
+      "List",
+      "Button"
+    ],
+    "answersBG": [
+      ".alert()",
+      "ZStack",
+      "List",
+      "Button"
+    ],
+    "correctAnswerEN": ".alert()",
+    "correctAnswerBG": ".alert()",
+    "explanationEN": ".alert() displays a system alert with title, message, and action buttons bound to state.",
+    "explanationBG": ".alert() показва системен alert с заглавие, съобщение и бутони за действия, вързани към състояние."
   },
   {
     "id": "swiftui-advanced-06",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to load data without blocking body. Which choice is best?",
-    "questionBG": "Developer трябва да зареди данни без да блокира body. Кой избор е най-подходящ?",
-    "answersBG": [
-      "async task in lifecycle",
-      "ZStack",
-      "List",
-      "Button"
-    ],
+    "questionEN": "An API request in body blocks the UI thread. Where should you start async loading?",
+    "questionBG": "API заявката в body блокира UI thread. Къде трябва да стартираш async зареждането?",
     "answersEN": [
       "async task in lifecycle",
       "ZStack",
       "List",
       "Button"
     ],
-    "correctAnswerBG": "async task in lifecycle",
+    "answersBG": [
+      "async task in lifecycle",
+      "ZStack",
+      "List",
+      "Button"
+    ],
     "correctAnswerEN": "async task in lifecycle",
-    "explanationBG": "Async work трябва да се стартира от task/lifecycle, не директно в body.",
-    "explanationEN": "async task in lifecycle is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "async task in lifecycle",
+    "explanationEN": "Starting network work in .task or onAppear keeps body pure and ties cancellation to view lifecycle.",
+    "explanationBG": "Стартирането на мрежова работа в .task или onAppear държи body чист и връзва cancellation с lifecycle на изгледа."
+  },
+  {
+    "id": "swiftui-beginner-07",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A button must show the system icon star.fill. Which view loads an SF Symbol?",
+    "questionBG": "Бутонът трябва да покаже системната икона star.fill. Кой view зарежда SF Symbol?",
+    "answersEN": [
+      "Image(systemName:)",
+      "List",
+      "Button",
+      "Text"
+    ],
+    "answersBG": [
+      "Image(systemName:)",
+      "List",
+      "Button",
+      "Text"
+    ],
+    "correctAnswerEN": "Image(systemName:)",
+    "correctAnswerBG": "Image(systemName:)",
+    "explanationEN": "Image(systemName:) loads symbols from Apple's SF Symbols set with automatic scaling and accessibility support.",
+    "explanationBG": "Image(systemName:) зарежда символи от SF Symbols с автоматично мащабиране и поддръжка за достъпност."
+  },
+  {
+    "id": "swiftui-intermediate-07",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "When the quiz screen opens, questions must load asynchronously. Which lifecycle modifier starts the work?",
+    "questionBG": "При отваряне на quiz екрана трябва да се заредят въпросите асинхронно. Кой lifecycle modifier стартира работата?",
+    "answersEN": [
+      ".task()",
+      "List",
+      "Button",
+      "Text"
+    ],
+    "answersBG": [
+      ".task()",
+      "List",
+      "Button",
+      "Text"
+    ],
+    "correctAnswerEN": ".task()",
+    "correctAnswerBG": ".task()",
+    "explanationEN": ".task() starts async work tied to view appearance and cancels it automatically when the view disappears.",
+    "explanationBG": ".task() стартира async работа при появяване на изгледа и я отменя автоматично при изчезване."
   },
   {
     "id": "swiftui-advanced-07",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to handle cancellation when leaving a screen. Which choice is best?",
-    "questionBG": "Developer трябва да обработи cancellation при напускане на screen. Кой избор е най-подходящ?",
-    "answersBG": [
-      "check Task cancellation",
-      "List",
-      "Button",
-      "Text"
-    ],
+    "questionEN": "The user leaves the screen before the API call finishes. What do you check in the async task?",
+    "questionBG": "Потребителят напуска екрана преди API да приключи. Какво проверяваш в async задачата?",
     "answersEN": [
       "check Task cancellation",
       "List",
       "Button",
       "Text"
     ],
-    "correctAnswerBG": "check Task cancellation",
+    "answersBG": [
+      "check Task cancellation",
+      "List",
+      "Button",
+      "Text"
+    ],
     "correctAnswerEN": "check Task cancellation",
-    "explanationBG": "SwiftUI може да cancel-не task при изчезване на view.",
-    "explanationEN": "check Task cancellation is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "check Task cancellation",
+    "explanationEN": "SwiftUI cancels view tasks on disappear; checking Task.isCancelled avoids applying results after navigation away.",
+    "explanationBG": "SwiftUI отменя task-овете при изчезване на изгледа; проверката на Task.isCancelled спира прилагане на резултат след напускане."
+  },
+  {
+    "id": "swiftui-beginner-08",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The user taps \"Start Quiz\" and the game must begin. Which view accepts the tap action?",
+    "questionBG": "Потребителят натиска „Start Quiz“ и трябва да стартира игра. Кой view приема tap action?",
+    "answersEN": [
+      "Button",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "answersBG": [
+      "Button",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "correctAnswerEN": "Button",
+    "correctAnswerBG": "Button",
+    "explanationEN": "Button wraps tappable content and runs an action closure when the user activates it.",
+    "explanationBG": "Button обвива натискаемо съдържание и изпълнява action closure, когато потребителят го активира."
+  },
+  {
+    "id": "swiftui-intermediate-08",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "When searchText changes, the list must filter. Which modifier reacts to the change?",
+    "questionBG": "Когато searchText се промени, трябва да филтрираш списъка. Кой modifier реагира на промяна?",
+    "answersEN": [
+      ".onChange()",
+      "Button",
+      "Text",
+      "Image"
+    ],
+    "answersBG": [
+      ".onChange()",
+      "Button",
+      "Text",
+      "Image"
+    ],
+    "correctAnswerEN": ".onChange()",
+    "correctAnswerBG": ".onChange()",
+    "explanationEN": ".onChange() runs a closure whenever a watched value changes, useful for side effects and validation.",
+    "explanationBG": ".onChange() изпълнява closure при промяна на наблюдавана стойност — полезно за странични ефекти и валидация."
   },
   {
     "id": "swiftui-advanced-08",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to make previews useful for many states. Which choice is best?",
-    "questionBG": "Developer трябва да направи previews полезни за много states. Кой избор е най-подходящ?",
-    "answersBG": [
-      "preview fixtures",
-      "Button",
-      "Text",
-      "Image"
-    ],
+    "questionEN": "A preview must show loading, success, and error without manually launching the app. What do you pass to #Preview?",
+    "questionBG": "Preview трябва да покаже loading, success и error без ръчно пускане на app. Какво подаваш в #Preview?",
     "answersEN": [
       "preview fixtures",
       "Button",
       "Text",
       "Image"
     ],
-    "correctAnswerBG": "preview fixtures",
+    "answersBG": [
+      "preview fixtures",
+      "Button",
+      "Text",
+      "Image"
+    ],
     "correctAnswerEN": "preview fixtures",
-    "explanationBG": "Preview fixtures показват loading, success и error states бързо.",
-    "explanationEN": "preview fixtures is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "preview fixtures",
+    "explanationEN": "Preview fixtures supply loading, success, and error states so designers and developers can validate UI quickly.",
+    "explanationBG": "Preview fixture-ите подават loading, success и error състояния, за да валидират UI бързо дизайнери и разработчици."
+  },
+  {
+    "id": "swiftui-beginner-09",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The title must sit on the left and the Settings button on the right in one row. Which view absorbs the free space?",
+    "questionBG": "Заглавието трябва да е вляво, а бутонът Settings вдясно в един ред. Кой view поема свободното пространство?",
+    "answersEN": [
+      "Spacer",
+      "Text",
+      "Image",
+      "NavigationStack"
+    ],
+    "answersBG": [
+      "Spacer",
+      "Text",
+      "Image",
+      "NavigationStack"
+    ],
+    "correctAnswerEN": "Spacer",
+    "correctAnswerBG": "Spacer",
+    "explanationEN": "Spacer expands along the stack axis to absorb free space and push neighboring views apart.",
+    "explanationBG": "Spacer се разтяга по оста на stack-а, заема свободното пространство и раздалечава съседните изгледи."
+  },
+  {
+    "id": "swiftui-intermediate-09",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "The list flickers because ForEach uses indices instead of stable IDs. What must you improve?",
+    "questionBG": "Списъкът премигва, защото ForEach използва индекси вместо стабилни ID. Какво трябва да подобриш?",
+    "answersEN": [
+      "stable identity",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "answersBG": [
+      "stable identity",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
+    "correctAnswerEN": "stable identity",
+    "correctAnswerBG": "stable identity",
+    "explanationEN": "Stable identity lets SwiftUI diff collections correctly so rows update instead of being destroyed and recreated.",
+    "explanationBG": "Стабилната идентичност позволява на SwiftUI да diff-ва колекции коректно, така че редовете се обновяват, а не се пресъздават."
   },
   {
     "id": "swiftui-advanced-09",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to avoid putting navigation in every child. Which choice is best?",
-    "questionBG": "Developer трябва да избегне navigation във всеки child. Кой избор е най-подходящ?",
-    "answersBG": [
-      "central navigation state",
-      "Text",
-      "Image",
-      "Spacer"
-    ],
+    "questionEN": "Every child holds its own NavigationPath and navigation becomes chaotic. What do you centralize?",
+    "questionBG": "Всеки child държи собствен NavigationPath и flow става хаотичен. Какво централизираш?",
     "answersEN": [
       "central navigation state",
       "Text",
       "Image",
       "Spacer"
     ],
-    "correctAnswerBG": "central navigation state",
+    "answersBG": [
+      "central navigation state",
+      "Text",
+      "Image",
+      "Spacer"
+    ],
     "correctAnswerEN": "central navigation state",
-    "explanationBG": "Central navigation state прави flow-а по-предвидим и testable.",
-    "explanationEN": "central navigation state is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "central navigation state",
+    "explanationEN": "Central navigation state avoids scattering NavigationLink logic in children and makes flows easier to test.",
+    "explanationBG": "Централното navigation състояние избягва разпръснати NavigationLink логики в children и улеснява тестването на потоци."
+  },
+  {
+    "id": "swiftui-beginner-10",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A library shows 20 categories as scrollable rows. Which view fits best?",
+    "questionBG": "Библиотеката показва 20 категории като скролируеми редове. Кой view е най-подходящ?",
+    "answersEN": [
+      "List",
+      "Spacer",
+      "NavigationStack",
+      "ProgressView"
+    ],
+    "answersBG": [
+      "List",
+      "Spacer",
+      "NavigationStack",
+      "ProgressView"
+    ],
+    "correctAnswerEN": "List",
+    "correctAnswerBG": "List",
+    "explanationEN": "List is optimized for scrollable rows, selection, and platform styling of repeating data.",
+    "explanationBG": "List е оптимизиран за скролируеми редове, селекция и платформен стил при повтарящи се данни."
+  },
+  {
+    "id": "swiftui-intermediate-10",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "An achievements screen shows a grid of badge cards. Which lazy grid container fits?",
+    "questionBG": "Achievement екранът показва мрежа от badge карти. Кой lazy grid container е подходящ?",
+    "answersEN": [
+      "LazyVGrid",
+      "Image",
+      "Spacer",
+      "NavigationStack"
+    ],
+    "answersBG": [
+      "LazyVGrid",
+      "Image",
+      "Spacer",
+      "NavigationStack"
+    ],
+    "correctAnswerEN": "LazyVGrid",
+    "correctAnswerBG": "LazyVGrid",
+    "explanationEN": "LazyVGrid builds a vertical grid that creates cells only when they become visible, saving memory on large sets.",
+    "explanationBG": "LazyVGrid изгражда вертикална мрежа и създава клетки само когато станат видими, което пести памет при големи набори."
   },
   {
     "id": "swiftui-advanced-10",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to build accessible custom controls. Which choice is best?",
-    "questionBG": "Developer трябва да създаде accessible custom controls. Кой избор е най-подходящ?",
-    "answersBG": [
-      "accessibility labels and values",
-      "Image",
-      "Spacer",
-      "NavigationStack"
-    ],
+    "questionEN": "A custom star-rating control is not read by VoiceOver. What accessibility properties do you add?",
+    "questionBG": "Custom star-rating control не се чете от VoiceOver. Какви accessibility свойства добавяш?",
     "answersEN": [
       "accessibility labels and values",
       "Image",
       "Spacer",
       "NavigationStack"
     ],
-    "correctAnswerBG": "accessibility labels and values",
+    "answersBG": [
+      "accessibility labels and values",
+      "Image",
+      "Spacer",
+      "NavigationStack"
+    ],
     "correctAnswerEN": "accessibility labels and values",
-    "explanationBG": "Custom controls имат нужда от label/value, за да са разбираеми за VoiceOver.",
-    "explanationEN": "accessibility labels and values is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "accessibility labels and values",
+    "explanationEN": "Custom controls need explicit accessibilityLabel and value so VoiceOver can describe purpose and current state.",
+    "explanationBG": "Custom контролите искат явни accessibilityLabel и value, за да описва VoiceOver предназначението и текущото състояние."
+  },
+  {
+    "id": "swiftui-beginner-11",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The Home screen must push CategorySelection on tap. Which navigation container do you use?",
+    "questionBG": "Home екранът трябва да push-не CategorySelection при tap. Кой navigation container използваш?",
+    "answersEN": [
+      "NavigationStack",
+      "Spacer",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "answersBG": [
+      "NavigationStack",
+      "Spacer",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "correctAnswerEN": "NavigationStack",
+    "correctAnswerBG": "NavigationStack",
+    "explanationEN": "NavigationStack manages a path of screens for push/pop navigation in modern SwiftUI apps.",
+    "explanationBG": "NavigationStack управлява път от екрани за push/pop навигация в съвременни SwiftUI приложения."
+  },
+  {
+    "id": "swiftui-intermediate-11",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A custom chart must know the parent's width before drawing. Which view provides geometry information?",
+    "questionBG": "Custom chart трябва да знае ширината на родителя преди да се нарисува. Кой view дава geometry информация?",
+    "answersEN": [
+      "GeometryReader",
+      "Spacer",
+      "NavigationStack",
+      "ProgressView"
+    ],
+    "answersBG": [
+      "GeometryReader",
+      "Spacer",
+      "NavigationStack",
+      "ProgressView"
+    ],
+    "correctAnswerEN": "GeometryReader",
+    "correctAnswerBG": "GeometryReader",
+    "explanationEN": "GeometryReader exposes the size and coordinate space of its parent so layouts can adapt to available space.",
+    "explanationBG": "GeometryReader предоставя размера и coordinate space на родителя, за да се адаптира layout-ът към наличното пространство."
   },
   {
     "id": "swiftui-advanced-11",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to honor Reduce Motion. Which choice is best?",
-    "questionBG": "Developer трябва да уважи Reduce Motion. Кой избор е най-подходящ?",
-    "answersBG": [
-      "accessibilityReduceMotion",
-      "Spacer",
-      "NavigationStack",
-      "ProgressView"
-    ],
+    "questionEN": "The user enabled Reduce Motion in system settings. Which environment value must you respect?",
+    "questionBG": "Потребителят е включил Reduce Motion в системните настройки. Коя environment стойност трябва да уважиш?",
     "answersEN": [
       "accessibilityReduceMotion",
       "Spacer",
       "NavigationStack",
       "ProgressView"
     ],
-    "correctAnswerBG": "accessibilityReduceMotion",
+    "answersBG": [
+      "accessibilityReduceMotion",
+      "Spacer",
+      "NavigationStack",
+      "ProgressView"
+    ],
     "correctAnswerEN": "accessibilityReduceMotion",
-    "explanationBG": "Reduce Motion трябва да спира или намалява декоративни animations.",
-    "explanationEN": "accessibilityReduceMotion is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "accessibilityReduceMotion",
+    "explanationEN": "accessibilityReduceMotion indicates the user prefers less motion; decorative animations should respect it.",
+    "explanationBG": "accessibilityReduceMotion показва, че потребителят предпочита по-малко движение; декоративните анимации трябва да го уважават."
+  },
+  {
+    "id": "swiftui-beginner-12",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A card looks glued to the edges. Which modifier adds inner spacing?",
+    "questionBG": "Картата изглежда залепена за ръбовете. Кой modifier добавя вътрешно разстояние?",
+    "answersEN": [
+      ".padding()",
+      "NavigationStack",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "answersBG": [
+      ".padding()",
+      "NavigationStack",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "correctAnswerEN": ".padding()",
+    "correctAnswerBG": ".padding()",
+    "explanationEN": ".padding() inset content from its container edges, improving touch targets and visual breathing room.",
+    "explanationBG": ".padding() отмества съдържанието от ръбовете на контейнера и подобрява touch зоните и визуалното разстояние."
+  },
+  {
+    "id": "swiftui-intermediate-12",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A hero animation between thumbnail and detail needs a shared namespace. Which property wrapper creates it?",
+    "questionBG": "Hero анимация между thumbnail и detail изисква споделен namespace. Кой property wrapper го създава?",
+    "answersEN": [
+      "@Namespace",
+      "NavigationStack",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "answersBG": [
+      "@Namespace",
+      "NavigationStack",
+      "ProgressView",
+      "ScrollView"
+    ],
+    "correctAnswerEN": "@Namespace",
+    "correctAnswerBG": "@Namespace",
+    "explanationEN": "@Namespace defines a shared identity scope required by matchedGeometryEffect for hero transitions.",
+    "explanationBG": "@Namespace дефинира споделен identity scope, нужен на matchedGeometryEffect за hero преходи."
   },
   {
     "id": "swiftui-advanced-12",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to avoid layout jumps from async images. Which choice is best?",
-    "questionBG": "Developer трябва да избегне layout jumps от async images. Кой избор е най-подходящ?",
-    "answersBG": [
-      "reserve stable dimensions",
-      "NavigationStack",
-      "ProgressView",
-      "ScrollView"
-    ],
+    "questionEN": "AsyncImage changes height and the list jumps. What do you reserve before loading completes?",
+    "questionBG": "AsyncImage сменя височината и списъкът скача. Какво резервираш преди зареждане?",
     "answersEN": [
       "reserve stable dimensions",
       "NavigationStack",
       "ProgressView",
       "ScrollView"
     ],
-    "correctAnswerBG": "reserve stable dimensions",
+    "answersBG": [
+      "reserve stable dimensions",
+      "NavigationStack",
+      "ProgressView",
+      "ScrollView"
+    ],
     "correctAnswerEN": "reserve stable dimensions",
-    "explanationBG": "Стабилните размери предотвратяват reflow при зареждане.",
-    "explanationEN": "reserve stable dimensions is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "reserve stable dimensions",
+    "explanationEN": "Reserving width and height before async images load prevents layout jumps when content arrives.",
+    "explanationBG": "Резервирането на ширина и височина преди async изображения предотвратява layout скокове при зареждане."
+  },
+  {
+    "id": "swiftui-beginner-13",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A title must use the .title2 style. Which modifier changes the typography?",
+    "questionBG": "Заглавието трябва да използва .title2 стил. Кой modifier променя типографията?",
+    "answersEN": [
+      ".font()",
+      "ProgressView",
+      "ScrollView",
+      "ForEach"
+    ],
+    "answersBG": [
+      ".font()",
+      "ProgressView",
+      "ScrollView",
+      "ForEach"
+    ],
+    "correctAnswerEN": ".font()",
+    "correctAnswerBG": ".font()",
+    "explanationEN": ".font() applies a text style or custom font to SwiftUI text, keeping typography consistent with design tokens.",
+    "explanationBG": ".font() прилага текстов стил или шрифт към SwiftUI текст и пази типографията консистентна с design token-ите."
+  },
+  {
+    "id": "swiftui-intermediate-13",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "When isExpanded changes, only the panel height should animate. Which animation modifier is value-based?",
+    "questionBG": "isExpanded промяна трябва да анимира само височината на панела. Кой animation modifier е value-based?",
+    "answersEN": [
+      ".animation(_:value:)",
+      "ProgressView",
+      "ScrollView",
+      "ForEach"
+    ],
+    "answersBG": [
+      ".animation(_:value:)",
+      "ProgressView",
+      "ScrollView",
+      "ForEach"
+    ],
+    "correctAnswerEN": ".animation(_:value:)",
+    "correctAnswerBG": ".animation(_:value:)",
+    "explanationEN": "Value-based animation triggers only when the specified state changes, avoiding unintended implicit animations.",
+    "explanationBG": "Value-based анимацията се задейства само при промяна на конкретното състояние и избягва нежелани implicit анимации."
   },
   {
     "id": "swiftui-advanced-13",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to share state across many screens carefully. Which choice is best?",
-    "questionBG": "Developer трябва да сподели state между много екрани внимателно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "environment injection",
-      "ProgressView",
-      "ScrollView",
-      "ForEach"
-    ],
+    "questionEN": "The signed-in user must be available across several tabs without prop drilling. Which mechanism shares the dependency safely?",
+    "questionBG": "Session user трябва да е достъпен в няколко таба без prop drilling. Кой механизъм споделя зависимостта контролирано?",
     "answersEN": [
       "environment injection",
       "ProgressView",
       "ScrollView",
       "ForEach"
     ],
-    "correctAnswerBG": "environment injection",
+    "answersBG": [
+      "environment injection",
+      "ProgressView",
+      "ScrollView",
+      "ForEach"
+    ],
     "correctAnswerEN": "environment injection",
-    "explanationBG": "Environment injection е полезен, но трябва да остане ясен и ограничен.",
-    "explanationEN": "environment injection is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "environment injection",
+    "explanationEN": "Environment injection shares dependencies down the tree, but should be scoped to avoid hidden global coupling.",
+    "explanationBG": "Environment injection споделя зависимости надолу по дървото, но трябва да е ограничен, за да няма скрито глобално свързване."
+  },
+  {
+    "id": "swiftui-beginner-14",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "An icon must turn red when an error occurs. Which modifier sets the foreground style?",
+    "questionBG": "Иконата трябва да стане червена при грешка. Кой modifier задава foreground стил?",
+    "answersEN": [
+      ".foregroundStyle()",
+      "ScrollView",
+      "ForEach",
+      "@StateObject"
+    ],
+    "answersBG": [
+      ".foregroundStyle()",
+      "ScrollView",
+      "ForEach",
+      "@StateObject"
+    ],
+    "correctAnswerEN": ".foregroundStyle()",
+    "correctAnswerBG": ".foregroundStyle()",
+    "explanationEN": ".foregroundStyle() sets fill color or gradients for text and symbols, replacing older foregroundColor usage.",
+    "explanationBG": ".foregroundStyle() задава цвят или градиент за текст и символи и заменя по-старото foregroundColor."
+  },
+  {
+    "id": "swiftui-intermediate-14",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "All primary buttons need the same pressed effect across the app. Which abstraction styles the buttons?",
+    "questionBG": "Всички primary бутони трябва еднакъв pressed ефект в приложението. Кой abstraction стилизира бутоните?",
+    "answersEN": [
+      "ButtonStyle",
+      "ScrollView",
+      "ForEach",
+      "@StateObject"
+    ],
+    "answersBG": [
+      "ButtonStyle",
+      "ScrollView",
+      "ForEach",
+      "@StateObject"
+    ],
+    "correctAnswerEN": "ButtonStyle",
+    "correctAnswerBG": "ButtonStyle",
+    "explanationEN": "ButtonStyle centralizes pressed/normal/disabled appearance so buttons look consistent across the app.",
+    "explanationBG": "ButtonStyle централизира изгледа при натискане/нормално/disabled състояние и прави бутоните консистентни."
   },
   {
     "id": "swiftui-advanced-14",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to keep render code deterministic. Which choice is best?",
-    "questionBG": "Developer трябва да държи render code deterministic. Кой избор е най-подходящ?",
-    "answersBG": [
-      "avoid random work in body",
-      "ScrollView",
-      "ForEach",
-      "@StateObject"
-    ],
+    "questionEN": "The background color changes randomly on every redraw. What do you avoid in body?",
+    "questionBG": "Цветът на фона се променя случайно при всеки redraw. Какво избягваш в body?",
     "answersEN": [
       "avoid random work in body",
       "ScrollView",
       "ForEach",
       "@StateObject"
     ],
-    "correctAnswerBG": "avoid random work in body",
+    "answersBG": [
+      "avoid random work in body",
+      "ScrollView",
+      "ForEach",
+      "@StateObject"
+    ],
     "correctAnswerEN": "avoid random work in body",
-    "explanationBG": "Random work в body прави UI updates непредвидими.",
-    "explanationEN": "avoid random work in body is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "avoid random work in body",
+    "explanationEN": "Random or time-dependent work in body changes output every redraw, breaking diffing and causing flicker.",
+    "explanationBG": "Случайна или времезависима работа в body променя изхода при всеки redraw, чупи diff-ването и причинява трептене."
+  },
+  {
+    "id": "swiftui-beginner-15",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A list row needs a gray background behind the text. Which modifier draws the background?",
+    "questionBG": "Редът в списъка трябва сив фон зад текста. Кой modifier рисува background?",
+    "answersEN": [
+      ".background()",
+      "ForEach",
+      "@StateObject",
+      "@ObservedObject"
+    ],
+    "answersBG": [
+      ".background()",
+      "ForEach",
+      "@StateObject",
+      "@ObservedObject"
+    ],
+    "correctAnswerEN": ".background()",
+    "correctAnswerBG": ".background()",
+    "explanationEN": ".background() places another view behind the modified view, commonly used for cards and highlights.",
+    "explanationBG": ".background() поставя друг изглед зад модифицирания изглед — често за карти и акценти."
+  },
+  {
+    "id": "swiftui-intermediate-15",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A CardShadow style repeats on eight screens. Which protocol packages the reusable modifier?",
+    "questionBG": "CardShadow стил се повтаря на 8 екрана. Кой протокол опакова повторяем modifier?",
+    "answersEN": [
+      "ViewModifier",
+      "ForEach",
+      "@StateObject",
+      "@ObservedObject"
+    ],
+    "answersBG": [
+      "ViewModifier",
+      "ForEach",
+      "@StateObject",
+      "@ObservedObject"
+    ],
+    "correctAnswerEN": "ViewModifier",
+    "correctAnswerBG": "ViewModifier",
+    "explanationEN": "ViewModifier packages reusable styling or behavior that you can apply with a custom extension.",
+    "explanationBG": "ViewModifier опакова повторяем стил или поведение, което можеш да приложиш чрез custom extension."
   },
   {
     "id": "swiftui-advanced-15",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to validate empty states. Which choice is best?",
-    "questionBG": "Developer трябва да валидира empty states. Кой избор е най-подходящ?",
-    "answersBG": [
-      "safe fallback UI",
-      "ForEach",
-      "@StateObject",
-      "@ObservedObject"
-    ],
+    "questionEN": "The results list is empty after filtering. What do you show instead of a blank screen?",
+    "questionBG": "Списъкът с резултати е празен след филтър. Какво показваш вместо празен екран?",
     "answersEN": [
       "safe fallback UI",
       "ForEach",
       "@StateObject",
       "@ObservedObject"
     ],
-    "correctAnswerBG": "safe fallback UI",
+    "answersBG": [
+      "safe fallback UI",
+      "ForEach",
+      "@StateObject",
+      "@ObservedObject"
+    ],
     "correctAnswerEN": "safe fallback UI",
-    "explanationBG": "Empty states предотвратяват crash и дават ясен UX при липсващи данни.",
-    "explanationEN": "safe fallback UI is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "safe fallback UI",
+    "explanationEN": "Empty and error states need deliberate fallback UI so users understand what happened instead of seeing a blank screen.",
+    "explanationBG": "Празните и error състояния искат умишлен fallback UI, за да разбира потребителят какво се е случило вместо празен екран."
+  },
+  {
+    "id": "swiftui-beginner-16",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "A card needs rounded corners with a radius of 12. Which modifier masks the shape?",
+    "questionBG": "Картата трябва закръглени ъгли с радиус 12. Кой modifier маскира формата?",
+    "answersEN": [
+      ".clipShape()",
+      "@StateObject",
+      "@ObservedObject",
+      "@Namespace"
+    ],
+    "answersBG": [
+      ".clipShape()",
+      "@StateObject",
+      "@ObservedObject",
+      "@Namespace"
+    ],
+    "correctAnswerEN": ".clipShape()",
+    "correctAnswerBG": ".clipShape()",
+    "explanationEN": ".clipShape() masks a view to a shape such as RoundedRectangle, enabling rounded corners and circular avatars.",
+    "explanationBG": ".clipShape() маскира изглед до форма като RoundedRectangle и позволява закръглени ъгли и кръгли аватари."
+  },
+  {
+    "id": "swiftui-intermediate-16",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A child must report its measured header height to the parent layout. Which mechanism passes data upward?",
+    "questionBG": "Child трябва да съобщи измерената височина на header към parent layout. Кой механизъм подава данни нагоре?",
+    "answersEN": [
+      "PreferenceKey",
+      "@StateObject",
+      "@ObservedObject",
+      "@Namespace"
+    ],
+    "answersBG": [
+      "PreferenceKey",
+      "@StateObject",
+      "@ObservedObject",
+      "@Namespace"
+    ],
+    "correctAnswerEN": "PreferenceKey",
+    "correctAnswerBG": "PreferenceKey",
+    "explanationEN": "PreferenceKey lets child views pass layout measurements up the hierarchy to a parent coordinator.",
+    "explanationBG": "PreferenceKey позволява на дъщерни изгледи да подават layout измервания нагоре към родителски координатор."
   },
   {
     "id": "swiftui-advanced-16",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to support large lists efficiently. Which choice is best?",
-    "questionBG": "Developer трябва да поддържа големи lists ефективно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "lazy containers",
-      "@StateObject",
-      "@ObservedObject",
-      "@Namespace"
-    ],
+    "questionEN": "A feed with 5,000 items slows scrolling. Which containers create cells on demand?",
+    "questionBG": "Feed с 5 000 елемента забавя скролирането. Кои контейнери създават клетки при нужда?",
     "answersEN": [
       "lazy containers",
       "@StateObject",
       "@ObservedObject",
       "@Namespace"
     ],
-    "correctAnswerBG": "lazy containers",
+    "answersBG": [
+      "lazy containers",
+      "@StateObject",
+      "@ObservedObject",
+      "@Namespace"
+    ],
     "correctAnswerEN": "lazy containers",
-    "explanationBG": "Lazy containers създават views при нужда и пазят memory.",
-    "explanationEN": "lazy containers is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "lazy containers",
+    "explanationEN": "LazyVStack, LazyHStack, and LazyVGrid create views on demand, which is essential for large scrolling content.",
+    "explanationBG": "LazyVStack, LazyHStack и LazyVGrid създават изгледи при нужда, което е ключово за голямо скролируемо съдържание."
+  },
+  {
+    "id": "swiftui-beginner-17",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "You have an array of QuizCategory items and need a row for each. Which view generates the collection?",
+    "questionBG": "Имаш масив от QuizCategory и трябва ред за всеки елемент. Кой view генерира колекцията?",
+    "answersEN": [
+      "ForEach",
+      "@Namespace",
+      "GeometryReader",
+      "PreferenceKey"
+    ],
+    "answersBG": [
+      "ForEach",
+      "@Namespace",
+      "GeometryReader",
+      "PreferenceKey"
+    ],
+    "correctAnswerEN": "ForEach",
+    "correctAnswerBG": "ForEach",
+    "explanationEN": "ForEach generates a collection of views from identifiable data, which List and stacks use to render rows.",
+    "explanationBG": "ForEach генерира колекция от изгледи от идентифицируеми данни, което List и stack-овете ползват за редове."
+  },
+  {
+    "id": "swiftui-intermediate-17",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "Filtering 10,000 questions in body slows the UI. Where should the heavy work live?",
+    "questionBG": "Филтрирането на 10 000 въпроса в body бави UI. Къде трябва да живее тежката работа?",
+    "answersEN": [
+      "move work to model or task",
+      "@ObservedObject",
+      "@Namespace",
+      "GeometryReader"
+    ],
+    "answersBG": [
+      "move work to model or task",
+      "@ObservedObject",
+      "@Namespace",
+      "GeometryReader"
+    ],
+    "correctAnswerEN": "move work to model or task",
+    "correctAnswerBG": "move work to model or task",
+    "explanationEN": "Heavy work in body runs on every redraw; moving it to a model or .task keeps rendering fast and predictable.",
+    "explanationBG": "Тежката работа в body се изпълнява при всеки redraw; преместването в model или .task държи рендерирането бързо и предвидимо."
   },
   {
     "id": "swiftui-advanced-17",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to avoid overusing AnyView. Which choice is best?",
-    "questionBG": "Developer трябва да избегне прекомерна употреба на AnyView. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prefer concrete view composition",
-      "@ObservedObject",
-      "@Namespace",
-      "GeometryReader"
-    ],
+    "questionEN": "Every branch returns AnyView and compile time grows. What do you prefer instead of type erasure?",
+    "questionBG": "Всеки branch връща AnyView и compile time нараства. Какво предпочиташ вместо type erasure?",
     "answersEN": [
       "prefer concrete view composition",
       "@ObservedObject",
       "@Namespace",
       "GeometryReader"
     ],
-    "correctAnswerBG": "prefer concrete view composition",
+    "answersBG": [
+      "prefer concrete view composition",
+      "@ObservedObject",
+      "@Namespace",
+      "GeometryReader"
+    ],
     "correctAnswerEN": "prefer concrete view composition",
-    "explanationBG": "Concrete view types дават повече информация на compiler-а.",
-    "explanationEN": "prefer concrete view composition is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "prefer concrete view composition",
+    "explanationEN": "Concrete view types help the compiler optimize updates; AnyView type-erases that information and can hurt performance.",
+    "explanationBG": "Конкретните view типове помагат на компилатора да оптимизира обновяванията; AnyView ги стира и може да влоши производителността."
+  },
+  {
+    "id": "swiftui-beginner-18",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "An FAQ page is longer than the screen. Which container allows vertical scrolling?",
+    "questionBG": "FAQ страницата е по-дълга от екрана. Кой container позволява вертикално скролиране?",
+    "answersEN": [
+      "ScrollView",
+      "GeometryReader",
+      "PreferenceKey",
+      "Layout"
+    ],
+    "answersBG": [
+      "ScrollView",
+      "GeometryReader",
+      "PreferenceKey",
+      "Layout"
+    ],
+    "correctAnswerEN": "ScrollView",
+    "correctAnswerBG": "ScrollView",
+    "explanationEN": "ScrollView enables scrolling when content exceeds available space along a chosen axis.",
+    "explanationBG": "ScrollView позволява скролиране, когато съдържанието надхвърля наличното пространство по избраната ос."
+  },
+  {
+    "id": "swiftui-intermediate-18",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "A user with enlarged text in Settings must read the quiz without clipping. Which accessibility feature do you support?",
+    "questionBG": "Потребител с увеличен текст в Settings трябва да чете quiz без отрязване. Коя accessibility функция поддържаш?",
+    "answersEN": [
+      "Dynamic Type",
+      "@Namespace",
+      "GeometryReader",
+      "PreferenceKey"
+    ],
+    "answersBG": [
+      "Dynamic Type",
+      "@Namespace",
+      "GeometryReader",
+      "PreferenceKey"
+    ],
+    "correctAnswerEN": "Dynamic Type",
+    "correctAnswerBG": "Dynamic Type",
+    "explanationEN": "Dynamic Type scales text with the user's accessibility settings, which Text and system fonts respect automatically.",
+    "explanationBG": "Dynamic Type мащабира текста според настройките за достъпност на потребителя, които Text и системните шрифтове уважават автоматично."
   },
   {
     "id": "swiftui-advanced-18",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to coordinate multiple animations predictably. Which choice is best?",
-    "questionBG": "Developer трябва да координира много animations предвидимо. Кой избор е най-подходящ?",
-    "answersBG": [
-      "explicit animation values",
-      "@Namespace",
-      "GeometryReader",
-      "PreferenceKey"
-    ],
+    "questionEN": "Three state changes animate unexpectedly together. How do you limit which values animate?",
+    "questionBG": "Три state промени анимират неочаквано заедно. Как ограничаваш кои стойности се анимират?",
     "answersEN": [
       "explicit animation values",
       "@Namespace",
       "GeometryReader",
       "PreferenceKey"
     ],
-    "correctAnswerBG": "explicit animation values",
+    "answersBG": [
+      "explicit animation values",
+      "@Namespace",
+      "GeometryReader",
+      "PreferenceKey"
+    ],
     "correctAnswerEN": "explicit animation values",
-    "explanationBG": "Explicit value-based animations ограничават кога се анимира.",
-    "explanationEN": "explicit animation values is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "explicit animation values",
+    "explanationEN": "Animating explicit values limits which properties animate, preventing unrelated state changes from moving together.",
+    "explanationBG": "Анимирането на explicit стойности ограничава кои свойства се движат и спира несвързани промени да се анимират заедно."
+  },
+  {
+    "id": "swiftui-beginner-19",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "While questions load, you need a waiting indicator. Which view shows progress?",
+    "questionBG": "Докато се зареждат въпросите, трябва индикатор за изчакване. Кой view показва progress?",
+    "answersEN": [
+      "ProgressView",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
+    "answersBG": [
+      "ProgressView",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
+    "correctAnswerEN": "ProgressView",
+    "correctAnswerBG": "ProgressView",
+    "explanationEN": "ProgressView shows indeterminate or determinate loading state built into SwiftUI.",
+    "explanationBG": "ProgressView показва неопределен или определен loading статус, вграден в SwiftUI."
+  },
+  {
+    "id": "swiftui-intermediate-19",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "You want a custom flow layout unlike standard stacks. Which SwiftUI protocol do you implement?",
+    "questionBG": "Искаш custom flow layout, различен от стандартните stack-ове. Кой SwiftUI протокол имплементираш?",
+    "answersEN": [
+      "Layout protocol",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
+    "answersBG": [
+      "Layout protocol",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
+    "correctAnswerEN": "Layout protocol",
+    "correctAnswerBG": "Layout protocol",
+    "explanationEN": "The Layout protocol lets you implement custom measurement and placement algorithms for container views.",
+    "explanationBG": "Layout протоколът позволява собствени алгоритъми за измерване и подреждане на контейнерни изгледи."
   },
   {
     "id": "swiftui-advanced-19",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to test view model behavior. Which choice is best?",
-    "questionBG": "Developer трябва да тества view model behavior. Кой избор е най-подходящ?",
-    "answersBG": [
-      "unit tests around state transitions",
-      "@State",
-      "@Binding",
-      "@Environment"
-    ],
+    "questionEN": "You want to test scoring logic without UI tests. What do you test around the ViewModel?",
+    "questionBG": "Искаш да тестваш scoring логиката без UI тестове. Какво тестваш около ViewModel?",
     "answersEN": [
       "unit tests around state transitions",
       "@State",
       "@Binding",
       "@Environment"
     ],
-    "correctAnswerBG": "unit tests around state transitions",
+    "answersBG": [
+      "unit tests around state transitions",
+      "@State",
+      "@Binding",
+      "@Environment"
+    ],
     "correctAnswerEN": "unit tests around state transitions",
-    "explanationBG": "State transitions могат да се проверят бързо без UI automation.",
-    "explanationEN": "unit tests around state transitions is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "unit tests around state transitions",
+    "explanationEN": "ViewModels can be unit tested by asserting state transitions without spinning up the full UI hierarchy.",
+    "explanationBG": "ViewModel-ите могат да се unit тестват чрез проверка на state преходи без пълна UI йерархия."
+  },
+  {
+    "id": "swiftui-beginner-20",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The theme must adapt to the system's light/dark mode. Which wrapper reads environment values?",
+    "questionBG": "Темата трябва да се адаптира към light/dark mode на системата. Кой wrapper чете environment стойности?",
+    "answersEN": [
+      "@Environment",
+      "@Binding",
+      "VStack",
+      "HStack"
+    ],
+    "answersBG": [
+      "@Environment",
+      "@Binding",
+      "VStack",
+      "HStack"
+    ],
+    "correctAnswerEN": "@Environment",
+    "correctAnswerBG": "@Environment",
+    "explanationEN": "@Environment reads values injected by SwiftUI or ancestors, such as colorScheme, dismiss action, or locale.",
+    "explanationBG": "@Environment чете стойности, инжектирани от SwiftUI или родители, като colorScheme, dismiss action или locale."
+  },
+  {
+    "id": "swiftui-intermediate-20",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "One state change must have no animation and another needs a spring. Which type carries animation context for the update?",
+    "questionBG": "Една промяна трябва без анимация, друга със spring. Кой тип носи animation контекст за update?",
+    "answersEN": [
+      "Transaction",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
+    "answersBG": [
+      "Transaction",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
+    "correctAnswerEN": "Transaction",
+    "correctAnswerBG": "Transaction",
+    "explanationEN": "Transaction carries animation settings for a state change, letting you override timing per update.",
+    "explanationBG": "Transaction носи animation настройки за промяна на състояние и позволява override на timing за конкретно обновяване."
   },
   {
     "id": "swiftui-advanced-20",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to isolate formatting logic. Which choice is best?",
-    "questionBG": "Developer трябва да изолира formatting logic. Кой избор е най-подходящ?",
-    "answersBG": [
-      "computed properties or formatters",
-      "@Binding",
-      "@Environment",
-      "VStack"
-    ],
+    "questionEN": "Date formatting is duplicated across five views. Where do you extract the formatting logic?",
+    "questionBG": "Форматирането на дата се дублира в пет view-та. Къде изнасяш formatting логиката?",
     "answersEN": [
       "computed properties or formatters",
       "@Binding",
       "@Environment",
       "VStack"
     ],
-    "correctAnswerBG": "computed properties or formatters",
+    "answersBG": [
+      "computed properties or formatters",
+      "@Binding",
+      "@Environment",
+      "VStack"
+    ],
     "correctAnswerEN": "computed properties or formatters",
-    "explanationBG": "Изолиран formatting намалява duplicate UI code.",
-    "explanationEN": "computed properties or formatters is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "computed properties or formatters",
+    "explanationEN": "Formatting in computed properties or dedicated formatters keeps views declarative and avoids duplicated presentation logic.",
+    "explanationBG": "Форматирането в computed properties или отделни formatter-и държи изгледите декларативни и без дублирана presentation логика."
+  },
+  {
+    "id": "swiftui-beginner-21",
+    "categoryId": "swiftui",
+    "difficulty": "beginner",
+    "questionEN": "The Submit button must stay inactive while the form is invalid. Which modifier disables it?",
+    "questionBG": "Submit бутонът трябва да е неактивен, докато формата е невалидна. Кой modifier го деактивира?",
+    "answersEN": [
+      ".disabled(true)",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "answersBG": [
+      ".disabled(true)",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "correctAnswerEN": ".disabled(true)",
+    "correctAnswerBG": ".disabled(true)",
+    "explanationEN": ".disabled(true) prevents user interaction and applies a disabled appearance to controls.",
+    "explanationBG": ".disabled(true) спира потребителско взаимодействие и прилага disabled визуален стил към контролите."
+  },
+  {
+    "id": "swiftui-intermediate-21",
+    "categoryId": "swiftui",
+    "difficulty": "intermediate",
+    "questionEN": "QuizView grew too large with networking and scoring logic. Which layer takes state and actions?",
+    "questionBG": "QuizView става твърде голям с networking и scoring логика. Кой слой поема state и действията?",
+    "answersEN": [
+      "ViewModel",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "answersBG": [
+      "ViewModel",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
+    "correctAnswerEN": "ViewModel",
+    "correctAnswerBG": "ViewModel",
+    "explanationEN": "A ViewModel holds presentation logic and state outside the view, improving testability in SwiftUI MVVM setups.",
+    "explanationBG": "ViewModel държи presentation логика и състояние извън изгледа и подобрява тестируемостта в SwiftUI MVVM."
   },
   {
     "id": "swiftui-advanced-21",
     "categoryId": "swiftui",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to design reusable components. Which choice is best?",
-    "questionBG": "Developer трябва да проектира reusable components. Кой избор е най-подходящ?",
-    "answersBG": [
-      "small focused views",
-      "@Environment",
-      "VStack",
-      "HStack"
-    ],
+    "questionEN": "One screen handles the header, list, footer, and all logic. What view design eases maintenance?",
+    "questionBG": "Един екран прави всичко — header, list, footer и логика. Какъв view дизайн улеснява поддръжката?",
     "answersEN": [
       "small focused views",
       "@Environment",
       "VStack",
       "HStack"
     ],
-    "correctAnswerBG": "small focused views",
+    "answersBG": [
+      "small focused views",
+      "@Environment",
+      "VStack",
+      "HStack"
+    ],
     "correctAnswerEN": "small focused views",
-    "explanationBG": "Малки focused views са по-лесни за preview, тест и промяна.",
-    "explanationEN": "small focused views is the best fit here because it directly supports the described SwiftUI workflow."
+    "correctAnswerBG": "small focused views",
+    "explanationEN": "Small focused views are easier to preview, reuse, and reason about than monolithic screens.",
+    "explanationBG": "Малките фокусирани изгледи са по-лесни за preview, повторна употреба и разбиране от монолитни екрани."
   }
 ]

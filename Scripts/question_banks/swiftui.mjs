@@ -1,0 +1,1304 @@
+export default [
+  {
+    beginner: {
+      questionEN: "A settings screen toggle must keep its value locally on that screen. Which property wrapper fits?",
+      questionBG: "Локален toggle трябва да пази стойността си в екрана за настройки. Кой property wrapper е подходящ?",
+      answersEN: [
+        "@State",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      answersBG: [
+        "@State",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      correctEN: "@State",
+      correctBG: "@State",
+      explanationEN: "@State lets the view own simple value-type state locally. SwiftUI recreates the view on updates, but @State storage survives redraws.",
+      explanationBG: "@State позволява на изгледа да притежава просто локално състояние. SwiftUI пресъздава изгледа при обновявания, но @State съхранението оцелява при redraw."
+    },
+    intermediate: {
+      questionEN: "A quiz screen creates QuizViewModel and must not lose it on redraw. Which wrapper owns the object?",
+      questionBG: "Екранът създава QuizViewModel и не трябва да го губи при redraw. Кой wrapper притежава обекта?",
+      answersEN: [
+        "@StateObject",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      answersBG: [
+        "@StateObject",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      correctEN: "@StateObject",
+      correctBG: "@StateObject",
+      explanationEN: "@StateObject creates and retains an ObservableObject for the view's lifetime, avoiding accidental recreation.",
+      explanationBG: "@StateObject създава и задържа ObservableObject за живота на изгледа и избягва случайно пресъздаване."
+    },
+    advanced: {
+      questionEN: "A list flickers on every keystroke in the search field. What do you check first for excess redraws?",
+      questionBG: "List премигва при всеки keystroke в search. Какво проверяваш първо за излишни redraw-и?",
+      answersEN: [
+        "inspect state ownership and identity",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      answersBG: [
+        "inspect state ownership and identity",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      correctEN: "inspect state ownership and identity",
+      correctBG: "inspect state ownership and identity",
+      explanationEN: "Excess redraws often come from unstable IDs or state owned at the wrong level; auditing ownership fixes the root cause.",
+      explanationBG: "Излишните redraw-и често идват от нестабилни ID или състояние на грешно ниво; одит на собствеността оправя коренната причина."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A child Toggle must change isOn owned by the parent screen. Which wrapper links them?",
+      questionBG: "Дъщерен Toggle трябва да променя isOn, притежавано от родителския екран. Кой wrapper свързва двете страни?",
+      answersEN: [
+        "@Binding",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "@Binding",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "@Binding",
+      correctBG: "@Binding",
+      explanationEN: "@Binding creates a two-way reference to state owned elsewhere, so a child can edit a parent value without copying it.",
+      explanationBG: "@Binding създава двупосочна връзка към състояние, притежавано другаде, и дъщерен изглед може да редактира родителска стойност без копие."
+    },
+    intermediate: {
+      questionEN: "A child view receives an existing SettingsStore from its parent. Which wrapper only observes it?",
+      questionBG: "Child view получава вече създаден SettingsStore от родителя. Кой wrapper само наблюдава?",
+      answersEN: [
+        "@ObservedObject",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      answersBG: [
+        "@ObservedObject",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      correctEN: "@ObservedObject",
+      correctBG: "@ObservedObject",
+      explanationEN: "@ObservedObject observes an object created and owned outside the view, such as one passed from a parent.",
+      explanationBG: "@ObservedObject наблюдава обект, създаден и притежаван извън изгледа, например подаден от родител."
+    },
+    advanced: {
+      questionEN: "Editing one row rebuilds the entire list. What data model helps the diff?",
+      questionBG: "Промяна на един ред преизгражда целия списък. Какъв модел на данните помага на diff-а?",
+      answersEN: [
+        "stable Identifiable models",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      answersBG: [
+        "stable Identifiable models",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      correctEN: "stable Identifiable models",
+      correctBG: "stable Identifiable models",
+      explanationEN: "Identifiable models with stable IDs help List and ForEach update only changed rows instead of rebuilding all cells.",
+      explanationBG: "Identifiable модели със стабилни ID помагат на List и ForEach да обновяват само променените редове, а не целия списък."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A profile screen must stack avatar, name, and buttons vertically. Which layout container do you use?",
+      questionBG: "Екран за профил трябва да подреди аватар, име и бутони един под друг. Кой layout container използваш?",
+      answersEN: [
+        "VStack",
+        "@Environment",
+        "HStack",
+        "ZStack"
+      ],
+      answersBG: [
+        "VStack",
+        "@Environment",
+        "HStack",
+        "ZStack"
+      ],
+      correctEN: "VStack",
+      correctBG: "VStack",
+      explanationEN: "VStack arranges child views vertically in document order, which is the standard layout for top-to-bottom content.",
+      explanationBG: "VStack подрежда дъщерните изгледи вертикално в реда на дефиниция и е стандартният layout за съдържание отгоре надолу."
+    },
+    intermediate: {
+      questionEN: "An iPad's second window must remember its selected tab after a scene restart. Which wrapper persists scene state?",
+      questionBG: "На iPad вторият прозорец трябва да запомни избран таб след рестарт на scene. Кой wrapper пази scene state?",
+      answersEN: [
+        "@SceneStorage",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "@SceneStorage",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "@SceneStorage",
+      correctBG: "@SceneStorage",
+      explanationEN: "@SceneStorage persists small state per scene so SwiftUI can restore UI state after process termination.",
+      explanationBG: "@SceneStorage пази малко състояние за всяка scene, за да възстанови UI след прекратяване на процеса."
+    },
+    advanced: {
+      questionEN: "A view model is not released after dismissing a sheet. What do you review in action closures?",
+      questionBG: "ViewModel не се освобождава след dismiss на sheet. Какво преглеждаш в action closure-ите?",
+      answersEN: [
+        "review closure captures",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "review closure captures",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "review closure captures",
+      correctBG: "review closure captures",
+      explanationEN: "Closures in views can strongly capture objects and extend lifetimes; reviewing captures prevents leaks and stale updates.",
+      explanationBG: "Closure-ите в изгледи могат силно да capture-нат обекти и да удължат живота им; прегледът на capture-ите предотвратява течове и остарели обновявания."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A toolbar row must place an icon and title on one line. Which container is correct?",
+      questionBG: "Toolbar ред трябва да подреди икона и заглавие в един ред. Кой container е правилен?",
+      answersEN: [
+        "HStack",
+        "VStack",
+        "ZStack",
+        "List"
+      ],
+      answersBG: [
+        "HStack",
+        "VStack",
+        "ZStack",
+        "List"
+      ],
+      correctEN: "HStack",
+      correctBG: "HStack",
+      explanationEN: "HStack places views side by side horizontally, ideal for toolbars, badges, and inline controls.",
+      explanationBG: "HStack поставя изгледите един до друг хоризонтално — подходящ за toolbar-и, badge-ове и inline контроли."
+    },
+    intermediate: {
+      questionEN: "The user picks a language and that choice must survive between launches. Which wrapper syncs with UserDefaults?",
+      questionBG: "Потребителят избира език и изборът трябва да оцелее между стартирания. Кой wrapper синхронизира с UserDefaults?",
+      answersEN: [
+        "@AppStorage",
+        "VStack",
+        "HStack",
+        "ZStack"
+      ],
+      answersBG: [
+        "@AppStorage",
+        "VStack",
+        "HStack",
+        "ZStack"
+      ],
+      correctEN: "@AppStorage",
+      correctBG: "@AppStorage",
+      explanationEN: "@AppStorage syncs a property with UserDefaults using a key, ideal for lightweight user preferences.",
+      explanationBG: "@AppStorage синхронизира свойство с UserDefaults чрез ключ — подходящ за леки потребителски настройки."
+    },
+    advanced: {
+      questionEN: "A photo must smoothly expand from a grid cell to a detail screen. Which geometry modifier creates the hero effect?",
+      questionBG: "Снимката трябва плавно да се разшири от grid към detail. Кой geometry modifier прави hero ефект?",
+      answersEN: [
+        "matchedGeometryEffect",
+        "VStack",
+        "HStack",
+        "ZStack"
+      ],
+      answersBG: [
+        "matchedGeometryEffect",
+        "VStack",
+        "HStack",
+        "ZStack"
+      ],
+      correctEN: "matchedGeometryEffect",
+      correctBG: "matchedGeometryEffect",
+      explanationEN: "matchedGeometryEffect animates shared geometry between two views, enabling smooth hero transitions.",
+      explanationBG: "matchedGeometryEffect анимира споделена геометрия между два изгледа и позволява плавни hero преходи."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A badge must sit on the corner of an icon. Which container layers the views?",
+      questionBG: "Badge трябва да седи върху иконата в ъгъла. Кой container наслоява изгледите?",
+      answersEN: [
+        "ZStack",
+        "HStack",
+        "List",
+        "Button"
+      ],
+      answersBG: [
+        "ZStack",
+        "HStack",
+        "List",
+        "Button"
+      ],
+      correctEN: "ZStack",
+      correctBG: "ZStack",
+      explanationEN: "ZStack layers views on the z-axis so backgrounds, overlays, and badges can share the same frame.",
+      explanationBG: "ZStack наслоява изгледи по z-оста, така че фон, overlay и badge могат да споделят една и съща рамка."
+    },
+    intermediate: {
+      questionEN: "Settings must open as a modal screen from Home. Which presentation modifier do you use?",
+      questionBG: "Settings трябва да се отвори като модален екран от Home. Кой presentation modifier използваш?",
+      answersEN: [
+        ".sheet()",
+        "HStack",
+        "ZStack",
+        "List"
+      ],
+      answersBG: [
+        ".sheet()",
+        "HStack",
+        "ZStack",
+        "List"
+      ],
+      correctEN: ".sheet()",
+      correctBG: ".sheet()",
+      explanationEN: ".sheet() presents a modal view above the current hierarchy, typically for secondary tasks.",
+      explanationBG: ".sheet() показва модален изглед над текущата йерархия — обикновено за вторични задачи."
+    },
+    advanced: {
+      questionEN: "A scroll animation stutters on a real device. Which Xcode tool profiles frame timing?",
+      questionBG: "Scroll анимацията заеква на реално устройство. Кой Xcode инструмент профилира frame timing?",
+      answersEN: [
+        "Instruments",
+        "HStack",
+        "ZStack",
+        "List"
+      ],
+      answersBG: [
+        "Instruments",
+        "HStack",
+        "ZStack",
+        "List"
+      ],
+      correctEN: "Instruments",
+      correctBG: "Instruments",
+      explanationEN: "Instruments profiles CPU, GPU, and frame timing to diagnose animation hitches and rendering bottlenecks.",
+      explanationBG: "Instruments профилира CPU, GPU и frame timing, за да диагностицира animation hitches и rendering bottleneck-и."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The screen must display the title \"Daily Challenge\". Which view is most appropriate?",
+      questionBG: "Екранът трябва да покаже заглавие „Daily Challenge“. Кой view е най-подходящ?",
+      answersEN: [
+        "Text",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      answersBG: [
+        "Text",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      correctEN: "Text",
+      correctBG: "Text",
+      explanationEN: "Text is SwiftUI's primitive for styled strings and is the correct choice for displaying readable content.",
+      explanationBG: "Text е основният SwiftUI примитив за стилизирани низове и е правилният избор за показване на четимо съдържание."
+    },
+    intermediate: {
+      questionEN: "The user deletes progress and needs confirmation before the action proceeds. Which modifier shows an alert?",
+      questionBG: "Потребителят изтрива прогрес и трябва потвърждение преди действие. Кой modifier показва alert?",
+      answersEN: [
+        ".alert()",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      answersBG: [
+        ".alert()",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      correctEN: ".alert()",
+      correctBG: ".alert()",
+      explanationEN: ".alert() displays a system alert with title, message, and action buttons bound to state.",
+      explanationBG: ".alert() показва системен alert с заглавие, съобщение и бутони за действия, вързани към състояние."
+    },
+    advanced: {
+      questionEN: "An API request in body blocks the UI thread. Where should you start async loading?",
+      questionBG: "API заявката в body блокира UI thread. Къде трябва да стартираш async зареждането?",
+      answersEN: [
+        "async task in lifecycle",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      answersBG: [
+        "async task in lifecycle",
+        "ZStack",
+        "List",
+        "Button"
+      ],
+      correctEN: "async task in lifecycle",
+      correctBG: "async task in lifecycle",
+      explanationEN: "Starting network work in .task or onAppear keeps body pure and ties cancellation to view lifecycle.",
+      explanationBG: "Стартирането на мрежова работа в .task или onAppear държи body чист и връзва cancellation с lifecycle на изгледа."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A button must show the system icon star.fill. Which view loads an SF Symbol?",
+      questionBG: "Бутонът трябва да покаже системната икона star.fill. Кой view зарежда SF Symbol?",
+      answersEN: [
+        "Image(systemName:)",
+        "List",
+        "Button",
+        "Text"
+      ],
+      answersBG: [
+        "Image(systemName:)",
+        "List",
+        "Button",
+        "Text"
+      ],
+      correctEN: "Image(systemName:)",
+      correctBG: "Image(systemName:)",
+      explanationEN: "Image(systemName:) loads symbols from Apple's SF Symbols set with automatic scaling and accessibility support.",
+      explanationBG: "Image(systemName:) зарежда символи от SF Symbols с автоматично мащабиране и поддръжка за достъпност."
+    },
+    intermediate: {
+      questionEN: "When the quiz screen opens, questions must load asynchronously. Which lifecycle modifier starts the work?",
+      questionBG: "При отваряне на quiz екрана трябва да се заредят въпросите асинхронно. Кой lifecycle modifier стартира работата?",
+      answersEN: [
+        ".task()",
+        "List",
+        "Button",
+        "Text"
+      ],
+      answersBG: [
+        ".task()",
+        "List",
+        "Button",
+        "Text"
+      ],
+      correctEN: ".task()",
+      correctBG: ".task()",
+      explanationEN: ".task() starts async work tied to view appearance and cancels it automatically when the view disappears.",
+      explanationBG: ".task() стартира async работа при появяване на изгледа и я отменя автоматично при изчезване."
+    },
+    advanced: {
+      questionEN: "The user leaves the screen before the API call finishes. What do you check in the async task?",
+      questionBG: "Потребителят напуска екрана преди API да приключи. Какво проверяваш в async задачата?",
+      answersEN: [
+        "check Task cancellation",
+        "List",
+        "Button",
+        "Text"
+      ],
+      answersBG: [
+        "check Task cancellation",
+        "List",
+        "Button",
+        "Text"
+      ],
+      correctEN: "check Task cancellation",
+      correctBG: "check Task cancellation",
+      explanationEN: "SwiftUI cancels view tasks on disappear; checking Task.isCancelled avoids applying results after navigation away.",
+      explanationBG: "SwiftUI отменя task-овете при изчезване на изгледа; проверката на Task.isCancelled спира прилагане на резултат след напускане."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The user taps \"Start Quiz\" and the game must begin. Which view accepts the tap action?",
+      questionBG: "Потребителят натиска „Start Quiz“ и трябва да стартира игра. Кой view приема tap action?",
+      answersEN: [
+        "Button",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      answersBG: [
+        "Button",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      correctEN: "Button",
+      correctBG: "Button",
+      explanationEN: "Button wraps tappable content and runs an action closure when the user activates it.",
+      explanationBG: "Button обвива натискаемо съдържание и изпълнява action closure, когато потребителят го активира."
+    },
+    intermediate: {
+      questionEN: "When searchText changes, the list must filter. Which modifier reacts to the change?",
+      questionBG: "Когато searchText се промени, трябва да филтрираш списъка. Кой modifier реагира на промяна?",
+      answersEN: [
+        ".onChange()",
+        "Button",
+        "Text",
+        "Image"
+      ],
+      answersBG: [
+        ".onChange()",
+        "Button",
+        "Text",
+        "Image"
+      ],
+      correctEN: ".onChange()",
+      correctBG: ".onChange()",
+      explanationEN: ".onChange() runs a closure whenever a watched value changes, useful for side effects and validation.",
+      explanationBG: ".onChange() изпълнява closure при промяна на наблюдавана стойност — полезно за странични ефекти и валидация."
+    },
+    advanced: {
+      questionEN: "A preview must show loading, success, and error without manually launching the app. What do you pass to #Preview?",
+      questionBG: "Preview трябва да покаже loading, success и error без ръчно пускане на app. Какво подаваш в #Preview?",
+      answersEN: [
+        "preview fixtures",
+        "Button",
+        "Text",
+        "Image"
+      ],
+      answersBG: [
+        "preview fixtures",
+        "Button",
+        "Text",
+        "Image"
+      ],
+      correctEN: "preview fixtures",
+      correctBG: "preview fixtures",
+      explanationEN: "Preview fixtures supply loading, success, and error states so designers and developers can validate UI quickly.",
+      explanationBG: "Preview fixture-ите подават loading, success и error състояния, за да валидират UI бързо дизайнери и разработчици."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The title must sit on the left and the Settings button on the right in one row. Which view absorbs the free space?",
+      questionBG: "Заглавието трябва да е вляво, а бутонът Settings вдясно в един ред. Кой view поема свободното пространство?",
+      answersEN: [
+        "Spacer",
+        "Text",
+        "Image",
+        "NavigationStack"
+      ],
+      answersBG: [
+        "Spacer",
+        "Text",
+        "Image",
+        "NavigationStack"
+      ],
+      correctEN: "Spacer",
+      correctBG: "Spacer",
+      explanationEN: "Spacer expands along the stack axis to absorb free space and push neighboring views apart.",
+      explanationBG: "Spacer се разтяга по оста на stack-а, заема свободното пространство и раздалечава съседните изгледи."
+    },
+    intermediate: {
+      questionEN: "The list flickers because ForEach uses indices instead of stable IDs. What must you improve?",
+      questionBG: "Списъкът премигва, защото ForEach използва индекси вместо стабилни ID. Какво трябва да подобриш?",
+      answersEN: [
+        "stable identity",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      answersBG: [
+        "stable identity",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      correctEN: "stable identity",
+      correctBG: "stable identity",
+      explanationEN: "Stable identity lets SwiftUI diff collections correctly so rows update instead of being destroyed and recreated.",
+      explanationBG: "Стабилната идентичност позволява на SwiftUI да diff-ва колекции коректно, така че редовете се обновяват, а не се пресъздават."
+    },
+    advanced: {
+      questionEN: "Every child holds its own NavigationPath and navigation becomes chaotic. What do you centralize?",
+      questionBG: "Всеки child държи собствен NavigationPath и flow става хаотичен. Какво централизираш?",
+      answersEN: [
+        "central navigation state",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      answersBG: [
+        "central navigation state",
+        "Text",
+        "Image",
+        "Spacer"
+      ],
+      correctEN: "central navigation state",
+      correctBG: "central navigation state",
+      explanationEN: "Central navigation state avoids scattering NavigationLink logic in children and makes flows easier to test.",
+      explanationBG: "Централното navigation състояние избягва разпръснати NavigationLink логики в children и улеснява тестването на потоци."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A library shows 20 categories as scrollable rows. Which view fits best?",
+      questionBG: "Библиотеката показва 20 категории като скролируеми редове. Кой view е най-подходящ?",
+      answersEN: [
+        "List",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      answersBG: [
+        "List",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      correctEN: "List",
+      correctBG: "List",
+      explanationEN: "List is optimized for scrollable rows, selection, and platform styling of repeating data.",
+      explanationBG: "List е оптимизиран за скролируеми редове, селекция и платформен стил при повтарящи се данни."
+    },
+    intermediate: {
+      questionEN: "An achievements screen shows a grid of badge cards. Which lazy grid container fits?",
+      questionBG: "Achievement екранът показва мрежа от badge карти. Кой lazy grid container е подходящ?",
+      answersEN: [
+        "LazyVGrid",
+        "Image",
+        "Spacer",
+        "NavigationStack"
+      ],
+      answersBG: [
+        "LazyVGrid",
+        "Image",
+        "Spacer",
+        "NavigationStack"
+      ],
+      correctEN: "LazyVGrid",
+      correctBG: "LazyVGrid",
+      explanationEN: "LazyVGrid builds a vertical grid that creates cells only when they become visible, saving memory on large sets.",
+      explanationBG: "LazyVGrid изгражда вертикална мрежа и създава клетки само когато станат видими, което пести памет при големи набори."
+    },
+    advanced: {
+      questionEN: "A custom star-rating control is not read by VoiceOver. What accessibility properties do you add?",
+      questionBG: "Custom star-rating control не се чете от VoiceOver. Какви accessibility свойства добавяш?",
+      answersEN: [
+        "accessibility labels and values",
+        "Image",
+        "Spacer",
+        "NavigationStack"
+      ],
+      answersBG: [
+        "accessibility labels and values",
+        "Image",
+        "Spacer",
+        "NavigationStack"
+      ],
+      correctEN: "accessibility labels and values",
+      correctBG: "accessibility labels and values",
+      explanationEN: "Custom controls need explicit accessibilityLabel and value so VoiceOver can describe purpose and current state.",
+      explanationBG: "Custom контролите искат явни accessibilityLabel и value, за да описва VoiceOver предназначението и текущото състояние."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The Home screen must push CategorySelection on tap. Which navigation container do you use?",
+      questionBG: "Home екранът трябва да push-не CategorySelection при tap. Кой navigation container използваш?",
+      answersEN: [
+        "NavigationStack",
+        "Spacer",
+        "ProgressView",
+        "ScrollView"
+      ],
+      answersBG: [
+        "NavigationStack",
+        "Spacer",
+        "ProgressView",
+        "ScrollView"
+      ],
+      correctEN: "NavigationStack",
+      correctBG: "NavigationStack",
+      explanationEN: "NavigationStack manages a path of screens for push/pop navigation in modern SwiftUI apps.",
+      explanationBG: "NavigationStack управлява път от екрани за push/pop навигация в съвременни SwiftUI приложения."
+    },
+    intermediate: {
+      questionEN: "A custom chart must know the parent's width before drawing. Which view provides geometry information?",
+      questionBG: "Custom chart трябва да знае ширината на родителя преди да се нарисува. Кой view дава geometry информация?",
+      answersEN: [
+        "GeometryReader",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      answersBG: [
+        "GeometryReader",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      correctEN: "GeometryReader",
+      correctBG: "GeometryReader",
+      explanationEN: "GeometryReader exposes the size and coordinate space of its parent so layouts can adapt to available space.",
+      explanationBG: "GeometryReader предоставя размера и coordinate space на родителя, за да се адаптира layout-ът към наличното пространство."
+    },
+    advanced: {
+      questionEN: "The user enabled Reduce Motion in system settings. Which environment value must you respect?",
+      questionBG: "Потребителят е включил Reduce Motion в системните настройки. Коя environment стойност трябва да уважиш?",
+      answersEN: [
+        "accessibilityReduceMotion",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      answersBG: [
+        "accessibilityReduceMotion",
+        "Spacer",
+        "NavigationStack",
+        "ProgressView"
+      ],
+      correctEN: "accessibilityReduceMotion",
+      correctBG: "accessibilityReduceMotion",
+      explanationEN: "accessibilityReduceMotion indicates the user prefers less motion; decorative animations should respect it.",
+      explanationBG: "accessibilityReduceMotion показва, че потребителят предпочита по-малко движение; декоративните анимации трябва да го уважават."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A card looks glued to the edges. Which modifier adds inner spacing?",
+      questionBG: "Картата изглежда залепена за ръбовете. Кой modifier добавя вътрешно разстояние?",
+      answersEN: [
+        ".padding()",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      answersBG: [
+        ".padding()",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      correctEN: ".padding()",
+      correctBG: ".padding()",
+      explanationEN: ".padding() inset content from its container edges, improving touch targets and visual breathing room.",
+      explanationBG: ".padding() отмества съдържанието от ръбовете на контейнера и подобрява touch зоните и визуалното разстояние."
+    },
+    intermediate: {
+      questionEN: "A hero animation between thumbnail and detail needs a shared namespace. Which property wrapper creates it?",
+      questionBG: "Hero анимация между thumbnail и detail изисква споделен namespace. Кой property wrapper го създава?",
+      answersEN: [
+        "@Namespace",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      answersBG: [
+        "@Namespace",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      correctEN: "@Namespace",
+      correctBG: "@Namespace",
+      explanationEN: "@Namespace defines a shared identity scope required by matchedGeometryEffect for hero transitions.",
+      explanationBG: "@Namespace дефинира споделен identity scope, нужен на matchedGeometryEffect за hero преходи."
+    },
+    advanced: {
+      questionEN: "AsyncImage changes height and the list jumps. What do you reserve before loading completes?",
+      questionBG: "AsyncImage сменя височината и списъкът скача. Какво резервираш преди зареждане?",
+      answersEN: [
+        "reserve stable dimensions",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      answersBG: [
+        "reserve stable dimensions",
+        "NavigationStack",
+        "ProgressView",
+        "ScrollView"
+      ],
+      correctEN: "reserve stable dimensions",
+      correctBG: "reserve stable dimensions",
+      explanationEN: "Reserving width and height before async images load prevents layout jumps when content arrives.",
+      explanationBG: "Резервирането на ширина и височина преди async изображения предотвратява layout скокове при зареждане."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A title must use the .title2 style. Which modifier changes the typography?",
+      questionBG: "Заглавието трябва да използва .title2 стил. Кой modifier променя типографията?",
+      answersEN: [
+        ".font()",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      answersBG: [
+        ".font()",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      correctEN: ".font()",
+      correctBG: ".font()",
+      explanationEN: ".font() applies a text style or custom font to SwiftUI text, keeping typography consistent with design tokens.",
+      explanationBG: ".font() прилага текстов стил или шрифт към SwiftUI текст и пази типографията консистентна с design token-ите."
+    },
+    intermediate: {
+      questionEN: "When isExpanded changes, only the panel height should animate. Which animation modifier is value-based?",
+      questionBG: "isExpanded промяна трябва да анимира само височината на панела. Кой animation modifier е value-based?",
+      answersEN: [
+        ".animation(_:value:)",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      answersBG: [
+        ".animation(_:value:)",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      correctEN: ".animation(_:value:)",
+      correctBG: ".animation(_:value:)",
+      explanationEN: "Value-based animation triggers only when the specified state changes, avoiding unintended implicit animations.",
+      explanationBG: "Value-based анимацията се задейства само при промяна на конкретното състояние и избягва нежелани implicit анимации."
+    },
+    advanced: {
+      questionEN: "The signed-in user must be available across several tabs without prop drilling. Which mechanism shares the dependency safely?",
+      questionBG: "Session user трябва да е достъпен в няколко таба без prop drilling. Кой механизъм споделя зависимостта контролирано?",
+      answersEN: [
+        "environment injection",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      answersBG: [
+        "environment injection",
+        "ProgressView",
+        "ScrollView",
+        "ForEach"
+      ],
+      correctEN: "environment injection",
+      correctBG: "environment injection",
+      explanationEN: "Environment injection shares dependencies down the tree, but should be scoped to avoid hidden global coupling.",
+      explanationBG: "Environment injection споделя зависимости надолу по дървото, но трябва да е ограничен, за да няма скрито глобално свързване."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "An icon must turn red when an error occurs. Which modifier sets the foreground style?",
+      questionBG: "Иконата трябва да стане червена при грешка. Кой modifier задава foreground стил?",
+      answersEN: [
+        ".foregroundStyle()",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      answersBG: [
+        ".foregroundStyle()",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      correctEN: ".foregroundStyle()",
+      correctBG: ".foregroundStyle()",
+      explanationEN: ".foregroundStyle() sets fill color or gradients for text and symbols, replacing older foregroundColor usage.",
+      explanationBG: ".foregroundStyle() задава цвят или градиент за текст и символи и заменя по-старото foregroundColor."
+    },
+    intermediate: {
+      questionEN: "All primary buttons need the same pressed effect across the app. Which abstraction styles the buttons?",
+      questionBG: "Всички primary бутони трябва еднакъв pressed ефект в приложението. Кой abstraction стилизира бутоните?",
+      answersEN: [
+        "ButtonStyle",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      answersBG: [
+        "ButtonStyle",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      correctEN: "ButtonStyle",
+      correctBG: "ButtonStyle",
+      explanationEN: "ButtonStyle centralizes pressed/normal/disabled appearance so buttons look consistent across the app.",
+      explanationBG: "ButtonStyle централизира изгледа при натискане/нормално/disabled състояние и прави бутоните консистентни."
+    },
+    advanced: {
+      questionEN: "The background color changes randomly on every redraw. What do you avoid in body?",
+      questionBG: "Цветът на фона се променя случайно при всеки redraw. Какво избягваш в body?",
+      answersEN: [
+        "avoid random work in body",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      answersBG: [
+        "avoid random work in body",
+        "ScrollView",
+        "ForEach",
+        "@StateObject"
+      ],
+      correctEN: "avoid random work in body",
+      correctBG: "avoid random work in body",
+      explanationEN: "Random or time-dependent work in body changes output every redraw, breaking diffing and causing flicker.",
+      explanationBG: "Случайна или времезависима работа в body променя изхода при всеки redraw, чупи diff-ването и причинява трептене."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A list row needs a gray background behind the text. Which modifier draws the background?",
+      questionBG: "Редът в списъка трябва сив фон зад текста. Кой modifier рисува background?",
+      answersEN: [
+        ".background()",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      answersBG: [
+        ".background()",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      correctEN: ".background()",
+      correctBG: ".background()",
+      explanationEN: ".background() places another view behind the modified view, commonly used for cards and highlights.",
+      explanationBG: ".background() поставя друг изглед зад модифицирания изглед — често за карти и акценти."
+    },
+    intermediate: {
+      questionEN: "A CardShadow style repeats on eight screens. Which protocol packages the reusable modifier?",
+      questionBG: "CardShadow стил се повтаря на 8 екрана. Кой протокол опакова повторяем modifier?",
+      answersEN: [
+        "ViewModifier",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      answersBG: [
+        "ViewModifier",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      correctEN: "ViewModifier",
+      correctBG: "ViewModifier",
+      explanationEN: "ViewModifier packages reusable styling or behavior that you can apply with a custom extension.",
+      explanationBG: "ViewModifier опакова повторяем стил или поведение, което можеш да приложиш чрез custom extension."
+    },
+    advanced: {
+      questionEN: "The results list is empty after filtering. What do you show instead of a blank screen?",
+      questionBG: "Списъкът с резултати е празен след филтър. Какво показваш вместо празен екран?",
+      answersEN: [
+        "safe fallback UI",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      answersBG: [
+        "safe fallback UI",
+        "ForEach",
+        "@StateObject",
+        "@ObservedObject"
+      ],
+      correctEN: "safe fallback UI",
+      correctBG: "safe fallback UI",
+      explanationEN: "Empty and error states need deliberate fallback UI so users understand what happened instead of seeing a blank screen.",
+      explanationBG: "Празните и error състояния искат умишлен fallback UI, за да разбира потребителят какво се е случило вместо празен екран."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "A card needs rounded corners with a radius of 12. Which modifier masks the shape?",
+      questionBG: "Картата трябва закръглени ъгли с радиус 12. Кой modifier маскира формата?",
+      answersEN: [
+        ".clipShape()",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      answersBG: [
+        ".clipShape()",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      correctEN: ".clipShape()",
+      correctBG: ".clipShape()",
+      explanationEN: ".clipShape() masks a view to a shape such as RoundedRectangle, enabling rounded corners and circular avatars.",
+      explanationBG: ".clipShape() маскира изглед до форма като RoundedRectangle и позволява закръглени ъгли и кръгли аватари."
+    },
+    intermediate: {
+      questionEN: "A child must report its measured header height to the parent layout. Which mechanism passes data upward?",
+      questionBG: "Child трябва да съобщи измерената височина на header към parent layout. Кой механизъм подава данни нагоре?",
+      answersEN: [
+        "PreferenceKey",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      answersBG: [
+        "PreferenceKey",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      correctEN: "PreferenceKey",
+      correctBG: "PreferenceKey",
+      explanationEN: "PreferenceKey lets child views pass layout measurements up the hierarchy to a parent coordinator.",
+      explanationBG: "PreferenceKey позволява на дъщерни изгледи да подават layout измервания нагоре към родителски координатор."
+    },
+    advanced: {
+      questionEN: "A feed with 5,000 items slows scrolling. Which containers create cells on demand?",
+      questionBG: "Feed с 5 000 елемента забавя скролирането. Кои контейнери създават клетки при нужда?",
+      answersEN: [
+        "lazy containers",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      answersBG: [
+        "lazy containers",
+        "@StateObject",
+        "@ObservedObject",
+        "@Namespace"
+      ],
+      correctEN: "lazy containers",
+      correctBG: "lazy containers",
+      explanationEN: "LazyVStack, LazyHStack, and LazyVGrid create views on demand, which is essential for large scrolling content.",
+      explanationBG: "LazyVStack, LazyHStack и LazyVGrid създават изгледи при нужда, което е ключово за голямо скролируемо съдържание."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "You have an array of QuizCategory items and need a row for each. Which view generates the collection?",
+      questionBG: "Имаш масив от QuizCategory и трябва ред за всеки елемент. Кой view генерира колекцията?",
+      answersEN: [
+        "ForEach",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      answersBG: [
+        "ForEach",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      correctEN: "ForEach",
+      correctBG: "ForEach",
+      explanationEN: "ForEach generates a collection of views from identifiable data, which List and stacks use to render rows.",
+      explanationBG: "ForEach генерира колекция от изгледи от идентифицируеми данни, което List и stack-овете ползват за редове."
+    },
+    intermediate: {
+      questionEN: "Filtering 10,000 questions in body slows the UI. Where should the heavy work live?",
+      questionBG: "Филтрирането на 10 000 въпроса в body бави UI. Къде трябва да живее тежката работа?",
+      answersEN: [
+        "move work to model or task",
+        "@ObservedObject",
+        "@Namespace",
+        "GeometryReader"
+      ],
+      answersBG: [
+        "move work to model or task",
+        "@ObservedObject",
+        "@Namespace",
+        "GeometryReader"
+      ],
+      correctEN: "move work to model or task",
+      correctBG: "move work to model or task",
+      explanationEN: "Heavy work in body runs on every redraw; moving it to a model or .task keeps rendering fast and predictable.",
+      explanationBG: "Тежката работа в body се изпълнява при всеки redraw; преместването в model или .task държи рендерирането бързо и предвидимо."
+    },
+    advanced: {
+      questionEN: "Every branch returns AnyView and compile time grows. What do you prefer instead of type erasure?",
+      questionBG: "Всеки branch връща AnyView и compile time нараства. Какво предпочиташ вместо type erasure?",
+      answersEN: [
+        "prefer concrete view composition",
+        "@ObservedObject",
+        "@Namespace",
+        "GeometryReader"
+      ],
+      answersBG: [
+        "prefer concrete view composition",
+        "@ObservedObject",
+        "@Namespace",
+        "GeometryReader"
+      ],
+      correctEN: "prefer concrete view composition",
+      correctBG: "prefer concrete view composition",
+      explanationEN: "Concrete view types help the compiler optimize updates; AnyView type-erases that information and can hurt performance.",
+      explanationBG: "Конкретните view типове помагат на компилатора да оптимизира обновяванията; AnyView ги стира и може да влоши производителността."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "An FAQ page is longer than the screen. Which container allows vertical scrolling?",
+      questionBG: "FAQ страницата е по-дълга от екрана. Кой container позволява вертикално скролиране?",
+      answersEN: [
+        "ScrollView",
+        "GeometryReader",
+        "PreferenceKey",
+        "Layout"
+      ],
+      answersBG: [
+        "ScrollView",
+        "GeometryReader",
+        "PreferenceKey",
+        "Layout"
+      ],
+      correctEN: "ScrollView",
+      correctBG: "ScrollView",
+      explanationEN: "ScrollView enables scrolling when content exceeds available space along a chosen axis.",
+      explanationBG: "ScrollView позволява скролиране, когато съдържанието надхвърля наличното пространство по избраната ос."
+    },
+    intermediate: {
+      questionEN: "A user with enlarged text in Settings must read the quiz without clipping. Which accessibility feature do you support?",
+      questionBG: "Потребител с увеличен текст в Settings трябва да чете quiz без отрязване. Коя accessibility функция поддържаш?",
+      answersEN: [
+        "Dynamic Type",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      answersBG: [
+        "Dynamic Type",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      correctEN: "Dynamic Type",
+      correctBG: "Dynamic Type",
+      explanationEN: "Dynamic Type scales text with the user's accessibility settings, which Text and system fonts respect automatically.",
+      explanationBG: "Dynamic Type мащабира текста според настройките за достъпност на потребителя, които Text и системните шрифтове уважават автоматично."
+    },
+    advanced: {
+      questionEN: "Three state changes animate unexpectedly together. How do you limit which values animate?",
+      questionBG: "Три state промени анимират неочаквано заедно. Как ограничаваш кои стойности се анимират?",
+      answersEN: [
+        "explicit animation values",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      answersBG: [
+        "explicit animation values",
+        "@Namespace",
+        "GeometryReader",
+        "PreferenceKey"
+      ],
+      correctEN: "explicit animation values",
+      correctBG: "explicit animation values",
+      explanationEN: "Animating explicit values limits which properties animate, preventing unrelated state changes from moving together.",
+      explanationBG: "Анимирането на explicit стойности ограничава кои свойства се движат и спира несвързани промени да се анимират заедно."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "While questions load, you need a waiting indicator. Which view shows progress?",
+      questionBG: "Докато се зареждат въпросите, трябва индикатор за изчакване. Кой view показва progress?",
+      answersEN: [
+        "ProgressView",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      answersBG: [
+        "ProgressView",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      correctEN: "ProgressView",
+      correctBG: "ProgressView",
+      explanationEN: "ProgressView shows indeterminate or determinate loading state built into SwiftUI.",
+      explanationBG: "ProgressView показва неопределен или определен loading статус, вграден в SwiftUI."
+    },
+    intermediate: {
+      questionEN: "You want a custom flow layout unlike standard stacks. Which SwiftUI protocol do you implement?",
+      questionBG: "Искаш custom flow layout, различен от стандартните stack-ове. Кой SwiftUI протокол имплементираш?",
+      answersEN: [
+        "Layout protocol",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      answersBG: [
+        "Layout protocol",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      correctEN: "Layout protocol",
+      correctBG: "Layout protocol",
+      explanationEN: "The Layout protocol lets you implement custom measurement and placement algorithms for container views.",
+      explanationBG: "Layout протоколът позволява собствени алгоритъми за измерване и подреждане на контейнерни изгледи."
+    },
+    advanced: {
+      questionEN: "You want to test scoring logic without UI tests. What do you test around the ViewModel?",
+      questionBG: "Искаш да тестваш scoring логиката без UI тестове. Какво тестваш около ViewModel?",
+      answersEN: [
+        "unit tests around state transitions",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      answersBG: [
+        "unit tests around state transitions",
+        "@State",
+        "@Binding",
+        "@Environment"
+      ],
+      correctEN: "unit tests around state transitions",
+      correctBG: "unit tests around state transitions",
+      explanationEN: "ViewModels can be unit tested by asserting state transitions without spinning up the full UI hierarchy.",
+      explanationBG: "ViewModel-ите могат да се unit тестват чрез проверка на state преходи без пълна UI йерархия."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The theme must adapt to the system's light/dark mode. Which wrapper reads environment values?",
+      questionBG: "Темата трябва да се адаптира към light/dark mode на системата. Кой wrapper чете environment стойности?",
+      answersEN: [
+        "@Environment",
+        "@Binding",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "@Environment",
+        "@Binding",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "@Environment",
+      correctBG: "@Environment",
+      explanationEN: "@Environment reads values injected by SwiftUI or ancestors, such as colorScheme, dismiss action, or locale.",
+      explanationBG: "@Environment чете стойности, инжектирани от SwiftUI или родители, като colorScheme, dismiss action или locale."
+    },
+    intermediate: {
+      questionEN: "One state change must have no animation and another needs a spring. Which type carries animation context for the update?",
+      questionBG: "Една промяна трябва без анимация, друга със spring. Кой тип носи animation контекст за update?",
+      answersEN: [
+        "Transaction",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      answersBG: [
+        "Transaction",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      correctEN: "Transaction",
+      correctBG: "Transaction",
+      explanationEN: "Transaction carries animation settings for a state change, letting you override timing per update.",
+      explanationBG: "Transaction носи animation настройки за промяна на състояние и позволява override на timing за конкретно обновяване."
+    },
+    advanced: {
+      questionEN: "Date formatting is duplicated across five views. Where do you extract the formatting logic?",
+      questionBG: "Форматирането на дата се дублира в пет view-та. Къде изнасяш formatting логиката?",
+      answersEN: [
+        "computed properties or formatters",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      answersBG: [
+        "computed properties or formatters",
+        "@Binding",
+        "@Environment",
+        "VStack"
+      ],
+      correctEN: "computed properties or formatters",
+      correctBG: "computed properties or formatters",
+      explanationEN: "Formatting in computed properties or dedicated formatters keeps views declarative and avoids duplicated presentation logic.",
+      explanationBG: "Форматирането в computed properties или отделни formatter-и държи изгледите декларативни и без дублирана presentation логика."
+    }
+  },
+  {
+    beginner: {
+      questionEN: "The Submit button must stay inactive while the form is invalid. Which modifier disables it?",
+      questionBG: "Submit бутонът трябва да е неактивен, докато формата е невалидна. Кой modifier го деактивира?",
+      answersEN: [
+        ".disabled(true)",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        ".disabled(true)",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: ".disabled(true)",
+      correctBG: ".disabled(true)",
+      explanationEN: ".disabled(true) prevents user interaction and applies a disabled appearance to controls.",
+      explanationBG: ".disabled(true) спира потребителско взаимодействие и прилага disabled визуален стил към контролите."
+    },
+    intermediate: {
+      questionEN: "QuizView grew too large with networking and scoring logic. Which layer takes state and actions?",
+      questionBG: "QuizView става твърде голям с networking и scoring логика. Кой слой поема state и действията?",
+      answersEN: [
+        "ViewModel",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "ViewModel",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "ViewModel",
+      correctBG: "ViewModel",
+      explanationEN: "A ViewModel holds presentation logic and state outside the view, improving testability in SwiftUI MVVM setups.",
+      explanationBG: "ViewModel държи presentation логика и състояние извън изгледа и подобрява тестируемостта в SwiftUI MVVM."
+    },
+    advanced: {
+      questionEN: "One screen handles the header, list, footer, and all logic. What view design eases maintenance?",
+      questionBG: "Един екран прави всичко — header, list, footer и логика. Какъв view дизайн улеснява поддръжката?",
+      answersEN: [
+        "small focused views",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      answersBG: [
+        "small focused views",
+        "@Environment",
+        "VStack",
+        "HStack"
+      ],
+      correctEN: "small focused views",
+      correctBG: "small focused views",
+      explanationEN: "Small focused views are easier to preview, reuse, and reason about than monolithic screens.",
+      explanationBG: "Малките фокусирани изгледи са по-лесни за preview, повторна употреба и разбиране от монолитни екрани."
+    }
+  }
+];

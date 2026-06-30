@@ -3,1449 +3,1449 @@
     "id": "xcode-debugging-beginner-01",
     "categoryId": "xcode-debugging",
     "difficulty": "beginner",
-    "questionEN": "A developer needs to find compiler errors quickly. Which choice is best?",
-    "questionBG": "Developer трябва да намери compiler errors бързо. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "answersEN": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "correctAnswerBG": "Issue navigator",
-    "correctAnswerEN": "Issue navigator",
-    "explanationBG": "Issue navigator събира build errors и warnings.",
-    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-02",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
-    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
+    "questionEN": "You need app execution to pause exactly before a suspicious line runs. What do you set?",
+    "questionBG": "Трябва изпълнението да спре точно преди подозрителен ред. Какво задаваш?",
     "answersEN": [
       "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
+      "Build phase",
+      "Asset catalog",
+      "Launch screen"
     ],
-    "correctAnswerBG": "Breakpoint",
+    "answersBG": [
+      "Breakpoint",
+      "Build phase",
+      "Asset catalog",
+      "Launch screen"
+    ],
     "correctAnswerEN": "Breakpoint",
-    "explanationBG": "Breakpoint спира program execution за inspection.",
-    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-03",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
-    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
-    "answersBG": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
-    ],
-    "answersEN": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
-    ],
-    "correctAnswerBG": "LLDB",
-    "correctAnswerEN": "LLDB",
-    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
-    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-04",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to read print output. Which choice is best?",
-    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
-    ],
-    "answersEN": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
-    ],
-    "correctAnswerBG": "Console",
-    "correctAnswerEN": "Console",
-    "explanationBG": "Console показва logs и runtime output.",
-    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-05",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
-    ],
-    "answersEN": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
-    ],
-    "correctAnswerBG": "Debug area",
-    "correctAnswerEN": "Debug area",
-    "explanationBG": "Debug area показва variables, stack и console.",
-    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-06",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
-    "answersBG": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
-    ],
-    "answersEN": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
-    ],
-    "correctAnswerBG": "View debugger",
-    "correctAnswerEN": "View debugger",
-    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
-    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-07",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to find retained objects. Which choice is best?",
-    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
-    ],
-    "answersEN": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
-    ],
-    "correctAnswerBG": "Memory graph",
-    "correctAnswerEN": "Memory graph",
-    "explanationBG": "Memory graph помага за leaks и reference cycles.",
-    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-08",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to profile performance. Which choice is best?",
-    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
-    ],
-    "answersEN": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
-    ],
-    "correctAnswerBG": "Instruments",
-    "correctAnswerEN": "Instruments",
-    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
-    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-09",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to choose app plus configuration. Which choice is best?",
-    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
-    ],
-    "answersEN": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
-    ],
-    "correctAnswerBG": "Scheme",
-    "correctAnswerEN": "Scheme",
-    "explanationBG": "Scheme определя target, run/test actions и configuration.",
-    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-10",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
-    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
-    ],
-    "answersEN": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
-    ],
-    "correctAnswerBG": "Target",
-    "correctAnswerEN": "Target",
-    "explanationBG": "Target описва product, sources, resources и build settings.",
-    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-11",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to change deployment target. Which choice is best?",
-    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
-    ],
-    "answersEN": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
-    ],
-    "correctAnswerBG": "Build settings",
-    "correctAnswerEN": "Build settings",
-    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
-    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-12",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
-    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
-    ],
-    "answersEN": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
-    ],
-    "correctAnswerBG": "Clean Build Folder",
-    "correctAnswerEN": "Clean Build Folder",
-    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
-    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-13",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
-    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
-    "answersBG": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
-    ],
-    "answersEN": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
-    ],
-    "correctAnswerBG": "DerivedData",
-    "correctAnswerEN": "DerivedData",
-    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
-    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-14",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
-    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
-    ],
-    "answersEN": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
-    ],
-    "correctAnswerBG": "Simulator logs",
-    "correctAnswerEN": "Simulator logs",
-    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
-    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-15",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to catch data races. Which choice is best?",
-    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
-    ],
-    "answersEN": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
-    ],
-    "correctAnswerBG": "Thread sanitizer",
-    "correctAnswerEN": "Thread sanitizer",
-    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
-    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-16",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
-    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
-    ],
-    "answersEN": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
-    ],
-    "correctAnswerBG": "Main Thread Checker",
-    "correctAnswerEN": "Main Thread Checker",
-    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
-    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-17",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
-    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
-    ],
-    "answersEN": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
-    ],
-    "correctAnswerBG": "Unit tests",
-    "correctAnswerEN": "Unit tests",
-    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
-    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-18",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
-    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
-    ],
-    "answersEN": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
-    ],
-    "correctAnswerBG": "Test navigator",
-    "correctAnswerEN": "Test navigator",
-    "explanationBG": "Test navigator показва test suites и results.",
-    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-19",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
-    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
-    ],
-    "answersEN": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
-    ],
-    "correctAnswerBG": "Preview diagnostics",
-    "correctAnswerEN": "Preview diagnostics",
-    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
-    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-20",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to read a production crash. Which choice is best?",
-    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "answersEN": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "correctAnswerBG": "Symbolicated crash log",
-    "correctAnswerEN": "Symbolicated crash log",
-    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
-    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-beginner-21",
-    "categoryId": "xcode-debugging",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
-    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
-    "answersEN": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
-    "correctAnswerBG": "Exception breakpoint",
-    "correctAnswerEN": "Exception breakpoint",
-    "explanationBG": "Exception breakpoint спира точно при exception source.",
-    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "correctAnswerBG": "Breakpoint",
+    "explanationEN": "Breakpoints stop runtime at precise code locations for inspection.",
+    "explanationBG": "Breakpoint-ите спират изпълнението на точна позиция за преглед на състоянието."
   },
   {
     "id": "xcode-debugging-intermediate-01",
     "categoryId": "xcode-debugging",
     "difficulty": "intermediate",
-    "questionEN": "A developer needs to find compiler errors practically. Which choice is best?",
-    "questionBG": "Developer трябва да намери compiler errors практичено. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
+    "questionEN": "A breakpoint hits too often inside a loop and slows debugging. Which feature narrows it?",
+    "questionBG": "Breakpoint се удря твърде често в цикъл и дебъгът става бавен. Коя функция го стеснява?",
     "answersEN": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
+      "Conditional breakpoint",
+      "Delete DerivedData",
+      "Change app icon",
+      "Disable ARC"
     ],
-    "correctAnswerBG": "Issue navigator",
-    "correctAnswerEN": "Issue navigator",
-    "explanationBG": "Issue navigator събира build errors и warnings.",
-    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-02",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
-    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
     "answersBG": [
-      "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
+      "Conditional breakpoint",
+      "Изтрий DerivedData",
+      "Смени иконата",
+      "Изключи ARC"
     ],
-    "answersEN": [
-      "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
-    "correctAnswerBG": "Breakpoint",
-    "correctAnswerEN": "Breakpoint",
-    "explanationBG": "Breakpoint спира program execution за inspection.",
-    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-03",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
-    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
-    "answersBG": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
-    ],
-    "answersEN": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
-    ],
-    "correctAnswerBG": "LLDB",
-    "correctAnswerEN": "LLDB",
-    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
-    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-04",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to read print output. Which choice is best?",
-    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
-    ],
-    "answersEN": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
-    ],
-    "correctAnswerBG": "Console",
-    "correctAnswerEN": "Console",
-    "explanationBG": "Console показва logs и runtime output.",
-    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-05",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
-    ],
-    "answersEN": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
-    ],
-    "correctAnswerBG": "Debug area",
-    "correctAnswerEN": "Debug area",
-    "explanationBG": "Debug area показва variables, stack и console.",
-    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-06",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
-    "answersBG": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
-    ],
-    "answersEN": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
-    ],
-    "correctAnswerBG": "View debugger",
-    "correctAnswerEN": "View debugger",
-    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
-    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-07",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to find retained objects. Which choice is best?",
-    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
-    ],
-    "answersEN": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
-    ],
-    "correctAnswerBG": "Memory graph",
-    "correctAnswerEN": "Memory graph",
-    "explanationBG": "Memory graph помага за leaks и reference cycles.",
-    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-08",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to profile performance. Which choice is best?",
-    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
-    ],
-    "answersEN": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
-    ],
-    "correctAnswerBG": "Instruments",
-    "correctAnswerEN": "Instruments",
-    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
-    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-09",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to choose app plus configuration. Which choice is best?",
-    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
-    ],
-    "answersEN": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
-    ],
-    "correctAnswerBG": "Scheme",
-    "correctAnswerEN": "Scheme",
-    "explanationBG": "Scheme определя target, run/test actions и configuration.",
-    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-10",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
-    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
-    ],
-    "answersEN": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
-    ],
-    "correctAnswerBG": "Target",
-    "correctAnswerEN": "Target",
-    "explanationBG": "Target описва product, sources, resources и build settings.",
-    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-11",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to change deployment target. Which choice is best?",
-    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
-    ],
-    "answersEN": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
-    ],
-    "correctAnswerBG": "Build settings",
-    "correctAnswerEN": "Build settings",
-    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
-    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-12",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
-    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
-    ],
-    "answersEN": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
-    ],
-    "correctAnswerBG": "Clean Build Folder",
-    "correctAnswerEN": "Clean Build Folder",
-    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
-    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-13",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
-    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
-    "answersBG": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
-    ],
-    "answersEN": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
-    ],
-    "correctAnswerBG": "DerivedData",
-    "correctAnswerEN": "DerivedData",
-    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
-    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-14",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
-    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
-    ],
-    "answersEN": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
-    ],
-    "correctAnswerBG": "Simulator logs",
-    "correctAnswerEN": "Simulator logs",
-    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
-    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-15",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to catch data races. Which choice is best?",
-    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
-    ],
-    "answersEN": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
-    ],
-    "correctAnswerBG": "Thread sanitizer",
-    "correctAnswerEN": "Thread sanitizer",
-    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
-    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-16",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
-    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
-    ],
-    "answersEN": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
-    ],
-    "correctAnswerBG": "Main Thread Checker",
-    "correctAnswerEN": "Main Thread Checker",
-    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
-    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-17",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
-    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
-    ],
-    "answersEN": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
-    ],
-    "correctAnswerBG": "Unit tests",
-    "correctAnswerEN": "Unit tests",
-    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
-    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-18",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
-    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
-    ],
-    "answersEN": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
-    ],
-    "correctAnswerBG": "Test navigator",
-    "correctAnswerEN": "Test navigator",
-    "explanationBG": "Test navigator показва test suites и results.",
-    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-19",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
-    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
-    ],
-    "answersEN": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
-    ],
-    "correctAnswerBG": "Preview diagnostics",
-    "correctAnswerEN": "Preview diagnostics",
-    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
-    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-20",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to read a production crash. Which choice is best?",
-    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "answersEN": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
-    "correctAnswerBG": "Symbolicated crash log",
-    "correctAnswerEN": "Symbolicated crash log",
-    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
-    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
-  },
-  {
-    "id": "xcode-debugging-intermediate-21",
-    "categoryId": "xcode-debugging",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
-    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
-    "answersEN": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
-    "correctAnswerBG": "Exception breakpoint",
-    "correctAnswerEN": "Exception breakpoint",
-    "explanationBG": "Exception breakpoint спира точно при exception source.",
-    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "correctAnswerEN": "Conditional breakpoint",
+    "correctAnswerBG": "Conditional breakpoint",
+    "explanationEN": "Conditional breakpoints pause only when an expression is true.",
+    "explanationBG": "Conditional breakpoint спира само когато зададеното условие е истина."
   },
   {
     "id": "xcode-debugging-advanced-01",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to find compiler errors practically. Which choice is best?",
-    "questionBG": "Developer трябва да намери compiler errors практичено. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
+    "questionEN": "Intermittent bug appears only when value crosses threshold once. What breakpoint setup is strongest?",
+    "questionBG": "Периодичен бъг се появява само когато стойност мине праг веднъж. Коя breakpoint настройка е най-силна?",
     "answersEN": [
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB",
-      "Console"
+      "Conditional + action breakpoint with auto-continue logging",
+      "Plain unconditional breakpoint everywhere",
+      "No breakpoints, only prints",
+      "Rebuild app each step"
     ],
-    "correctAnswerBG": "Issue navigator",
-    "correctAnswerEN": "Issue navigator",
-    "explanationBG": "Issue navigator събира build errors и warnings.",
-    "explanationEN": "Issue navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Conditional + action breakpoint с auto-continue логване",
+      "Обикновени breakpoint-и навсякъде",
+      "Без breakpoint-и, само print",
+      "Rebuild на всяка стъпка"
+    ],
+    "correctAnswerEN": "Conditional + action breakpoint with auto-continue logging",
+    "correctAnswerBG": "Conditional + action breakpoint с auto-continue логване",
+    "explanationEN": "Action breakpoints capture rare events without pausing every iteration.",
+    "explanationBG": "Action breakpoint-ите улавят редки събития без спиране на всяка итерация."
+  },
+  {
+    "id": "xcode-debugging-beginner-02",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Execution is paused and you want current variable values. Which debugger context do you use?",
+    "questionBG": "Изпълнението е спряно и искаш текущите стойности на променливи. Кой debugger контекст използваш?",
+    "answersEN": [
+      "LLDB console",
+      "Info.plist editor",
+      "Package.swift",
+      "App Store Connect"
+    ],
+    "answersBG": [
+      "LLDB конзола",
+      "Info.plist редактор",
+      "Package.swift",
+      "App Store Connect"
+    ],
+    "correctAnswerEN": "LLDB console",
+    "correctAnswerBG": "LLDB конзола",
+    "explanationEN": "LLDB allows runtime inspection of variables and expressions while paused.",
+    "explanationBG": "LLDB позволява runtime преглед на променливи и изрази при пауза."
+  },
+  {
+    "id": "xcode-debugging-intermediate-02",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "You need to step into a called function to inspect internal state. Which action is correct?",
+    "questionBG": "Трябва да влезеш в извикана функция за вътрешно състояние. Кое действие е правилно?",
+    "answersEN": [
+      "Step Into",
+      "Step Over always",
+      "Continue forever",
+      "Stop debugging"
+    ],
+    "answersBG": [
+      "Step Into",
+      "Step Over винаги",
+      "Continue завинаги",
+      "Stop debugging"
+    ],
+    "correctAnswerEN": "Step Into",
+    "correctAnswerBG": "Step Into",
+    "explanationEN": "Step Into follows execution into the callee body for deeper inspection.",
+    "explanationBG": "Step Into влиза в тялото на извиканата функция за по-дълбок преглед."
   },
   {
     "id": "xcode-debugging-advanced-02",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to pause execution on a line. Which choice is best?",
-    "questionBG": "Developer трябва да pause-не execution на ред. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
+    "questionEN": "A release-only crash needs stack inspection with optimized frames. Which LLDB command is fundamental?",
+    "questionBG": "Release-only срив изисква преглед на stack с оптимизирани frame-ове. Коя LLDB команда е фундаментална?",
     "answersEN": [
-      "Breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
+      "bt (backtrace)",
+      "help only",
+      "image list without symbols",
+      "po always on random pointers"
     ],
-    "correctAnswerBG": "Breakpoint",
-    "correctAnswerEN": "Breakpoint",
-    "explanationBG": "Breakpoint спира program execution за inspection.",
-    "explanationEN": "Breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "bt (backtrace)",
+      "само help",
+      "image list без символи",
+      "po на случайни pointer-и"
+    ],
+    "correctAnswerEN": "bt (backtrace)",
+    "correctAnswerBG": "bt (backtrace)",
+    "explanationEN": "Backtrace reveals call chain leading to crash and guides root-cause direction.",
+    "explanationBG": "Backtrace показва веригата от извиквания до срива и насочва към root-cause."
+  },
+  {
+    "id": "xcode-debugging-beginner-03",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "UI looks wrong and constraints conflict, but code seems fine. Which Xcode tool helps visualize hierarchy?",
+    "questionBG": "UI изглежда грешно и има конфликтни constraints, а кодът е наред. Кой Xcode инструмент визуализира йерархията?",
+    "answersEN": [
+      "View Debugger",
+      "Instruments Energy Log",
+      "Organizer Archives",
+      "Keychain Access"
+    ],
+    "answersBG": [
+      "View Debugger",
+      "Instruments Energy Log",
+      "Organizer Archives",
+      "Keychain Access"
+    ],
+    "correctAnswerEN": "View Debugger",
+    "correctAnswerBG": "View Debugger",
+    "explanationEN": "View Debugger shows 3D hierarchy and constraint relationships live.",
+    "explanationBG": "View Debugger показва 3D йерархията и constraint връзките в реално време."
+  },
+  {
+    "id": "xcode-debugging-intermediate-03",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A hidden overlay blocks taps on a button. What in View Debugger confirms this quickly?",
+    "questionBG": "Скрит overlay блокира натискания върху бутон. Какво във View Debugger го потвърждава бързо?",
+    "answersEN": [
+      "Inspect z-order and hit-test chain",
+      "Check app icon sizes",
+      "Run unit tests only",
+      "Delete storyboard"
+    ],
+    "answersBG": [
+      "Провери z-order и hit-test веригата",
+      "Провери размери на иконата",
+      "Само unit тестове",
+      "Изтрий storyboard"
+    ],
+    "correctAnswerEN": "Inspect z-order and hit-test chain",
+    "correctAnswerBG": "Провери z-order и hit-test веригата",
+    "explanationEN": "Tap issues often come from layering/hit-testing, visible in hierarchy debugging.",
+    "explanationBG": "Tap проблемите често идват от layering/hit-testing и се виждат в hierarchy дебъга."
   },
   {
     "id": "xcode-debugging-advanced-03",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to type debugger commands. Which choice is best?",
-    "questionBG": "Developer трябва да пише debugger commands. Кой избор е най-подходящ?",
-    "answersBG": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
-    ],
+    "questionEN": "UI bug appears only after navigation transitions and not in static screenshots. What workflow is strongest?",
+    "questionBG": "UI бъгът се появява само след навигационни преходи, не в статични screenshot-и. Кой workflow е най-силен?",
     "answersEN": [
-      "LLDB",
-      "Console",
-      "Debug area",
-      "View debugger"
+      "Pause at runtime transition and inspect dynamic view hierarchy",
+      "Rely on storyboard preview",
+      "Increase animation speed",
+      "Use print for constraints only"
     ],
-    "correctAnswerBG": "LLDB",
-    "correctAnswerEN": "LLDB",
-    "explanationBG": "LLDB е debugger конзолата зад Xcode debugging.",
-    "explanationEN": "LLDB is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Пауза по време на преход и преглед на динамичната йерархия",
+      "Разчитай на storyboard preview",
+      "Увеличи скоростта на анимация",
+      "Само print за constraints"
+    ],
+    "correctAnswerEN": "Pause at runtime transition and inspect dynamic view hierarchy",
+    "correctAnswerBG": "Пауза по време на преход и преглед на динамичната йерархия",
+    "explanationEN": "Transition-time inspection catches transient layout states invisible in static views.",
+    "explanationBG": "Прегледът по време на преход хваща преходни layout състояния, невидими в статични изгледи."
+  },
+  {
+    "id": "xcode-debugging-beginner-04",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "App crashes with EXC_BAD_ACCESS after several interactions. Which Xcode diagnostic should you enable first?",
+    "questionBG": "Приложението пада с EXC_BAD_ACCESS след няколко действия. Коя Xcode диагностика включваш първо?",
+    "answersEN": [
+      "Address Sanitizer",
+      "Metal frame capture",
+      "Localization preview",
+      "Archive validation"
+    ],
+    "answersBG": [
+      "Address Sanitizer",
+      "Metal frame capture",
+      "Localization preview",
+      "Archive validation"
+    ],
+    "correctAnswerEN": "Address Sanitizer",
+    "correctAnswerBG": "Address Sanitizer",
+    "explanationEN": "Address Sanitizer detects invalid memory access and use-after-free issues.",
+    "explanationBG": "Address Sanitizer засича невалиден достъп до памет и use-after-free проблеми."
+  },
+  {
+    "id": "xcode-debugging-intermediate-04",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Data race causes random state corruption under concurrent writes. Which sanitizer targets this?",
+    "questionBG": "Data race причинява случайна корупция на състоянието при конкурентни записи. Кой sanitizer е за това?",
+    "answersEN": [
+      "Thread Sanitizer",
+      "Leak Sanitizer only",
+      "Malloc stack logging off",
+      "Symbol stripping"
+    ],
+    "answersBG": [
+      "Thread Sanitizer",
+      "Само Leak Sanitizer",
+      "Изключено malloc stack logging",
+      "Symbol stripping"
+    ],
+    "correctAnswerEN": "Thread Sanitizer",
+    "correctAnswerBG": "Thread Sanitizer",
+    "explanationEN": "Thread Sanitizer detects unsynchronized concurrent memory access patterns.",
+    "explanationBG": "Thread Sanitizer засича несинхронизиран конкурентен достъп до памет."
   },
   {
     "id": "xcode-debugging-advanced-04",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to read print output. Which choice is best?",
-    "questionBG": "Developer трябва да прочете print output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
-    ],
+    "questionEN": "Sanitizers slow tests heavily, but you still need broad coverage in CI. What strategy balances both?",
+    "questionBG": "Sanitizer-ите силно забавят тестовете, но искаш широко покритие в CI. Коя стратегия балансира двете?",
     "answersEN": [
-      "Console",
-      "Debug area",
-      "View debugger",
-      "Memory graph"
+      "Dedicated sanitizer test lanes on targeted suites",
+      "Run sanitizers on every single commit path",
+      "Disable sanitizers permanently",
+      "Use sanitizers only locally"
     ],
-    "correctAnswerBG": "Console",
-    "correctAnswerEN": "Console",
-    "explanationBG": "Console показва logs и runtime output.",
-    "explanationEN": "Console is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Отделни sanitizer CI ленти с таргетирани тестове",
+      "Sanitizer за всяка проверка навсякъде",
+      "Постоянно изключване на sanitizer-и",
+      "Sanitizer само локално"
+    ],
+    "correctAnswerEN": "Dedicated sanitizer test lanes on targeted suites",
+    "correctAnswerBG": "Отделни sanitizer CI ленти с таргетирани тестове",
+    "explanationEN": "Targeted lanes maintain signal while controlling execution cost.",
+    "explanationBG": "Таргетираните CI ленти пазят добър сигнал при контролирана цена на изпълнение."
+  },
+  {
+    "id": "xcode-debugging-beginner-05",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Memory keeps growing when opening and closing one screen. Which instrument should you open first?",
+    "questionBG": "Паметта расте при многократно отваряне/затваряне на един екран. Кой инструмент отваряш първо?",
+    "answersEN": [
+      "Instruments Leaks/Allocations",
+      "Simulator geolocation",
+      "App Store screenshots",
+      "Swift Package index"
+    ],
+    "answersBG": [
+      "Instruments Leaks/Allocations",
+      "Simulator geolocation",
+      "App Store screenshots",
+      "Swift Package index"
+    ],
+    "correctAnswerEN": "Instruments Leaks/Allocations",
+    "correctAnswerBG": "Instruments Leaks/Allocations",
+    "explanationEN": "Leaks and Allocations show object growth patterns and potential retention issues.",
+    "explanationBG": "Leaks и Allocations показват модели на растеж на обекти и потенциални проблеми със задържане."
+  },
+  {
+    "id": "xcode-debugging-intermediate-05",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Leak appears only after dismissing modal 20 times. What test pattern helps isolate it?",
+    "questionBG": "Leak се появява само след 20 затваряния на modal. Кой тестов pattern помага да се изолира?",
+    "answersEN": [
+      "Repeat action loop with memory baseline checkpoints",
+      "Single manual run",
+      "Only unit tests without UI",
+      "Disable ARC"
+    ],
+    "answersBG": [
+      "Повтарящ action loop с memory baseline checkpoints",
+      "Еднократно ръчно пускане",
+      "Само unit тестове без UI",
+      "Изключи ARC"
+    ],
+    "correctAnswerEN": "Repeat action loop with memory baseline checkpoints",
+    "correctAnswerBG": "Повтарящ action loop с memory baseline checkpoints",
+    "explanationEN": "Repetition exposes cumulative leaks that one-off runs miss.",
+    "explanationBG": "Повторенията разкриват кумулативни течове, които единичният run пропуска."
   },
   {
     "id": "xcode-debugging-advanced-05",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to inspect variables while paused. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не variables при pause. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
-    ],
+    "questionEN": "Leak trace points to Combine subscriptions across view lifecycle. What fix pattern is common?",
+    "questionBG": "Leak trace показва Combine subscriptions през lifecycle-а на екрана. Кой fix pattern е често правилен?",
     "answersEN": [
-      "Debug area",
-      "View debugger",
-      "Memory graph",
-      "Instruments"
+      "Lifecycle-scoped cancellables and weak captures",
+      "Global never-cleared cancellables",
+      "Strong self in every sink",
+      "Disable subscriptions"
     ],
-    "correctAnswerBG": "Debug area",
-    "correctAnswerEN": "Debug area",
-    "explanationBG": "Debug area показва variables, stack и console.",
-    "explanationEN": "Debug area is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Lifecycle-scoped cancellables и weak capture",
+      "Глобални cancellables без изчистване",
+      "Strong self във всеки sink",
+      "Пълно изключване на subscriptions"
+    ],
+    "correctAnswerEN": "Lifecycle-scoped cancellables and weak captures",
+    "correctAnswerBG": "Lifecycle-scoped cancellables и weak capture",
+    "explanationEN": "Scoped cancellation and weak ownership break retain cycles in reactive pipelines.",
+    "explanationBG": "Scoped отменяне и weak ownership прекъсват retain циклите в реактивни потоци."
+  },
+  {
+    "id": "xcode-debugging-beginner-06",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "CPU spikes happen while scrolling feed. Which Instruments profile is most relevant?",
+    "questionBG": "CPU натоварването скача при скрол на feed. Кой Instruments профил е най-релевантен?",
+    "answersEN": [
+      "Time Profiler",
+      "Network Link Conditioner",
+      "Color Meter",
+      "Archive Organizer"
+    ],
+    "answersBG": [
+      "Time Profiler",
+      "Network Link Conditioner",
+      "Color Meter",
+      "Archive Organizer"
+    ],
+    "correctAnswerEN": "Time Profiler",
+    "correctAnswerBG": "Time Profiler",
+    "explanationEN": "Time Profiler pinpoints hot functions consuming CPU during interactions.",
+    "explanationBG": "Time Profiler показва кои функции реално изяждат CPU по време на взаимодействия."
+  },
+  {
+    "id": "xcode-debugging-intermediate-06",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Main thread is busy with JSON parsing causing jank. What correction is expected?",
+    "questionBG": "Main thread е зает с JSON parsing и има засичане. Каква корекция се очаква?",
+    "answersEN": [
+      "Move heavy parsing off main thread",
+      "Increase frame rate target",
+      "Add more breakpoints",
+      "Disable UI updates"
+    ],
+    "answersBG": [
+      "Премести тежкия parsing извън main thread",
+      "Увеличи frame rate target",
+      "Добави още breakpoints",
+      "Изключи UI обновявания"
+    ],
+    "correctAnswerEN": "Move heavy parsing off main thread",
+    "correctAnswerBG": "Премести тежкия parsing извън main thread",
+    "explanationEN": "Main-thread parsing blocks rendering and event handling.",
+    "explanationBG": "Parsing на main thread блокира рендерирането и обработката на събития."
   },
   {
     "id": "xcode-debugging-advanced-06",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to inspect SwiftUI/UIKit hierarchy. Which choice is best?",
-    "questionBG": "Developer трябва да inspect-не SwiftUI/UIKit hierarchy. Кой избор е най-подходящ?",
-    "answersBG": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
-    ],
+    "questionEN": "Performance regression appears only after one hour session. What profiling approach catches it best?",
+    "questionBG": "Регресията в производителността се появява само след едночасова сесия. Кой profiling подход я хваща най-добре?",
     "answersEN": [
-      "View debugger",
-      "Memory graph",
-      "Instruments",
-      "Scheme"
+      "Long-duration trace with periodic markers/signposts",
+      "Short 10-second sample only",
+      "Cold launch profiling only",
+      "Manual screenshots"
     ],
-    "correctAnswerBG": "View debugger",
-    "correctAnswerEN": "View debugger",
-    "explanationBG": "View debugger показва визуалната hierarchy runtime.",
-    "explanationEN": "View debugger is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Дълга trace с периодични markers/signposts",
+      "Само кратка 10-секундна проба",
+      "Само profiling на cold launch",
+      "Ръчни screenshot-и"
+    ],
+    "correctAnswerEN": "Long-duration trace with periodic markers/signposts",
+    "correctAnswerBG": "Дълга trace с периодични markers/signposts",
+    "explanationEN": "Long traces expose drift and cumulative costs hidden in short samples.",
+    "explanationBG": "Дългите trace-ове показват натрупвания и drift, които късите проби скриват."
+  },
+  {
+    "id": "xcode-debugging-beginner-07",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "You changed code but simulator still behaves like old build. Which cleanup often fixes this?",
+    "questionBG": "Промени кода, но симулаторът се държи като стар build. Кое почистване често го оправя?",
+    "answersEN": [
+      "Clean build folder / DerivedData cleanup",
+      "Change wallpaper",
+      "Reorder files in navigator",
+      "Rename project only"
+    ],
+    "answersBG": [
+      "Clean build folder / DerivedData почистване",
+      "Смени wallpaper",
+      "Размести файловете",
+      "Само преименувай проекта"
+    ],
+    "correctAnswerEN": "Clean build folder / DerivedData cleanup",
+    "correctAnswerBG": "Clean build folder / DerivedData почистване",
+    "explanationEN": "Stale build artifacts can cause mismatched runtime behavior.",
+    "explanationBG": "Стари build артефакти могат да причинят разминаване между код и runtime поведение."
+  },
+  {
+    "id": "xcode-debugging-intermediate-07",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "CI machine passes but your local build fails with strange indexing issues. What reset is helpful?",
+    "questionBG": "CI минава, но локалният build се чупи със странни indexing проблеми. Кой reset помага?",
+    "answersEN": [
+      "Clear local derived/intermediate caches and reindex",
+      "Delete git repo",
+      "Disable source control",
+      "Change branch name"
+    ],
+    "answersBG": [
+      "Изчисти локалните derived/intermediate кешове и reindex",
+      "Изтрий git репото",
+      "Изключи source control",
+      "Смени името на branch"
+    ],
+    "correctAnswerEN": "Clear local derived/intermediate caches and reindex",
+    "correctAnswerBG": "Изчисти локалните derived/intermediate кешове и reindex",
+    "explanationEN": "Reindexing and cache reset can resolve local toolchain state corruption.",
+    "explanationBG": "Reindex и reset на кеша често оправят повредено локално състояние на toolchain-а."
   },
   {
     "id": "xcode-debugging-advanced-07",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to find retained objects. Which choice is best?",
-    "questionBG": "Developer трябва да намери retained objects. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
-    ],
+    "questionEN": "Frequent cache nukes waste developer time. What team-level mitigation is strongest?",
+    "questionBG": "Честото чистене на кеш губи време на екипа. Коя team-level мярка е най-силна?",
     "answersEN": [
-      "Memory graph",
-      "Instruments",
-      "Scheme",
-      "Target"
+      "Deterministic build scripts and pinned toolchain config",
+      "Tell everyone to clean daily",
+      "Avoid CI usage",
+      "Disable module caching globally"
     ],
-    "correctAnswerBG": "Memory graph",
-    "correctAnswerEN": "Memory graph",
-    "explanationBG": "Memory graph помага за leaks и reference cycles.",
-    "explanationEN": "Memory graph is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Детерминирани build скриптове и pinned toolchain конфигурация",
+      "Кажи на всички да чистят всеки ден",
+      "Избягвай CI",
+      "Глобално изключи module caching"
+    ],
+    "correctAnswerEN": "Deterministic build scripts and pinned toolchain config",
+    "correctAnswerBG": "Детерминирани build скриптове и pinned toolchain конфигурация",
+    "explanationEN": "Deterministic environments reduce cache-related instability at source.",
+    "explanationBG": "Детерминираната среда намалява cache нестабилността още в основата."
+  },
+  {
+    "id": "xcode-debugging-beginner-08",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Crash report from user shows memory addresses, not function names. What is missing?",
+    "questionBG": "Crash report от потребител показва адреси, не имена на функции. Какво липсва?",
+    "answersEN": [
+      "Matching dSYM symbols",
+      "App icon set",
+      "Launch storyboard",
+      "Localization files"
+    ],
+    "answersBG": [
+      "Съответните dSYM символи",
+      "Иконният сет",
+      "Launch storyboard",
+      "Localization файлове"
+    ],
+    "correctAnswerEN": "Matching dSYM symbols",
+    "correctAnswerBG": "Съответните dSYM символи",
+    "explanationEN": "Without dSYM files, crash addresses cannot be symbolicated into readable stacks.",
+    "explanationBG": "Без dSYM файлове адресите не могат да се преведат в четим stack trace."
+  },
+  {
+    "id": "xcode-debugging-intermediate-08",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "You have crash stack, but no clue about user path before crash. What should be added?",
+    "questionBG": "Имаш crash stack, но няма контекст какво е правил потребителят преди това. Какво трябва да се добави?",
+    "answersEN": [
+      "Breadcrumb logs / signposts around critical flows",
+      "Higher app icon resolution",
+      "More storyboard segues",
+      "Disable crash reporting"
+    ],
+    "answersBG": [
+      "Breadcrumb логове / signpost-и около критични потоци",
+      "По-висока резолюция на иконата",
+      "Още storyboard segues",
+      "Изключи crash reporting"
+    ],
+    "correctAnswerEN": "Breadcrumb logs / signposts around critical flows",
+    "correctAnswerBG": "Breadcrumb логове / signpost-и около критични потоци",
+    "explanationEN": "Breadcrumb context reconstructs user journey leading to crash.",
+    "explanationBG": "Breadcrumb контекстът възстановява пътя на потребителя до момента на срив."
   },
   {
     "id": "xcode-debugging-advanced-08",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to profile performance. Which choice is best?",
-    "questionBG": "Developer трябва да профилира performance. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
-    ],
+    "questionEN": "Crashes happen only on specific app-build and device-OS combination. What triage key should be used?",
+    "questionBG": "Сривовете се случват само при конкретна комбинация build и device-OS. Кой triage ключ да се ползва?",
     "answersEN": [
-      "Instruments",
-      "Scheme",
-      "Target",
-      "Build settings"
+      "Group by app version + OS + device + symbolicated signature",
+      "Group only by crash day",
+      "Group by user email only",
+      "Group by country only"
     ],
-    "correctAnswerBG": "Instruments",
-    "correctAnswerEN": "Instruments",
-    "explanationBG": "Instruments измерва CPU, memory, leaks и responsiveness.",
-    "explanationEN": "Instruments is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Групиране по app версия + OS + устройство + symbolicated signature",
+      "Само по ден на срива",
+      "Само по user email",
+      "Само по държава"
+    ],
+    "correctAnswerEN": "Group by app version + OS + device + symbolicated signature",
+    "correctAnswerBG": "Групиране по app версия + OS + устройство + symbolicated signature",
+    "explanationEN": "Multi-dimensional grouping isolates reproducible crash cohorts quickly.",
+    "explanationBG": "Многомерното групиране бързо изолира възпроизводими crash групи."
+  },
+  {
+    "id": "xcode-debugging-beginner-09",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A log should be searchable and structured in Console app. Which API is preferred over print?",
+    "questionBG": "Логът трябва да е структуриран и търсим в Console app. Кой API е предпочитан пред print?",
+    "answersEN": [
+      "OSLog/Logger",
+      "NSAssert",
+      "fatalError",
+      "debugDescription only"
+    ],
+    "answersBG": [
+      "OSLog/Logger",
+      "NSAssert",
+      "fatalError",
+      "само debugDescription"
+    ],
+    "correctAnswerEN": "OSLog/Logger",
+    "correctAnswerBG": "OSLog/Logger",
+    "explanationEN": "OSLog provides categories, levels, privacy controls, and efficient logging.",
+    "explanationBG": "OSLog дава категории, нива, privacy контрол и ефективно логване."
+  },
+  {
+    "id": "xcode-debugging-intermediate-09",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Logs leak sensitive user data in production. What logging practice should be applied?",
+    "questionBG": "Логовете изтичат чувствителни потребителски данни в production. Коя практика трябва да се приложи?",
+    "answersEN": [
+      "Use privacy redaction in structured logs",
+      "Log full payloads always",
+      "Disable all logging forever",
+      "Store logs in UI labels"
+    ],
+    "answersBG": [
+      "Privacy redaction в структурираните логове",
+      "Винаги пълни payload-и",
+      "Пълно спиране на логването завинаги",
+      "Логове в UI labels"
+    ],
+    "correctAnswerEN": "Use privacy redaction in structured logs",
+    "correctAnswerBG": "Privacy redaction в структурираните логове",
+    "explanationEN": "Redaction keeps debugging signal while protecting sensitive information.",
+    "explanationBG": "Редакцията пази полезен debug сигнал и защитава чувствителната информация."
   },
   {
     "id": "xcode-debugging-advanced-09",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to evaluate app plus configuration. Which choice is best?",
-    "questionBG": "Developer трябва да избере app плюс configuration. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
-    ],
+    "questionEN": "You need end-to-end trace across app and backend request for one user action. What is key?",
+    "questionBG": "Трябва end-to-end trace между app и backend заявка за едно действие. Кое е ключово?",
     "answersEN": [
-      "Scheme",
-      "Target",
-      "Build settings",
-      "DerivedData"
+      "Correlation IDs propagated through logs and network headers",
+      "Timestamp only",
+      "Random session names",
+      "One global static log file"
     ],
-    "correctAnswerBG": "Scheme",
-    "correctAnswerEN": "Scheme",
-    "explanationBG": "Scheme определя target, run/test actions и configuration.",
-    "explanationEN": "Scheme is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Correlation ID, пренасян в логове и network header-и",
+      "Само timestamp",
+      "Случайни session имена",
+      "Един глобален static log файл"
+    ],
+    "correctAnswerEN": "Correlation IDs propagated through logs and network headers",
+    "correctAnswerBG": "Correlation ID, пренасян в логове и network header-и",
+    "explanationEN": "Correlation IDs connect distributed events into one coherent trace.",
+    "explanationBG": "Correlation ID свързва разпределените събития в една последователна trace картина."
+  },
+  {
+    "id": "xcode-debugging-beginner-10",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A bug appears only in release, not debug. Which build mode should be tested locally?",
+    "questionBG": "Бъгът се появява само в release, не в debug. Кой build режим трябва да тестваш локално?",
+    "answersEN": [
+      "Release configuration",
+      "Debug only always",
+      "Playground mode",
+      "Archive without run"
+    ],
+    "answersBG": [
+      "Release конфигурация",
+      "Винаги само debug",
+      "Playground режим",
+      "Archive без пускане"
+    ],
+    "correctAnswerEN": "Release configuration",
+    "correctAnswerBG": "Release конфигурация",
+    "explanationEN": "Optimization and compiler settings differ, so release behavior must be tested directly.",
+    "explanationBG": "Оптимизацията и компилаторните настройки са различни, затова release поведението трябва да се тества директно."
+  },
+  {
+    "id": "xcode-debugging-intermediate-10",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "A timing bug disappears under debugger attachment. What debugging method can reduce observer effect?",
+    "questionBG": "Timing бъгът изчезва, когато debugger е закачен. Кой метод намалява observer effect?",
+    "answersEN": [
+      "Trace with lightweight logging/signposts without breakpoints",
+      "Add more breakpoints",
+      "Step every line manually",
+      "Run only in simulator"
+    ],
+    "answersBG": [
+      "Trace с леко логване/signpost без breakpoint-и",
+      "Още breakpoint-и",
+      "Ръчно стъпване по всеки ред",
+      "Само в симулатор"
+    ],
+    "correctAnswerEN": "Trace with lightweight logging/signposts without breakpoints",
+    "correctAnswerBG": "Trace с леко логване/signpost без breakpoint-и",
+    "explanationEN": "Non-invasive tracing preserves timing characteristics better than intrusive pausing.",
+    "explanationBG": "Ненатрапчивото трасиране пази timing характеристиките по-добре от спиране с debugger."
   },
   {
     "id": "xcode-debugging-advanced-10",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to define a buildable product. Which choice is best?",
-    "questionBG": "Developer трябва да дефинира buildable product. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
-    ],
+    "questionEN": "Rare heisenbug appears in production under load only. What evidence strategy is strongest?",
+    "questionBG": "Рядък heisenbug се проявява само в production под натоварване. Коя стратегия за доказателства е най-силна?",
     "answersEN": [
-      "Target",
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder"
+      "Feature-flagged diagnostic telemetry with targeted sampling",
+      "Global verbose logs for all users",
+      "No telemetry for privacy",
+      "Only postmortem guesses"
     ],
-    "correctAnswerBG": "Target",
-    "correctAnswerEN": "Target",
-    "explanationBG": "Target описва product, sources, resources и build settings.",
-    "explanationEN": "Target is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Feature-flag диагностична телеметрия с таргетирано sampling",
+      "Глобално verbose логване за всички",
+      "Без телеметрия за privacy",
+      "Само postmortem предположения"
+    ],
+    "correctAnswerEN": "Feature-flagged diagnostic telemetry with targeted sampling",
+    "correctAnswerBG": "Feature-flag диагностична телеметрия с таргетирано sampling",
+    "explanationEN": "Targeted telemetry captures needed evidence while controlling overhead and risk.",
+    "explanationBG": "Таргетираната телеметрия събира нужните доказателства при контролиран overhead и риск."
+  },
+  {
+    "id": "xcode-debugging-beginner-11",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "UI tests fail randomly because elements are not ready yet. What simple stabilization helps?",
+    "questionBG": "UI тестовете падат случайно, защото елементите още не са готови. Коя проста стабилизация помага?",
+    "answersEN": [
+      "Use explicit waits for expected state",
+      "Add fixed long sleeps everywhere",
+      "Disable all assertions",
+      "Run tests less often"
+    ],
+    "answersBG": [
+      "Явни wait условия за очаквано състояние",
+      "Дълги фиксирани sleep-ове навсякъде",
+      "Изключи всички assertions",
+      "Пускай тестовете по-рядко"
+    ],
+    "correctAnswerEN": "Use explicit waits for expected state",
+    "correctAnswerBG": "Явни wait условия за очаквано състояние",
+    "explanationEN": "State-based waits reduce flakiness better than arbitrary delays.",
+    "explanationBG": "Wait по състояние намалява flaky проблемите по-добре от произволни забавяния."
+  },
+  {
+    "id": "xcode-debugging-intermediate-11",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "CI UI tests fail only on one simulator device type. What triage step is best first?",
+    "questionBG": "CI UI тестовете падат само на един тип симулатор. Коя triage стъпка е най-добра първо?",
+    "answersEN": [
+      "Reproduce with same device/OS matrix locally or dedicated lane",
+      "Ignore that device",
+      "Delete tests",
+      "Run only smoke test"
+    ],
+    "answersBG": [
+      "Възпроизведи със същата device/OS матрица локално или в отделна лента",
+      "Игнорирай устройството",
+      "Изтрий тестовете",
+      "Само smoke тест"
+    ],
+    "correctAnswerEN": "Reproduce with same device/OS matrix locally or dedicated lane",
+    "correctAnswerBG": "Възпроизведи със същата device/OS матрица локално или в отделна лента",
+    "explanationEN": "Matching environment is crucial for reproducing matrix-specific failures.",
+    "explanationBG": "Съвпадащата среда е критична за възпроизвеждане на матрично-специфични провали."
   },
   {
     "id": "xcode-debugging-advanced-11",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to change deployment target. Which choice is best?",
-    "questionBG": "Developer трябва да промени deployment target. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
-    ],
+    "questionEN": "You need long-term flake reduction, not one-off retries. What engineering loop is strongest?",
+    "questionBG": "Трябва дългосрочно намаляване на flaky тестове, не еднократни retry-та. Кой инженерен цикъл е най-силен?",
     "answersEN": [
-      "Build settings",
-      "DerivedData",
-      "Clean Build Folder",
-      "Simulator logs"
+      "Flake dashboard + quarantine policy + root-cause SLA",
+      "Infinite retries",
+      "Mark failures as passed",
+      "Disable UI test suite"
     ],
-    "correctAnswerBG": "Build settings",
-    "correctAnswerEN": "Build settings",
-    "explanationBG": "Build settings съдържат compiler и packaging configuration.",
-    "explanationEN": "Build settings is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Flake dashboard + quarantine политика + root-cause SLA",
+      "Безкрайни retry-та",
+      "Маркирай провалите като passed",
+      "Изключи UI тестовете"
+    ],
+    "correctAnswerEN": "Flake dashboard + quarantine policy + root-cause SLA",
+    "correctAnswerBG": "Flake dashboard + quarantine политика + root-cause SLA",
+    "explanationEN": "Systematic ownership and metrics are needed to sustainably reduce flakiness.",
+    "explanationBG": "За устойчиво намаляване на flake проблемите са нужни системна отговорност и метрики."
+  },
+  {
+    "id": "xcode-debugging-beginner-12",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "App freezes but does not crash. Which quick signal can show if main thread is blocked?",
+    "questionBG": "Приложението замръзва, но не се срива. Кой бърз сигнал показва дали main thread е блокиран?",
+    "answersEN": [
+      "Main Thread Checker / thread backtrace while paused",
+      "App icon badge",
+      "Build number",
+      "Code coverage percent"
+    ],
+    "answersBG": [
+      "Main Thread Checker / thread backtrace при пауза",
+      "Иконен badge",
+      "Build номер",
+      "Code coverage процент"
+    ],
+    "correctAnswerEN": "Main Thread Checker / thread backtrace while paused",
+    "correctAnswerBG": "Main Thread Checker / thread backtrace при пауза",
+    "explanationEN": "Paused thread inspection quickly reveals if main thread is stuck in heavy work or deadlock.",
+    "explanationBG": "Прегледът на нишките при пауза бързо показва дали main thread е блокиран от тежка работа или deadlock."
+  },
+  {
+    "id": "xcode-debugging-intermediate-12",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Deadlock occurs between two serial queues waiting on each other. What fix is fundamental?",
+    "questionBG": "Deadlock възниква между две serial queue-та, които чакат една друга. Кой fix е фундаментален?",
+    "answersEN": [
+      "Remove cyclic waiting and redesign synchronization",
+      "Add more synchronous dispatches",
+      "Sleep before locking",
+      "Increase queue label length"
+    ],
+    "answersBG": [
+      "Премахни цикличното чакане и преработи синхронизацията",
+      "Добави още synchronous dispatch",
+      "sleep преди lock",
+      "По-дълги queue имена"
+    ],
+    "correctAnswerEN": "Remove cyclic waiting and redesign synchronization",
+    "correctAnswerBG": "Премахни цикличното чакане и преработи синхронизацията",
+    "explanationEN": "Deadlocks are structural wait cycles and must be broken by design.",
+    "explanationBG": "Deadlock е структурен цикъл на изчакване и трябва да се прекъсне на ниво дизайн."
   },
   {
     "id": "xcode-debugging-advanced-12",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to fix stale build artifacts. Which choice is best?",
-    "questionBG": "Developer трябва да оправи stale build artifacts. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
-    ],
+    "questionEN": "Intermittent deadlock appears only under high concurrency. What instrumentation is most useful?",
+    "questionBG": "Периодичен deadlock се появява само при висока конкуренция. Коя инструментaция е най-полезна?",
     "answersEN": [
-      "Clean Build Folder",
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer"
+      "Queue/signpost tracing with lock acquisition timeline",
+      "Only UI screenshots",
+      "Disable concurrency",
+      "Random retries"
     ],
-    "correctAnswerBG": "Clean Build Folder",
-    "correctAnswerEN": "Clean Build Folder",
-    "explanationBG": "Clean Build Folder премахва build outputs за fresh rebuild.",
-    "explanationEN": "Clean Build Folder is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Queue/signpost tracing с timeline на lock придобивания",
+      "Само UI screenshot-и",
+      "Изключи конкуренцията",
+      "Случайни retry-та"
+    ],
+    "correctAnswerEN": "Queue/signpost tracing with lock acquisition timeline",
+    "correctAnswerBG": "Queue/signpost tracing с timeline на lock придобивания",
+    "explanationEN": "Timeline traces reveal ordering and lock contention leading to deadlock.",
+    "explanationBG": "Timeline следите показват реда и lock contention-а, довеждащи до deadlock."
+  },
+  {
+    "id": "xcode-debugging-beginner-13",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A network bug is hard to reproduce because backend is unstable. What local debugging aid helps?",
+    "questionBG": "Мрежов бъг е труден за възпроизвеждане, защото backend е нестабилен. Коя локална помощ за дебъг помага?",
+    "answersEN": [
+      "Mock/stub network responses",
+      "Increase app animations",
+      "Disable breakpoints",
+      "Use random endpoints"
+    ],
+    "answersBG": [
+      "Mock/stub мрежови отговори",
+      "Увеличи анимациите",
+      "Изключи breakpoint-ите",
+      "Случайни endpoint-и"
+    ],
+    "correctAnswerEN": "Mock/stub network responses",
+    "correctAnswerBG": "Mock/stub мрежови отговори",
+    "explanationEN": "Stubs provide deterministic inputs for reproducible debugging.",
+    "explanationBG": "Stub-овете дават детерминирани входове за възпроизводим дебъг."
+  },
+  {
+    "id": "xcode-debugging-intermediate-13",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Race bug depends on delayed response timing. How should stubs be improved?",
+    "questionBG": "Race бъг зависи от забавено време на отговор. Как да се подобрят stub-овете?",
+    "answersEN": [
+      "Inject controllable latency and failure scenarios",
+      "Always return instant success",
+      "Disable network layer",
+      "Use one static JSON only"
+    ],
+    "answersBG": [
+      "Инжектирай контролируема latency и failure сценарии",
+      "Винаги моментален успех",
+      "Изключи network слоя",
+      "Само един статичен JSON"
+    ],
+    "correctAnswerEN": "Inject controllable latency and failure scenarios",
+    "correctAnswerBG": "Инжектирай контролируема latency и failure сценарии",
+    "explanationEN": "Timing-controlled stubs expose concurrency bugs that happy-path mocks miss.",
+    "explanationBG": "Stub-ове с контрол на времето разкриват concurrency бъгове, които happy-path mock-овете пропускат."
   },
   {
     "id": "xcode-debugging-advanced-13",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to clear generated build cache. Which choice is best?",
-    "questionBG": "Developer трябва да изчисти generated build cache. Кой избор е най-подходящ?",
-    "answersBG": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
-    ],
+    "questionEN": "You need deterministic replay of production API incidents in CI. What architecture enables that?",
+    "questionBG": "Трябва детерминиран replay на production API инциденти в CI. Коя архитектура го позволява?",
     "answersEN": [
-      "DerivedData",
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker"
+      "Record-replay HTTP fixtures with contract validation",
+      "Live calls to production in tests",
+      "No network tests",
+      "Manual debugging only"
     ],
-    "correctAnswerBG": "DerivedData",
-    "correctAnswerEN": "DerivedData",
-    "explanationBG": "DerivedData пази build cache, indexes и intermediates.",
-    "explanationEN": "DerivedData is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Record-replay HTTP fixtures с contract валидация",
+      "Live заявки към production в тестове",
+      "Без мрежови тестове",
+      "Само ръчен дебъг"
+    ],
+    "correctAnswerEN": "Record-replay HTTP fixtures with contract validation",
+    "correctAnswerBG": "Record-replay HTTP fixtures с contract валидация",
+    "explanationEN": "Record-replay fixtures make failures reproducible while validating protocol assumptions.",
+    "explanationBG": "Record-replay fixture-ите правят проблемите възпроизводими и валидират протоколни предположения."
+  },
+  {
+    "id": "xcode-debugging-beginner-14",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Battery drain report points to background activity while app is idle. Which tool helps inspect energy impact?",
+    "questionBG": "Доклад за батерията сочи фонова активност, докато приложението е idle. Кой инструмент помага за енергийния анализ?",
+    "answersEN": [
+      "Instruments Energy Log",
+      "View Debugger",
+      "Asset Inspector",
+      "Test navigator"
+    ],
+    "answersBG": [
+      "Instruments Energy Log",
+      "View Debugger",
+      "Asset Inspector",
+      "Test navigator"
+    ],
+    "correctAnswerEN": "Instruments Energy Log",
+    "correctAnswerBG": "Instruments Energy Log",
+    "explanationEN": "Energy Log highlights wakeups, CPU spikes, and background usage patterns.",
+    "explanationBG": "Energy Log показва wakeup-и, CPU пикове и модели на фонов разход."
+  },
+  {
+    "id": "xcode-debugging-intermediate-14",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Background timer wakes app every 5 seconds unnecessarily. What logic correction is appropriate?",
+    "questionBG": "Фонов timer събужда приложението на всеки 5 секунди без нужда. Коя логическа корекция е уместна?",
+    "answersEN": [
+      "Event-driven scheduling instead of frequent polling",
+      "Decrease interval to 1 second",
+      "Add more timers",
+      "Ignore battery report"
+    ],
+    "answersBG": [
+      "Event-driven планиране вместо често polling",
+      "Намали интервала до 1 секунда",
+      "Добави още timer-и",
+      "Игнорирай battery доклада"
+    ],
+    "correctAnswerEN": "Event-driven scheduling instead of frequent polling",
+    "correctAnswerBG": "Event-driven планиране вместо често polling",
+    "explanationEN": "Event-driven design avoids unnecessary wakeups and saves battery.",
+    "explanationBG": "Event-driven дизайнът избягва излишни събуждания и пести батерия."
   },
   {
     "id": "xcode-debugging-advanced-14",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to see device runtime messages. Which choice is best?",
-    "questionBG": "Developer трябва да види device runtime messages. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
-    ],
+    "questionEN": "You must enforce energy budget for background sync across releases. What control loop is best?",
+    "questionBG": "Трябва да налагаш енергиен бюджет за background sync между release-и. Кой контролен цикъл е най-добър?",
     "answersEN": [
-      "Simulator logs",
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests"
+      "Energy regression benchmarks in CI with alert thresholds",
+      "Manual battery testing once",
+      "Disable sync forever",
+      "Ignore OS diagnostics"
     ],
-    "correctAnswerBG": "Simulator logs",
-    "correctAnswerEN": "Simulator logs",
-    "explanationBG": "Simulator logs помагат при runtime и system-level debugging.",
-    "explanationEN": "Simulator logs is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Energy regression benchmark-и в CI с alert прагове",
+      "Еднократен ръчен battery тест",
+      "Постоянно изключване на sync",
+      "Игнориране на OS диагностиката"
+    ],
+    "correctAnswerEN": "Energy regression benchmarks in CI with alert thresholds",
+    "correctAnswerBG": "Energy regression benchmark-и в CI с alert прагове",
+    "explanationEN": "Continuous energy baselines detect regressions before they reach users.",
+    "explanationBG": "Непрекъснатите енергийни baseline-и хващат регресии преди да стигнат до потребителите."
+  },
+  {
+    "id": "xcode-debugging-beginner-15",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A final debugging checklist asks what to do before filing bug ticket. Which evidence is most useful?",
+    "questionBG": "Финален debugging checklist пита какво да приложиш преди bug тикет. Кое доказателство е най-полезно?",
+    "answersEN": [
+      "Repro steps + logs + device/OS/build info",
+      "Only screenshot",
+      "Only opinion",
+      "No attachments"
+    ],
+    "answersBG": [
+      "Repro стъпки + логове + device/OS/build информация",
+      "Само screenshot",
+      "Само мнение",
+      "Без прикачени данни"
+    ],
+    "correctAnswerEN": "Repro steps + logs + device/OS/build info",
+    "correctAnswerBG": "Repro стъпки + логове + device/OS/build информация",
+    "explanationEN": "Actionable bug reports need reproducibility and environment context.",
+    "explanationBG": "Полезните bug доклади искат възпроизводимост и контекст за средата."
+  },
+  {
+    "id": "xcode-debugging-intermediate-15",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Team fixes symptoms repeatedly but bug resurfaces. What process change improves outcomes?",
+    "questionBG": "Екипът поправя симптоми многократно, но бъгът се връща. Каква процесна промяна подобрява резултатите?",
+    "answersEN": [
+      "Root-cause analysis with regression test before close",
+      "Close ticket after quick patch",
+      "Skip postmortem",
+      "Assign randomly each time"
+    ],
+    "answersBG": [
+      "Root-cause анализ + regression тест преди затваряне",
+      "Затвори тикета след бърз patch",
+      "Пропусни postmortem",
+      "Случайно разпределение всеки път"
+    ],
+    "correctAnswerEN": "Root-cause analysis with regression test before close",
+    "correctAnswerBG": "Root-cause анализ + regression тест преди затваряне",
+    "explanationEN": "Root-cause plus regression test prevents recurrence of the same defect class.",
+    "explanationBG": "Root-cause анализът плюс regression тест предотвратяват повторение на същия клас дефекти."
   },
   {
     "id": "xcode-debugging-advanced-15",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to catch data races. Which choice is best?",
-    "questionBG": "Developer трябва да хване data races. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
-    ],
+    "questionEN": "You want a long-term debugging culture that scales with team growth. What framework is strongest?",
+    "questionBG": "Искаш дългосрочна debugging култура, която скалира с растежа на екипа. Коя рамка е най-силна?",
     "answersEN": [
-      "Thread sanitizer",
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator"
+      "Standardized incident playbooks + telemetry standards + learning reviews",
+      "Hero debugging by senior only",
+      "No documentation policy",
+      "Fix silently without sharing"
     ],
-    "correctAnswerBG": "Thread sanitizer",
-    "correctAnswerEN": "Thread sanitizer",
-    "explanationBG": "Thread sanitizer открива unsafe concurrent access.",
-    "explanationEN": "Thread sanitizer is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Стандартизирани incident playbook-и + telemetry стандарти + learning review-та",
+      "Hero debugging само от senior",
+      "Политика без документация",
+      "Тихи fix-ове без споделяне"
+    ],
+    "correctAnswerEN": "Standardized incident playbooks + telemetry standards + learning reviews",
+    "correctAnswerBG": "Стандартизирани incident playbook-и + telemetry стандарти + learning review-та",
+    "explanationEN": "Scalable debugging depends on shared process, shared signals, and shared learning.",
+    "explanationBG": "Скалируемият debugging зависи от споделен процес, споделени сигнали и споделено учене."
+  },
+  {
+    "id": "xcode-debugging-beginner-16",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "App crashes only when opening one specific screen after update. What quick step isolates whether issue is data-dependent?",
+    "questionBG": "Приложението пада само при отваряне на конкретен екран след update. Коя бърза стъпка проверява дали проблемът е зависим от данните?",
+    "answersEN": [
+      "Reproduce with clean test account and known fixture data",
+      "Change simulator theme",
+      "Disable all breakpoints permanently",
+      "Rename target"
+    ],
+    "answersBG": [
+      "Възпроизвеждане с чист тестов акаунт и известни fixture данни",
+      "Смяна на темата в симулатора",
+      "Постоянно изключване на breakpoint-и",
+      "Преименуване на target"
+    ],
+    "correctAnswerEN": "Reproduce with clean test account and known fixture data",
+    "correctAnswerBG": "Възпроизвеждане с чист тестов акаунт и известни fixture данни",
+    "explanationEN": "Controlled test data separates logic bugs from corrupted user-specific state.",
+    "explanationBG": "Контролираните тестови данни отделят логическия бъг от повредено потребителско състояние."
+  },
+  {
+    "id": "xcode-debugging-intermediate-16",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Crash reproduces only with migrated user data from previous app version. What debug focus is correct?",
+    "questionBG": "Сривът се възпроизвежда само с мигрирани данни от предишна версия. Кой debug фокус е правилен?",
+    "answersEN": [
+      "Data migration path and schema compatibility checks",
+      "UI color and font checks",
+      "Only network timeout tuning",
+      "Remove analytics SDK"
+    ],
+    "answersBG": [
+      "Пътят на data миграцията и schema съвместимостта",
+      "Проверка на цветове и шрифтове",
+      "Само timeout настройки",
+      "Премахване на analytics SDK"
+    ],
+    "correctAnswerEN": "Data migration path and schema compatibility checks",
+    "correctAnswerBG": "Пътят на data миграцията и schema съвместимостта",
+    "explanationEN": "Versioned data transitions are common root causes of post-update crashes.",
+    "explanationBG": "Versioned преходите на данни са честа root-cause причина за сривове след update."
   },
   {
     "id": "xcode-debugging-advanced-16",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to catch UI work off main thread. Which choice is best?",
-    "questionBG": "Developer трябва да хване UI work извън main thread. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
-    ],
+    "questionEN": "Production migration bugs are rare but severe. What prevention setup is strongest?",
+    "questionBG": "Production migration бъговете са редки, но тежки. Коя превантивна настройка е най-силна?",
     "answersEN": [
-      "Main Thread Checker",
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics"
+      "Migration test matrix with real anonymized fixtures in CI",
+      "One happy-path migration test",
+      "Manual migration testing yearly",
+      "Skip old-version support"
     ],
-    "correctAnswerBG": "Main Thread Checker",
-    "correctAnswerEN": "Main Thread Checker",
-    "explanationBG": "Main Thread Checker предупреждава за UI updates off main.",
-    "explanationEN": "Main Thread Checker is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Миграционна тестова матрица с реални анонимизирани fixture-и в CI",
+      "Един happy-path migration тест",
+      "Ръчно миграционно тестване веднъж годишно",
+      "Спиране на поддръжката на стари версии"
+    ],
+    "correctAnswerEN": "Migration test matrix with real anonymized fixtures in CI",
+    "correctAnswerBG": "Миграционна тестова матрица с реални анонимизирани fixture-и в CI",
+    "explanationEN": "Broad fixture coverage catches schema edge cases before rollout.",
+    "explanationBG": "Широкото покритие с fixture-и хваща schema edge случаи преди rollout."
+  },
+  {
+    "id": "xcode-debugging-beginner-17",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A crash happens before first UI frame. Which phase should you inspect first?",
+    "questionBG": "Срив се случва преди първия UI кадър. Коя фаза проверяваш първо?",
+    "answersEN": [
+      "App launch initialization path",
+      "Table view cell reuse",
+      "Gesture recognizers",
+      "Push notification content"
+    ],
+    "answersBG": [
+      "Пътят за launch инициализация",
+      "Table view cell reuse",
+      "Gesture recognizer-и",
+      "Съдържание на push нотификация"
+    ],
+    "correctAnswerEN": "App launch initialization path",
+    "correctAnswerBG": "Пътят за launch инициализация",
+    "explanationEN": "Pre-first-frame crashes usually originate in startup wiring and early dependency initialization.",
+    "explanationBG": "Сривовете преди първи кадър обикновено са в startup wiring и ранна инициализация на зависимости."
+  },
+  {
+    "id": "xcode-debugging-intermediate-17",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Startup work blocks first frame due to heavy synchronous setup. What refactor helps?",
+    "questionBG": "Startup работата блокира първия кадър заради тежка синхронна инициализация. Кой рефактор помага?",
+    "answersEN": [
+      "Defer non-critical work after initial UI appears",
+      "Do more synchronous setup in AppDelegate",
+      "Increase launch storyboard complexity",
+      "Disable prefetching"
+    ],
+    "answersBG": [
+      "Отложи некритичната работа след показване на първия UI",
+      "Още синхронна работа в AppDelegate",
+      "По-сложен launch storyboard",
+      "Изключи prefetching"
+    ],
+    "correctAnswerEN": "Defer non-critical work after initial UI appears",
+    "correctAnswerBG": "Отложи некритичната работа след показване на първия UI",
+    "explanationEN": "Deferring non-essential tasks reduces time-to-first-interaction.",
+    "explanationBG": "Отлагането на некритични задачи намалява времето до първа интеракция."
   },
   {
     "id": "xcode-debugging-advanced-17",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to verify code behavior automatically. Which choice is best?",
-    "questionBG": "Developer трябва да провери code behavior автоматично. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
-    ],
+    "questionEN": "You need to guard against startup regressions every release. Which metric gate is best?",
+    "questionBG": "Трябва да пазиш от startup регресии при всеки release. Кой metric gate е най-добър?",
     "answersEN": [
-      "Unit tests",
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log"
+      "Automated launch-time benchmarks with failure thresholds",
+      "Manual launch observation",
+      "Average CPU only",
+      "No startup checks"
     ],
-    "correctAnswerBG": "Unit tests",
-    "correctAnswerEN": "Unit tests",
-    "explanationBG": "Unit tests проверяват logic без ръчно тестване.",
-    "explanationEN": "Unit tests is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Автоматични launch benchmark-и с failure прагове",
+      "Ръчно наблюдение на старта",
+      "Само среден CPU",
+      "Без startup проверки"
+    ],
+    "correctAnswerEN": "Automated launch-time benchmarks with failure thresholds",
+    "correctAnswerBG": "Автоматични launch benchmark-и с failure прагове",
+    "explanationEN": "Release gates make startup regressions visible and block bad builds early.",
+    "explanationBG": "Release gate-овете правят startup регресиите видими и спират лошите build-ове рано."
+  },
+  {
+    "id": "xcode-debugging-beginner-18",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A crash is reported from TestFlight build. Which source gives quickest context for affected users?",
+    "questionBG": "Получен е срив от TestFlight build. Кой източник дава най-бърз контекст за засегнатите потребители?",
+    "answersEN": [
+      "TestFlight crash reports and tester feedback",
+      "Local git history only",
+      "Storyboard diff only",
+      "App icon assets"
+    ],
+    "answersBG": [
+      "TestFlight crash доклади и feedback от тестери",
+      "Само локална git история",
+      "Само storyboard diff",
+      "Иконни assets"
+    ],
+    "correctAnswerEN": "TestFlight crash reports and tester feedback",
+    "correctAnswerBG": "TestFlight crash доклади и feedback от тестери",
+    "explanationEN": "TestFlight aggregates crash diagnostics and user context for pre-release builds.",
+    "explanationBG": "TestFlight агрегира crash диагностика и потребителски контекст за prerelease build-ове."
+  },
+  {
+    "id": "xcode-debugging-intermediate-18",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "TestFlight crash appears only in one build number. What triage action should come first?",
+    "questionBG": "TestFlight сривът се появява само в един build номер. Кое triage действие е първо?",
+    "answersEN": [
+      "Compare diff and symbols between adjacent build numbers",
+      "Delete all historical builds",
+      "Ask testers to reinstall devices",
+      "Ignore until App Store release"
+    ],
+    "answersBG": [
+      "Сравни diff и символи между съседни build номера",
+      "Изтрий всички стари build-ове",
+      "Кажи на тестерите да преинсталират устройствата",
+      "Игнорирай до App Store release"
+    ],
+    "correctAnswerEN": "Compare diff and symbols between adjacent build numbers",
+    "correctAnswerBG": "Сравни diff и символи между съседни build номера",
+    "explanationEN": "Build-to-build comparison narrows suspect changes quickly.",
+    "explanationBG": "Сравнението build към build бързо стеснява подозрителните промени."
   },
   {
     "id": "xcode-debugging-advanced-18",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to run and inspect tests. Which choice is best?",
-    "questionBG": "Developer трябва да стартира и inspect-не tests. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
-    ],
+    "questionEN": "You need safer external beta rollout while debugging unknown crashes. What strategy is strongest?",
+    "questionBG": "Трябва по-безопасен външен beta rollout, докато дебъгваш непознати сривове. Коя стратегия е най-силна?",
     "answersEN": [
-      "Test navigator",
-      "Preview diagnostics",
-      "Symbolicated crash log",
-      "Exception breakpoint"
+      "Phased tester groups with crash-rate guardrails",
+      "Enable all external testers immediately",
+      "No crash monitoring during beta",
+      "Single giant release group"
     ],
-    "correctAnswerBG": "Test navigator",
-    "correctAnswerEN": "Test navigator",
-    "explanationBG": "Test navigator показва test suites и results.",
-    "explanationEN": "Test navigator is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Фазирани tester групи с guardrail за crash rate",
+      "Включи веднага всички външни тестери",
+      "Без crash monitoring по време на beta",
+      "Една огромна release група"
+    ],
+    "correctAnswerEN": "Phased tester groups with crash-rate guardrails",
+    "correctAnswerBG": "Фазирани tester групи с guardrail за crash rate",
+    "explanationEN": "Phased beta exposure limits blast radius while preserving debugging signal.",
+    "explanationBG": "Фазираното beta разпространение ограничава риска и запазва полезен дебъг сигнал."
+  },
+  {
+    "id": "xcode-debugging-beginner-19",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Symbolic breakpoint is useful when you want to stop on a framework method call. What is it?",
+    "questionBG": "Symbolic breakpoint е полезен, когато искаш спиране при извикване на framework метод. Какво представлява?",
+    "answersEN": [
+      "Breakpoint on symbol name instead of file line",
+      "Breakpoint only in storyboard",
+      "Breakpoint for CPU usage",
+      "Breakpoint on app icon change"
+    ],
+    "answersBG": [
+      "Breakpoint по име на символ, не по ред във файл",
+      "Breakpoint само в storyboard",
+      "Breakpoint за CPU usage",
+      "Breakpoint при смяна на икона"
+    ],
+    "correctAnswerEN": "Breakpoint on symbol name instead of file line",
+    "correctAnswerBG": "Breakpoint по име на символ, не по ред във файл",
+    "explanationEN": "Symbolic breakpoints catch method hits even when source line context varies.",
+    "explanationBG": "Symbolic breakpoint хваща извиквания на метод, дори когато конкретният ред в сорса се променя."
+  },
+  {
+    "id": "xcode-debugging-intermediate-19",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Auto Layout warnings flood logs and origin is unclear. Which symbolic breakpoint helps locate source immediately?",
+    "questionBG": "Auto Layout предупрежденията заливат логовете и произходът не е ясен. Кой symbolic breakpoint помага веднага?",
+    "answersEN": [
+      "UIViewAlertForUnsatisfiableConstraints",
+      "UIApplicationMain",
+      "main",
+      "viewDidLoad"
+    ],
+    "answersBG": [
+      "UIViewAlertForUnsatisfiableConstraints",
+      "UIApplicationMain",
+      "main",
+      "viewDidLoad"
+    ],
+    "correctAnswerEN": "UIViewAlertForUnsatisfiableConstraints",
+    "correctAnswerBG": "UIViewAlertForUnsatisfiableConstraints",
+    "explanationEN": "This symbolic breakpoint stops exactly when unsatisfiable constraints are detected.",
+    "explanationBG": "Този symbolic breakpoint спира точно при откриване на unsatisfiable constraints."
   },
   {
     "id": "xcode-debugging-advanced-19",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to debug broken SwiftUI previews. Which choice is best?",
-    "questionBG": "Developer трябва да debug-не broken SwiftUI previews. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
-    ],
+    "questionEN": "You need low-noise diagnostics from symbolic breakpoints across team machines. What practice helps?",
+    "questionBG": "Трябват нискошумни диагностики от symbolic breakpoint-и на машините на целия екип. Коя практика помага?",
     "answersEN": [
-      "Preview diagnostics",
-      "Issue navigator",
-      "Breakpoint",
-      "LLDB"
+      "Shared breakpoint profiles with conditions and actions",
+      "Personal ad-hoc breakpoints only",
+      "No breakpoint documentation",
+      "Enable all symbols unfiltered"
     ],
-    "correctAnswerBG": "Preview diagnostics",
-    "correctAnswerEN": "Preview diagnostics",
-    "explanationBG": "Preview diagnostics помага при preview build/runtime errors.",
-    "explanationEN": "Preview diagnostics is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Споделени breakpoint профили с условия и действия",
+      "Лични ad-hoc breakpoint-и само",
+      "Без документация за breakpoint-и",
+      "Включи всички символи без филтър"
+    ],
+    "correctAnswerEN": "Shared breakpoint profiles with conditions and actions",
+    "correctAnswerBG": "Споделени breakpoint профили с условия и действия",
+    "explanationEN": "Curated shared profiles improve consistency and reduce diagnostic noise.",
+    "explanationBG": "Подбраните споделени профили подобряват консистентността и намаляват диагностичния шум."
+  },
+  {
+    "id": "xcode-debugging-beginner-20",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "A bug appears only when app is backgrounded then reopened. Which lifecycle event is relevant to inspect?",
+    "questionBG": "Бъг се появява само при background и после връщане в приложението. Кое lifecycle събитие е релевантно за преглед?",
+    "answersEN": [
+      "Foreground/background transition callbacks",
+      "Table view didSelectRow",
+      "App icon export",
+      "Unit test teardown"
+    ],
+    "answersBG": [
+      "Foreground/background transition callback-и",
+      "Table view didSelectRow",
+      "Export на иконата",
+      "Unit test teardown"
+    ],
+    "correctAnswerEN": "Foreground/background transition callbacks",
+    "correctAnswerBG": "Foreground/background transition callback-и",
+    "explanationEN": "Lifecycle transition handlers often contain resume/refresh logic prone to state bugs.",
+    "explanationBG": "Lifecycle transition handler-ите често съдържат resume/refresh логика, податлива на state бъгове."
+  },
+  {
+    "id": "xcode-debugging-intermediate-20",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Data refresh starts twice after foregrounding and causes duplicate requests. What debug focus is correct?",
+    "questionBG": "Data refresh тръгва два пъти след foreground и прави дублирани заявки. Кой debug фокус е правилен?",
+    "answersEN": [
+      "Duplicate observer/subscription registration",
+      "Button tint color",
+      "Launch screen file size",
+      "Compiler optimization flag only"
+    ],
+    "answersBG": [
+      "Дублирана регистрация на observer/subscription",
+      "Цвят на бутона",
+      "Размер на launch screen файла",
+      "Само optimization флаг"
+    ],
+    "correctAnswerEN": "Duplicate observer/subscription registration",
+    "correctAnswerBG": "Дублирана регистрация на observer/subscription",
+    "explanationEN": "Foreground bugs frequently come from repeated listeners attached without proper teardown.",
+    "explanationBG": "Foreground бъговете често идват от повторни слушатели без коректно освобождаване."
   },
   {
     "id": "xcode-debugging-advanced-20",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to read a production crash. Which choice is best?",
-    "questionBG": "Developer трябва да прочете production crash. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
-    ],
+    "questionEN": "State corruption happens across lifecycle transitions and async tasks. What instrumentation gives causal timeline?",
+    "questionBG": "State corruption се случва през lifecycle преходи и async задачи. Коя инструментaция дава причинно-следствен timeline?",
     "answersEN": [
-      "Symbolicated crash log",
-      "Breakpoint",
-      "LLDB",
-      "Console"
+      "Lifecycle + async task signposts with correlation IDs",
+      "Console prints without timestamps",
+      "Only screenshot capture",
+      "Disable async operations"
     ],
-    "correctAnswerBG": "Symbolicated crash log",
-    "correctAnswerEN": "Symbolicated crash log",
-    "explanationBG": "Symbolicated crash log превежда addresses към functions и lines.",
-    "explanationEN": "Symbolicated crash log is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Lifecycle + async task signpost-и с correlation ID",
+      "Console print без timestamp",
+      "Само screenshot capture",
+      "Изключване на async операциите"
+    ],
+    "correctAnswerEN": "Lifecycle + async task signposts with correlation IDs",
+    "correctAnswerBG": "Lifecycle + async task signpost-и с correlation ID",
+    "explanationEN": "Correlated signposts reveal ordering between lifecycle callbacks and async effects.",
+    "explanationBG": "Корелираните signpost-и показват реда между lifecycle callback-и и async ефекти."
+  },
+  {
+    "id": "xcode-debugging-beginner-21",
+    "categoryId": "xcode-debugging",
+    "difficulty": "beginner",
+    "questionEN": "Final verification before merging a debug fix should include what?",
+    "questionBG": "Финалната проверка преди merge на debug fix трябва да включва какво?",
+    "answersEN": [
+      "Reproduce bug, verify fix, and run regression checks",
+      "Only update commit message",
+      "Skip retest to save time",
+      "Close ticket without validation"
+    ],
+    "answersBG": [
+      "Възпроизведи бъга, потвърди fix-а и пусни regression проверки",
+      "Само обнови commit съобщението",
+      "Пропусни retest за икономия",
+      "Затвори тикета без проверка"
+    ],
+    "correctAnswerEN": "Reproduce bug, verify fix, and run regression checks",
+    "correctAnswerBG": "Възпроизведи бъга, потвърди fix-а и пусни regression проверки",
+    "explanationEN": "A complete verification loop prevents reintroducing defects while closing the incident.",
+    "explanationBG": "Пълният verification цикъл предотвратява повторно вкарване на дефекти при затваряне на инцидента."
+  },
+  {
+    "id": "xcode-debugging-intermediate-21",
+    "categoryId": "xcode-debugging",
+    "difficulty": "intermediate",
+    "questionEN": "Fix solved crash but increased startup by 400ms. What decision process is better than shipping immediately?",
+    "questionBG": "Fix-ът махна срива, но увеличи startup с 400ms. Кой процес е по-добър от незабавно пускане?",
+    "answersEN": [
+      "Evaluate tradeoff with performance budget and alternative fixes",
+      "Ship now and optimize later always",
+      "Revert crash fix blindly",
+      "Ignore startup regression"
+    ],
+    "answersBG": [
+      "Оцени компромиса спрямо performance бюджет и алтернативни fix-ове",
+      "Пусни веднага и оптимизирай после винаги",
+      "Сляп revert на crash fix-а",
+      "Игнорирай startup регресията"
+    ],
+    "correctAnswerEN": "Evaluate tradeoff with performance budget and alternative fixes",
+    "correctAnswerBG": "Оцени компромиса спрямо performance бюджет и алтернативни fix-ове",
+    "explanationEN": "Debugging outcomes should be balanced against product performance constraints.",
+    "explanationBG": "Резултатите от debug трябва да се балансират спрямо продуктовите performance ограничения."
   },
   {
     "id": "xcode-debugging-advanced-21",
     "categoryId": "xcode-debugging",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to stop when an exception is thrown. Which choice is best?",
-    "questionBG": "Developer трябва да спре при thrown exception. Кой избор е най-подходящ?",
-    "answersBG": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
-    ],
+    "questionEN": "You want debugging improvements to persist beyond one incident. Which closure artifact is most valuable?",
+    "questionBG": "Искаш подобренията от дебъга да останат и след инцидента. Кой closure артефакт е най-ценен?",
     "answersEN": [
-      "Exception breakpoint",
-      "LLDB",
-      "Console",
-      "Debug area"
+      "Post-incident playbook update with concrete detection/prevention checks",
+      "Only chat summary",
+      "No documentation to stay fast",
+      "Archive logs and forget"
     ],
-    "correctAnswerBG": "Exception breakpoint",
-    "correctAnswerEN": "Exception breakpoint",
-    "explanationBG": "Exception breakpoint спира точно при exception source.",
-    "explanationEN": "Exception breakpoint is the best fit here because it directly supports the described Xcode & Debugging workflow."
+    "answersBG": [
+      "Post-incident playbook update с конкретни detection/prevention проверки",
+      "Само chat summary",
+      "Без документация за скорост",
+      "Архивирай логовете и забрави"
+    ],
+    "correctAnswerEN": "Post-incident playbook update with concrete detection/prevention checks",
+    "correctAnswerBG": "Post-incident playbook update с конкретни detection/prevention проверки",
+    "explanationEN": "Codifying lessons into playbooks turns one fix into repeated organizational learning.",
+    "explanationBG": "Кодифицирането на уроците в playbook превръща единичния fix в многократно организационно знание."
   }
 ]

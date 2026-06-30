@@ -116,6 +116,28 @@ function main() {
         errors.push(`${categoryId}: expected at least 20 ${difficulty} questions, got ${counts[difficulty]}`);
       }
     }
+
+    const stemsByDifficulty = new Map();
+    for (const question of questions) {
+      if (!question || !difficulties.has(question.difficulty) || !isNonEmptyString(question.questionEN)) {
+        continue;
+      }
+
+      const stem = question.questionEN.trim().toLowerCase();
+      if (!stemsByDifficulty.has(stem)) {
+        stemsByDifficulty.set(stem, new Set());
+      }
+      stemsByDifficulty.get(stem).add(question.difficulty);
+    }
+
+    for (const [stem, difficultySet] of stemsByDifficulty) {
+      if (difficultySet.size > 1) {
+        const sample = questions.find((item) => item.questionEN?.trim().toLowerCase() === stem);
+        errors.push(
+          `${categoryId}: duplicate question text across difficulty levels (${[...difficultySet].join(", ")}): ${sample?.id ?? stem}`
+        );
+      }
+    }
   }
 
   if (errors.length > 0) {

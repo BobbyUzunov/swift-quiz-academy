@@ -3,1449 +3,1449 @@
     "id": "git-github-beginner-01",
     "categoryId": "git-github",
     "difficulty": "beginner",
-    "questionEN": "A developer needs to see changed files. Which choice is best?",
-    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git status",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
+    "questionEN": "You just edited three Swift files and want to see what changed before staging. Which command should you run?",
+    "questionBG": "Редактира три Swift файла и искаш да видиш какво е променено преди staging. Коя команда трябва да изпълниш?",
     "answersEN": [
       "git status",
       "git add",
       "git commit",
-      "git branch"
+      "git push"
     ],
-    "correctAnswerBG": "git status",
+    "answersBG": [
+      "git status",
+      "git add",
+      "git commit",
+      "git push"
+    ],
     "correctAnswerEN": "git status",
-    "explanationBG": "git status показва working tree и staged changes.",
-    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-02",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
-    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git add",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "answersEN": [
-      "git add",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "correctAnswerBG": "git add",
-    "correctAnswerEN": "git add",
-    "explanationBG": "git add премества промени в staging area.",
-    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-03",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
-    ],
-    "answersEN": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
-    ],
-    "correctAnswerBG": "git commit",
-    "correctAnswerEN": "git commit",
-    "explanationBG": "git commit записва snapshot в локалната история.",
-    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-04",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
-    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
-    ],
-    "answersEN": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
-    ],
-    "correctAnswerBG": "git branch",
-    "correctAnswerEN": "git branch",
-    "explanationBG": "Branch позволява работа без директна промяна на main.",
-    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-05",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to move to another branch. Which choice is best?",
-    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
-    ],
-    "answersEN": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
-    ],
-    "correctAnswerBG": "git switch",
-    "correctAnswerEN": "git switch",
-    "explanationBG": "git switch сменя текущия branch.",
-    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-06",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
-    ],
-    "answersEN": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
-    ],
-    "correctAnswerBG": "git clone",
-    "correctAnswerEN": "git clone",
-    "explanationBG": "git clone създава локално копие на remote repository.",
-    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-07",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
-    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
-    ],
-    "answersEN": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
-    ],
-    "correctAnswerBG": "git push",
-    "correctAnswerEN": "git push",
-    "explanationBG": "git push качва локални commits към remote.",
-    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-08",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
-    ],
-    "answersEN": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
-    ],
-    "correctAnswerBG": "git pull",
-    "correctAnswerEN": "git pull",
-    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
-    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-09",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
-    ],
-    "answersEN": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
-    ],
-    "correctAnswerBG": "git fetch",
-    "correctAnswerEN": "git fetch",
-    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
-    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-10",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
-    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
-    ],
-    "answersEN": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
-    ],
-    "correctAnswerBG": "git merge",
-    "correctAnswerEN": "git merge",
-    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
-    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-11",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to request review before merging. Which choice is best?",
-    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
-    ],
-    "answersEN": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
-    ],
-    "correctAnswerBG": "pull request",
-    "correctAnswerEN": "pull request",
-    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
-    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-12",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
-    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
-    ],
-    "answersEN": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
-    ],
-    "correctAnswerBG": "code review",
-    "correctAnswerEN": "code review",
-    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
-    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-13",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
-    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
-    "answersBG": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
-    ],
-    "answersEN": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
-    ],
-    "correctAnswerBG": "merge conflict",
-    "correctAnswerEN": "merge conflict",
-    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
-    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-14",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
-    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
-    "answersBG": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
-    ],
-    "answersEN": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
-    ],
-    "correctAnswerBG": "GitHub Actions",
-    "correctAnswerEN": "GitHub Actions",
-    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
-    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-15",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
-    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
-    ],
-    "answersEN": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
-    ],
-    "correctAnswerBG": "tag",
-    "correctAnswerEN": "tag",
-    "explanationBG": "Tag сочи към конкретен commit, често за release.",
-    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-16",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
-    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
-    "answersBG": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
-    ],
-    "answersEN": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
-    ],
-    "correctAnswerBG": "release",
-    "correctAnswerEN": "release",
-    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
-    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-17",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
-    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
-    ],
-    "answersEN": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
-    ],
-    "correctAnswerBG": "fork",
-    "correctAnswerEN": "fork",
-    "explanationBG": "Fork създава GitHub copy за independent changes.",
-    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-18",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
-    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
-    "answersBG": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
-    ],
-    "answersEN": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
-    ],
-    "correctAnswerBG": "remote",
-    "correctAnswerEN": "remote",
-    "explanationBG": "Remote е named URL към repository извън локалната машина.",
-    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-19",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
-    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
-    ],
-    "answersEN": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
-    ],
-    "correctAnswerBG": "staging area",
-    "correctAnswerEN": "staging area",
-    "explanationBG": "Staging area позволява commit само на избрани промени.",
-    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-20",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
-    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
-    "answersEN": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
-    "correctAnswerBG": "git restore",
-    "correctAnswerEN": "git restore",
-    "explanationBG": "git restore може да върне working tree files към последния commit.",
-    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-beginner-21",
-    "categoryId": "git-github",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to see commit history. Which choice is best?",
-    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "answersEN": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "correctAnswerBG": "git log",
-    "correctAnswerEN": "git log",
-    "explanationBG": "git log показва commit history и metadata.",
-    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+    "correctAnswerBG": "git status",
+    "explanationEN": "git status lists modified, staged, and untracked files in the working tree without changing anything.",
+    "explanationBG": "git status показва променени, staged и untracked файлове в working tree без да променя нищо."
   },
   {
     "id": "git-github-intermediate-01",
     "categoryId": "git-github",
     "difficulty": "intermediate",
-    "questionEN": "A developer needs to see changed files. Which choice is best?",
-    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git status",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
+    "questionEN": "Your teammate asks which files you plan to include in the next commit. Which command shows staged vs unstaged changes in detail?",
+    "questionBG": "Колегата пита кои файлове планираш да включиш в следващия commit. Коя команда показва подробно staged срещу unstaged промени?",
     "answersEN": [
-      "git status",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
-    "correctAnswerBG": "git status",
-    "correctAnswerEN": "git status",
-    "explanationBG": "git status показва working tree и staged changes.",
-    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-02",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
-    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git add",
-      "git commit",
+      "git diff",
       "git branch",
-      "git checkout"
+      "git remote",
+      "git tag"
     ],
-    "answersEN": [
-      "git add",
-      "git commit",
+    "answersBG": [
+      "git diff",
       "git branch",
-      "git checkout"
+      "git remote",
+      "git tag"
     ],
-    "correctAnswerBG": "git add",
-    "correctAnswerEN": "git add",
-    "explanationBG": "git add премества промени в staging area.",
-    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-03",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
-    ],
-    "answersEN": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
-    ],
-    "correctAnswerBG": "git commit",
-    "correctAnswerEN": "git commit",
-    "explanationBG": "git commit записва snapshot в локалната история.",
-    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-04",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
-    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
-    ],
-    "answersEN": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
-    ],
-    "correctAnswerBG": "git branch",
-    "correctAnswerEN": "git branch",
-    "explanationBG": "Branch позволява работа без директна промяна на main.",
-    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-05",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to move to another branch. Which choice is best?",
-    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
-    ],
-    "answersEN": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
-    ],
-    "correctAnswerBG": "git switch",
-    "correctAnswerEN": "git switch",
-    "explanationBG": "git switch сменя текущия branch.",
-    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-06",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
-    ],
-    "answersEN": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
-    ],
-    "correctAnswerBG": "git clone",
-    "correctAnswerEN": "git clone",
-    "explanationBG": "git clone създава локално копие на remote repository.",
-    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-07",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
-    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
-    ],
-    "answersEN": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
-    ],
-    "correctAnswerBG": "git push",
-    "correctAnswerEN": "git push",
-    "explanationBG": "git push качва локални commits към remote.",
-    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-08",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
-    ],
-    "answersEN": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
-    ],
-    "correctAnswerBG": "git pull",
-    "correctAnswerEN": "git pull",
-    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
-    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-09",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
-    ],
-    "answersEN": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
-    ],
-    "correctAnswerBG": "git fetch",
-    "correctAnswerEN": "git fetch",
-    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
-    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-10",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
-    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
-    ],
-    "answersEN": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
-    ],
-    "correctAnswerBG": "git merge",
-    "correctAnswerEN": "git merge",
-    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
-    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-11",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to request review before merging. Which choice is best?",
-    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
-    ],
-    "answersEN": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
-    ],
-    "correctAnswerBG": "pull request",
-    "correctAnswerEN": "pull request",
-    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
-    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-12",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
-    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
-    ],
-    "answersEN": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
-    ],
-    "correctAnswerBG": "code review",
-    "correctAnswerEN": "code review",
-    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
-    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-13",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
-    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
-    "answersBG": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
-    ],
-    "answersEN": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
-    ],
-    "correctAnswerBG": "merge conflict",
-    "correctAnswerEN": "merge conflict",
-    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
-    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-14",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
-    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
-    "answersBG": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
-    ],
-    "answersEN": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
-    ],
-    "correctAnswerBG": "GitHub Actions",
-    "correctAnswerEN": "GitHub Actions",
-    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
-    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-15",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
-    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
-    ],
-    "answersEN": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
-    ],
-    "correctAnswerBG": "tag",
-    "correctAnswerEN": "tag",
-    "explanationBG": "Tag сочи към конкретен commit, често за release.",
-    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-16",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
-    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
-    "answersBG": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
-    ],
-    "answersEN": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
-    ],
-    "correctAnswerBG": "release",
-    "correctAnswerEN": "release",
-    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
-    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-17",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
-    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
-    ],
-    "answersEN": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
-    ],
-    "correctAnswerBG": "fork",
-    "correctAnswerEN": "fork",
-    "explanationBG": "Fork създава GitHub copy за independent changes.",
-    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-18",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
-    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
-    "answersBG": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
-    ],
-    "answersEN": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
-    ],
-    "correctAnswerBG": "remote",
-    "correctAnswerEN": "remote",
-    "explanationBG": "Remote е named URL към repository извън локалната машина.",
-    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-19",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
-    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
-    ],
-    "answersEN": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
-    ],
-    "correctAnswerBG": "staging area",
-    "correctAnswerEN": "staging area",
-    "explanationBG": "Staging area позволява commit само на избрани промени.",
-    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-20",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
-    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
-    "answersEN": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
-    "correctAnswerBG": "git restore",
-    "correctAnswerEN": "git restore",
-    "explanationBG": "git restore може да върне working tree files към последния commit.",
-    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
-  },
-  {
-    "id": "git-github-intermediate-21",
-    "categoryId": "git-github",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to see commit history. Which choice is best?",
-    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "answersEN": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
-    "correctAnswerBG": "git log",
-    "correctAnswerEN": "git log",
-    "explanationBG": "git log показва commit history и metadata.",
-    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+    "correctAnswerEN": "git diff",
+    "correctAnswerBG": "git diff",
+    "explanationEN": "git diff compares working tree or staged snapshots and shows line-by-line changes.",
+    "explanationBG": "git diff сравнява working tree или staged snapshot-и и показва промени ред по ред."
   },
   {
     "id": "git-github-advanced-01",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to see changed files. Which choice is best?",
-    "questionBG": "Developer трябва да види променени файлове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git status",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
+    "questionEN": "A release branch has dozens of commits and you need to find which one introduced a regression. Which command helps inspect history with filters?",
+    "questionBG": "Release branch има десетки commit-и и трябва да намериш кой е въвел регресия. Коя команда помага да прегледаш историята с филтри?",
     "answersEN": [
-      "git status",
-      "git add",
-      "git commit",
-      "git branch"
+      "git log --grep / git bisect",
+      "git stash list",
+      "git clean -fd",
+      "git init"
     ],
-    "correctAnswerBG": "git status",
-    "correctAnswerEN": "git status",
-    "explanationBG": "git status показва working tree и staged changes.",
-    "explanationEN": "git status is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git log --grep / git bisect",
+      "git stash list",
+      "git clean -fd",
+      "git init"
+    ],
+    "correctAnswerEN": "git log --grep / git bisect",
+    "correctAnswerBG": "git log --grep / git bisect",
+    "explanationEN": "git log can search messages and authors; git bisect binary-searches commits to pinpoint regressions.",
+    "explanationBG": "git log може да търси съобщения и автори; git bisect binary-search-ва commit-и, за да локализира регресия."
+  },
+  {
+    "id": "git-github-beginner-02",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You fixed a typo in README.md and want it in the next commit. Which command stages that single file?",
+    "questionBG": "Поправи печатна грешка в README.md и искаш да влезе в следващия commit. Коя команда stage-ва само този файл?",
+    "answersEN": [
+      "git add README.md",
+      "git commit README.md",
+      "git push README.md",
+      "git branch README.md"
+    ],
+    "answersBG": [
+      "git add README.md",
+      "git commit README.md",
+      "git push README.md",
+      "git branch README.md"
+    ],
+    "correctAnswerEN": "git add README.md",
+    "correctAnswerBG": "git add README.md",
+    "explanationEN": "git add moves changes from the working tree into the staging area for the next commit.",
+    "explanationBG": "git add премества промени от working tree в staging area за следващия commit."
+  },
+  {
+    "id": "git-github-intermediate-02",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You refactored ten files but only five belong in this commit. What is the safest workflow?",
+    "questionBG": "Рефакторира десет файла, но само пет принадлежат на този commit. Какъв е най-безопасният workflow?",
+    "answersEN": [
+      "git add specific files, then commit",
+      "git commit -a without review",
+      "git push before commit",
+      "delete .git folder"
+    ],
+    "answersBG": [
+      "git add specific files, then commit",
+      "git commit -a without review",
+      "git push before commit",
+      "delete .git folder"
+    ],
+    "correctAnswerEN": "git add specific files, then commit",
+    "correctAnswerBG": "git add specific files, then commit",
+    "explanationEN": "Staging selected paths lets you craft atomic commits instead of bundling unrelated changes.",
+    "explanationBG": "Stage-ването на избрани пътища позволява атомарни commit-и вместо смесване на несвързани промени."
   },
   {
     "id": "git-github-advanced-02",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to stage a file for commit. Which choice is best?",
-    "questionBG": "Developer трябва да stage-не файл за commit. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git add",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
+    "questionEN": "A hotfix must include only two files from a large dirty working tree. Which Git feature stages partial hunks?",
+    "questionBG": "Hotfix трябва да включи само два файла от голям dirty working tree. Коя Git функция stage-ва частични hunks?",
     "answersEN": [
-      "git add",
-      "git commit",
-      "git branch",
-      "git checkout"
+      "git add -p",
+      "git reset --hard",
+      "git reflog delete",
+      "git submodule deinit --all"
     ],
-    "correctAnswerBG": "git add",
-    "correctAnswerEN": "git add",
-    "explanationBG": "git add премества промени в staging area.",
-    "explanationEN": "git add is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git add -p",
+      "git reset --hard",
+      "git reflog delete",
+      "git submodule deinit --all"
+    ],
+    "correctAnswerEN": "git add -p",
+    "correctAnswerBG": "git add -p",
+    "explanationEN": "git add -p interactively stages selected hunks, enabling surgical commits from mixed changes.",
+    "explanationBG": "git add -p интерактивно stage-ва избрани hunks и позволява хирургични commit-и от смесени промени."
+  },
+  {
+    "id": "git-github-beginner-03",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "All review feedback is addressed and files are staged. Which command records the snapshot locally?",
+    "questionBG": "Целият review feedback е адресиран и файловете са staged. Коя команда записва snapshot-а локално?",
+    "answersEN": [
+      "git commit",
+      "git push",
+      "git fetch",
+      "git clone"
+    ],
+    "answersBG": [
+      "git commit",
+      "git push",
+      "git fetch",
+      "git clone"
+    ],
+    "correctAnswerEN": "git commit",
+    "correctAnswerBG": "git commit",
+    "explanationEN": "git commit saves staged changes as a new snapshot in your local repository history.",
+    "explanationBG": "git commit записва staged промени като нов snapshot в локалната история на хранилището."
+  },
+  {
+    "id": "git-github-intermediate-03",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "Your team requires conventional commit messages like feat: or fix:. Where should that message go?",
+    "questionBG": "Екипът изисква conventional commit съобщения като feat: или fix:. Къде трябва да отиде това съобщение?",
+    "answersEN": [
+      "git commit -m \"fix: handle nil score\"",
+      "git push -m message",
+      "git status -m",
+      "git branch -m"
+    ],
+    "answersBG": [
+      "git commit -m \"fix: handle nil score\"",
+      "git push -m message",
+      "git status -m",
+      "git branch -m"
+    ],
+    "correctAnswerEN": "git commit -m \"fix: handle nil score\"",
+    "correctAnswerBG": "git commit -m \"fix: handle nil score\"",
+    "explanationEN": "The -m flag attaches a message to the commit object, which becomes permanent history metadata.",
+    "explanationBG": "Флагът -m прикача съобщение към commit обекта, което става постоянни history metadata."
   },
   {
     "id": "git-github-advanced-03",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to save staged changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да запази staged changes локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
-    ],
+    "questionEN": "CI failed because the last commit bundled a feature and a formatting-only change. How should history be fixed before pushing?",
+    "questionBG": "CI се провали, защото последният commit смеси feature и само formatting промяна. Как трябва да се поправи историята преди push?",
     "answersEN": [
-      "git commit",
-      "git branch",
-      "git checkout",
-      "git switch"
+      "interactive rebase to split commits",
+      "git push --force without review",
+      "amend with unrelated files",
+      "commit empty tree"
     ],
-    "correctAnswerBG": "git commit",
-    "correctAnswerEN": "git commit",
-    "explanationBG": "git commit записва snapshot в локалната история.",
-    "explanationEN": "git commit is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "interactive rebase to split commits",
+      "git push --force without review",
+      "amend with unrelated files",
+      "commit empty tree"
+    ],
+    "correctAnswerEN": "interactive rebase to split commits",
+    "correctAnswerBG": "interactive rebase to split commits",
+    "explanationEN": "Interactive rebase lets you reorder, edit, or split commits so each change set is reviewable and revertible.",
+    "explanationBG": "Interactive rebase позволява пренареждане, редакция или разделяне на commit-и, така че всяка промяна да е reviewable и revertible."
+  },
+  {
+    "id": "git-github-beginner-04",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You will build a dark-mode toggle without touching main. Which command creates a new line of work?",
+    "questionBG": "Ще изградиш dark-mode toggle без да пипаш main. Коя команда създава нова линия на работа?",
+    "answersEN": [
+      "git branch feature/dark-mode",
+      "git commit feature/dark-mode",
+      "git push feature/dark-mode",
+      "git log feature/dark-mode"
+    ],
+    "answersBG": [
+      "git branch feature/dark-mode",
+      "git commit feature/dark-mode",
+      "git push feature/dark-mode",
+      "git log feature/dark-mode"
+    ],
+    "correctAnswerEN": "git branch feature/dark-mode",
+    "correctAnswerBG": "git branch feature/dark-mode",
+    "explanationEN": "git branch creates a pointer to a commit so you can isolate work from other branches.",
+    "explanationBG": "git branch създава указател към commit, за да изолираш работа от други клонове."
+  },
+  {
+    "id": "git-github-intermediate-04",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "main moved forward while you were on an old feature branch. What should you do before opening a PR?",
+    "questionBG": "main се е движил напред, докато си бил на стар feature branch. Какво трябва да направиш преди PR?",
+    "answersEN": [
+      "update branch with main (merge or rebase)",
+      "delete main locally",
+      "force push main",
+      "ignore remote changes"
+    ],
+    "answersBG": [
+      "update branch with main (merge or rebase)",
+      "delete main locally",
+      "force push main",
+      "ignore remote changes"
+    ],
+    "correctAnswerEN": "update branch with main (merge or rebase)",
+    "correctAnswerBG": "update branch with main (merge or rebase)",
+    "explanationEN": "Updating your branch with latest main reduces merge conflicts and keeps CI green on the PR.",
+    "explanationBG": "Актуализирането на клона с latest main намалява merge конфликти и държи CI зелен на PR."
   },
   {
     "id": "git-github-advanced-04",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to create a separate line of work. Which choice is best?",
-    "questionBG": "Developer трябва да създаде отделна линия на работа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
-    ],
+    "questionEN": "A long-lived branch diverged heavily from main. Which strategy keeps history linear but rewrites it?",
+    "questionBG": "Дълго живял клон се е разминал силно от main. Коя стратегия държи историята линейна, но я пренаписва?",
     "answersEN": [
-      "git branch",
-      "git checkout",
-      "git switch",
-      "git pull"
+      "git rebase onto main",
+      "git merge --no-ff only",
+      "duplicate repository",
+      "git checkout . on main"
     ],
-    "correctAnswerBG": "git branch",
-    "correctAnswerEN": "git branch",
-    "explanationBG": "Branch позволява работа без директна промяна на main.",
-    "explanationEN": "git branch is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git rebase onto main",
+      "git merge --no-ff only",
+      "duplicate repository",
+      "git checkout . on main"
+    ],
+    "correctAnswerEN": "git rebase onto main",
+    "correctAnswerBG": "git rebase onto main",
+    "explanationEN": "Rebase replays your commits on top of main, producing a linear history at the cost of rewriting commit SHAs.",
+    "explanationBG": "Rebase преиграва commit-ите ти върху main и дава линейна история на цената на пренаписване на SHA-та."
+  },
+  {
+    "id": "git-github-beginner-05",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You created branch feature/login but your terminal is still on main. Which command switches to the new branch?",
+    "questionBG": "Създаде клон feature/login, но терминалът все още е на main. Коя команда превключва към новия клон?",
+    "answersEN": [
+      "git switch feature/login",
+      "git commit feature/login",
+      "git remote feature/login",
+      "git tag feature/login"
+    ],
+    "answersBG": [
+      "git switch feature/login",
+      "git commit feature/login",
+      "git remote feature/login",
+      "git tag feature/login"
+    ],
+    "correctAnswerEN": "git switch feature/login",
+    "correctAnswerBG": "git switch feature/login",
+    "explanationEN": "git switch checks out the branch so your next commits land on that line of work.",
+    "explanationBG": "git switch checkout-ва клона, така че следващите commit-и да отидат на тази линия на работа."
+  },
+  {
+    "id": "git-github-intermediate-05",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You need to jump to main to hotfix a crash, then return to your feature branch. What preserves uncommitted work?",
+    "questionBG": "Трябва да прескочиш на main за hotfix на crash, после да се върнеш на feature клона. Какво пази неcommit-натата работа?",
+    "answersEN": [
+      "git stash, switch, later stash pop",
+      "git reset --hard",
+      "delete branch",
+      "git push -f"
+    ],
+    "answersBG": [
+      "git stash, switch, later stash pop",
+      "git reset --hard",
+      "delete branch",
+      "git push -f"
+    ],
+    "correctAnswerEN": "git stash, switch, later stash pop",
+    "correctAnswerBG": "git stash, switch, later stash pop",
+    "explanationEN": "git stash temporarily shelves changes so you can switch branches without committing WIP.",
+    "explanationBG": "git stash временно прибира промени, за да превключиш клонове без commit на WIP."
   },
   {
     "id": "git-github-advanced-05",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to move to another branch. Which choice is best?",
-    "questionBG": "Developer трябва да премине към друг branch. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
-    ],
+    "questionEN": "Detached HEAD appears after checking out an old tag for investigation. How do you keep any new commits?",
+    "questionBG": "Detached HEAD се появява след checkout на стар tag за разследване. Как запазваш нови commit-и?",
     "answersEN": [
-      "git switch",
-      "git checkout",
-      "git pull",
-      "git push"
+      "create a branch at that commit",
+      "stay detached and push",
+      "git clean -fdx immediately",
+      "amend main directly"
     ],
-    "correctAnswerBG": "git switch",
-    "correctAnswerEN": "git switch",
-    "explanationBG": "git switch сменя текущия branch.",
-    "explanationEN": "git switch is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "create a branch at that commit",
+      "stay detached and push",
+      "git clean -fdx immediately",
+      "amend main directly"
+    ],
+    "correctAnswerEN": "create a branch at that commit",
+    "correctAnswerBG": "create a branch at that commit",
+    "explanationEN": "Creating a branch gives a named ref to your commits; detached HEAD commits are easy to lose.",
+    "explanationBG": "Създаването на клон дава именуван ref към commit-ите; commit-ите в detached HEAD лесно се губят."
+  },
+  {
+    "id": "git-github-beginner-06",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You want to read recent commit messages on main to learn project conventions. Which command shows history?",
+    "questionBG": "Искаш да прочетеш скорошни commit съобщения на main, за да научиш конвенциите. Коя команда показва историята?",
+    "answersEN": [
+      "git log",
+      "git status",
+      "git add",
+      "git remote"
+    ],
+    "answersBG": [
+      "git log",
+      "git status",
+      "git add",
+      "git remote"
+    ],
+    "correctAnswerEN": "git log",
+    "correctAnswerBG": "git log",
+    "explanationEN": "git log walks the commit graph newest-first, showing hashes, authors, dates, and messages.",
+    "explanationBG": "git log обхожда commit графа от най-новите, показвайки hash-ове, автори, дати и съобщения."
+  },
+  {
+    "id": "git-github-intermediate-06",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A bug appeared last week. Which log option helps limit output to commits touching one file?",
+    "questionBG": "Bug се появи миналата седмица. Коя log опция ограничава изхода до commit-и, пипали един файл?",
+    "answersEN": [
+      "git log -- path/to/File.swift",
+      "git log --delete",
+      "git log --push",
+      "git log --stash"
+    ],
+    "answersBG": [
+      "git log -- path/to/File.swift",
+      "git log --delete",
+      "git log --push",
+      "git log --stash"
+    ],
+    "correctAnswerEN": "git log -- path/to/File.swift",
+    "correctAnswerBG": "git log -- path/to/File.swift",
+    "explanationEN": "Path arguments filter history to commits that modified the given file(s).",
+    "explanationBG": "Path аргументите филтрират историята до commit-и, които са променяли дадения файл."
   },
   {
     "id": "git-github-advanced-06",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to download a repository copy. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли copy на repository. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
-    ],
+    "questionEN": "You need blame info for a specific line in QuestionLoader.swift. Which command identifies the introducing commit?",
+    "questionBG": "Трябва blame информация за конкретен ред в QuestionLoader.swift. Коя команда идентифицира въвеждащия commit?",
     "answersEN": [
-      "git clone",
-      "git switch",
-      "git pull",
-      "git push"
+      "git blame QuestionLoader.swift",
+      "git clean QuestionLoader.swift",
+      "git tag QuestionLoader.swift",
+      "git init QuestionLoader.swift"
     ],
-    "correctAnswerBG": "git clone",
-    "correctAnswerEN": "git clone",
-    "explanationBG": "git clone създава локално копие на remote repository.",
-    "explanationEN": "git clone is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git blame QuestionLoader.swift",
+      "git clean QuestionLoader.swift",
+      "git tag QuestionLoader.swift",
+      "git init QuestionLoader.swift"
+    ],
+    "correctAnswerEN": "git blame QuestionLoader.swift",
+    "correctAnswerBG": "git blame QuestionLoader.swift",
+    "explanationEN": "git blame annotates each line with the last commit that changed it, aiding regression hunts.",
+    "explanationBG": "git blame анотира всеки ред с последния commit, който го е променил, и помага при лов на регресии."
+  },
+  {
+    "id": "git-github-beginner-07",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Before staging, you want to see exact line edits in HomeView.swift. Which command shows unstaged diffs?",
+    "questionBG": "Преди staging искаш да видиш точните редови промени в HomeView.swift. Коя команда показва unstaged diff-ове?",
+    "answersEN": [
+      "git diff HomeView.swift",
+      "git commit HomeView.swift",
+      "git branch HomeView.swift",
+      "git clone HomeView.swift"
+    ],
+    "answersBG": [
+      "git diff HomeView.swift",
+      "git commit HomeView.swift",
+      "git branch HomeView.swift",
+      "git clone HomeView.swift"
+    ],
+    "correctAnswerEN": "git diff HomeView.swift",
+    "correctAnswerBG": "git diff HomeView.swift",
+    "explanationEN": "git diff without --staged compares the working tree to the index for the given paths.",
+    "explanationBG": "git diff без --staged сравнява working tree с index-а за дадените пътища."
+  },
+  {
+    "id": "git-github-intermediate-07",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You staged files but want to review what will actually be committed. Which command should you run?",
+    "questionBG": "Stage-на файлове, но искаш да прегледаш какво реално ще влезе в commit. Коя команда трябва да изпълниш?",
+    "answersEN": [
+      "git diff --staged",
+      "git diff HEAD~5",
+      "git diff --no-index /",
+      "git diff --delete"
+    ],
+    "answersBG": [
+      "git diff --staged",
+      "git diff HEAD~5",
+      "git diff --no-index /",
+      "git diff --delete"
+    ],
+    "correctAnswerEN": "git diff --staged",
+    "correctAnswerBG": "git diff --staged",
+    "explanationEN": "git diff --staged (or --cached) shows differences between the index and the last commit.",
+    "explanationBG": "git diff --staged (или --cached) показва разлики между index-а и последния commit."
   },
   {
     "id": "git-github-advanced-07",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to send commits to GitHub. Which choice is best?",
-    "questionBG": "Developer трябва да изпрати commits към GitHub. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
-    ],
+    "questionEN": "A PR diff looks huge because of whitespace-only changes. Which diff option ignores those hunks?",
+    "questionBG": "PR diff изглежда огромен заради промени само в whitespace. Коя diff опция ги игнорира?",
     "answersEN": [
-      "git push",
-      "git pull",
-      "git fetch",
-      "git merge"
+      "git diff -w",
+      "git diff --word-diff=porcelain always",
+      "git diff --submodule=recursive delete",
+      "git diff --no-index force"
     ],
-    "correctAnswerBG": "git push",
-    "correctAnswerEN": "git push",
-    "explanationBG": "git push качва локални commits към remote.",
-    "explanationEN": "git push is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git diff -w",
+      "git diff --word-diff=porcelain always",
+      "git diff --submodule=recursive delete",
+      "git diff --no-index force"
+    ],
+    "correctAnswerEN": "git diff -w",
+    "correctAnswerBG": "git diff -w",
+    "explanationEN": "The -w flag ignores whitespace when comparing, surfacing substantive logic changes.",
+    "explanationBG": "Флагът -w игнорира whitespace при сравнение и показва същинските логически промени."
+  },
+  {
+    "id": "git-github-beginner-08",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You joined the team and need a local copy of the GitHub repo. Which command downloads it?",
+    "questionBG": "Започна в екипа и ти трябва локално копие на GitHub repo. Коя команда го сваля?",
+    "answersEN": [
+      "git clone <url>",
+      "git push <url>",
+      "git fetch <url> only",
+      "git tag <url>"
+    ],
+    "answersBG": [
+      "git clone <url>",
+      "git push <url>",
+      "git fetch <url> only",
+      "git tag <url>"
+    ],
+    "correctAnswerEN": "git clone <url>",
+    "correctAnswerBG": "git clone <url>",
+    "explanationEN": "git clone creates a new directory with a full copy of the remote repository and its history.",
+    "explanationBG": "git clone създава нова директория с пълно копие на remote хранилището и неговата история."
+  },
+  {
+    "id": "git-github-intermediate-08",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "The repo is large. Which clone option reduces history depth for a quicker start?",
+    "questionBG": "Хранилището е голямо. Коя clone опция намалява дълбочината на историята за по-бърз старт?",
+    "answersEN": [
+      "git clone --depth 1",
+      "git clone --mirror delete",
+      "git clone --bare force",
+      "git clone --recursive wipe"
+    ],
+    "answersBG": [
+      "git clone --depth 1",
+      "git clone --mirror delete",
+      "git clone --bare force",
+      "git clone --recursive wipe"
+    ],
+    "correctAnswerEN": "git clone --depth 1",
+    "correctAnswerBG": "git clone --depth 1",
+    "explanationEN": "A shallow clone (--depth) fetches only recent commits, saving time and disk for CI or quick fixes.",
+    "explanationBG": "Shallow clone (--depth) дърпа само скорошни commit-и и спестява време и диск за CI или бързи fix-ове."
   },
   {
     "id": "git-github-advanced-08",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to bring remote changes locally. Which choice is best?",
-    "questionBG": "Developer трябва да вземе remote промени локално. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
-    ],
+    "questionEN": "You must vendor a dependency via submodule inside the iOS project. Which clone flag initializes submodules?",
+    "questionBG": "Трябва да вкараш dependency чрез submodule в iOS проекта. Кой clone флаг инициализира submodule-ите?",
     "answersEN": [
-      "git pull",
-      "git fetch",
-      "git merge",
-      "git rebase"
+      "git clone --recurse-submodules",
+      "git clone --no-checkout forever",
+      "git clone --shared wipe",
+      "git clone --dissociate force"
     ],
-    "correctAnswerBG": "git pull",
-    "correctAnswerEN": "git pull",
-    "explanationBG": "git pull fetch-ва и интегрира remote changes.",
-    "explanationEN": "git pull is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git clone --recurse-submodules",
+      "git clone --no-checkout forever",
+      "git clone --shared wipe",
+      "git clone --dissociate force"
+    ],
+    "correctAnswerEN": "git clone --recurse-submodules",
+    "correctAnswerBG": "git clone --recurse-submodules",
+    "explanationEN": "--recurse-submodules clones and initializes nested repositories declared in .gitmodules.",
+    "explanationBG": "--recurse-submodules клонира и инициализира вложени хранилища, декларирани в .gitmodules."
+  },
+  {
+    "id": "git-github-beginner-09",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Your feature branch commits are ready and the remote is origin. Which command uploads them?",
+    "questionBG": "Feature branch commit-ите са готови и remote-ът е origin. Коя команда ги качва?",
+    "answersEN": [
+      "git push origin feature/quiz-ui",
+      "git pull origin feature/quiz-ui",
+      "git clone origin",
+      "git stash origin"
+    ],
+    "answersBG": [
+      "git push origin feature/quiz-ui",
+      "git pull origin feature/quiz-ui",
+      "git clone origin",
+      "git stash origin"
+    ],
+    "correctAnswerEN": "git push origin feature/quiz-ui",
+    "correctAnswerBG": "git push origin feature/quiz-ui",
+    "explanationEN": "git push sends local commits to a remote branch so teammates and CI can see your work.",
+    "explanationBG": "git push изпраща локални commit-и към remote клон, за да виждат работата ти екипът и CI."
+  },
+  {
+    "id": "git-github-intermediate-09",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "First push on a new local branch fails because upstream is not set. What fixes it?",
+    "questionBG": "Първият push на нов локален клон се проваля, защото upstream не е зададен. Какво го оправя?",
+    "answersEN": [
+      "git push -u origin branch-name",
+      "git push --delete origin",
+      "git push without remote",
+      "git push --force main always"
+    ],
+    "answersBG": [
+      "git push -u origin branch-name",
+      "git push --delete origin",
+      "git push without remote",
+      "git push --force main always"
+    ],
+    "correctAnswerEN": "git push -u origin branch-name",
+    "correctAnswerBG": "git push -u origin branch-name",
+    "explanationEN": "-u sets upstream tracking so future git push and git pull know the remote branch.",
+    "explanationBG": "-u задава upstream tracking, така че бъдещите git push и git pull да знаят remote клона."
   },
   {
     "id": "git-github-advanced-09",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to download remote refs without merging. Which choice is best?",
-    "questionBG": "Developer трябва да изтегли remote refs без merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
-    ],
+    "questionEN": "After rebase you must update the remote feature branch safely. What is the team-approved approach?",
+    "questionBG": "След rebase трябва да актуализираш remote feature клона безопасно. Какъв е одобреният от екипа подход?",
     "answersEN": [
-      "git fetch",
-      "git merge",
-      "git rebase",
-      "pull request"
+      "git push --force-with-lease",
+      "git push --force without checks",
+      "push to main directly",
+      "delete remote branch silently"
     ],
-    "correctAnswerBG": "git fetch",
-    "correctAnswerEN": "git fetch",
-    "explanationBG": "git fetch обновява remote tracking refs без да променя branch-а.",
-    "explanationEN": "git fetch is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git push --force-with-lease",
+      "git push --force without checks",
+      "push to main directly",
+      "delete remote branch silently"
+    ],
+    "correctAnswerEN": "git push --force-with-lease",
+    "correctAnswerBG": "git push --force-with-lease",
+    "explanationEN": "--force-with-lease refuses to overwrite remote work you have not seen, safer than bare --force.",
+    "explanationBG": "--force-with-lease отказва да презапише remote работа, която не си виждал — по-безопасно от голо --force."
+  },
+  {
+    "id": "git-github-beginner-10",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Teammates merged fixes to main while you were offline. Which command brings those commits into your branch?",
+    "questionBG": "Колегите са merge-нали fix-ове в main, докато си бил offline. Коя команда внася тези commit-и в твоя клон?",
+    "answersEN": [
+      "git pull origin main",
+      "git push origin main",
+      "git clone again",
+      "git tag origin main"
+    ],
+    "answersBG": [
+      "git pull origin main",
+      "git push origin main",
+      "git clone again",
+      "git tag origin main"
+    ],
+    "correctAnswerEN": "git pull origin main",
+    "correctAnswerBG": "git pull origin main",
+    "explanationEN": "git pull fetches and integrates remote changes, typically merging or rebasing into your current branch.",
+    "explanationBG": "git pull дърпа и интегрира remote промени, обикновено merge или rebase в текущия клон."
+  },
+  {
+    "id": "git-github-intermediate-10",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You prefer rebasing on pull to avoid merge commits on feature branches. Which config helps?",
+    "questionBG": "Предпочиташ rebase при pull, за да избегнеш merge commit-и на feature клонове. Коя настройка помага?",
+    "answersEN": [
+      "pull.rebase true",
+      "push.rebase only",
+      "commit.rebase false always",
+      "remote.rebase delete"
+    ],
+    "answersBG": [
+      "pull.rebase true",
+      "push.rebase only",
+      "commit.rebase false always",
+      "remote.rebase delete"
+    ],
+    "correctAnswerEN": "pull.rebase true",
+    "correctAnswerBG": "pull.rebase true",
+    "explanationEN": "Setting pull.rebase true replays your commits on top of fetched upstream instead of creating merge commits.",
+    "explanationBG": "pull.rebase true преиграва commit-ите ти върху fetched upstream вместо да създава merge commit-и."
   },
   {
     "id": "git-github-advanced-10",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to combine one branch into another. Which choice is best?",
-    "questionBG": "Developer трябва да комбинира един branch в друг. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
-    ],
+    "questionEN": "git pull caused unexpected conflicts during release week. What is the safer two-step alternative?",
+    "questionBG": "git pull предизвика неочаквани конфликти по време на release седмица. Коя е по-безопасната двустъпкова алтернатива?",
     "answersEN": [
-      "git merge",
-      "git rebase",
-      "pull request",
-      "code review"
+      "git fetch, then merge or rebase explicitly",
+      "git pull --force",
+      "delete .git",
+      "git push instead"
     ],
-    "correctAnswerBG": "git merge",
-    "correctAnswerEN": "git merge",
-    "explanationBG": "git merge интегрира histories и може да създаде merge commit.",
-    "explanationEN": "git merge is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git fetch, then merge or rebase explicitly",
+      "git pull --force",
+      "delete .git",
+      "git push instead"
+    ],
+    "correctAnswerEN": "git fetch, then merge or rebase explicitly",
+    "correctAnswerBG": "git fetch, then merge or rebase explicitly",
+    "explanationEN": "git fetch downloads refs without integrating, letting you inspect before merge or rebase.",
+    "explanationBG": "git fetch сваля ref-ове без интеграция и ти позволява да прегледаш преди merge или rebase."
+  },
+  {
+    "id": "git-github-beginner-11",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Xcode keeps showing build artifacts in git status. Which file should list DerivedData paths to ignore?",
+    "questionBG": "Xcode показва build артефакти в git status. Кой файл трябва да изброи DerivedData пътища за игнориране?",
+    "answersEN": [
+      ".gitignore",
+      "Info.plist",
+      "Package.swift",
+      "README.md"
+    ],
+    "answersBG": [
+      ".gitignore",
+      "Info.plist",
+      "Package.swift",
+      "README.md"
+    ],
+    "correctAnswerEN": ".gitignore",
+    "correctAnswerBG": ".gitignore",
+    "explanationEN": ".gitignore tells Git which paths not to track, keeping repos clean of generated files.",
+    "explanationBG": ".gitignore казва на Git кои пътища да не следи и държи repo-то чисто от генерирани файлове."
+  },
+  {
+    "id": "git-github-intermediate-11",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "A secret API key was committed before .gitignore was updated. What must happen besides ignoring it?",
+    "questionBG": "Таен API ключ беше commit-нат преди .gitignore да е актуализиран. Какво трябва да се случи освен игнориране?",
+    "answersEN": [
+      "remove from history and rotate the key",
+      "only add to .gitignore",
+      "push key to main",
+      "rename file only"
+    ],
+    "answersBG": [
+      "remove from history and rotate the key",
+      "only add to .gitignore",
+      "push key to main",
+      "rename file only"
+    ],
+    "correctAnswerEN": "remove from history and rotate the key",
+    "correctAnswerBG": "remove from history and rotate the key",
+    "explanationEN": "Ignoring future changes does not erase leaked secrets; rotate credentials and purge history if needed.",
+    "explanationBG": "Игнорирането на бъдещи промени не изтрива изтекли тайни; ротирай credentials и изчисти историята при нужда."
   },
   {
     "id": "git-github-advanced-11",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to request review before merging. Which choice is best?",
-    "questionBG": "Developer трябва да поиска review преди merge. Кой избор е най-подходящ?",
-    "answersBG": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
-    ],
+    "questionEN": "You need different ignore rules for local machine-only files without committing them. Which approach works?",
+    "questionBG": "Трябват различни ignore правила за локални файлове само на машината без commit. Кой подход работи?",
     "answersEN": [
-      "pull request",
-      "git rebase",
-      "code review",
-      "merge conflict"
+      ".git/info/exclude or global gitignore",
+      "commit machine paths to main",
+      "delete .gitignore",
+      "chmod 777 repo"
     ],
-    "correctAnswerBG": "pull request",
-    "correctAnswerEN": "pull request",
-    "explanationBG": "Pull request събира diff, discussion и checks преди merge.",
-    "explanationEN": "pull request is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      ".git/info/exclude or global gitignore",
+      "commit machine paths to main",
+      "delete .gitignore",
+      "chmod 777 repo"
+    ],
+    "correctAnswerEN": ".git/info/exclude or global gitignore",
+    "correctAnswerBG": ".git/info/exclude or global gitignore",
+    "explanationEN": "Repository exclude and global ignore files apply locally without sharing machine-specific paths.",
+    "explanationBG": "Repository exclude и global ignore файловете важат локално без споделяне на machine-specific пътища."
+  },
+  {
+    "id": "git-github-beginner-12",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Your local repo has no link to GitHub yet. Which command adds the remote named origin?",
+    "questionBG": "Локалното repo няма връзка с GitHub. Коя команда добавя remote с име origin?",
+    "answersEN": [
+      "git remote add origin <url>",
+      "git branch add origin",
+      "git commit origin <url>",
+      "git tag origin <url>"
+    ],
+    "answersBG": [
+      "git remote add origin <url>",
+      "git branch add origin",
+      "git commit origin <url>",
+      "git tag origin <url>"
+    ],
+    "correctAnswerEN": "git remote add origin <url>",
+    "correctAnswerBG": "git remote add origin <url>",
+    "explanationEN": "git remote add registers a nickname (origin) for the URL you push to and pull from.",
+    "explanationBG": "git remote add регистрира псевдоним (origin) за URL-а, към който push-ваш и от който pull-ваш."
+  },
+  {
+    "id": "git-github-intermediate-12",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "origin moved to a new organization URL. How do you update the existing remote?",
+    "questionBG": "origin се премести към нов organization URL. Как актуализираш съществуващия remote?",
+    "answersEN": [
+      "git remote set-url origin <new-url>",
+      "git remote delete git",
+      "git clone over existing",
+      "git init again"
+    ],
+    "answersBG": [
+      "git remote set-url origin <new-url>",
+      "git remote delete git",
+      "git clone over existing",
+      "git init again"
+    ],
+    "correctAnswerEN": "git remote set-url origin <new-url>",
+    "correctAnswerBG": "git remote set-url origin <new-url>",
+    "explanationEN": "set-url changes where origin points without losing local branches or history.",
+    "explanationBG": "set-url променя къде сочи origin без да губиш локални клонове или история."
   },
   {
     "id": "git-github-advanced-12",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to inspect proposed changes. Which choice is best?",
-    "questionBG": "Developer трябва да прегледа предложени промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
-    ],
+    "questionEN": "You collaborate with two remotes: upstream open source and your fork. Which remote typically receives PR targets?",
+    "questionBG": "Сътрудничиш с два remote-а: upstream open source и твоя fork. Кой remote обикновено получава PR цели?",
     "answersEN": [
-      "code review",
-      "pull request",
-      "merge conflict",
-      "GitHub Actions"
+      "upstream (source repo)",
+      "only local .git",
+      "origin always means upstream",
+      "no remotes needed"
     ],
-    "correctAnswerBG": "code review",
-    "correctAnswerEN": "code review",
-    "explanationBG": "Code review намира bugs, risks и design проблеми преди merge.",
-    "explanationEN": "code review is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "upstream (source repo)",
+      "only local .git",
+      "origin always means upstream",
+      "no remotes needed"
+    ],
+    "correctAnswerEN": "upstream (source repo)",
+    "correctAnswerBG": "upstream (source repo)",
+    "explanationEN": "Fork workflows push to origin (your fork) and open PRs against upstream (canonical project).",
+    "explanationBG": "Fork workflow-ите push-ват към origin (твоя fork) и отварят PR срещу upstream (каноничния проект)."
+  },
+  {
+    "id": "git-github-beginner-13",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "After merging a branch, Xcode shows conflict markers <<<<<<< in a file. What is the first recovery step?",
+    "questionBG": "След merge на клон Xcode показва conflict маркери <<<<<<< във файл. Каква е първата стъпка за възстановяване?",
+    "answersEN": [
+      "edit file to resolve conflicts, then stage",
+      "git push immediately",
+      "delete repository",
+      "ignore markers"
+    ],
+    "answersBG": [
+      "edit file to resolve conflicts, then stage",
+      "git push immediately",
+      "delete repository",
+      "ignore markers"
+    ],
+    "correctAnswerEN": "edit file to resolve conflicts, then stage",
+    "correctAnswerBG": "edit file to resolve conflicts, then stage",
+    "explanationEN": "Resolve conflicts manually or with a merge tool, then git add marks them resolved for commit.",
+    "explanationBG": "Разреши конфликтите ръчно или с merge tool, после git add ги маркира като разрешени за commit."
+  },
+  {
+    "id": "git-github-intermediate-13",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "Two developers edited the same function differently. Which merge strategy keeps both authorship lines visible?",
+    "questionBG": "Двама разработчици са редактирали една функция по различен начин. Коя merge стратегия запазва видими и двата авторства?",
+    "answersEN": [
+      "merge commit (--no-ff)",
+      "always squash without review",
+      "reset --hard remote",
+      "skip staging"
+    ],
+    "answersBG": [
+      "merge commit (--no-ff)",
+      "always squash without review",
+      "reset --hard remote",
+      "skip staging"
+    ],
+    "correctAnswerEN": "merge commit (--no-ff)",
+    "correctAnswerBG": "merge commit (--no-ff)",
+    "explanationEN": "A non-fast-forward merge commit preserves branch topology showing parallel development.",
+    "explanationBG": "Non-fast-forward merge commit запазва топологията на клоновете и показва паралелна разработка."
   },
   {
     "id": "git-github-advanced-13",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to resolve incompatible edits. Which choice is best?",
-    "questionBG": "Developer трябва да разреши несъвместими edits. Кой избор е най-подходящ?",
-    "answersBG": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
-    ],
+    "questionEN": "Repeated conflicts happen on the same file between release and develop. What long-term fix reduces pain?",
+    "questionBG": "Повтарящи се конфликти на един файл между release и develop. Какъв дългосрочен fix намалява болката?",
     "answersEN": [
-      "merge conflict",
-      "code review",
-      "GitHub Actions",
-      "tag"
+      "refactor shared code, smaller frequent merges",
+      "never merge develop",
+      "one giant annual merge",
+      "disable git"
     ],
-    "correctAnswerBG": "merge conflict",
-    "correctAnswerEN": "merge conflict",
-    "explanationBG": "Merge conflict се появява, когато Git не може сам да комбинира промени.",
-    "explanationEN": "merge conflict is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "refactor shared code, smaller frequent merges",
+      "never merge develop",
+      "one giant annual merge",
+      "disable git"
+    ],
+    "correctAnswerEN": "refactor shared code, smaller frequent merges",
+    "correctAnswerBG": "refactor shared code, smaller frequent merges",
+    "explanationEN": "Smaller changes and modular boundaries lower conflict surface; frequent integration catches issues early.",
+    "explanationBG": "По-малки промени и модулни граници намаляват conflict surface; честата интеграция хваща проблеми рано."
+  },
+  {
+    "id": "git-github-beginner-14",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You must switch branches but have unfinished experiments not ready to commit. Which command shelves them?",
+    "questionBG": "Трябва да превключиш клон, но имаш незавършени експерименти, неготови за commit. Коя команда ги прибира?",
+    "answersEN": [
+      "git stash",
+      "git commit -m wip",
+      "git push",
+      "git clean -fd"
+    ],
+    "answersBG": [
+      "git stash",
+      "git commit -m wip",
+      "git push",
+      "git clean -fd"
+    ],
+    "correctAnswerEN": "git stash",
+    "correctAnswerBG": "git stash",
+    "explanationEN": "git stash saves working directory changes on a stack so you can return to a clean tree.",
+    "explanationBG": "git stash записва промените от working directory на стек, за да се върнеш към чисто дърво."
+  },
+  {
+    "id": "git-github-intermediate-14",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You stashed three times and need only the latest stash applied. Which command applies the top entry?",
+    "questionBG": "Stash-на три пъти и трябва да приложиш само последния stash. Коя команда прилага горния запис?",
+    "answersEN": [
+      "git stash pop",
+      "git stash drop --all",
+      "git stash push --delete",
+      "git stash branch delete"
+    ],
+    "answersBG": [
+      "git stash pop",
+      "git stash drop --all",
+      "git stash push --delete",
+      "git stash branch delete"
+    ],
+    "correctAnswerEN": "git stash pop",
+    "correctAnswerBG": "git stash pop",
+    "explanationEN": "git stash pop applies the most recent stash and removes it from the stash list.",
+    "explanationBG": "git stash pop прилага най-скорошния stash и го маха от stash списъка."
   },
   {
     "id": "git-github-advanced-14",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to run CI on pushes and PRs. Which choice is best?",
-    "questionBG": "Developer трябва да стартира CI при pushes и PRs. Кой избор е най-подходящ?",
-    "answersBG": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
-    ],
+    "questionEN": "A stash contains both debug prints and a real fix. How do you apply only part of it?",
+    "questionBG": "Един stash съдържа debug print-ове и реален fix. Как прилагаш само част от него?",
     "answersEN": [
-      "GitHub Actions",
-      "merge conflict",
-      "tag",
-      "release"
+      "git stash apply, then selectively stage hunks",
+      "git stash pop --force all",
+      "never use stash",
+      "git reset --hard after pop"
     ],
-    "correctAnswerBG": "GitHub Actions",
-    "correctAnswerEN": "GitHub Actions",
-    "explanationBG": "GitHub Actions автоматизира tests, builds и workflows.",
-    "explanationEN": "GitHub Actions is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git stash apply, then selectively stage hunks",
+      "git stash pop --force all",
+      "never use stash",
+      "git reset --hard after pop"
+    ],
+    "correctAnswerEN": "git stash apply, then selectively stage hunks",
+    "correctAnswerBG": "git stash apply, then selectively stage hunks",
+    "explanationEN": "git stash apply keeps the stash entry; combined with git add -p you can commit selectively.",
+    "explanationBG": "git stash apply запазва stash записа; комбиниран с git add -p можеш да commit-ваш селективно."
+  },
+  {
+    "id": "git-github-beginner-15",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You want to see new commits on origin without merging them yet. Which command downloads refs only?",
+    "questionBG": "Искаш да видиш нови commit-и на origin без да ги merge-ваш още. Коя команда сваля само ref-ове?",
+    "answersEN": [
+      "git fetch",
+      "git pull",
+      "git push",
+      "git clone"
+    ],
+    "answersBG": [
+      "git fetch",
+      "git pull",
+      "git push",
+      "git clone"
+    ],
+    "correctAnswerEN": "git fetch",
+    "correctAnswerBG": "git fetch",
+    "explanationEN": "git fetch updates remote-tracking branches without changing your current branch working tree.",
+    "explanationBG": "git fetch актуализира remote-tracking клонове без да променя working tree на текущия клон."
+  },
+  {
+    "id": "git-github-intermediate-15",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "After fetch, how do you compare your feature branch with origin/main before rebasing?",
+    "questionBG": "След fetch как сравняваш feature клона си с origin/main преди rebase?",
+    "answersEN": [
+      "git log HEAD..origin/main",
+      "git status only",
+      "git clean -fd",
+      "git init"
+    ],
+    "answersBG": [
+      "git log HEAD..origin/main",
+      "git status only",
+      "git clean -fd",
+      "git init"
+    ],
+    "correctAnswerEN": "git log HEAD..origin/main",
+    "correctAnswerBG": "git log HEAD..origin/main",
+    "explanationEN": "Range syntax shows commits reachable from origin/main but not from your HEAD.",
+    "explanationBG": "Range синтаксисът показва commit-и, достижими от origin/main, но не от твоя HEAD."
   },
   {
     "id": "git-github-advanced-15",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to mark a version in history. Which choice is best?",
-    "questionBG": "Developer трябва да маркира версия в history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
-    ],
+    "questionEN": "CI uses git fetch --prune. Why is pruning useful on busy teams?",
+    "questionBG": "CI използва git fetch --prune. Защо prune е полезен при заети екипи?",
     "answersEN": [
-      "tag",
-      "GitHub Actions",
-      "release",
-      "fork"
+      "removes stale remote-tracking branches",
+      "deletes all local branches",
+      "wipes working tree",
+      "disables origin"
     ],
-    "correctAnswerBG": "tag",
-    "correctAnswerEN": "tag",
-    "explanationBG": "Tag сочи към конкретен commit, често за release.",
-    "explanationEN": "tag is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "removes stale remote-tracking branches",
+      "deletes all local branches",
+      "wipes working tree",
+      "disables origin"
+    ],
+    "correctAnswerEN": "removes stale remote-tracking branches",
+    "correctAnswerBG": "removes stale remote-tracking branches",
+    "explanationEN": "--prune deletes remote-tracking refs for branches deleted on the server, keeping refs accurate.",
+    "explanationBG": "--prune изтрива remote-tracking ref-ове за клонове, изтрити на сървъра, и държи ref-овете точни."
+  },
+  {
+    "id": "git-github-beginner-16",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "New contributors open the GitHub repo and see no project overview. Which file should explain setup?",
+    "questionBG": "Нови contributors отварят GitHub repo и няма project overview. Кой файл трябва да обясни setup?",
+    "answersEN": [
+      "README.md",
+      ".gitignore",
+      "LICENSE only",
+      "DerivedData/"
+    ],
+    "answersBG": [
+      "README.md",
+      ".gitignore",
+      "LICENSE only",
+      "DerivedData/"
+    ],
+    "correctAnswerEN": "README.md",
+    "correctAnswerBG": "README.md",
+    "explanationEN": "README.md is the landing document for purpose, build steps, and contribution basics.",
+    "explanationBG": "README.md е началният документ за цел, build стъпки и основи на принос."
+  },
+  {
+    "id": "git-github-intermediate-16",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "The README build steps fail on Apple Silicon Macs. Where should arch-specific notes live?",
+    "questionBG": "README build стъпките се провалят на Apple Silicon Mac. Къде трябва да живеят arch-specific бележки?",
+    "answersEN": [
+      "README troubleshooting section",
+      "random commit message",
+      "binary in repo",
+      "Info.plist only"
+    ],
+    "answersBG": [
+      "README troubleshooting section",
+      "random commit message",
+      "binary in repo",
+      "Info.plist only"
+    ],
+    "correctAnswerEN": "README troubleshooting section",
+    "correctAnswerBG": "README troubleshooting section",
+    "explanationEN": "Documenting platform quirks in README reduces duplicate issues and speeds onboarding.",
+    "explanationBG": "Документирането на platform quirks в README намалява дублирани issues и ускорява onboarding."
   },
   {
     "id": "git-github-advanced-16",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to publish packaged version notes. Which choice is best?",
-    "questionBG": "Developer трябва да публикува packaged version notes. Кой избор е най-подходящ?",
-    "answersBG": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
-    ],
+    "questionEN": "Open source repo needs contribution rules and code of conduct links. Which GitHub feature hosts them prominently?",
+    "questionBG": "Open source repo има нужда от contribution правила и code of conduct линкове. Кой GitHub feature ги показва видно?",
     "answersEN": [
-      "release",
-      "tag",
-      "fork",
-      "clone"
+      "Community profile / CONTRIBUTING.md",
+      "git stash",
+      "force push",
+      "delete wiki only"
     ],
-    "correctAnswerBG": "release",
-    "correctAnswerEN": "release",
-    "explanationBG": "GitHub Release комбинира tag, notes и artifacts.",
-    "explanationEN": "release is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "Community profile / CONTRIBUTING.md",
+      "git stash",
+      "force push",
+      "delete wiki only"
+    ],
+    "correctAnswerEN": "Community profile / CONTRIBUTING.md",
+    "correctAnswerBG": "Community profile / CONTRIBUTING.md",
+    "explanationEN": "CONTRIBUTING.md and community health files set expectations for issues, PRs, and reviews.",
+    "explanationBG": "CONTRIBUTING.md и community health файловете задават очаквания за issues, PR-и и review-та."
+  },
+  {
+    "id": "git-github-beginner-17",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You committed too early and want to uncommit but keep file changes staged. Which reset mode helps?",
+    "questionBG": "Commit-на твърде рано и искаш да отмениш commit, но да запазиш промените staged. Кой reset режим помага?",
+    "answersEN": [
+      "git reset --soft HEAD~1",
+      "git reset --hard HEAD~1",
+      "git push --force",
+      "git clean -fdx"
+    ],
+    "answersBG": [
+      "git reset --soft HEAD~1",
+      "git reset --hard HEAD~1",
+      "git push --force",
+      "git clean -fdx"
+    ],
+    "correctAnswerEN": "git reset --soft HEAD~1",
+    "correctAnswerBG": "git reset --soft HEAD~1",
+    "explanationEN": "--soft moves HEAD back one commit while leaving the index and working tree staged.",
+    "explanationBG": "--soft връща HEAD с един commit назад, като оставя index и working tree staged."
+  },
+  {
+    "id": "git-github-intermediate-17",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You need to discard local commits and match origin/main exactly. Which command is destructive but effective?",
+    "questionBG": "Трябва да отхвърлиш локални commit-и и да съвпаднеш точно с origin/main. Коя команда е разрушителна, но ефективна?",
+    "answersEN": [
+      "git reset --hard origin/main",
+      "git reset --soft only",
+      "git commit --amend all",
+      "git stash forever"
+    ],
+    "answersBG": [
+      "git reset --hard origin/main",
+      "git reset --soft only",
+      "git commit --amend all",
+      "git stash forever"
+    ],
+    "correctAnswerEN": "git reset --hard origin/main",
+    "correctAnswerBG": "git reset --hard origin/main",
+    "explanationEN": "--hard resets HEAD, index, and working tree to match the target, discarding local changes.",
+    "explanationBG": "--hard нулира HEAD, index и working tree към target-а и отхвърля локални промени."
   },
   {
     "id": "git-github-advanced-17",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to copy a repo under your account. Which choice is best?",
-    "questionBG": "Developer трябва да копира repo под твоя account. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
-    ],
+    "questionEN": "A bad commit is already public on a shared branch. Why is revert often preferred over reset?",
+    "questionBG": "Лош commit вече е публичен на споделен клон. Защо revert често е предпочитан пред reset?",
     "answersEN": [
-      "fork",
-      "release",
-      "clone",
-      "remote"
+      "git revert creates a new undo commit safely",
+      "reset is always safer on shared branches",
+      "revert deletes history",
+      "push is not needed"
     ],
-    "correctAnswerBG": "fork",
-    "correctAnswerEN": "fork",
-    "explanationBG": "Fork създава GitHub copy за independent changes.",
-    "explanationEN": "fork is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git revert creates a new undo commit safely",
+      "reset is always safer on shared branches",
+      "revert deletes history",
+      "push is not needed"
+    ],
+    "correctAnswerEN": "git revert creates a new undo commit safely",
+    "correctAnswerBG": "git revert creates a new undo commit safely",
+    "explanationEN": "git revert records a new commit that undoes changes without rewriting published history.",
+    "explanationBG": "git revert записва нов commit, който отменя промени без пренаписване на публикувана история."
+  },
+  {
+    "id": "git-github-beginner-18",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Release 2.0 passed QA. Which command marks that commit with a readable v2.0.0 label?",
+    "questionBG": "Release 2.0 мина QA. Коя команда маркира този commit с четим етикет v2.0.0?",
+    "answersEN": [
+      "git tag v2.0.0",
+      "git branch v2.0.0 only",
+      "git stash v2.0.0",
+      "git clean v2.0.0"
+    ],
+    "answersBG": [
+      "git tag v2.0.0",
+      "git branch v2.0.0 only",
+      "git stash v2.0.0",
+      "git clean v2.0.0"
+    ],
+    "correctAnswerEN": "git tag v2.0.0",
+    "correctAnswerBG": "git tag v2.0.0",
+    "explanationEN": "Tags are named pointers to commits, commonly used for release versions.",
+    "explanationBG": "Tag-овете са именувани указатели към commit-и, често използвани за release версии."
+  },
+  {
+    "id": "git-github-intermediate-18",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "You need to ship a signed annotated tag with release notes. Which command creates it?",
+    "questionBG": "Трябва да публикуваш signed annotated tag с release notes. Коя команда го създава?",
+    "answersEN": [
+      "git tag -a v2.0.0 -m \"notes\"",
+      "git tag -f delete all",
+      "git push without tag",
+      "git branch -d v2.0.0"
+    ],
+    "answersBG": [
+      "git tag -a v2.0.0 -m \"notes\"",
+      "git tag -f delete all",
+      "git push without tag",
+      "git branch -d v2.0.0"
+    ],
+    "correctAnswerEN": "git tag -a v2.0.0 -m \"notes\"",
+    "correctAnswerBG": "git tag -a v2.0.0 -m \"notes\"",
+    "explanationEN": "Annotated tags store metadata and messages; -a creates them separately from lightweight tags.",
+    "explanationBG": "Annotated tag-овете пазят metadata и съобщения; -a ги създава отделно от lightweight tag-ове."
   },
   {
     "id": "git-github-advanced-18",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to refer to the GitHub destination. Which choice is best?",
-    "questionBG": "Developer трябва да посочи GitHub destination. Кой избор е най-подходящ?",
-    "answersBG": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
-    ],
+    "questionEN": "Tags exist locally but GitHub releases page is empty. What is missing?",
+    "questionBG": "Tag-овете съществуват локално, но GitHub releases страницата е празна. Какво липсва?",
     "answersEN": [
-      "remote",
-      "fork",
-      "clone",
-      "staging area"
+      "git push origin --tags",
+      "git fetch --prune only",
+      "git stash pop",
+      "git reset --hard"
     ],
-    "correctAnswerBG": "remote",
-    "correctAnswerEN": "remote",
-    "explanationBG": "Remote е named URL към repository извън локалната машина.",
-    "explanationEN": "remote is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "git push origin --tags",
+      "git fetch --prune only",
+      "git stash pop",
+      "git reset --hard"
+    ],
+    "correctAnswerEN": "git push origin --tags",
+    "correctAnswerBG": "git push origin --tags",
+    "explanationEN": "Tags are not pushed by default; pushing tags publishes them for CI and release automation.",
+    "explanationBG": "Tag-овете не се push-ват по подразбиране; push на tag-ове ги публикува за CI и release automation."
+  },
+  {
+    "id": "git-github-beginner-19",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "You want to contribute to an open source Swift project you do not own. What is the first GitHub step?",
+    "questionBG": "Искаш да допринесеш към open source Swift проект, който не притежаваш. Каква е първата GitHub стъпка?",
+    "answersEN": [
+      "fork the repository",
+      "push directly to upstream main",
+      "delete upstream",
+      "clone without remote"
+    ],
+    "answersBG": [
+      "fork the repository",
+      "push directly to upstream main",
+      "delete upstream",
+      "clone without remote"
+    ],
+    "correctAnswerEN": "fork the repository",
+    "correctAnswerBG": "fork the repository",
+    "explanationEN": "Forking copies the repo to your account so you can push branches without upstream write access.",
+    "explanationBG": "Fork-ването копира repo в акаунта ти, за да push-ваш клонове без write достъп до upstream."
+  },
+  {
+    "id": "git-github-intermediate-19",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "Your fork is behind upstream with 50 new commits. How do you sync before a PR?",
+    "questionBG": "Fork-ът ти изостава от upstream с 50 нови commit-а. Как го синхронизираш преди PR?",
+    "answersEN": [
+      "fetch upstream, merge or rebase into fork",
+      "open PR from upstream to fork randomly",
+      "delete fork",
+      "force push upstream"
+    ],
+    "answersBG": [
+      "fetch upstream, merge or rebase into fork",
+      "open PR from upstream to fork randomly",
+      "delete fork",
+      "force push upstream"
+    ],
+    "correctAnswerEN": "fetch upstream, merge or rebase into fork",
+    "correctAnswerBG": "fetch upstream, merge or rebase into fork",
+    "explanationEN": "Syncing with upstream keeps your PR diff small and tests current with mainline.",
+    "explanationBG": "Синхронизацията с upstream държи PR diff-а малък и тестовете актуални с mainline."
   },
   {
     "id": "git-github-advanced-19",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to prepare only selected changes. Which choice is best?",
-    "questionBG": "Developer трябва да подготви само избрани промени. Кой избор е най-подходящ?",
-    "answersBG": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
-    ],
+    "questionEN": "A maintainer asks you to squash commits on your fork branch. Why do projects request that?",
+    "questionBG": "Maintainer иска да squash-неш commit-ите на fork клона. Защо проектите искат това?",
     "answersEN": [
-      "staging area",
-      "git status",
-      "git add",
-      "git commit"
+      "clean readable history in one logical change",
+      "hide authorship",
+      "break CI",
+      "avoid review"
     ],
-    "correctAnswerBG": "staging area",
-    "correctAnswerEN": "staging area",
-    "explanationBG": "Staging area позволява commit само на избрани промени.",
-    "explanationEN": "staging area is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "clean readable history in one logical change",
+      "hide authorship",
+      "break CI",
+      "avoid review"
+    ],
+    "correctAnswerEN": "clean readable history in one logical change",
+    "correctAnswerBG": "clean readable history in one logical change",
+    "explanationEN": "Squashing combines WIP commits into one cohesive change that is easier to review and bisect.",
+    "explanationBG": "Squash-ването обединява WIP commit-и в една свързана промяна, по-лесна за review и bisect."
+  },
+  {
+    "id": "git-github-beginner-20",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Your feature branch is pushed. What GitHub action asks maintainers to review and merge it?",
+    "questionBG": "Feature клонът е push-нат. Кое GitHub действие моли maintainers да го review-нат и merge-нат?",
+    "answersEN": [
+      "open a Pull Request",
+      "delete the branch",
+      "create a gist",
+      "edit wiki only"
+    ],
+    "answersBG": [
+      "open a Pull Request",
+      "delete the branch",
+      "create a gist",
+      "edit wiki only"
+    ],
+    "correctAnswerEN": "open a Pull Request",
+    "correctAnswerBG": "open a Pull Request",
+    "explanationEN": "Pull Requests propose integrating your branch and host discussion, checks, and reviews.",
+    "explanationBG": "Pull Request-ите предлагат интегриране на клона и хостват дискусия, проверки и review-та."
+  },
+  {
+    "id": "git-github-intermediate-20",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "CI checks fail on your PR. What should you do before requesting re-review?",
+    "questionBG": "CI проверките се провалят на PR. Какво трябва да направиш преди да поискаш re-review?",
+    "answersEN": [
+      "push fixes to the same branch",
+      "close PR permanently",
+      "merge without checks",
+      "rename repo"
+    ],
+    "answersBG": [
+      "push fixes to the same branch",
+      "close PR permanently",
+      "merge without checks",
+      "rename repo"
+    ],
+    "correctAnswerEN": "push fixes to the same branch",
+    "correctAnswerBG": "push fixes to the same branch",
+    "explanationEN": "Additional commits on the PR branch update the same PR and re-run CI automatically.",
+    "explanationBG": "Допълнителни commit-и на PR клона актуализират същия PR и пускат CI автоматично отново."
   },
   {
     "id": "git-github-advanced-20",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to undo a local unstaged edit carefully. Which choice is best?",
-    "questionBG": "Developer трябва да отмени local unstaged edit внимателно. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
-    ],
+    "questionEN": "Reviewer requests changes on a large PR. Which practice speeds approval?",
+    "questionBG": "Reviewer иска промени на голям PR. Коя практика ускорява одобрението?",
     "answersEN": [
-      "git restore",
-      "git add",
-      "git commit",
-      "git branch"
+      "respond per comment, push focused commits",
+      "ignore comments",
+      "split into unrelated force pushes",
+      "disable CI"
     ],
-    "correctAnswerBG": "git restore",
-    "correctAnswerEN": "git restore",
-    "explanationBG": "git restore може да върне working tree files към последния commit.",
-    "explanationEN": "git restore is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "respond per comment, push focused commits",
+      "ignore comments",
+      "split into unrelated force pushes",
+      "disable CI"
+    ],
+    "correctAnswerEN": "respond per comment, push focused commits",
+    "correctAnswerBG": "respond per comment, push focused commits",
+    "explanationEN": "Addressing feedback in tracked commits and replies shows resolution and keeps review context.",
+    "explanationBG": "Адресирането на feedback в проследими commit-и и отговори показва разрешение и пази review контекста."
+  },
+  {
+    "id": "git-github-beginner-21",
+    "categoryId": "git-github",
+    "difficulty": "beginner",
+    "questionEN": "Your team debates merge vs rebase for feature branches. What does rebase emphasize?",
+    "questionBG": "Екипът дебатира merge срещу rebase за feature клонове. Какво подчертава rebase?",
+    "answersEN": [
+      "linear history replaying commits on updated base",
+      "always creating merge commits",
+      "deleting remote branches",
+      "ignoring upstream"
+    ],
+    "answersBG": [
+      "linear history replaying commits on updated base",
+      "always creating merge commits",
+      "deleting remote branches",
+      "ignoring upstream"
+    ],
+    "correctAnswerEN": "linear history replaying commits on updated base",
+    "correctAnswerBG": "linear history replaying commits on updated base",
+    "explanationEN": "Rebase reapplies commits on a new base, avoiding merge bubbles for feature-only history.",
+    "explanationBG": "Rebase преприлага commit-и на нова база и избягва merge балончета за feature-only история."
+  },
+  {
+    "id": "git-github-intermediate-21",
+    "categoryId": "git-github",
+    "difficulty": "intermediate",
+    "questionEN": "When is merge commit preferable to rebase on a shared branch?",
+    "questionBG": "Кога merge commit е предпочитан пред rebase на споделен клон?",
+    "answersEN": [
+      "preserving exact branch integration context",
+      "never on shared branches",
+      "always rewrite history",
+      "avoiding CI"
+    ],
+    "answersBG": [
+      "preserving exact branch integration context",
+      "never on shared branches",
+      "always rewrite history",
+      "avoiding CI"
+    ],
+    "correctAnswerEN": "preserving exact branch integration context",
+    "correctAnswerBG": "preserving exact branch integration context",
+    "explanationEN": "Merge commits record how branches came together, useful for release and long-lived integration branches.",
+    "explanationBG": "Merge commit-ите записват как клоновете са се съединили — полезно за release и дългоживеещи integration клонове."
   },
   {
     "id": "git-github-advanced-21",
     "categoryId": "git-github",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to see commit history. Which choice is best?",
-    "questionBG": "Developer трябва да види commit history. Кой избор е най-подходящ?",
-    "answersBG": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
-    ],
+    "questionEN": "Interactive rebase is planned before merging a long PR. Which risk must the team acknowledge?",
+    "questionBG": "Планира се interactive rebase преди merge на дълъг PR. Кой риск екипът трябва да признае?",
     "answersEN": [
-      "git log",
-      "git commit",
-      "git branch",
-      "git checkout"
+      "rewritten SHAs require coordinated force-with-lease push",
+      "rebase cannot edit messages",
+      "history becomes immutable",
+      "CI never runs"
     ],
-    "correctAnswerBG": "git log",
-    "correctAnswerEN": "git log",
-    "explanationBG": "git log показва commit history и metadata.",
-    "explanationEN": "git log is the best fit here because it directly supports the described Git & GitHub workflow."
+    "answersBG": [
+      "rewritten SHAs require coordinated force-with-lease push",
+      "rebase cannot edit messages",
+      "history becomes immutable",
+      "CI never runs"
+    ],
+    "correctAnswerEN": "rewritten SHAs require coordinated force-with-lease push",
+    "correctAnswerBG": "rewritten SHAs require coordinated force-with-lease push",
+    "explanationEN": "Rebase creates new commit IDs; collaborators must reset or force-with-lease to align with the updated branch.",
+    "explanationBG": "Rebase създава нови commit ID-та; сътрудниците трябва reset или force-with-lease, за да се подравнят с актуализирания клон."
   }
 ]

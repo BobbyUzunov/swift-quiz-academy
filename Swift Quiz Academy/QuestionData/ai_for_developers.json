@@ -3,1449 +3,1449 @@
     "id": "ai-for-developers-beginner-01",
     "categoryId": "ai-for-developers",
     "difficulty": "beginner",
-    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
-    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
+    "questionEN": "A chatbot answer is vague. What prompt change helps first?",
+    "questionBG": "Отговорът на чатбота е твърде общ. Коя промяна в prompt-а помага първо?",
     "answersEN": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Add concrete goal, constraints, and output format",
+      "Increase max tokens only",
+      "Remove all context",
+      "Use random emojis"
     ],
-    "correctAnswerBG": "prompt",
-    "correctAnswerEN": "prompt",
-    "explanationBG": "Prompt е входът, който насочва AI системата.",
-    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-02",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
-    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
     "answersBG": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Добави конкретна цел, ограничения и формат",
+      "Само увеличи max tokens",
+      "Премахни целия контекст",
+      "Случайни емоджита"
     ],
-    "answersEN": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "correctAnswerBG": "model",
-    "correctAnswerEN": "model",
-    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
-    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-03",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
-    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "answersEN": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "correctAnswerBG": "token",
-    "correctAnswerEN": "token",
-    "explanationBG": "Tokens са парчета текст, с които language models работят.",
-    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-04",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
-    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
-    ],
-    "answersEN": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
-    ],
-    "correctAnswerBG": "context window",
-    "correctAnswerEN": "context window",
-    "explanationBG": "Context window е максималният обем input/output context.",
-    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-05",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
-    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "answersEN": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "correctAnswerBG": "hallucination",
-    "correctAnswerEN": "hallucination",
-    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
-    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-06",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
-    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
-    "answersBG": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "answersEN": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "correctAnswerBG": "human review",
-    "correctAnswerEN": "human review",
-    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
-    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-07",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
-    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
-    ],
-    "answersEN": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
-    ],
-    "correctAnswerBG": "privacy review",
-    "correctAnswerEN": "privacy review",
-    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
-    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-08",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
-    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
-    ],
-    "answersEN": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
-    ],
-    "correctAnswerBG": "prompt injection",
-    "correctAnswerEN": "prompt injection",
-    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
-    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-09",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
-    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
-    "answersBG": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
-    ],
-    "answersEN": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
-    ],
-    "correctAnswerBG": "grounding",
-    "correctAnswerEN": "grounding",
-    "explanationBG": "Grounding свързва output с надеждни източници.",
-    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-10",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
-    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
-    "answersBG": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
-    ],
-    "answersEN": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
-    ],
-    "correctAnswerBG": "retrieval",
-    "correctAnswerEN": "retrieval",
-    "explanationBG": "Retrieval добавя външен context към AI отговор.",
-    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-11",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
-    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
-    "answersBG": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
-    ],
-    "answersEN": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
-    ],
-    "correctAnswerBG": "embedding",
-    "correctAnswerEN": "embedding",
-    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
-    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-12",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
-    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
-    "answersBG": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
-    ],
-    "answersEN": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
-    ],
-    "correctAnswerBG": "temperature",
-    "correctAnswerEN": "temperature",
-    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
-    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-13",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
-    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
-    ],
-    "answersEN": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
-    ],
-    "correctAnswerBG": "evals",
-    "correctAnswerEN": "evals",
-    "explanationBG": "Evals проверяват quality, safety и regressions.",
-    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-14",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to label input into categories. Which choice is best?",
-    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
-    "answersBG": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
-    ],
-    "answersEN": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
-    ],
-    "correctAnswerBG": "classification",
-    "correctAnswerEN": "classification",
-    "explanationBG": "Classification избира category label за input.",
-    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-15",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
-    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
-    "answersBG": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
-    ],
-    "answersEN": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
-    ],
-    "correctAnswerBG": "regression",
-    "correctAnswerEN": "regression",
-    "explanationBG": "Regression прогнозира числова стойност.",
-    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-16",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
-    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
-    "answersBG": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
-    ],
-    "answersEN": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
-    ],
-    "correctAnswerBG": "inference",
-    "correctAnswerEN": "inference",
-    "explanationBG": "Inference използва model-а след training.",
-    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-17",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
-    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
-    "answersBG": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
-    ],
-    "answersEN": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
-    ],
-    "correctAnswerBG": "bias",
-    "correctAnswerEN": "bias",
-    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
-    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-18",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
-    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
-    ],
-    "answersEN": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
-    ],
-    "correctAnswerBG": "overfitting",
-    "correctAnswerEN": "overfitting",
-    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
-    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-19",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to test during model development. Which choice is best?",
-    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
-    "answersBG": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
-    ],
-    "answersEN": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
-    ],
-    "correctAnswerBG": "validation set",
-    "correctAnswerEN": "validation set",
-    "explanationBG": "Validation set помага да се оценява model без training leakage.",
-    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-20",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
-    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "answersEN": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "correctAnswerBG": "fine-tuning",
-    "correctAnswerEN": "fine-tuning",
-    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
-    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-beginner-21",
-    "categoryId": "ai-for-developers",
-    "difficulty": "beginner",
-    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
-    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
-    "answersBG": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "answersEN": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "correctAnswerBG": "system prompt",
-    "correctAnswerEN": "system prompt",
-    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
-    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+    "correctAnswerEN": "Add concrete goal, constraints, and output format",
+    "correctAnswerBG": "Добави конкретна цел, ограничения и формат",
+    "explanationEN": "Specific prompts reduce ambiguity and steer the model toward actionable outputs.",
+    "explanationBG": "Конкретният prompt намалява двусмислието и насочва модела към използваем резултат."
   },
   {
     "id": "ai-for-developers-intermediate-01",
     "categoryId": "ai-for-developers",
     "difficulty": "intermediate",
-    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
-    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
+    "questionEN": "Team prompts differ wildly and quality is inconsistent. What process should be introduced?",
+    "questionBG": "Екипните prompt-и са различни и качеството е непостоянно. Какъв процес трябва да се въведе?",
     "answersEN": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Prompt templates with versioning and review",
+      "Everyone writes ad-hoc prompts",
+      "Disable system prompts",
+      "Use one-word prompts"
     ],
-    "correctAnswerBG": "prompt",
-    "correctAnswerEN": "prompt",
-    "explanationBG": "Prompt е входът, който насочва AI системата.",
-    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-02",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
-    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
     "answersBG": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Prompt шаблони с versioning и review",
+      "Ad-hoc prompt от всеки",
+      "Изключване на system prompt",
+      "Prompt от една дума"
     ],
-    "answersEN": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "correctAnswerBG": "model",
-    "correctAnswerEN": "model",
-    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
-    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-03",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
-    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "answersEN": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "correctAnswerBG": "token",
-    "correctAnswerEN": "token",
-    "explanationBG": "Tokens са парчета текст, с които language models работят.",
-    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-04",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
-    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
-    ],
-    "answersEN": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
-    ],
-    "correctAnswerBG": "context window",
-    "correctAnswerEN": "context window",
-    "explanationBG": "Context window е максималният обем input/output context.",
-    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-05",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
-    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "answersEN": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "correctAnswerBG": "hallucination",
-    "correctAnswerEN": "hallucination",
-    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
-    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-06",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
-    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
-    "answersBG": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "answersEN": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
-    ],
-    "correctAnswerBG": "human review",
-    "correctAnswerEN": "human review",
-    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
-    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-07",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
-    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
-    ],
-    "answersEN": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
-    ],
-    "correctAnswerBG": "privacy review",
-    "correctAnswerEN": "privacy review",
-    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
-    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-08",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
-    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
-    ],
-    "answersEN": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
-    ],
-    "correctAnswerBG": "prompt injection",
-    "correctAnswerEN": "prompt injection",
-    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
-    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-09",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
-    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
-    "answersBG": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
-    ],
-    "answersEN": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
-    ],
-    "correctAnswerBG": "grounding",
-    "correctAnswerEN": "grounding",
-    "explanationBG": "Grounding свързва output с надеждни източници.",
-    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-10",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
-    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
-    "answersBG": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
-    ],
-    "answersEN": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
-    ],
-    "correctAnswerBG": "retrieval",
-    "correctAnswerEN": "retrieval",
-    "explanationBG": "Retrieval добавя външен context към AI отговор.",
-    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-11",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
-    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
-    "answersBG": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
-    ],
-    "answersEN": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
-    ],
-    "correctAnswerBG": "embedding",
-    "correctAnswerEN": "embedding",
-    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
-    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-12",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
-    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
-    "answersBG": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
-    ],
-    "answersEN": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
-    ],
-    "correctAnswerBG": "temperature",
-    "correctAnswerEN": "temperature",
-    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
-    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-13",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
-    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
-    ],
-    "answersEN": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
-    ],
-    "correctAnswerBG": "evals",
-    "correctAnswerEN": "evals",
-    "explanationBG": "Evals проверяват quality, safety и regressions.",
-    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-14",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to label input into categories. Which choice is best?",
-    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
-    "answersBG": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
-    ],
-    "answersEN": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
-    ],
-    "correctAnswerBG": "classification",
-    "correctAnswerEN": "classification",
-    "explanationBG": "Classification избира category label за input.",
-    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-15",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
-    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
-    "answersBG": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
-    ],
-    "answersEN": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
-    ],
-    "correctAnswerBG": "regression",
-    "correctAnswerEN": "regression",
-    "explanationBG": "Regression прогнозира числова стойност.",
-    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-16",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
-    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
-    "answersBG": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
-    ],
-    "answersEN": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
-    ],
-    "correctAnswerBG": "inference",
-    "correctAnswerEN": "inference",
-    "explanationBG": "Inference използва model-а след training.",
-    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-17",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
-    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
-    "answersBG": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
-    ],
-    "answersEN": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
-    ],
-    "correctAnswerBG": "bias",
-    "correctAnswerEN": "bias",
-    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
-    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-18",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
-    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
-    ],
-    "answersEN": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
-    ],
-    "correctAnswerBG": "overfitting",
-    "correctAnswerEN": "overfitting",
-    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
-    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-19",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to test during model development. Which choice is best?",
-    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
-    "answersBG": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
-    ],
-    "answersEN": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
-    ],
-    "correctAnswerBG": "validation set",
-    "correctAnswerEN": "validation set",
-    "explanationBG": "Validation set помага да се оценява model без training leakage.",
-    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-20",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
-    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "answersEN": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
-    "correctAnswerBG": "fine-tuning",
-    "correctAnswerEN": "fine-tuning",
-    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
-    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
-  },
-  {
-    "id": "ai-for-developers-intermediate-21",
-    "categoryId": "ai-for-developers",
-    "difficulty": "intermediate",
-    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
-    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
-    "answersBG": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "answersEN": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
-    "correctAnswerBG": "system prompt",
-    "correctAnswerEN": "system prompt",
-    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
-    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+    "correctAnswerEN": "Prompt templates with versioning and review",
+    "correctAnswerBG": "Prompt шаблони с versioning и review",
+    "explanationEN": "Versioned templates create repeatability and make prompt changes auditable.",
+    "explanationBG": "Versioned шаблоните дават повторяемост и правят промените в prompt-ите проследими."
   },
   {
     "id": "ai-for-developers-advanced-01",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to give instructions to an AI tool. Which choice is best?",
-    "questionBG": "Developer трябва да даде инструкции на AI tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
+    "questionEN": "A critical support bot needs deterministic style across releases. What architecture is strongest?",
+    "questionBG": "Критичен support бот иска детерминиран стил между release-и. Коя архитектура е най-силна?",
     "answersEN": [
-      "prompt",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Prompt contract tests + pinned model/version + regression suite",
+      "Always use latest model blindly",
+      "Manual spot checks only",
+      "No prompt governance"
     ],
-    "correctAnswerBG": "prompt",
-    "correctAnswerEN": "prompt",
-    "explanationBG": "Prompt е входът, който насочва AI системата.",
-    "explanationEN": "prompt is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Prompt contract тестове + pinned model/version + regression suite",
+      "Винаги latest модел без проверка",
+      "Само ръчни spot проверки",
+      "Без управление на prompt-ите"
+    ],
+    "correctAnswerEN": "Prompt contract tests + pinned model/version + regression suite",
+    "correctAnswerBG": "Prompt contract тестове + pinned model/version + regression suite",
+    "explanationEN": "Deterministic behavior needs controlled model versions and automated regression checks.",
+    "explanationBG": "Детерминираното поведение изисква контролирани версии на модела и автоматични регресионни проверки."
+  },
+  {
+    "id": "ai-for-developers-beginner-02",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "The model ignores your app policy and answers too freely. What message type should carry policy?",
+    "questionBG": "Моделът игнорира политиката на приложението и отговаря твърде свободно. Кой тип съобщение носи политиката?",
+    "answersEN": [
+      "System message",
+      "Last user message only",
+      "Tool result",
+      "Assistant reply"
+    ],
+    "answersBG": [
+      "System message",
+      "Само последното user съобщение",
+      "Tool result",
+      "Assistant reply"
+    ],
+    "correctAnswerEN": "System message",
+    "correctAnswerBG": "System message",
+    "explanationEN": "System messages define global behavior and constraints for the conversation.",
+    "explanationBG": "System съобщенията задават глобалното поведение и ограничения в разговора."
+  },
+  {
+    "id": "ai-for-developers-intermediate-02",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Rules are in system prompt, but a user asks to ignore them. What should happen?",
+    "questionBG": "Правилата са в system prompt, но потребителят иска да ги игнорира. Какво трябва да стане?",
+    "answersEN": [
+      "Keep system policy precedence",
+      "Follow user request immediately",
+      "Delete system message",
+      "Switch to random mode"
+    ],
+    "answersBG": [
+      "Запази приоритета на system политиката",
+      "Изпълни веднага user искането",
+      "Изтрий system съобщението",
+      "Случаен режим"
+    ],
+    "correctAnswerEN": "Keep system policy precedence",
+    "correctAnswerBG": "Запази приоритета на system политиката",
+    "explanationEN": "Hierarchy matters: system instructions override user attempts to bypass safety constraints.",
+    "explanationBG": "Йерархията е важна: system инструкциите имат приоритет пред опитите за заобикаляне."
   },
   {
     "id": "ai-for-developers-advanced-02",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to describe the AI system being used. Which choice is best?",
-    "questionBG": "Developer трябва да опише използваната AI система. Кой избор е най-подходящ?",
-    "answersBG": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
+    "questionEN": "Enterprise app has legal and tone policies changing often. How should instruction layers be managed?",
+    "questionBG": "Enterprise приложение има често променящи се legal и tone политики. Как да се управляват instruction слоевете?",
     "answersEN": [
-      "model",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Policy engine composing system instructions by tenant/version",
+      "Hardcode one giant static prompt forever",
+      "Let users choose policy",
+      "No central instruction store"
     ],
-    "correctAnswerBG": "model",
-    "correctAnswerEN": "model",
-    "explanationBG": "Model е обучената система, която прави predictions или генерира output.",
-    "explanationEN": "model is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Policy engine, който композира system инструкции по tenant/версия",
+      "Един статичен огромен prompt завинаги",
+      "Потребителите избират политика",
+      "Без централно хранилище за инструкции"
+    ],
+    "correctAnswerEN": "Policy engine composing system instructions by tenant/version",
+    "correctAnswerBG": "Policy engine, който композира system инструкции по tenant/версия",
+    "explanationEN": "Composed instruction layers enable controlled policy updates without fragile manual edits.",
+    "explanationBG": "Композираните instruction слоеве позволяват контролирани policy промени без чупливи ръчни редакции."
+  },
+  {
+    "id": "ai-for-developers-beginner-03",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "The model response is cut off mid-sentence. What likely limit was reached?",
+    "questionBG": "Отговорът на модела е прекъснат по средата на изречение. Кой лимит вероятно е достигнат?",
+    "answersEN": [
+      "Token limit",
+      "GPU temperature limit",
+      "HTTP method limit",
+      "Locale limit"
+    ],
+    "answersBG": [
+      "Token лимит",
+      "GPU температурен лимит",
+      "HTTP method лимит",
+      "Locale лимит"
+    ],
+    "correctAnswerEN": "Token limit",
+    "correctAnswerBG": "Token лимит",
+    "explanationEN": "Model context and output are token-bounded; long prompts can truncate completions.",
+    "explanationBG": "Контекстът и изходът на модела са ограничени по token-и; дългите prompt-и режат отговора."
+  },
+  {
+    "id": "ai-for-developers-intermediate-03",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "A long meeting transcript causes expensive calls and latency. What first optimization is practical?",
+    "questionBG": "Дълъг transcript от среща води до скъпи и бавни заявки. Коя първа оптимизация е практична?",
+    "answersEN": [
+      "Summarize/compress context before final prompt",
+      "Increase temperature",
+      "Disable retries",
+      "Use fewer punctuation marks"
+    ],
+    "answersBG": [
+      "Обобщи/компресирай контекста преди финалния prompt",
+      "Увеличи temperature",
+      "Изключи retry",
+      "По-малко пунктуация"
+    ],
+    "correctAnswerEN": "Summarize/compress context before final prompt",
+    "correctAnswerBG": "Обобщи/компресирай контекста преди финалния prompt",
+    "explanationEN": "Context compression preserves key facts while reducing token spend and latency.",
+    "explanationBG": "Компресията на контекста пази важните факти и намалява token разхода и забавянето."
   },
   {
     "id": "ai-for-developers-advanced-03",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to split text for model processing. Which choice is best?",
-    "questionBG": "Developer трябва да раздели текст за model processing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
+    "questionEN": "You need predictable token budgets per request in production. What strategy works best?",
+    "questionBG": "Трябва предвидим token бюджет за всяка заявка в production. Коя стратегия работи най-добре?",
     "answersEN": [
-      "token",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
+      "Preflight token estimation + adaptive truncation policy",
+      "Hope prompts stay short",
+      "Disable context entirely",
+      "Use random chunk order"
     ],
-    "correctAnswerBG": "token",
-    "correctAnswerEN": "token",
-    "explanationBG": "Tokens са парчета текст, с които language models работят.",
-    "explanationEN": "token is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Preflight token оценка + adaptive truncation политика",
+      "Надявай се prompt-ите да са кратки",
+      "Пълно премахване на контекста",
+      "Случаен ред на chunk-овете"
+    ],
+    "correctAnswerEN": "Preflight token estimation + adaptive truncation policy",
+    "correctAnswerBG": "Preflight token оценка + adaptive truncation политика",
+    "explanationEN": "Estimating before call allows deterministic trimming and cost control.",
+    "explanationBG": "Оценката преди заявка позволява детерминирано съкращаване и контрол на разхода."
+  },
+  {
+    "id": "ai-for-developers-beginner-04",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "The model invents a non-existent API method. What is this called?",
+    "questionBG": "Моделът измисля несъществуващ API метод. Как се нарича това?",
+    "answersEN": [
+      "Hallucination",
+      "Embedding drift",
+      "Token clipping",
+      "Batching"
+    ],
+    "answersBG": [
+      "Hallucination",
+      "Embedding drift",
+      "Token clipping",
+      "Batching"
+    ],
+    "correctAnswerEN": "Hallucination",
+    "correctAnswerBG": "Hallucination",
+    "explanationEN": "Hallucination means producing plausible but incorrect facts not grounded in evidence.",
+    "explanationBG": "Hallucination означава правдоподобни, но неверни твърдения без реална опора."
+  },
+  {
+    "id": "ai-for-developers-intermediate-04",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Support agent must avoid guessing and answer only from docs. What prompt rule helps?",
+    "questionBG": "Support агент не трябва да гадае и трябва да отговаря само от документация. Кое prompt правило помага?",
+    "answersEN": [
+      "If unsure, say unknown and cite source requirement",
+      "Always answer confidently",
+      "Remove source references",
+      "Increase creativity"
+    ],
+    "answersBG": [
+      "При несигурност казвай „не знам“ и изисквай източник",
+      "Винаги уверен отговор",
+      "Премахни източниците",
+      "Повиши креативността"
+    ],
+    "correctAnswerEN": "If unsure, say unknown and cite source requirement",
+    "correctAnswerBG": "При несигурност казвай „не знам“ и изисквай източник",
+    "explanationEN": "Explicit uncertainty policy reduces fabricated answers and improves trust.",
+    "explanationBG": "Явната политика при несигурност намалява измислените отговори и повишава доверието."
   },
   {
     "id": "ai-for-developers-advanced-04",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to limit how much text the model can consider. Which choice is best?",
-    "questionBG": "Developer трябва да ограничи колко текст model-ът може да разгледа. Кой избор е най-подходящ?",
-    "answersBG": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
-    ],
+    "questionEN": "Regulated workflow needs proof every answer is grounded. What architecture supports this?",
+    "questionBG": "Регулиран процес изисква доказателство, че всеки отговор е обоснован. Коя архитектура го поддържа?",
     "answersEN": [
-      "context window",
-      "fine-tuning",
-      "embedding",
-      "token"
+      "Citation-required RAG pipeline with answerability checks",
+      "Pure model memory answers",
+      "No retrieval to save cost",
+      "Post-edit by interns only"
     ],
-    "correctAnswerBG": "context window",
-    "correctAnswerEN": "context window",
-    "explanationBG": "Context window е максималният обем input/output context.",
-    "explanationEN": "context window is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "RAG pipeline с задължителни цитати и answerability проверки",
+      "Отговори само по памет на модела",
+      "Без retrieval за пестене",
+      "Само ръчно редактиране от стажанти"
+    ],
+    "correctAnswerEN": "Citation-required RAG pipeline with answerability checks",
+    "correctAnswerBG": "RAG pipeline с задължителни цитати и answerability проверки",
+    "explanationEN": "Grounded citations plus answerability gates provide traceability and compliance evidence.",
+    "explanationBG": "Обосновани цитати и answerability проверки дават проследимост и доказателство за compliance."
+  },
+  {
+    "id": "ai-for-developers-beginner-05",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "You want less random wording in generated release notes. Which parameter usually lowers randomness?",
+    "questionBG": "Искаш по-малко случайни формулировки в release notes. Кой параметър обикновено намалява случайността?",
+    "answersEN": [
+      "Lower temperature",
+      "Higher top-p and temperature",
+      "Higher max tokens only",
+      "Longer system message only"
+    ],
+    "answersBG": [
+      "По-ниска temperature",
+      "По-високи top-p и temperature",
+      "Само повече max tokens",
+      "Само по-дълъг system prompt"
+    ],
+    "correctAnswerEN": "Lower temperature",
+    "correctAnswerBG": "По-ниска temperature",
+    "explanationEN": "Lower temperature favors higher-probability tokens and more deterministic phrasing.",
+    "explanationBG": "По-ниската temperature предпочита по-вероятните token-и и по-детерминирани фрази."
+  },
+  {
+    "id": "ai-for-developers-intermediate-05",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Creative brainstorming output became repetitive after lowering temperature. What adjustment is reasonable?",
+    "questionBG": "Креативният brainstorming стана повтаряем след ниска temperature. Каква корекция е разумна?",
+    "answersEN": [
+      "Increase temperature for ideation mode",
+      "Set temperature to zero forever",
+      "Disable prompt context",
+      "Use fewer examples"
+    ],
+    "answersBG": [
+      "Повиши temperature за ideation режим",
+      "Остави temperature нула завинаги",
+      "Изключи prompt контекста",
+      "По-малко примери"
+    ],
+    "correctAnswerEN": "Increase temperature for ideation mode",
+    "correctAnswerBG": "Повиши temperature за ideation режим",
+    "explanationEN": "Different tasks require different entropy; ideation benefits from controlled diversity.",
+    "explanationBG": "Различните задачи искат различна ентропия; ideation печели от контролирано разнообразие."
   },
   {
     "id": "ai-for-developers-advanced-05",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to recognize confident but false output. Which choice is best?",
-    "questionBG": "Developer трябва да разпознае уверен, но грешен output. Кой избор е най-подходящ?",
-    "answersBG": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
-    ],
+    "questionEN": "App uses one model for both legal summaries and creative copy. What sampling strategy is best?",
+    "questionBG": "Приложението ползва един модел за legal summary и за creative copy. Коя sampling стратегия е най-добра?",
     "answersEN": [
-      "hallucination",
-      "embedding",
-      "token",
-      "temperature"
+      "Task-specific sampling profiles per use case",
+      "One global temperature for everything",
+      "No parameter control at all",
+      "Randomize settings each request"
     ],
-    "correctAnswerBG": "hallucination",
-    "correctAnswerEN": "hallucination",
-    "explanationBG": "Hallucination е output, който звучи убедително, но не е вярен.",
-    "explanationEN": "hallucination is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Task-specific sampling профили по use case",
+      "Една глобална temperature за всичко",
+      "Без контрол на параметрите",
+      "Случайни настройки при всяка заявка"
+    ],
+    "correctAnswerEN": "Task-specific sampling profiles per use case",
+    "correctAnswerBG": "Task-specific sampling профили по use case",
+    "explanationEN": "Per-task profiles optimize determinism where needed and creativity where useful.",
+    "explanationBG": "Профилите по задача дават детерминираност там, където е нужна, и креативност там, където е полезна."
+  },
+  {
+    "id": "ai-for-developers-beginner-06",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "You need semantic search over docs, not keyword match. What representation is required?",
+    "questionBG": "Трябва семантично търсене в документация, не keyword съвпадение. Какво представяне е нужно?",
+    "answersEN": [
+      "Embeddings",
+      "Regex only",
+      "PNG thumbnails",
+      "JWT tokens"
+    ],
+    "answersBG": [
+      "Embeddings",
+      "Само regex",
+      "PNG thumbnails",
+      "JWT token-и"
+    ],
+    "correctAnswerEN": "Embeddings",
+    "correctAnswerBG": "Embeddings",
+    "explanationEN": "Embeddings map text to vectors capturing semantic similarity beyond exact words.",
+    "explanationBG": "Embeddings превръщат текста във вектори и улавят семантична близост отвъд точните думи."
+  },
+  {
+    "id": "ai-for-developers-intermediate-06",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Search quality drops because old and new docs share one embedding index. What fix helps?",
+    "questionBG": "Качеството на търсене пада, защото стари и нови документи са в един embedding индекс. Кой fix помага?",
+    "answersEN": [
+      "Metadata filters + recency-aware retrieval",
+      "More stopwords",
+      "Sort by file name only",
+      "Disable vector normalization"
+    ],
+    "answersBG": [
+      "Metadata филтри + recency-aware retrieval",
+      "Повече stopwords",
+      "Сортиране само по име на файл",
+      "Изключване на vector normalization"
+    ],
+    "correctAnswerEN": "Metadata filters + recency-aware retrieval",
+    "correctAnswerBG": "Metadata филтри + recency-aware retrieval",
+    "explanationEN": "Metadata and recency constraints keep retrieval aligned with current, relevant documents.",
+    "explanationBG": "Metadata и recency ограничения държат retrieval-а фокусиран върху актуални и релевантни документи."
   },
   {
     "id": "ai-for-developers-advanced-06",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to check risky AI output before acting. Which choice is best?",
-    "questionBG": "Developer трябва да провери рисков AI output преди действие. Кой избор е най-подходящ?",
-    "answersBG": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
-    ],
+    "questionEN": "You run multilingual product docs with one retrieval stack. What embedding strategy is robust?",
+    "questionBG": "Имаш многоезични продуктови документи с един retrieval стек. Коя embedding стратегия е устойчива?",
     "answersEN": [
-      "human review",
-      "embedding",
-      "token",
-      "temperature"
+      "Multilingual embedding model with language-aware evaluation",
+      "Separate random model per language without eval",
+      "Translate everything manually daily",
+      "English-only index"
     ],
-    "correctAnswerBG": "human review",
-    "correctAnswerEN": "human review",
-    "explanationBG": "Human review намалява вредата при high-impact AI decisions.",
-    "explanationEN": "human review is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Multilingual embedding модел с language-aware evaluation",
+      "Случаен отделен модел по език без eval",
+      "Ръчен ежедневен превод на всичко",
+      "Само английски индекс"
+    ],
+    "correctAnswerEN": "Multilingual embedding model with language-aware evaluation",
+    "correctAnswerBG": "Multilingual embedding модел с language-aware evaluation",
+    "explanationEN": "Multilingual embeddings need targeted evaluation per language to ensure parity.",
+    "explanationBG": "Multilingual embedding-ите изискват целенасочена оценка по език за равностойно качество."
+  },
+  {
+    "id": "ai-for-developers-beginner-07",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "RAG answers quote irrelevant chunks from giant documents. What chunking change helps first?",
+    "questionBG": "RAG отговорите цитират нерелевантни части от огромни документи. Коя chunking промяна помага първо?",
+    "answersEN": [
+      "Smaller semantic chunks with overlap",
+      "One chunk per entire document",
+      "No chunk metadata",
+      "Random sentence sampling"
+    ],
+    "answersBG": [
+      "По-малки семантични chunk-ове с overlap",
+      "Един chunk за целия документ",
+      "Без chunk metadata",
+      "Случайна извадка от изречения"
+    ],
+    "correctAnswerEN": "Smaller semantic chunks with overlap",
+    "correctAnswerBG": "По-малки семантични chunk-ове с overlap",
+    "explanationEN": "Semantic chunking improves retrieval precision while overlap preserves context continuity.",
+    "explanationBG": "Семантичното chunk-ване подобрява точността на retrieval-а, а overlap пази контекста непрекъснат."
+  },
+  {
+    "id": "ai-for-developers-intermediate-07",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Retriever returns good chunks, but final answer ignores them. What prompt addition helps?",
+    "questionBG": "Retriever връща добри chunk-ове, но финалният отговор ги игнорира. Какво допълнение в prompt-а помага?",
+    "answersEN": [
+      "Require evidence-based answer with explicit citations",
+      "Hide retrieved context from model",
+      "Increase temperature only",
+      "Remove user question"
+    ],
+    "answersBG": [
+      "Изисквай evidence-based отговор с явни цитати",
+      "Скрий retrieval контекста от модела",
+      "Само по-висока temperature",
+      "Премахни user въпроса"
+    ],
+    "correctAnswerEN": "Require evidence-based answer with explicit citations",
+    "correctAnswerBG": "Изисквай evidence-based отговор с явни цитати",
+    "explanationEN": "Citation requirements force the model to ground output in retrieved evidence.",
+    "explanationBG": "Изискването за цитати принуждава модела да обоснове отговора с retrieval доказателства."
   },
   {
     "id": "ai-for-developers-advanced-07",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to avoid sending secrets to a tool. Which choice is best?",
-    "questionBG": "Developer трябва да избегне изпращане на secrets към tool. Кой избор е най-подходящ?",
-    "answersBG": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
-    ],
+    "questionEN": "RAG must answer from private docs plus user account data safely. What architecture is strongest?",
+    "questionBG": "RAG трябва да отговаря от частни документи плюс user account данни безопасно. Коя архитектура е най-силна?",
     "answersEN": [
-      "privacy review",
-      "token",
-      "temperature",
-      "validation set"
+      "Scoped retrieval with authorization filters before generation",
+      "Retrieve all docs then filter after answer",
+      "No auth filtering for speed",
+      "Client-side hidden prompts only"
     ],
-    "correctAnswerBG": "privacy review",
-    "correctAnswerEN": "privacy review",
-    "explanationBG": "Privacy review уточнява дали данните могат да се използват с даден tool.",
-    "explanationEN": "privacy review is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Scoped retrieval с authorization филтри преди генерация",
+      "Първо retrieval на всичко, после филтър",
+      "Без auth филтри за скорост",
+      "Само client-side скрити prompt-и"
+    ],
+    "correctAnswerEN": "Scoped retrieval with authorization filters before generation",
+    "correctAnswerBG": "Scoped retrieval с authorization филтри преди генерация",
+    "explanationEN": "Security must gate retrieval itself, otherwise sensitive context can leak into generation.",
+    "explanationBG": "Сигурността трябва да ограничава самия retrieval, иначе чувствителен контекст може да изтече в генерацията."
+  },
+  {
+    "id": "ai-for-developers-beginner-08",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "Your team debates if model quality improved after prompt change. What is needed to decide objectively?",
+    "questionBG": "Екипът спори дали качеството се е подобрило след prompt промяна. Какво е нужно за обективно решение?",
+    "answersEN": [
+      "Evaluation set with baseline comparison",
+      "Gut feeling only",
+      "One demo conversation",
+      "Higher token limit"
+    ],
+    "answersBG": [
+      "Evaluation набор с сравнение към baseline",
+      "Само усещане",
+      "Един demo разговор",
+      "По-висок token лимит"
+    ],
+    "correctAnswerEN": "Evaluation set with baseline comparison",
+    "correctAnswerBG": "Evaluation набор с сравнение към baseline",
+    "explanationEN": "A fixed eval set converts subjective debate into measurable quality deltas.",
+    "explanationBG": "Фиксираният eval набор превръща субективния спор в измерима разлика в качеството."
+  },
+  {
+    "id": "ai-for-developers-intermediate-08",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Accuracy is high, but users still complain. Which additional metric should be tracked?",
+    "questionBG": "Точността е висока, но потребителите пак се оплакват. Коя допълнителна метрика трябва да се следи?",
+    "answersEN": [
+      "Task success/user satisfaction signal",
+      "Prompt length only",
+      "Number of commas",
+      "GPU memory usage only"
+    ],
+    "answersBG": [
+      "Task success / user satisfaction сигнал",
+      "Само дължина на prompt",
+      "Брой запетаи",
+      "Само GPU памет"
+    ],
+    "correctAnswerEN": "Task success/user satisfaction signal",
+    "correctAnswerBG": "Task success / user satisfaction сигнал",
+    "explanationEN": "User-perceived usefulness may diverge from raw accuracy; product metrics close that gap.",
+    "explanationBG": "Потребителската полезност може да се разминава с голата точност; продуктови метрики затварят тази пропаст."
   },
   {
     "id": "ai-for-developers-advanced-08",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to protect prompts from malicious user text. Which choice is best?",
-    "questionBG": "Developer трябва да пази prompts от malicious user text. Кой избор е най-подходящ?",
-    "answersBG": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
-    ],
+    "questionEN": "You need continuous LLM quality monitoring in production with safe rollouts. What setup works best?",
+    "questionBG": "Трябва непрекъснат monitoring на LLM качеството в production със safe rollout. Коя настройка работи най-добре?",
     "answersEN": [
-      "prompt injection",
-      "temperature",
-      "validation set",
-      "human review"
+      "Canary evals + shadow traffic + rollback thresholds",
+      "Deploy globally and watch Twitter",
+      "No monitoring after launch",
+      "Manual monthly checks only"
     ],
-    "correctAnswerBG": "prompt injection",
-    "correctAnswerEN": "prompt injection",
-    "explanationBG": "Prompt injection се опитва да промени инструкциите чрез входни данни.",
-    "explanationEN": "prompt injection is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Canary eval-и + shadow трафик + rollback прагове",
+      "Глобален deploy и следене на Twitter",
+      "Без monitoring след launch",
+      "Само месечни ръчни проверки"
+    ],
+    "correctAnswerEN": "Canary evals + shadow traffic + rollback thresholds",
+    "correctAnswerBG": "Canary eval-и + shadow трафик + rollback прагове",
+    "explanationEN": "Canaries and shadowing catch regressions early while limiting blast radius.",
+    "explanationBG": "Canary и shadow подходите хващат регресии рано и ограничават риска за потребителите."
+  },
+  {
+    "id": "ai-for-developers-beginner-09",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A prompt injection asks the bot to reveal hidden instructions. What should the app do?",
+    "questionBG": "Prompt injection кара бота да разкрие скрити инструкции. Какво трябва да направи приложението?",
+    "answersEN": [
+      "Refuse and enforce system policy",
+      "Print full system prompt",
+      "Disable moderation",
+      "Trust user input fully"
+    ],
+    "answersBG": [
+      "Отказ и налагане на system политиката",
+      "Покажи целия system prompt",
+      "Изключи moderation",
+      "Пълно доверие на user input"
+    ],
+    "correctAnswerEN": "Refuse and enforce system policy",
+    "correctAnswerBG": "Отказ и налагане на system политиката",
+    "explanationEN": "Injection attempts must be treated as adversarial and blocked by policy hierarchy.",
+    "explanationBG": "Injection опитите са adversarial и трябва да бъдат блокирани от policy йерархията."
+  },
+  {
+    "id": "ai-for-developers-intermediate-09",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Retrieved documents may contain malicious instructions. What defensive RAG step is needed?",
+    "questionBG": "Retrieved документи може да съдържат злонамерени инструкции. Коя защитна стъпка в RAG е нужна?",
+    "answersEN": [
+      "Context sanitization and instruction boundary tagging",
+      "Trust retrieved text as commands",
+      "Disable retrieval filters",
+      "Append all docs verbatim"
+    ],
+    "answersBG": [
+      "Санитизация на контекста и маркиране на instruction граници",
+      "Доверявай се на retrieved текста като команди",
+      "Изключи retrieval филтрите",
+      "Добави всички документи дословно"
+    ],
+    "correctAnswerEN": "Context sanitization and instruction boundary tagging",
+    "correctAnswerBG": "Санитизация на контекста и маркиране на instruction граници",
+    "explanationEN": "RAG context is data, not authority. Boundary tagging prevents prompt-hijack via documents.",
+    "explanationBG": "RAG контекстът е данни, не авторитет. Маркирането на граници спира prompt-hijack през документи."
   },
   {
     "id": "ai-for-developers-advanced-09",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to attach source material to improve answers. Which choice is best?",
-    "questionBG": "Developer трябва да добави source material за по-добри отговори. Кой избор е най-подходящ?",
-    "answersBG": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
-    ],
+    "questionEN": "Security team wants red-teamable guarantees for prompt injection resistance. What program is strongest?",
+    "questionBG": "Security екипът иска red-teamable гаранции за устойчивост срещу prompt injection. Коя програма е най-силна?",
     "answersEN": [
-      "grounding",
-      "validation set",
-      "human review",
-      "privacy review"
+      "Automated adversarial eval suite with policy regression gates",
+      "One-time manual pentest",
+      "Hide prompts in source code",
+      "No external testing"
     ],
-    "correctAnswerBG": "grounding",
-    "correctAnswerEN": "grounding",
-    "explanationBG": "Grounding свързва output с надеждни източници.",
-    "explanationEN": "grounding is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Автоматизирана adversarial eval система с policy regression gate-ове",
+      "Еднократен ръчен pentest",
+      "Скриване на prompt-ите в сорса",
+      "Без външно тестване"
+    ],
+    "correctAnswerEN": "Automated adversarial eval suite with policy regression gates",
+    "correctAnswerBG": "Автоматизирана adversarial eval система с policy regression gate-ове",
+    "explanationEN": "Injection resilience needs continuous adversarial testing, not one-off checks.",
+    "explanationBG": "Устойчивостта срещу injection изисква непрекъснато adversarial тестване, не еднократни проверки."
+  },
+  {
+    "id": "ai-for-developers-beginner-10",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A developer hardcoded OpenAI key in app source. What is the immediate correction?",
+    "questionBG": "Разработчик е hardcode-нал OpenAI ключ в сорса. Коя е незабавната корекция?",
+    "answersEN": [
+      "Rotate key and move to secure secret manager",
+      "Base64 encode key in code",
+      "Commit key to private repo only",
+      "Store key in README"
+    ],
+    "answersBG": [
+      "Ротация на ключа и преместване в secure secret manager",
+      "Base64 на ключа в кода",
+      "Commit на ключа само в private repo",
+      "Ключът в README"
+    ],
+    "correctAnswerEN": "Rotate key and move to secure secret manager",
+    "correctAnswerBG": "Ротация на ключа и преместване в secure secret manager",
+    "explanationEN": "A leaked key is compromised; rotation and secure storage are mandatory.",
+    "explanationBG": "Изтеклият ключ е компрометиран; ротация и сигурно съхранение са задължителни."
+  },
+  {
+    "id": "ai-for-developers-intermediate-10",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Mobile app should call LLM APIs. Why is direct client-side API key usage risky?",
+    "questionBG": "Мобилно приложение трябва да вика LLM API. Защо директен client-side ключ е рисков?",
+    "answersEN": [
+      "Keys can be extracted and abused",
+      "It improves latency",
+      "It guarantees lower cost",
+      "It prevents reverse engineering"
+    ],
+    "answersBG": [
+      "Ключовете могат да се извлекат и злоупотребят",
+      "Подобрява latency",
+      "Гарантира по-ниска цена",
+      "Предотвратява reverse engineering"
+    ],
+    "correctAnswerEN": "Keys can be extracted and abused",
+    "correctAnswerBG": "Ключовете могат да се извлекат и злоупотребят",
+    "explanationEN": "Client binaries are inspectable; sensitive credentials should stay server-side.",
+    "explanationBG": "Клиентските binary-та са анализируеми; чувствителните ключове трябва да останат сървърно."
   },
   {
     "id": "ai-for-developers-advanced-10",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to find relevant documents before answering. Which choice is best?",
-    "questionBG": "Developer трябва да намери relevant documents преди отговор. Кой избор е най-подходящ?",
-    "answersBG": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
-    ],
+    "questionEN": "You need tenant-isolated billing and revoke capability for AI access. What credential architecture fits?",
+    "questionBG": "Трябва tenant-изолирано таксуване и възможност за revoke на AI достъпа. Коя credential архитектура е подходяща?",
     "answersEN": [
-      "retrieval",
-      "privacy review",
-      "prompt injection",
-      "system prompt"
+      "Server-issued short-lived scoped tokens",
+      "One permanent global API key",
+      "Keys baked per app version",
+      "User password as API key"
     ],
-    "correctAnswerBG": "retrieval",
-    "correctAnswerEN": "retrieval",
-    "explanationBG": "Retrieval добавя външен context към AI отговор.",
-    "explanationEN": "retrieval is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Сървърно издавани краткоживеещи scoped token-и",
+      "Един постоянен глобален API ключ",
+      "Ключове baked във всяка app версия",
+      "User парола като API ключ"
+    ],
+    "correctAnswerEN": "Server-issued short-lived scoped tokens",
+    "correctAnswerBG": "Сървърно издавани краткоживеещи scoped token-и",
+    "explanationEN": "Short-lived scoped tokens enable revocation, isolation, and better abuse containment.",
+    "explanationBG": "Краткоживеещите scoped token-и позволяват revoke, изолация и по-добро ограничаване на злоупотреби."
+  },
+  {
+    "id": "ai-for-developers-beginner-11",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "LLM requests start failing with HTTP 429. What does it indicate?",
+    "questionBG": "LLM заявките започват да връщат HTTP 429. Какво означава това?",
+    "answersEN": [
+      "Rate limit exceeded",
+      "Model is deleted",
+      "Wrong JSON syntax only",
+      "TLS certificate expired"
+    ],
+    "answersBG": [
+      "Надвишен rate limit",
+      "Моделът е изтрит",
+      "Само грешен JSON синтаксис",
+      "Изтекъл TLS сертификат"
+    ],
+    "correctAnswerEN": "Rate limit exceeded",
+    "correctAnswerBG": "Надвишен rate limit",
+    "explanationEN": "429 means too many requests in the allowed window; backoff and throttling are required.",
+    "explanationBG": "429 означава твърде много заявки в позволения прозорец; нужни са backoff и throttling."
+  },
+  {
+    "id": "ai-for-developers-intermediate-11",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Burst traffic from one feature starves other critical requests. What control helps?",
+    "questionBG": "Burst трафик от една функция „изяжда“ квотата и блокира критични заявки. Кой контрол помага?",
+    "answersEN": [
+      "Per-feature rate buckets with priority queue",
+      "One shared unbounded queue",
+      "Disable retries globally",
+      "Send requests in random order"
+    ],
+    "answersBG": [
+      "Rate bucket-и по функции с приоритетна опашка",
+      "Една обща неограничена опашка",
+      "Глобално спиране на retry",
+      "Случаен ред на заявките"
+    ],
+    "correctAnswerEN": "Per-feature rate buckets with priority queue",
+    "correctAnswerBG": "Rate bucket-и по функции с приоритетна опашка",
+    "explanationEN": "Feature-level quotas protect critical paths during bursts.",
+    "explanationBG": "Квотите по функции пазят критичните потоци при пиково натоварване."
   },
   {
     "id": "ai-for-developers-advanced-11",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to represent meaning as vectors. Which choice is best?",
-    "questionBG": "Developer трябва да представи meaning като vectors. Кой избор е най-подходящ?",
-    "answersBG": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
-    ],
+    "questionEN": "Enterprise SLA requires graceful degradation under model-provider outage. What pattern is strongest?",
+    "questionBG": "Enterprise SLA изисква graceful degradation при outage на моделния доставчик. Кой pattern е най-силен?",
     "answersEN": [
-      "embedding",
-      "prompt injection",
-      "system prompt",
-      "grounding"
+      "Circuit breaker + fallback model/path + queue replay",
+      "Return 500 and stop all traffic",
+      "Infinite retry loop",
+      "Disable logging to save CPU"
     ],
-    "correctAnswerBG": "embedding",
-    "correctAnswerEN": "embedding",
-    "explanationBG": "Embeddings кодират semantic meaning в numeric vectors.",
-    "explanationEN": "embedding is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Circuit breaker + fallback модел/път + queue replay",
+      "Връщай 500 и спирай всичко",
+      "Безкраен retry цикъл",
+      "Спиране на логването за CPU"
+    ],
+    "correctAnswerEN": "Circuit breaker + fallback model/path + queue replay",
+    "correctAnswerBG": "Circuit breaker + fallback модел/път + queue replay",
+    "explanationEN": "Circuit breaking avoids cascading failures while fallback and replay preserve service continuity.",
+    "explanationBG": "Circuit breaker спира каскадни сривове, а fallback и replay пазят непрекъснатостта на услугата."
+  },
+  {
+    "id": "ai-for-developers-beginner-12",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "Users think the app froze while waiting for long AI answer. What UX improvement helps immediately?",
+    "questionBG": "Потребителите мислят, че приложението е замръзнало, докато чака дълъг AI отговор. Кое UX подобрение помага веднага?",
+    "answersEN": [
+      "Stream partial tokens/responses",
+      "Hide all loading indicators",
+      "Block UI until completion",
+      "Show static splash screen"
+    ],
+    "answersBG": [
+      "Streaming на частични token-и/отговори",
+      "Скриване на всички индикатори",
+      "Блокиране на UI до край",
+      "Статичен splash екран"
+    ],
+    "correctAnswerEN": "Stream partial tokens/responses",
+    "correctAnswerBG": "Streaming на частични token-и/отговори",
+    "explanationEN": "Streaming improves perceived latency and keeps users engaged during long generations.",
+    "explanationBG": "Streaming подобрява усещаната скорост и държи потребителя ангажиран при дълги генерации."
+  },
+  {
+    "id": "ai-for-developers-intermediate-12",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Streaming output sometimes cuts markdown code blocks. What post-processing is needed?",
+    "questionBG": "Streaming изходът понякога прекъсва markdown code block. Каква пост-обработка е нужна?",
+    "answersEN": [
+      "Incremental parser with completion repair",
+      "Disable markdown completely",
+      "Strip all punctuation",
+      "Append random backticks"
+    ],
+    "answersBG": [
+      "Incremental parser с repair при завършване",
+      "Пълно изключване на markdown",
+      "Премахване на пунктуация",
+      "Добавяне на случайни backtick-и"
+    ],
+    "correctAnswerEN": "Incremental parser with completion repair",
+    "correctAnswerBG": "Incremental parser с repair при завършване",
+    "explanationEN": "Streaming needs structure-aware assembly to keep output valid and readable.",
+    "explanationBG": "Streaming изисква структурно-aware сглобяване, за да остане изходът валиден и четим."
   },
   {
     "id": "ai-for-developers-advanced-12",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to control randomness in generation. Which choice is best?",
-    "questionBG": "Developer трябва да контролира randomness при generation. Кой избор е най-подходящ?",
-    "answersBG": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
-    ],
+    "questionEN": "App must stream low-latency drafts then replace with high-quality final answer. What serving strategy fits?",
+    "questionBG": "Приложението трябва да стриймва бърз чернови отговор и после да го замени с качествен финален. Коя serving стратегия пасва?",
     "answersEN": [
-      "temperature",
-      "system prompt",
-      "grounding",
-      "evals"
+      "Two-stage generation (fast model then quality model)",
+      "One slow model only",
+      "Draft and final from same cached text",
+      "No streaming allowed"
     ],
-    "correctAnswerBG": "temperature",
-    "correctAnswerEN": "temperature",
-    "explanationBG": "Temperature влияе колко разнообразен е generated output.",
-    "explanationEN": "temperature is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Двуетапна генерация (бърз модел после качествен модел)",
+      "Само един бавен модел",
+      "Чернова и финал от един и същ кеширан текст",
+      "Без streaming"
+    ],
+    "correctAnswerEN": "Two-stage generation (fast model then quality model)",
+    "correctAnswerBG": "Двуетапна генерация (бърз модел после качествен модел)",
+    "explanationEN": "Two-stage serving balances responsiveness with quality in user-facing experiences.",
+    "explanationBG": "Двуетапното serving решение балансира бърза реакция и високо качество за потребителя."
+  },
+  {
+    "id": "ai-for-developers-beginner-13",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "You want model to call your weather API only when needed. Which capability should you use?",
+    "questionBG": "Искаш моделът да вика weather API само при нужда. Коя възможност трябва да използваш?",
+    "answersEN": [
+      "Tool/function calling",
+      "Longer plain text prompts",
+      "Higher temperature",
+      "Disable JSON responses"
+    ],
+    "answersBG": [
+      "Tool/function calling",
+      "По-дълги plain text prompt-и",
+      "По-висока temperature",
+      "Изключване на JSON отговори"
+    ],
+    "correctAnswerEN": "Tool/function calling",
+    "correctAnswerBG": "Tool/function calling",
+    "explanationEN": "Function calling lets the model request structured tool invocations instead of hallucinating data.",
+    "explanationBG": "Function calling позволява структурирани tool извиквания вместо измисляне на данни."
+  },
+  {
+    "id": "ai-for-developers-intermediate-13",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Model chooses wrong tool because schemas overlap. What should be improved?",
+    "questionBG": "Моделът избира грешен tool, защото схемите се припокриват. Какво трябва да се подобри?",
+    "answersEN": [
+      "Clearer tool descriptions and distinct argument schemas",
+      "More tools with same names",
+      "Remove parameter validation",
+      "Hide tool docs from model"
+    ],
+    "answersBG": [
+      "По-ясни описания и различими argument схеми",
+      "Още tools със сходни имена",
+      "Премахване на валидация",
+      "Скриване на tool документацията"
+    ],
+    "correctAnswerEN": "Clearer tool descriptions and distinct argument schemas",
+    "correctAnswerBG": "По-ясни описания и различими argument схеми",
+    "explanationEN": "Distinct schemas reduce ambiguity and improve correct tool selection.",
+    "explanationBG": "Различимите схеми намаляват двусмислието и подобряват правилния избор на tool."
   },
   {
     "id": "ai-for-developers-advanced-13",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to measure model behavior with tests. Which choice is best?",
-    "questionBG": "Developer трябва да измери model behavior с тестове. Кой избор е най-подходящ?",
-    "answersBG": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
-    ],
+    "questionEN": "A financial assistant executes tools with side effects. What safety control is essential?",
+    "questionBG": "Финансов асистент изпълнява tools със странични ефекти. Кой safety контрол е задължителен?",
     "answersEN": [
-      "evals",
-      "system prompt",
-      "grounding",
-      "classification"
+      "Human/Policy confirmation gate before dangerous actions",
+      "Auto-execute every suggested tool",
+      "Skip audit logs",
+      "Allow free-form SQL tools"
     ],
-    "correctAnswerBG": "evals",
-    "correctAnswerEN": "evals",
-    "explanationBG": "Evals проверяват quality, safety и regressions.",
-    "explanationEN": "evals is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Human/Policy confirmation gate преди рискови действия",
+      "Автоизпълнение на всеки предложен tool",
+      "Прескачане на audit логовете",
+      "Свободен SQL tool без ограничения"
+    ],
+    "correctAnswerEN": "Human/Policy confirmation gate before dangerous actions",
+    "correctAnswerBG": "Human/Policy confirmation gate преди рискови действия",
+    "explanationEN": "Side-effectful operations require explicit approval and policy checks to prevent harmful execution.",
+    "explanationBG": "Операциите със странични ефекти изискват явна верификация и policy проверки, за да се избегнат вредни изпълнения."
+  },
+  {
+    "id": "ai-for-developers-beginner-14",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "Team asks whether to fine-tune or just improve prompts for support FAQ bot. First step?",
+    "questionBG": "Екипът пита дали да fine-tune-не модела или само да подобри prompt-а за FAQ бот. Каква е първата стъпка?",
+    "answersEN": [
+      "Exhaust prompt + retrieval improvements first",
+      "Fine-tune immediately",
+      "Train custom model from scratch",
+      "Disable context"
+    ],
+    "answersBG": [
+      "Първо изчерпи prompt + retrieval подобренията",
+      "Веднага fine-tune",
+      "Train custom модел от нулата",
+      "Изключи контекста"
+    ],
+    "correctAnswerEN": "Exhaust prompt + retrieval improvements first",
+    "correctAnswerBG": "Първо изчерпи prompt + retrieval подобренията",
+    "explanationEN": "Prompt and retrieval fixes are usually faster, cheaper, and easier to iterate.",
+    "explanationBG": "Prompt и retrieval подобренията обикновено са по-бързи, по-евтини и по-лесни за итерация."
+  },
+  {
+    "id": "ai-for-developers-intermediate-14",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "You need strict output style consistency across thousands of similar tasks. When is fine-tuning justified?",
+    "questionBG": "Нужна е строга стилова консистентност за хиляди сходни задачи. Кога fine-tuning е оправдан?",
+    "answersEN": [
+      "When repeated pattern and dataset quality support it",
+      "Whenever one prompt fails once",
+      "Only to reduce token count",
+      "Never in production"
+    ],
+    "answersBG": [
+      "Когато има повтаряем pattern и качествен dataset",
+      "При единичен провал на prompt",
+      "Само за по-малко token-и",
+      "Никога в production"
+    ],
+    "correctAnswerEN": "When repeated pattern and dataset quality support it",
+    "correctAnswerBG": "Когато има повтаряем pattern и качествен dataset",
+    "explanationEN": "Fine-tuning pays off for high-volume stable tasks with strong supervised examples.",
+    "explanationBG": "Fine-tuning си струва при голям обем стабилни задачи с добри обучаващи примери."
   },
   {
     "id": "ai-for-developers-advanced-14",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to label input into categories. Which choice is best?",
-    "questionBG": "Developer трябва да класифицира input в категории. Кой избор е най-подходящ?",
-    "answersBG": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
-    ],
+    "questionEN": "Leadership wants ROI before funding fine-tuning program. What evaluation plan is strongest?",
+    "questionBG": "Ръководството иска ROI преди финансиране на fine-tuning програма. Кой eval план е най-силен?",
     "answersEN": [
-      "classification",
-      "grounding",
-      "evals",
-      "regression"
+      "A/B compare baseline vs tuned on cost, quality, latency",
+      "Train first and justify later",
+      "Measure only token savings",
+      "Use anecdotal feedback"
     ],
-    "correctAnswerBG": "classification",
-    "correctAnswerEN": "classification",
-    "explanationBG": "Classification избира category label за input.",
-    "explanationEN": "classification is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "A/B сравнение baseline срещу tuned по цена, качество и latency",
+      "Първо train, после оправдание",
+      "Само token спестяване",
+      "Само анекдотичен feedback"
+    ],
+    "correctAnswerEN": "A/B compare baseline vs tuned on cost, quality, latency",
+    "correctAnswerBG": "A/B сравнение baseline срещу tuned по цена, качество и latency",
+    "explanationEN": "ROI decisions need multidimensional evidence, not single-metric wins.",
+    "explanationBG": "ROI решенията искат многомерни данни, а не победа по една метрика."
+  },
+  {
+    "id": "ai-for-developers-beginner-15",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "You need offline image classification in iOS app. Which Apple technology is the common choice?",
+    "questionBG": "Трябва офлайн класификация на изображения в iOS приложение. Коя Apple технология е стандартният избор?",
+    "answersEN": [
+      "Core ML",
+      "CloudKit only",
+      "URLSessionWebSocketTask",
+      "StoreKit"
+    ],
+    "answersBG": [
+      "Core ML",
+      "Само CloudKit",
+      "URLSessionWebSocketTask",
+      "StoreKit"
+    ],
+    "correctAnswerEN": "Core ML",
+    "correctAnswerBG": "Core ML",
+    "explanationEN": "Core ML enables on-device inference with optimized model execution.",
+    "explanationBG": "Core ML позволява on-device inference с оптимизирано изпълнение на модели."
+  },
+  {
+    "id": "ai-for-developers-intermediate-15",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "On-device model is accurate but too slow on older phones. What optimization is typical first?",
+    "questionBG": "On-device моделът е точен, но бавен на по-стари телефони. Коя оптимизация е типична първа стъпка?",
+    "answersEN": [
+      "Quantize/prune model and benchmark per device class",
+      "Increase image resolution",
+      "Disable batching logic",
+      "Run inference on main thread"
+    ],
+    "answersBG": [
+      "Quantize/prune на модела и benchmark по клас устройства",
+      "Повишаване на резолюцията",
+      "Изключване на batching",
+      "Inference на main thread"
+    ],
+    "correctAnswerEN": "Quantize/prune model and benchmark per device class",
+    "correctAnswerBG": "Quantize/prune на модела и benchmark по клас устройства",
+    "explanationEN": "Model compression can reduce latency and memory while keeping acceptable accuracy.",
+    "explanationBG": "Компресията на модела намалява latency и паметта при запазена приемлива точност."
   },
   {
     "id": "ai-for-developers-advanced-15",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to predict a numeric value. Which choice is best?",
-    "questionBG": "Developer трябва да предскаже numeric value. Кой избор е най-подходящ?",
-    "answersBG": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
-    ],
+    "questionEN": "You need hybrid AI: private data on device, heavy reasoning in cloud. What architecture balances both?",
+    "questionBG": "Трябва хибриден AI: private данни на устройството, тежко reasoning в облака. Коя архитектура балансира и двете?",
     "answersEN": [
-      "regression",
-      "evals",
-      "classification",
-      "bias"
+      "On-device preprocessing + cloud inference with minimal payload",
+      "Send full raw data always",
+      "Cloud only with no local fallback",
+      "Device only regardless task size"
     ],
-    "correctAnswerBG": "regression",
-    "correctAnswerEN": "regression",
-    "explanationBG": "Regression прогнозира числова стойност.",
-    "explanationEN": "regression is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "On-device preprocessing + cloud inference с минимален payload",
+      "Винаги изпращай пълни сурови данни",
+      "Само cloud без local fallback",
+      "Само device независимо от задачата"
+    ],
+    "correctAnswerEN": "On-device preprocessing + cloud inference with minimal payload",
+    "correctAnswerBG": "On-device preprocessing + cloud inference с минимален payload",
+    "explanationEN": "Hybrid pipelines preserve privacy and efficiency by sending only necessary transformed context.",
+    "explanationBG": "Хибридният pipeline пази privacy и ефективност, като изпраща само нужното трансформирано съдържание."
+  },
+  {
+    "id": "ai-for-developers-beginner-16",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "AI responses are slow and users drop off. Which trade-off is usually adjusted first?",
+    "questionBG": "AI отговорите са бавни и потребителите отпадат. Кой trade-off най-често се коригира първо?",
+    "answersEN": [
+      "Use a smaller/faster model for first response",
+      "Add longer prompts",
+      "Increase output length",
+      "Disable caching"
+    ],
+    "answersBG": [
+      "По-малък/бърз модел за първи отговор",
+      "По-дълги prompt-и",
+      "По-дълъг output",
+      "Изключване на кеш"
+    ],
+    "correctAnswerEN": "Use a smaller/faster model for first response",
+    "correctAnswerBG": "По-малък/бърз модел за първи отговор",
+    "explanationEN": "Faster first response improves UX even if a richer follow-up model is used later.",
+    "explanationBG": "По-бързият първи отговор подобрява UX, дори после да има по-богат модел."
+  },
+  {
+    "id": "ai-for-developers-intermediate-16",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Costs spike because every query hits premium model. What routing strategy helps?",
+    "questionBG": "Разходите скачат, защото всяка заявка ползва premium модел. Коя routing стратегия помага?",
+    "answersEN": [
+      "Model tier routing by task complexity",
+      "Always premium for safety",
+      "Random model choice",
+      "One model per user"
+    ],
+    "answersBG": [
+      "Model tier routing според сложността на задачата",
+      "Винаги premium за всеки случай",
+      "Случаен избор на модел",
+      "По един модел за потребител"
+    ],
+    "correctAnswerEN": "Model tier routing by task complexity",
+    "correctAnswerBG": "Model tier routing според сложността на задачата",
+    "explanationEN": "Complexity-based routing controls spend while preserving quality on hard tasks.",
+    "explanationBG": "Routing по сложност контролира разхода и пази качеството при трудните задачи."
   },
   {
     "id": "ai-for-developers-advanced-16",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to run a trained model on new input. Which choice is best?",
-    "questionBG": "Developer трябва да стартира trained model върху нов input. Кой избор е най-подходящ?",
-    "answersBG": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
-    ],
+    "questionEN": "You need dynamic cost-quality control under monthly budget cap. What controller is best?",
+    "questionBG": "Трябва динамичен контрол на цена/качество при месечен бюджетен таван. Кой контролер е най-подходящ?",
     "answersEN": [
-      "inference",
-      "classification",
-      "regression",
-      "bias"
+      "Policy-based inference router with budget-aware throttles",
+      "Manual budget check every Friday",
+      "Disable high-quality model permanently",
+      "Ignore budget until invoice"
     ],
-    "correctAnswerBG": "inference",
-    "correctAnswerEN": "inference",
-    "explanationBG": "Inference използва model-а след training.",
-    "explanationEN": "inference is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Policy-based inference router с budget-aware throttles",
+      "Ръчна бюджетна проверка всеки петък",
+      "Постоянно изключване на качествения модел",
+      "Игнорирай бюджета до фактура"
+    ],
+    "correctAnswerEN": "Policy-based inference router with budget-aware throttles",
+    "correctAnswerBG": "Policy-based inference router с budget-aware throttles",
+    "explanationEN": "Budget-aware routing adapts in real time rather than relying on delayed manual controls.",
+    "explanationBG": "Budget-aware routing се адаптира в реално време, вместо да разчита на закъснели ръчни проверки."
+  },
+  {
+    "id": "ai-for-developers-beginner-17",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "You send same long system context every request. What optimization can reduce repeated cost?",
+    "questionBG": "Изпращаш един и същ дълъг system контекст при всяка заявка. Коя оптимизация намалява повтарящия се разход?",
+    "answersEN": [
+      "Context caching/session reuse",
+      "Higher temperature",
+      "More punctuation",
+      "Disable retries"
+    ],
+    "answersBG": [
+      "Context caching / session reuse",
+      "По-висока temperature",
+      "Повече пунктуация",
+      "Изключване на retry"
+    ],
+    "correctAnswerEN": "Context caching/session reuse",
+    "correctAnswerBG": "Context caching / session reuse",
+    "explanationEN": "Caching stable context avoids paying token costs repeatedly for unchanged instructions.",
+    "explanationBG": "Кеширането на стабилен контекст избягва многократно плащане за неизменени инструкции."
+  },
+  {
+    "id": "ai-for-developers-intermediate-17",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Cached context becomes stale after policy update. What invalidation rule is required?",
+    "questionBG": "Кешираният контекст остарява след policy update. Какво правило за invalidation е нужно?",
+    "answersEN": [
+      "Versioned cache keys tied to policy revision",
+      "Infinite cache TTL",
+      "Manual app restart only",
+      "Random cache eviction"
+    ],
+    "answersBG": [
+      "Versioned cache ключове по policy ревизия",
+      "Безкраен cache TTL",
+      "Само ръчен рестарт",
+      "Случайно cache изтриване"
+    ],
+    "correctAnswerEN": "Versioned cache keys tied to policy revision",
+    "correctAnswerBG": "Versioned cache ключове по policy ревизия",
+    "explanationEN": "Versioned keys guarantee fresh context when policy changes.",
+    "explanationBG": "Versioned ключовете гарантират свеж контекст при промяна на политиката."
   },
   {
     "id": "ai-for-developers-advanced-17",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to detect unfair patterns in data. Which choice is best?",
-    "questionBG": "Developer трябва да открие unfair patterns в data. Кой избор е най-подходящ?",
-    "answersBG": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
-    ],
+    "questionEN": "Large enterprise tenant has custom policy blocks and docs. How should context cache be segmented safely?",
+    "questionBG": "Голям enterprise tenant има custom policy блокове и документи. Как cache-ът за контекст да се сегментира безопасно?",
     "answersEN": [
-      "bias",
-      "regression",
-      "overfitting",
-      "inference"
+      "Tenant- and policy-scoped cache partitions",
+      "One global shared cache for all tenants",
+      "No cache isolation",
+      "Client-side only cache with no auth"
     ],
-    "correctAnswerBG": "bias",
-    "correctAnswerEN": "bias",
-    "explanationBG": "Bias може да доведе до несправедливи или неточни outputs.",
-    "explanationEN": "bias is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Cache партиции по tenant и policy",
+      "Един общ cache за всички tenant-и",
+      "Без cache изолация",
+      "Само client-side cache без auth"
+    ],
+    "correctAnswerEN": "Tenant- and policy-scoped cache partitions",
+    "correctAnswerBG": "Cache партиции по tenant и policy",
+    "explanationEN": "Scoped partitions prevent cross-tenant leakage and keep policy contexts isolated.",
+    "explanationBG": "Scoped партициите предотвратяват cross-tenant изтичане и изолират policy контекста."
+  },
+  {
+    "id": "ai-for-developers-beginner-18",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "Users flag wrong answers in-app. What should happen to that signal?",
+    "questionBG": "Потребителите маркират грешни отговори в приложението. Какво трябва да стане с този сигнал?",
+    "answersEN": [
+      "Store feedback for evaluation and prompt iteration",
+      "Ignore it",
+      "Auto-ban user",
+      "Only show thank-you toast"
+    ],
+    "answersBG": [
+      "Съхрани feedback за evaluation и prompt итерация",
+      "Игнорирай го",
+      "Автоматичен ban на потребителя",
+      "Само thank-you toast"
+    ],
+    "correctAnswerEN": "Store feedback for evaluation and prompt iteration",
+    "correctAnswerBG": "Съхрани feedback за evaluation и prompt итерация",
+    "explanationEN": "Feedback loops are key to continuously improving model behavior.",
+    "explanationBG": "Feedback циклите са ключови за непрекъснато подобрение на поведението на модела."
+  },
+  {
+    "id": "ai-for-developers-intermediate-18",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Feedback queue grows but no one can prioritize fixes. What triage scheme helps?",
+    "questionBG": "Feedback опашката расте, но никой не може да приоритизира fix-овете. Коя triage схема помага?",
+    "answersEN": [
+      "Bucket by severity, frequency, and business impact",
+      "Sort alphabetically",
+      "Fix oldest only",
+      "Randomly sample once a quarter"
+    ],
+    "answersBG": [
+      "Групиране по severity, честота и бизнес ефект",
+      "Азбучно сортиране",
+      "Fix само най-старото",
+      "Случайна извадка веднъж на тримесечие"
+    ],
+    "correctAnswerEN": "Bucket by severity, frequency, and business impact",
+    "correctAnswerBG": "Групиране по severity, честота и бизнес ефект",
+    "explanationEN": "Risk-based triage focuses effort where user harm and impact are highest.",
+    "explanationBG": "Risk-based triage фокусира усилията там, където вредата и ефектът са най-големи."
   },
   {
     "id": "ai-for-developers-advanced-18",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to notice memorizing instead of generalizing. Which choice is best?",
-    "questionBG": "Developer трябва да забележи memorizing вместо generalizing. Кой избор е най-подходящ?",
-    "answersBG": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
-    ],
+    "questionEN": "You want automated improvement cycles from production data without leaking sensitive content. What pipeline is best?",
+    "questionBG": "Искаш автоматични подобрителни цикли от production данни без изтичане на чувствително съдържание. Кой pipeline е най-добър?",
     "answersEN": [
-      "overfitting",
-      "bias",
-      "inference",
-      "model"
+      "PII-redacted telemetry -> eval generation -> gated rollout",
+      "Train directly on raw logs",
+      "Store no data at all",
+      "Manual copy-paste bug reports"
     ],
-    "correctAnswerBG": "overfitting",
-    "correctAnswerEN": "overfitting",
-    "explanationBG": "Overfitting означава, че model-ът се справя с training data, но не generalize-ва.",
-    "explanationEN": "overfitting is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "PII-redacted telemetry -> eval генериране -> gated rollout",
+      "Train директно върху сурови логове",
+      "Без събиране на никакви данни",
+      "Ръчни copy-paste bug reports"
+    ],
+    "correctAnswerEN": "PII-redacted telemetry -> eval generation -> gated rollout",
+    "correctAnswerBG": "PII-redacted telemetry -> eval генериране -> gated rollout",
+    "explanationEN": "Redaction plus gated loops enable safe, continuous quality improvement.",
+    "explanationBG": "Редакцията на PII и gated циклите позволяват безопасно, непрекъснато повишаване на качеството."
+  },
+  {
+    "id": "ai-for-developers-beginner-19",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "A legal review asks what user data enters prompts. What should your system provide?",
+    "questionBG": "Правен преглед пита какви потребителски данни влизат в prompt-ите. Какво трябва да предостави системата?",
+    "answersEN": [
+      "Data flow inventory and prompt field audit",
+      "Only model name",
+      "Only UI screenshots",
+      "No documentation"
+    ],
+    "answersBG": [
+      "Data flow инвентар и audit на prompt полетата",
+      "Само име на модела",
+      "Само UI screenshot-и",
+      "Без документация"
+    ],
+    "correctAnswerEN": "Data flow inventory and prompt field audit",
+    "correctAnswerBG": "Data flow инвентар и audit на prompt полетата",
+    "explanationEN": "Governance starts with visibility into what data is sent and why.",
+    "explanationBG": "Управлението започва с видимост какви данни се изпращат и защо."
+  },
+  {
+    "id": "ai-for-developers-intermediate-19",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Policy requires data minimization for AI calls. Which engineering control enforces this best?",
+    "questionBG": "Политиката изисква минимизация на данните при AI заявки. Кой инженерeн контрол го налага най-добре?",
+    "answersEN": [
+      "Prompt schema allowlist with automated checks",
+      "Developer discretion only",
+      "Send entire user profile each call",
+      "Rely on legal memo"
+    ],
+    "answersBG": [
+      "Prompt schema allowlist с автоматични проверки",
+      "Само преценка на разработчика",
+      "Изпращай целия профил при всяка заявка",
+      "Разчитай на правна бележка"
+    ],
+    "correctAnswerEN": "Prompt schema allowlist with automated checks",
+    "correctAnswerBG": "Prompt schema allowlist с автоматични проверки",
+    "explanationEN": "Allowlists operationalize minimization and prevent accidental over-sharing.",
+    "explanationBG": "Allowlist-ите превръщат минимизацията в работещ контрол и спират неволно препращане на излишни данни."
   },
   {
     "id": "ai-for-developers-advanced-19",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to test during model development. Which choice is best?",
-    "questionBG": "Developer трябва да тества по време на model development. Кой избор е най-подходящ?",
-    "answersBG": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
-    ],
+    "questionEN": "Global deployment must satisfy GDPR, SOC2, and tenant-specific retention. What governance stack is strongest?",
+    "questionBG": "Глобален rollout трябва да покрива GDPR, SOC2 и tenant-specific retention. Кой governance стек е най-силен?",
     "answersEN": [
-      "validation set",
-      "prompt",
-      "context window",
-      "hallucination"
+      "Policy-as-code, regional routing, encrypted logs, retention controls",
+      "One global storage bucket for everything",
+      "No logging to avoid compliance",
+      "Manual deletion on request only"
     ],
-    "correctAnswerBG": "validation set",
-    "correctAnswerEN": "validation set",
-    "explanationBG": "Validation set помага да се оценява model без training leakage.",
-    "explanationEN": "validation set is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Policy-as-code, регионално routing, криптирани логове и retention контроли",
+      "Един глобален storage bucket за всичко",
+      "Без логове за „сигурност“",
+      "Само ръчно триене при заявка"
+    ],
+    "correctAnswerEN": "Policy-as-code, regional routing, encrypted logs, retention controls",
+    "correctAnswerBG": "Policy-as-code, регионално routing, криптирани логове и retention контроли",
+    "explanationEN": "Compliance at scale requires enforceable technical controls, not ad-hoc manual process.",
+    "explanationBG": "Compliance при мащаб изисква налагаеми технически контроли, а не ad-hoc ръчни процеси."
+  },
+  {
+    "id": "ai-for-developers-beginner-20",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "An AI coding assistant keeps suggesting outdated API usage. What is the first remediation?",
+    "questionBG": "AI coding асистентът предлага остарели API-та. Коя е първата корекция?",
+    "answersEN": [
+      "Provide up-to-date docs in retrieval context",
+      "Increase creativity",
+      "Disable linting",
+      "Shorten all prompts to one line"
+    ],
+    "answersBG": [
+      "Подай актуална документация в retrieval контекста",
+      "Повиши креативността",
+      "Изключи linting",
+      "Съкратени prompt-и до един ред"
+    ],
+    "correctAnswerEN": "Provide up-to-date docs in retrieval context",
+    "correctAnswerBG": "Подай актуална документация в retrieval контекста",
+    "explanationEN": "Model priors may be stale; grounding with current docs improves API correctness.",
+    "explanationBG": "Предварителните знания на модела може да са стари; grounding с актуални docs подобрява API точността."
+  },
+  {
+    "id": "ai-for-developers-intermediate-20",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "Generated code compiles but violates team architecture conventions. What control should be added?",
+    "questionBG": "Генерираният код компилира, но нарушава архитектурните конвенции на екипа. Какъв контрол да се добави?",
+    "answersEN": [
+      "Post-generation lint/architecture checks with feedback loop",
+      "Accept all generated code",
+      "Turn off CI checks",
+      "Use larger model only"
+    ],
+    "answersBG": [
+      "Post-generation lint/architecture проверки с feedback цикъл",
+      "Приемай целия генериран код",
+      "Изключи CI проверките",
+      "Само по-голям модел"
+    ],
+    "correctAnswerEN": "Post-generation lint/architecture checks with feedback loop",
+    "correctAnswerBG": "Post-generation lint/architecture проверки с feedback цикъл",
+    "explanationEN": "Automated checks enforce local engineering standards beyond model output quality.",
+    "explanationBG": "Автоматичните проверки налагат локалните инженерни стандарти отвъд качеството на генерацията."
   },
   {
     "id": "ai-for-developers-advanced-20",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to adapt a model to a narrower task. Which choice is best?",
-    "questionBG": "Developer трябва да адаптира model към по-тясна задача. Кой избор е най-подходящ?",
-    "answersBG": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
-    ],
+    "questionEN": "Org wants AI-assisted coding with controlled risk for production repos. What rollout model is strongest?",
+    "questionBG": "Организацията иска AI-assisted coding с контролиран риск за production репота. Кой rollout модел е най-силен?",
     "answersEN": [
-      "fine-tuning",
-      "context window",
-      "hallucination",
-      "retrieval"
+      "Human-in-the-loop approvals + policy checks + staged rollout",
+      "Direct commit to main from model",
+      "Disable code review for AI commits",
+      "Use AI only on Fridays"
     ],
-    "correctAnswerBG": "fine-tuning",
-    "correctAnswerEN": "fine-tuning",
-    "explanationBG": "Fine-tuning променя model weights за specific task или style.",
-    "explanationEN": "fine-tuning is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Human-in-the-loop одобрения + policy проверки + staged rollout",
+      "Директен commit в main от модела",
+      "Спиране на code review за AI commit-и",
+      "AI само в петък"
+    ],
+    "correctAnswerEN": "Human-in-the-loop approvals + policy checks + staged rollout",
+    "correctAnswerBG": "Human-in-the-loop одобрения + policy проверки + staged rollout",
+    "explanationEN": "Controlled adoption balances productivity gains with quality and security safeguards.",
+    "explanationBG": "Контролираното внедряване балансира продуктивността със защити за качество и сигурност."
+  },
+  {
+    "id": "ai-for-developers-beginner-21",
+    "categoryId": "ai-for-developers",
+    "difficulty": "beginner",
+    "questionEN": "Your AI feature roadmap is full. What should be validated before shipping a new capability?",
+    "questionBG": "Roadmap-ът за AI функции е пълен. Какво трябва да се валидира преди пускане на нова възможност?",
+    "answersEN": [
+      "Clear user value and measurable success criteria",
+      "Model benchmark score alone",
+      "UI color preference",
+      "CEO intuition only"
+    ],
+    "answersBG": [
+      "Ясна потребителска стойност и измерим критерий за успех",
+      "Само benchmark резултат на модела",
+      "Цветови предпочитания на UI",
+      "Само интуицията на CEO"
+    ],
+    "correctAnswerEN": "Clear user value and measurable success criteria",
+    "correctAnswerBG": "Ясна потребителска стойност и измерим критерий за успех",
+    "explanationEN": "Product value and measurable outcomes prevent shipping expensive novelty without impact.",
+    "explanationBG": "Потребителската стойност и измеримият резултат спират пускането на скъпа новост без реален ефект."
+  },
+  {
+    "id": "ai-for-developers-intermediate-21",
+    "categoryId": "ai-for-developers",
+    "difficulty": "intermediate",
+    "questionEN": "An AI feature works technically but harms support operations with noisy outputs. What launch gate is missing?",
+    "questionBG": "AI функция работи технически, но пречи на support екипа с шумни изходи. Коя launch бариера липсва?",
+    "answersEN": [
+      "Operational readiness review with downstream teams",
+      "Higher token limits",
+      "More random examples",
+      "Bigger model context window"
+    ],
+    "answersBG": [
+      "Operational readiness review с downstream екипите",
+      "По-високи token лимити",
+      "Повече случайни примери",
+      "По-голям context прозорец"
+    ],
+    "correctAnswerEN": "Operational readiness review with downstream teams",
+    "correctAnswerBG": "Operational readiness review с downstream екипите",
+    "explanationEN": "Cross-functional readiness ensures the feature is supportable, not only technically functional.",
+    "explanationBG": "Cross-functional готовността гарантира, че функцията е поддържаема, а не само технически работеща."
   },
   {
     "id": "ai-for-developers-advanced-21",
     "categoryId": "ai-for-developers",
     "difficulty": "advanced",
-    "questionEN": "A developer needs to set high-level assistant behavior. Which choice is best?",
-    "questionBG": "Developer трябва да зададе high-level assistant behavior. Кой избор е най-подходящ?",
-    "answersBG": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
-    ],
+    "questionEN": "How do you keep AI features merge-ready long term as models and policies evolve?",
+    "questionBG": "Как държиш AI функционалностите merge-ready в дългосрочен план, докато модели и политики се променят?",
     "answersEN": [
-      "system prompt",
-      "hallucination",
-      "retrieval",
-      "fine-tuning"
+      "Continuous evals, policy CI gates, and rollback playbooks",
+      "Freeze model forever",
+      "Ship without monitoring",
+      "Rely on manual hero debugging"
     ],
-    "correctAnswerBG": "system prompt",
-    "correctAnswerEN": "system prompt",
-    "explanationBG": "System prompt дефинира role, constraints и приоритети за assistant.",
-    "explanationEN": "system prompt is the best fit here because it directly supports the described AI for Developers workflow."
+    "answersBG": [
+      "Непрекъснати eval-и, policy CI gate-ове и rollback playbook-и",
+      "Замразяване на модела завинаги",
+      "Пускане без monitoring",
+      "Ръчен hero debugging"
+    ],
+    "correctAnswerEN": "Continuous evals, policy CI gates, and rollback playbooks",
+    "correctAnswerBG": "Непрекъснати eval-и, policy CI gate-ове и rollback playbook-и",
+    "explanationEN": "Sustainable AI delivery needs ongoing measurement, enforced controls, and fast recovery paths.",
+    "explanationBG": "Устойчивата AI доставка иска постоянни измервания, налагаеми контроли и бързи сценарии за възстановяване."
   }
 ]

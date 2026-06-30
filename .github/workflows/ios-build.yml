@@ -19,7 +19,10 @@ jobs:
         run: sudo xcode-select -s /Applications/Xcode.app
 
       - name: Validate question database
-        run: node Scripts/validate_questions.js
+        run: |
+          node Scripts/validate_questions.js
+          node Scripts/rebuild_question_database.mjs
+          git diff --exit-code -- "Swift Quiz Academy/QuestionData"
 
       - name: Build
         run: |
