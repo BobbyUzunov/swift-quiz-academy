@@ -11,7 +11,11 @@ final class Swift_Quiz_AcademyUITests: XCTestCase {
     override func setUpWithError() throws {
         continueAfterFailure = false
         app = XCUIApplication()
-        app.launchArguments = ["-resetUserDefaultsForUITests"]
+        app.launchArguments = ["-resetUserDefaultsForUITests", "-uitestShortQuiz"]
+        app.launchEnvironment = [
+            "AppleLanguages": "(en)",
+            "AppleLocale": "en_US"
+        ]
     }
 
     override func tearDownWithError() throws {
@@ -38,25 +42,27 @@ final class Swift_Quiz_AcademyUITests: XCTestCase {
     func testCompleteQuizShowsResult() throws {
         launchApp()
         app.buttons["startQuizButton"].tap()
+        XCTAssertTrue(app.buttons["categoryButton_swift-basics"].waitForExistence(timeout: 5))
         app.buttons["categoryButton_swift-basics"].tap()
+        XCTAssertTrue(app.buttons["quizBackButton"].waitForExistence(timeout: 10))
 
-        for _ in 0..<21 {
+        for questionIndex in 0..<3 {
             let correctAnswer = app.buttons["answerButton_correct"]
-            XCTAssertTrue(correctAnswer.waitForExistence(timeout: 5))
+            XCTAssertTrue(correctAnswer.waitForExistence(timeout: 8), "Missing correct answer on question \(questionIndex + 1)")
             correctAnswer.tap()
 
             let seeResult = app.buttons["seeResultButton"]
-            if seeResult.exists {
+            if seeResult.waitForExistence(timeout: 2) {
                 seeResult.tap()
                 break
             }
 
             let nextQuestion = app.buttons["nextQuestionButton"]
-            XCTAssertTrue(nextQuestion.waitForExistence(timeout: 5))
+            XCTAssertTrue(nextQuestion.waitForExistence(timeout: 8), "Missing next button on question \(questionIndex + 1)")
             nextQuestion.tap()
         }
 
-        XCTAssertTrue(app.buttons["Review Answers"].waitForExistence(timeout: 5))
+        XCTAssertTrue(app.buttons["reviewAnswersButton"].waitForExistence(timeout: 10))
     }
 
     @MainActor

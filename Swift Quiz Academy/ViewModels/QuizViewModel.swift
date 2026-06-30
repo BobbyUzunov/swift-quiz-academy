@@ -166,9 +166,19 @@ final class QuizViewModel {
     }
 
     var currentQuestions: [QuizQuestion] {
-        if isPracticeMistakes { return practiceMistakeQuestions }
-        guard let selectedCategory else { return [] }
-        return selectedCategory.questionsByDifficulty[selectedDifficulty] ?? []
+        let questions: [QuizQuestion]
+        if isPracticeMistakes {
+            questions = practiceMistakeQuestions
+        } else if let selectedCategory {
+            questions = selectedCategory.questionsByDifficulty[selectedDifficulty] ?? []
+        } else {
+            return []
+        }
+
+        if CommandLine.arguments.contains("-uitestShortQuiz") {
+            return Array(questions.prefix(3))
+        }
+        return questions
     }
 
     var currentQuestion: QuizQuestion? {

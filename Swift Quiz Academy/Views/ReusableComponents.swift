@@ -95,6 +95,7 @@ struct SwiftQuizAcademyRootView: View {
     private var mainTabs: some View {
         TabView {
             homeView
+                .accessibilityIdentifier("homeTab")
                 .tabItem {
                     Label(viewModel.localized("Начало", "Home"), systemImage: "house.fill")
                 }
@@ -103,11 +104,13 @@ struct SwiftQuizAcademyRootView: View {
                 viewModel: libraryViewModel,
                 selectedLanguage: viewModel.selectedLanguage
             )
+            .accessibilityIdentifier("libraryTab")
             .tabItem {
                 Label(viewModel.localized("Библиотека", "Library"), systemImage: "books.vertical.fill")
             }
 
             settingsView(showsDoneButton: false)
+                .accessibilityIdentifier("settingsTab")
                 .tabItem {
                     Label(viewModel.localized("Настройки", "Settings"), systemImage: "gearshape.fill")
                 }

@@ -64,6 +64,7 @@ struct ResultView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.purple)
+                    .accessibilityIdentifier("reviewAnswersButton")
 
                     Button(action: onRestart) {
                         Text(localized("Започни отново", "Restart"))
@@ -73,6 +74,7 @@ struct ResultView: View {
                     }
                     .buttonStyle(.borderedProminent)
                     .tint(.blue)
+                    .accessibilityIdentifier("restartQuizButton")
 
                     Button(action: onHome) {
                         Text(localized("Към началото", "Home"))
@@ -82,6 +84,7 @@ struct ResultView: View {
                     }
                     .buttonStyle(.bordered)
                     .tint(.blue)
+                    .accessibilityIdentifier("resultHomeButton")
                 }
             }
             .padding(24)

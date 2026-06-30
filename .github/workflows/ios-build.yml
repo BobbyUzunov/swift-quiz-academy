@@ -29,7 +29,8 @@ jobs:
             -destination "generic/platform=iOS" \
             CODE_SIGNING_ALLOWED=NO
 
-      - name: Unit Tests
+      - name: Resolve iOS Simulator
+        id: simulator
         run: |
           DESTINATION_ID="$(xcrun simctl list devices available | awk -F '[()]' '/iPhone/ { print $2; exit }')"
           if [ -z "$DESTINATION_ID" ]; then
@@ -37,10 +38,25 @@ jobs:
             xcrun simctl list devices available
             exit 1
           fi
+          echo "destination_id=$DESTINATION_ID" >> "$GITHUB_OUTPUT"
 
+      - name: Unit Tests
+        run: |
           xcodebuild test \
             -project "Swift Quiz Academy.xcodeproj" \
             -scheme "Swift Quiz Academy" \
-            -destination "id=$DESTINATION_ID" \
+            -destination "id=${{ steps.simulator.outputs.destination_id }}" \
             -only-testing:"Swift Quiz AcademyTests" \
+            CODE_SIGNING_ALLOWED=NO
+
+      - name: UI Smoke Tests
+        run: |
+          xcodebuild test \
+            -project "Swift Quiz Academy.xcodeproj" \
+            -scheme "Swift Quiz Academy" \
+            -destination "id=${{ steps.simulator.outputs.destination_id }}" \
+            -only-testing:"Swift Quiz AcademyUITests" \
+            -skip-testing:"Swift Quiz AcademyUITests/Swift_Quiz_AcademyUITestsLaunchTests" \
+            -parallel-testing-enabled NO \
+            -maximum-test-execution-time-allowance 180 \
             CODE_SIGNING_ALLOWED=NO

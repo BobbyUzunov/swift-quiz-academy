@@ -291,9 +291,13 @@ The project includes unit tests for:
 Latest local verification:
 
 ```text
-xcodebuild test   - passed
-xcodebuild build  - passed
+node Scripts/validate_questions.js  - passed
+xcodebuild build                    - passed
+xcodebuild test (unit tests)        - passed
+xcodebuild test (UI smoke tests)    - passed
 ```
+
+GitHub Actions validates the JSON database, builds the app, runs unit tests, and runs UI smoke tests on every push to `main`.
 
 Run the app build locally:
 
@@ -310,20 +314,19 @@ xcodebuild build \
 
 ## Roadmap
 
-### Version 1.3
+### Version 1.5
 
-- Cloud synchronization
-- User profiles
-- Online leaderboards
-- More quiz categories
-- Expanded JSON question database
+- App Store release polish and metadata
+- Additional quiz categories and question packs
+- Improved study modes (spaced repetition, bookmarked sets)
+- Widgets and learning reminders
 
 ### Version 2.0
 
-- Multiplayer challenges
-- Community features
-- Advanced learning paths
-- App Store polish
+- Cloud synchronization and user profiles
+- Online leaderboards and multiplayer challenges
+- Community features and shared question sets
+- Advanced learning paths with guided curricula
 
 ---
 
